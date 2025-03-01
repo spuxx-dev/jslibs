@@ -41,7 +41,8 @@
     "types": "tsc --noEmit",
     "test": "pnpm test:vitest",
     "test:vitest": "playwright install && vitest --workspace=vitest.workspace.ts --browser.headless",
-    "test:vitest:browser": "playwright install && vitest --workspace=vitest.workspace.ts"
+    "test:vitest:browser": "playwright install && vitest --workspace=vitest.workspace.ts",
+    "test:vitest:watch": "playwright install && vitest --workspace=vitest.workspace.ts --inspect --no-file-parallelism --watch"
   },
   "devDependencies": {
     "@iconify-icon/solid": "2.3.0",
