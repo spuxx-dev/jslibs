@@ -3,7 +3,6 @@ import { render, screen, waitFor } from '@solidjs/testing-library';
 import { Modal } from '../modal.service';
 import { ConfirmModal } from './confirm.modal';
 import { ModalPortal } from '../modal-portal.component';
-import { sleep } from '@spuxx/js-utils';
 
 describe(
   'ConfirmModal',
