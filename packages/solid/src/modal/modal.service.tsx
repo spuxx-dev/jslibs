@@ -28,8 +28,12 @@ export class Modal extends ServiceMixin<Modal>() {
    * @param key The key of the modal to open.
    * @param options The options to pass to the modal.
    */
-  static show<TOptions extends ModalOptions>(modal: ModalComponent<TOptions>, options: TOptions) {
+  static async show<TOptions extends ModalOptions>(
+    modal: ModalComponent<TOptions>,
+    options: TOptions,
+  ) {
     this.setState({ open: true, component: modal, options });
+    await Promise.resolve();
   }
 
   /**
@@ -37,6 +41,7 @@ export class Modal extends ServiceMixin<Modal>() {
    */
   static async close() {
     this.setState({ ...this.state, open: false });
+    await Promise.resolve();
   }
 
   /**

@@ -66,11 +66,12 @@ export interface ConfirmModalOptions extends ModalOptions {
 }
 
 export const ConfirmModal: ModalComponent<ConfirmModalOptions> = (options) => {
-  const {
-    confirmColor = 'primary',
-    cancelColor = 'primary',
-    onCancel = () => Modal.close(),
-  } = options;
+  const { confirmColor = 'primary', cancelColor = 'primary' } = options;
+
+  const handleCancel = () => {
+    if (options.onCancel) options.onCancel();
+    else Modal.close();
+  };
 
   return (
     <ModalTemplate {...options}>
@@ -85,7 +86,7 @@ export const ConfirmModal: ModalComponent<ConfirmModalOptions> = (options) => {
         {options.cancelLabel && (
           <Button
             icon={options.cancelIcon}
-            onClick={onCancel}
+            onClick={handleCancel}
             color={cancelColor}
             variant="colored"
           >
