@@ -15,7 +15,6 @@ export const BaseColor = {
 
 /**
  * The base color of an element.
- * @internal
  */
 export type BaseColor = (typeof BaseColor)[keyof typeof BaseColor];
 
@@ -30,7 +29,6 @@ export const ContentColor = {
 
 /**
  * The content color of an element.
- * @internal
  */
 export type ContentColor = (typeof ContentColor)[keyof typeof ContentColor];
 
@@ -46,6 +44,5 @@ export const ModalSize = {
 };
 /**
  * The size of a modal dialog.
- * @internal
  */
 export type ModalSize = (typeof ModalSize)[keyof typeof ModalSize];
