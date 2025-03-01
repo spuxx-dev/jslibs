@@ -13,13 +13,13 @@ interface Props extends ModalOptions, ParentProps {}
  * import { ModalTemplate, ModalHeader, ModalBody, ModalFooter, Button } from '@spuxx/solid';
  * export const MyModal = (options) => {
  *   return (
- *     <Modal {...options}>
+ *     <ModalTemplate {...options}>
  *       <ModalHeader title="Hello World!" />
  *       <ModalBody>This is a modal dialog.</ModalBody>
  *       <ModalFooter>
  *         <Button>Close</Button>
  *       </ModalFooter>
- *     </Modal>
+ *     </ModalTemplate>
  *   );
  * }
  * ```
@@ -28,12 +28,16 @@ export const ModalTemplate: Component<Props> = (options) => {
   const { size = 'auto', preventClose = false, onClose } = options;
 
   const handleOpenChange = (value: boolean) => {
+    // The value check is here mostly for safety and we don't usually run into it.
+    /* v8 ignore next */
     if (value) return;
     Modal.close();
     if (typeof onClose === 'function') onClose();
   };
 
   const handleContentPresentChange = (value: boolean) => {
+    // The value check is here mostly for safety and we don't usually run into it.
+    /* v8 ignore next */
     if (value) return;
     Modal.setState({
       open: false,
