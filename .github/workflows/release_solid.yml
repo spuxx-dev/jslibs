@@ -1,0 +1,16 @@
+name: Releases (@spuxx/solid)
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+    - "solid-*"
+
+jobs:
+  release:
+    name: Release artifact (@spuxx/solid)
+    uses: ./.github/workflows/release.yml
+    with:
+      PATH: packages/solid
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
