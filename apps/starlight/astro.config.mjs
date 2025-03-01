@@ -35,7 +35,20 @@ export default defineConfig({
         },
         {
           label: 'browser-utils',
-          items: [{ label: 'Introduction', slug: 'browser-utils' }],
+          items: [
+            {
+              label: 'Introduction',
+              slug: 'browser-utils',
+            },
+            {
+              label: 'Styles and Themes',
+              slug: 'browser-utils/styles-and-themes',
+            },
+            {
+              label: 'Services',
+              autogenerate: { directory: 'browser-utils/services' },
+            },
+          ],
         },
       ],
     }),

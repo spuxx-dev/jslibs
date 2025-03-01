@@ -1,6 +1,6 @@
 /**
  * Extending `ServiceMixin` will turn the inheriting class into a singleton class.
- * @see {@link https://en.wikipedia.org/wiki/Singleton_pattern|Singleton}
+ * @see {@link https://en.wikipedia.org/wiki/Singleton_pattern}
  * @typeParam TService - The type of the service.
  * @returns A parent class that turns the inheriting class into a singleton class.
  * @example
@@ -13,7 +13,7 @@ export function ServiceMixin<TService>() {
     /**
      * ⛔️ Do not set this and treat it as if it were `protected`! ⛔️ Unfortunately, TypeScript does not allow
      * private or protected members in declaration files yet.
-     * @see {@link https://github.com/microsoft/TypeScript/issues/35822|TypeScript}
+     * @see {@link https://github.com/microsoft/TypeScript/issues/35822}
      * @internal
      */
     static _instance: TService | null;

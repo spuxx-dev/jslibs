@@ -4,7 +4,10 @@ import { LocalStorageOptions } from './types';
 /**
  * A mixin that provides a standardized and type-safe abstraction of the browser's
  * `localStorage` API.
- * For more information, see: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+ * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage}
+ * @param options - The {@link LocalStorageOptions} for configuring the service.
+ * @typeParam TLocalStorage - The type of your local storage data.
+ * @returns Your `LocalStorage` service class.
  * @example
  * export interface ILocalStorage {
  *   foo: string;
@@ -56,6 +59,7 @@ export function LocalStorageMixin<TLocalStorage extends object>(
 
     /**
      * Saves the data to `localStorage`.
+     * @returns After the data has been saved.
      */
     static save(): void {
       localStorage.setItem(
@@ -66,7 +70,8 @@ export function LocalStorageMixin<TLocalStorage extends object>(
 
     /**
      * Gets a value from `localStorage`.
-     * @param key The key to get the value for.
+     * @param key - The key of the value to get.
+     * @typeParam TKey - The key of the value to get.
      * @returns The value for the given key.
      */
     static get<TKey extends keyof TLocalStorage>(key: TKey): TLocalStorage[TKey] {
@@ -77,8 +82,9 @@ export function LocalStorageMixin<TLocalStorage extends object>(
 
     /**
      * Sets a value in `localStorage`.
-     * @param key The key to get the value for.
-     * @returns The value for the given key.
+     * @param key - The key of the value to set.
+     * @typeParam TKey - The key of the value to set.
+     * @returns After the value has been set.
      */
     static set<TKey extends keyof TLocalStorage>(key: TKey, value: TLocalStorage[TKey]): void {
       this.instance._data[key] = value;

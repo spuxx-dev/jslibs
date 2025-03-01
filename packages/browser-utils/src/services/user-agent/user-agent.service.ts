@@ -3,7 +3,6 @@ import { UserAgentOptions } from './types';
 
 /**
  * `UserAgent` provides functionality related to the user-agent.
- *
  * @example
  * // Check whether the viewport is considered a desktop
  * const { isDesktop } = UserAgent;
@@ -18,18 +17,24 @@ export class UserAgent extends ServiceMixin<UserAgent>() {
 
   /**
    * Sets the `UserAgent`s options.
-   * @param options (optional) The options to use.
+   * @param options - The options to use.
+   * @returns After the options have been set.
    */
   static setOptions(options: Partial<UserAgentOptions>) {
     this.instance._options = { ...this.options, ...options };
   }
 
+  /**
+   * Gets the `UserAgent`s options.
+   * @returns The `UserAgent`s options.
+   */
   static get options(): UserAgentOptions {
     return UserAgent.instance._options;
   }
 
   /**
    * Whether the current viewport is considered a desktop.
+   * @returns Whether the current viewport is considered a desktop.
    */
   static get isDesktop() {
     const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth);

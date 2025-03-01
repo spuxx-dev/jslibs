@@ -1,0 +1,142 @@
+---
+title: 'Styles and Themes'
+description: '@spuxx/browser-utils provides a set of CSS styles and themes primarily intended for my personal use.'
+---
+
+import TypeDoc from '@docs/browser-utils/styles.md';
+
+The package provides a set of CSS styles and themes primarily intended for my personal use. You are free to use it in your own projects, but I will not be accepting pull requests or issues requesting changes to this part of the library.
+
+## Styles
+
+To use the styles, you need to import the CSS file into your project.
+
+```js
+/* JavaScript */
+import '@spuxx/browser-utils/styles.css';
+```
+
+```css
+/* CSS */
+@import '@spuxx/browser-utils/styles.css';
+```
+
+### Use with native HTML elements
+
+After importing the CSS file, you can use any of the included styles directly in your HTML.
+You can look up all available styles in [src/styles](https://github.com/spuxx-dev/jslibs/tree/main/packages/browser-utils/src/styles).
+
+```html
+<div class="spx spx-container">
+  <button class="spx spx-button" spx-color="gradient" spx-variant="outlined">Click me</button>
+</div>
+```
+
+### Use with @spuxx/solid
+
+However, the styles are primarily intended for use with [SolidJS](https://www.solidjs.com/) and my [@spuxx/solid](https://spuxx-dev.github.io/jslibs/browser-utils) library.
+If you use that library, you simply need to import the styles into your project. Components provided by that library will automatically use the styles.
+
+```jsx
+import '@spuxx/browser-utils/styles.css';
+import { Button } from '@spuxx/solid';
+
+export default function App() {
+  return (
+    <Button color="gradient" variant="outlined">
+      Click me
+    </Button>
+  );
+}
+```
+
+## Themes
+
+To use the themes, you need to import the CSS file into your project.
+
+```js
+/* JavaScript */
+import '@spuxx/browser-utils/themes.css';
+```
+
+```css
+/* CSS */
+@import '@spuxx/browser-utils/themes.css';
+```
+
+### Built-in Themes
+
+The library comes with two built-in themes, `default` and `light`.
+Both themes are based on [Tailwind's color palette](https://tailwindcss.com/docs/customizing-colors)
+(also see [tailwindcolor.com](https://tailwindcolor.com/)).
+
+- [Default theme](packages/browser-utils/themes/default.theme.css)
+- [Light theme](packages/browser-utils/themes/light.theme.css)
+
+You may override each of those themes by creating a CSS file and overwriting any of the variables:
+
+```css
+html,
+html *,
+* {
+  /* Overwrite default theme variables */
+}
+
+html[spx-theme='light'],
+html[spx-theme='light'] *,
+*[spx-theme='light'] {
+  /* Overwrite light theme variables */
+}
+```
+
+### Custom Themes
+
+You can also create your own custom themes by creating a CSS file and overwriting any of the variables:
+
+```css
+html[spx-theme='my-theme'],
+html[spx-theme='my-theme'] *,
+*[spx-theme='my-theme'] {
+  /* Overwrite any of the default theme variables */
+}
+```
+
+> 🛈 Note: You do not need to overwrite all of the variables. You can only overwrite the ones you want to change.
+
+You may then import your custom theme into your project:
+
+```js
+/* JavaScript */
+import './themes/my-theme.css';
+```
+
+```css
+/* CSS */
+@import './themes/my-theme.css';
+```
+
+You may then use your theme by setting the `spx-theme` attribute on the `html` element:
+
+```html
+<html spx-theme="my-theme">
+  ...
+</html>
+```
+
+### Theme individual components
+
+Themes are usually applied to the entire document (by setting the `spx-theme` attribute on the `html` element).
+However, you can also apply a theme to individual components.
+
+To do this, you can use the `spx-theme` attribute on the element itself.
+
+```html
+<div spx-theme="my-theme">...</div>
+```
+
+## Variables and Types
+
+The library also provides a set of variables and types for use with TypeScript. They can help you use the styles correctly and in a type-safe manner.
+They are primarily intended for use with [SolidJS](https://www.solidjs.com/) and my [@spuxx/solid](https://spuxx-dev.github.io/jslibs/browser-utils) library.
+
+<TypeDoc />

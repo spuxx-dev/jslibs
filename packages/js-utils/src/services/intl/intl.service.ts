@@ -12,7 +12,7 @@ interface SetupOptions {
 }
 /**
  * The `Intl` service provides i18n-related functionalities.
- * @see {@link https://github.com/Modyfi/vite-plugin-yaml|vite-plugin-yaml}
+ * @see {@link https://github.com/Modyfi/vite-plugin-yaml}
  * @example
  * import { Intl } from '@spuxx/js-utils';
  * import de from './translations/de.yml';
@@ -30,7 +30,7 @@ export class Intl extends ServiceMixin<Intl>() {
   private _currentDictionary?: Dictionary;
   /**
    * Sets up `Intl` with the given options. Needs to be called at application startup.
-   * @see {@link https://github.com/Modyfi/vite-plugin-yaml|vite-plugin-yaml}
+   * @see {@link https://github.com/Modyfi/vite-plugin-yaml}
    * @param {SetupOptions} options The options to use.
    * @example
    * import { Intl } from '@spuxx/js-utils';
