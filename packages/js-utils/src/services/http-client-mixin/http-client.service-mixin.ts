@@ -2,7 +2,6 @@
 import { type AxiosError } from 'axios';
 import { ServiceMixin } from '../mixin';
 import {
-  EndpointFunction,
   HttpError,
   type EndpointDefinition,
   type Endpoints,
@@ -20,22 +19,10 @@ type HttpClient<T extends Endpoints> = {
 };
 
 /**
- * A helper function to create an endpoint definition in a type-safe way.
- * @param definition The endpoint definition.
- */
-export function defineEndpoint<
-  TFunction extends EndpointFunction,
-  TTransformedResult = Awaited<ReturnType<TFunction>>,
->(
-  definition: EndpointDefinition<TFunction, TTransformedResult>,
-): EndpointDefinition<TFunction, TTransformedResult> {
-  return definition;
-}
-
-/**
  * A mixin that adds HTTP client functionality to a class. Can be used to create a strongly typed
  * HTTP client.
- * @param options The options for the HTTP client.
+ * @param options - The options for the HTTP client.
+ * @typeParam TEndpoints - The set of {@link Endpoints} to register with the HTTP client.
  * @example
  * import { HttpClientMixin, defineEndpoint } from '@spuxx/js-utils';
  *
@@ -65,6 +52,13 @@ export function HttpClientMixin<TEndpoints extends Endpoints>(
   class Client extends ServiceMixin<Client>() {
     private options = options;
 
+    /**
+     * Invokes an endpoint with the provided arguments. Handles everything from fetching the response
+     * to handling errors and transforming the response.
+     * @param endpointDef - The definition of the endpoint to invoke.
+     * @param args - The arguments to pass to the endpoint function.
+     * @returns A promise that resolves to the result of the endpoint function and its transformer.
+     */
     static async invokeEndpoint(endpointDef: EndpointDefinition, ...args: any[]): Promise<any> {
       let response: any;
       try {

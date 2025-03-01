@@ -35,7 +35,7 @@ export default defineConfig({
         },
         {
           label: 'browser-utils',
-          items: [{ label: 'Introductin', slug: 'browser-utils' }],
+          items: [{ label: 'Introduction', slug: 'browser-utils' }],
         },
       ],
     }),

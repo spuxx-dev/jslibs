@@ -1,8 +1,8 @@
 import { describe, expect, it, vi } from 'vitest';
 import axios, { type AxiosResponse } from 'axios';
-import { defineEndpoint, HttpClientMixin } from './http-client.service-mixin';
+import { HttpClientMixin } from './http-client.service-mixin';
 import { HttpClientOptions, HttpError } from './types';
-import { sleep } from '../../main';
+import { defineEndpoint, sleep } from '../../main';
 
 describe('HttpClientMixin', () => {
   describe('endpoint definition', () => {
