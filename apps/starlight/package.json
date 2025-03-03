@@ -13,7 +13,7 @@
   "devDependencies": {
     "@astrojs/check": "0.9.4",
     "@astrojs/mdx": "4.0.8",
-    "@astrojs/solid-js": "5.0.4",
+    "@astrojs/solid-js": "5.0.5",
     "@astrojs/starlight": "0.32.1",
     "astro": "5.1.5",
     "sharp": "0.33.5",
