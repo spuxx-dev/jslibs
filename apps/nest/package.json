@@ -16,7 +16,7 @@
     "@nanogiants/nestjs-swagger-api-exception-decorator": "1.7.0",
     "@nestjs/common": "10.4.6",
     "@nestjs/core": "11.0.11",
-    "@nestjs/platform-express": "10.4.4",
+    "@nestjs/platform-express": "11.0.11",
     "@nestjs/swagger": "11.0.6",
     "@spuxx/js-utils": "workspace:@spuxx/js-utils@*",
     "@spuxx/nest-utils": "workspace:@spuxx/nest-utils@*",
