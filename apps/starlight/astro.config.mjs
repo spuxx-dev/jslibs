@@ -50,6 +50,19 @@ export default defineConfig({
             },
           ],
         },
+        {
+          label: 'solid',
+          items: [
+            {
+              label: 'Introduction',
+              slug: 'solid',
+            },
+            {
+              label: 'Components',
+              autogenerate: { directory: 'solid/components' },
+            },
+          ],
+        },
       ],
     }),
   ],

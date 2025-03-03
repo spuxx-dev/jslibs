@@ -11,6 +11,9 @@
     "check": "astro check"
   },
   "devDependencies": {
+    "@spuxx/browser-utils": "workspace:@spuxx/browser-utils@*",
+    "@spuxx/js-utils": "workspace:@spuxx/js-utils@*",
+    "@spuxx/solid": "workspace:@spuxx/solid@*",
     "@astrojs/check": "0.9.4",
     "@astrojs/mdx": "4.0.8",
     "@astrojs/solid-js": "5.0.4",
