@@ -15,7 +15,7 @@
     "@astrojs/mdx": "4.0.8",
     "@astrojs/solid-js": "5.0.5",
     "@astrojs/starlight": "0.32.1",
-    "astro": "5.1.5",
+    "astro": "5.4.1",
     "sharp": "0.33.5",
     "solid-js": "1.9.4",
     "typescript": "5.7.3",
