@@ -1,0 +1,31 @@
+---
+title: 'Container'
+description: 'A container component. Very flexible and can be used for most layout purposes.'
+---
+
+import TypeDoc from '@docs/solid/components/layout/container.md';
+import { BaseColor } from '@packages/browser-utils';
+import { Interactive } from '@src/components/interactive';
+
+<Interactive
+  componentName="Container"
+  argDefinitions={{
+    color: {
+      type: 'string',
+      options: Object.values({ ...BaseColor }),
+    },
+    variant: {
+      type: 'string',
+      options: ['contained', 'outlined', 'colored'],
+    },
+    noPadding: {
+      type: 'boolean',
+    },
+  }}
+>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet
+  blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+  malesuada lacus ex, sit amet blandit leo lobortis eget.
+</Interactive>
+
+<TypeDoc />

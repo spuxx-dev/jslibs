@@ -1,17 +1,17 @@
-import { createEffect, createSignal, Show, type Component } from 'solid-js';
+import { createEffect, createSignal, Show, type Component, type ParentProps } from 'solid-js';
 import { render } from 'solid-js/web';
 import { Container, Divider, Heading } from '@spuxx/solid';
 import { InteractiveControls } from './InteractiveControls';
 import type { Argument } from './types';
 
-interface Props {
+interface Props extends ParentProps {
   componentName: string;
   argDefinitions: Record<string, Argument<unknown>>;
   title?: string;
 }
 
 export const InteractiveSolid: Component<Props> = (props) => {
-  const { title, componentName, argDefinitions } = props;
+  const { title, componentName, argDefinitions, children } = props;
 
   let dispose: (() => void) | undefined;
   // eslint-disable-next-line prefer-const
@@ -40,7 +40,7 @@ export const InteractiveSolid: Component<Props> = (props) => {
     }
 
     if (containerRef && component) {
-      dispose = render(() => component(args), containerRef);
+      dispose = render(() => component({ ...args, children }), containerRef);
     }
   });
 

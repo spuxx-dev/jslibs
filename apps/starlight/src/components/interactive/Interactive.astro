@@ -9,4 +9,6 @@ interface Props {
 }
 ---
 
-<InteractiveSolid client:only="solid-js" {...Astro.props} />
+<InteractiveSolid client:only="solid-js" {...Astro.props}>
+  <slot />
+</InteractiveSolid>
