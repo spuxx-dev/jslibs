@@ -1,0 +1,27 @@
+---
+title: 'Divider'
+description: 'A library containing various production-ready components for SolidJS applications.'
+---
+
+import TypeDoc from '@docs/solid/components/layout/divider.md';
+import { BaseColor, ContentColor } from '@packages/browser-utils/dist/main';
+import { Interactive } from '@src/components/interactive';
+
+<Interactive
+  componentName="Divider"
+  argDefinitions={{
+    color: {
+      type: 'string',
+      options: Object.values({ ...BaseColor, ...ContentColor }),
+    },
+    variant: {
+      type: 'string',
+      options: ['straight', 'sleek'],
+    },
+    vertical: {
+      type: 'boolean',
+    },
+  }}
+/>
+
+<TypeDoc />

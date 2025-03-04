@@ -4,9 +4,8 @@ import { attributes, classNames } from '@src/main';
 
 /**
  * A divider component. Can be used to separate content. Supports vertical orientation.
- * Color defaults to `surface`, but can be customized with the `color` prop.
- * @param props
- * @returns
+ * @param props {@link DividerProps}
+ * @returns The divider component.
  */
 export const Divider: Component<DividerProps> = (props) => {
   const { color = 'text-subtle', variant = 'straight', vertical } = props;
