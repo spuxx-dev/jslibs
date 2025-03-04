@@ -1,6 +1,6 @@
 import { Component } from 'solid-js';
 import { DividerProps } from './divider.types';
-import { classNames } from '@src/main';
+import { attributes, classNames } from '@src/main';
 
 /**
  * A divider component. Can be used to separate content. Supports vertical orientation.
@@ -13,7 +13,7 @@ export const Divider: Component<DividerProps> = (props) => {
 
   return (
     <hr
-      {...props.attrs}
+      {...attributes(props)}
       spx-color={color}
       spx-variant={variant}
       spx-vertical={vertical}

@@ -71,4 +71,10 @@ describe('Button', () => {
     button.click();
     expect(onClick).not.toHaveBeenCalled();
   });
+
+  it('should accept inline styles', () => {
+    const { getByRole } = render(() => <Button style={{ width: '1337px' }}>Click me</Button>);
+    const button = getByRole('button');
+    expect(button).toHaveStyle({ width: '1337px' });
+  });
 });
