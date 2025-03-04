@@ -35,4 +35,9 @@ describe('Divider', () => {
     expect(divider).toHaveAttribute('spx-vertical');
     expect(divider).toHaveAttribute('id', 'foo');
   });
+
+  it('should accept inline styles', () => {
+    const { container } = render(() => <Divider style={{ width: '1337px' }} />);
+    expect(container.firstChild).toHaveStyle({ width: '1337px' });
+  });
 });

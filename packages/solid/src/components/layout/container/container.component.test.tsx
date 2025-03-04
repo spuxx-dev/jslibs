@@ -41,4 +41,9 @@ describe('Container', () => {
     expect(container).toHaveAttribute('spx-no-padding');
     expect(container).toHaveAttribute('id', 'container');
   });
+
+  it('should accept inline styles', () => {
+    const { container } = render(() => <Container style={{ width: '1337px' }}>Content</Container>);
+    expect(container.firstChild).toHaveStyle({ width: '1337px' });
+  });
 });
