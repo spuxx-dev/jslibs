@@ -16,7 +16,7 @@
     "@nanogiants/nestjs-swagger-api-exception-decorator": "1.7.0",
     "@nestjs/common": "10.4.6",
     "@nestjs/core": "11.0.11",
-    "@nestjs/platform-express": "10.4.4",
+    "@nestjs/platform-express": "11.0.11",
     "@nestjs/swagger": "11.0.6",
     "@spuxx/js-utils": "workspace:@spuxx/js-utils@*",
     "@spuxx/nest-utils": "workspace:@spuxx/nest-utils@*",
@@ -31,12 +31,12 @@
     "@vitest/coverage-v8": "3.0.5",
     "express-openid-connect": "2.17.1",
     "source-map-support": "0.5.21",
-    "ts-loader": "9.5.1",
+    "ts-loader": "9.5.2",
     "ts-node": "10.9.2",
     "typescript": "5.7.3",
     "unplugin-swc": "1.5.1",
     "vite": "6.1.0",
-    "vite-tsconfig-paths": "5.1.2",
-    "vitest": "3.0.5"
+    "vite-tsconfig-paths": "5.1.4",
+    "vitest": "3.0.7"
   }
 }
