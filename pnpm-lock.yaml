@@ -109,8 +109,8 @@ importers:
         specifier: 6.1.0
         version: 6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0)
       vite-tsconfig-paths:
-        specifier: 5.1.2
-        version: 5.1.2(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
+        specifier: 5.1.4
+        version: 5.1.4(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
       vitest:
         specifier: 3.0.7
         version: 3.0.7(@types/debug@4.1.12)(@types/node@22.13.8)(@vitest/browser@3.0.7(@types/node@22.13.8)(typescript@5.7.3)(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@1.21.7)(jsdom@26.0.0)(msw@2.7.3(@types/node@22.13.8)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0)
@@ -149,8 +149,8 @@ importers:
         specifier: 6.1.0
         version: 6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0)
       vite-tsconfig-paths:
-        specifier: 5.1.2
-        version: 5.1.2(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
+        specifier: 5.1.4
+        version: 5.1.4(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
 
   apps/solid:
     dependencies:
@@ -238,8 +238,8 @@ importers:
         specifier: 4.5.0
         version: 4.5.0(@types/node@22.13.8)(rollup@4.34.9)(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
       vite-tsconfig-paths:
-        specifier: 5.1.2
-        version: 5.1.2(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
+        specifier: 5.1.4
+        version: 5.1.4(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
       vitest:
         specifier: 3.0.7
         version: 3.0.7(@types/debug@4.1.12)(@types/node@22.13.8)(@vitest/browser@3.0.7(@types/node@22.13.8)(typescript@5.7.3)(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@1.21.7)(jsdom@26.0.0)(msw@2.7.3(@types/node@22.13.8)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0)
@@ -268,8 +268,8 @@ importers:
         specifier: 4.2.1
         version: 4.2.1(@types/node@22.13.8)(rollup@4.34.9)(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
       vite-tsconfig-paths:
-        specifier: 5.1.2
-        version: 5.1.2(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
+        specifier: 5.1.4
+        version: 5.1.4(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
       vitest:
         specifier: 3.0.7
         version: 3.0.7(@types/debug@4.1.12)(@types/node@22.13.8)(@vitest/browser@3.0.7(@types/node@22.13.8)(typescript@5.7.3)(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@1.21.7)(jsdom@26.0.0)(msw@2.6.0(@types/node@22.13.8)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0)
@@ -311,8 +311,8 @@ importers:
         specifier: 4.5.0
         version: 4.5.0(@types/node@22.13.8)(rollup@4.34.9)(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
       vite-tsconfig-paths:
-        specifier: 5.1.2
-        version: 5.1.2(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
+        specifier: 5.1.4
+        version: 5.1.4(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
       vitest:
         specifier: 3.0.7
         version: 3.0.7(@types/debug@4.1.12)(@types/node@22.13.8)(@vitest/browser@3.0.7(@types/node@22.13.8)(typescript@5.7.3)(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@1.21.7)(jsdom@26.0.0)(msw@2.7.3(@types/node@22.13.8)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0)
@@ -393,8 +393,8 @@ importers:
         specifier: 4.5.0
         version: 4.5.0(@types/node@22.13.8)(rollup@4.34.9)(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
       vite-tsconfig-paths:
-        specifier: 5.1.2
-        version: 5.1.2(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
+        specifier: 5.1.4
+        version: 5.1.4(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
       vitest:
         specifier: 3.0.7
         version: 3.0.7(@types/debug@4.1.12)(@types/node@22.13.8)(@vitest/browser@3.0.7(@types/node@22.13.8)(typescript@5.7.3)(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@1.21.7)(jsdom@26.0.0)(msw@2.7.3(@types/node@22.13.8)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0)
@@ -448,8 +448,8 @@ importers:
         specifier: 2.11.6
         version: 2.11.6(@testing-library/jest-dom@6.6.3)(solid-js@1.9.4)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
       vite-tsconfig-paths:
-        specifier: 5.1.2
-        version: 5.1.2(typescript@5.7.2)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
+        specifier: 5.1.4
+        version: 5.1.4(typescript@5.7.2)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0))
       vitest:
         specifier: 3.0.7
         version: 3.0.7(@types/debug@4.1.12)(@types/node@22.13.8)(@vitest/browser@3.0.7)(happy-dom@8.9.0(encoding@0.1.13))(jiti@1.21.7)(jsdom@26.0.0)(msw@2.7.3(@types/node@22.13.8)(typescript@5.7.2))(terser@5.39.0)(yaml@2.7.0)
@@ -6804,16 +6804,6 @@ packages:
       '@swc/wasm':
         optional: true
 
-  tsconfck@3.1.1:
-    resolution: {integrity: sha512-00eoI6WY57SvZEVjm13stEVE90VkEdJAFGgpFLTsZbJyW/LwFQ7uQxJHWpZ2hzSWgCPKc9AnBnNP+0X7o3hAmQ==}
-    engines: {node: ^18 || >=20}
-    hasBin: true
-    peerDependencies:
-      typescript: ^5.0.0
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-
   tsconfck@3.1.5:
     resolution: {integrity: sha512-CLDfGgUp7XPswWnezWwsCRxNmgQjhYq3VXHM0/XIRxhVrKw0M1if9agzryh1QS3nxjCROvV+xWxoJO1YctzzWg==}
     engines: {node: ^18 || >=20}
@@ -7193,8 +7183,8 @@ packages:
       '@testing-library/jest-dom':
         optional: true
 
-  vite-tsconfig-paths@5.1.2:
-    resolution: {integrity: sha512-gEIbKfJzSEv0yR3XS2QEocKetONoWkbROj6hGx0FHM18qKUojhvcokQsxQx5nMkelZq2n37zbSGCJn+FSODSjA==}
+  vite-tsconfig-paths@5.1.4:
+    resolution: {integrity: sha512-cYj0LRuLV2c2sMqhqhGpaO3LretdtMn/BVX4cPLanIZuwwrkVl+lK84E/miEXkCHWXuq65rhNN4rXsBcOB3S4w==}
     peerDependencies:
       vite: '*'
     peerDependenciesMeta:
@@ -15430,13 +15420,9 @@ snapshots:
     optionalDependencies:
       '@swc/core': 1.7.22
 
-  tsconfck@3.1.1(typescript@5.7.2):
+  tsconfck@3.1.5(typescript@5.7.2):
     optionalDependencies:
       typescript: 5.7.2
-
-  tsconfck@3.1.1(typescript@5.7.3):
-    optionalDependencies:
-      typescript: 5.7.3
 
   tsconfck@3.1.5(typescript@5.7.3):
     optionalDependencies:
@@ -15841,22 +15827,22 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vite-tsconfig-paths@5.1.2(typescript@5.7.2)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0)):
+  vite-tsconfig-paths@5.1.4(typescript@5.7.2)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0)):
     dependencies:
       debug: 4.4.0
       globrex: 0.1.2
-      tsconfck: 3.1.1(typescript@5.7.2)
+      tsconfck: 3.1.5(typescript@5.7.2)
     optionalDependencies:
       vite: 6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite-tsconfig-paths@5.1.2(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0)):
+  vite-tsconfig-paths@5.1.4(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0)):
     dependencies:
       debug: 4.4.0
       globrex: 0.1.2
-      tsconfck: 3.1.1(typescript@5.7.3)
+      tsconfck: 3.1.5(typescript@5.7.3)
     optionalDependencies:
       vite: 6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0)
     transitivePeerDependencies:
