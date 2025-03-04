@@ -51,7 +51,6 @@ export const InteractiveSolid: Component<Props> = (props) => {
 
         <Show when={state().component}>
           <InteractiveControls argDefinitions={argDefinitions} onArgsChange={handleArgsChange} />
-          {JSON.stringify(state().args)}
           <Container
             variant="contained"
             color="background"
