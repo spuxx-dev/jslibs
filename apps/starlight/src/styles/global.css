@@ -1,2 +1,2 @@
-@import '@spuxx/browser-utils/styles';
-@import '@spuxx/browser-utils/themes';
+@import 'node_modules/@spuxx/browser-utils/dist/styles.css';
+@import 'node_modules/@spuxx/browser-utils/dist/themes.css';
