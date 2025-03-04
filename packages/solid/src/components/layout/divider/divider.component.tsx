@@ -9,14 +9,14 @@ import { attributes, classNames } from '@src/main';
  * @returns
  */
 export const Divider: Component<DividerProps> = (props) => {
-  const { color = 'text-subtle', vertical = undefined, variant = 'straight' } = props;
+  const { color = 'text-subtle', variant = 'straight', vertical } = props;
 
   return (
     <hr
       {...attributes(props)}
       spx-color={color}
       spx-variant={variant}
-      spx-vertical={vertical}
+      spx-vertical={vertical ? 'true' : undefined}
       {...classNames('spx-divider', props.class)}
     />
   );
