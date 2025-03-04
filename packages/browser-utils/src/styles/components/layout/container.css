@@ -19,5 +19,5 @@
 }
 
 .spx-container[spx-variant='outlined'] {
-  color: inherit;
+  color: inherit !important;
 }
