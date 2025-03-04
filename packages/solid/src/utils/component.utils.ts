@@ -23,6 +23,7 @@ export const classNames = (...classes: (string | undefined)[]): { class: string 
  *   return <div {...attributes(props)}></div>;
  * }
  */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const attributes = (props: ComponentProps<any>) => {
   return {
     style: props.style,

@@ -4,13 +4,13 @@ import { isEmptyOrWhitespace } from '@spuxx/js-utils';
 import type { Argument } from './types';
 
 interface Props {
-  argDefinitions: Record<string, Argument<any>>;
-  onArgsChange: (args: Record<string, any>) => void;
+  argDefinitions: Record<string, Argument<unknown>>;
+  onArgsChange: (args: Record<string, unknown>) => void;
 }
 
 export const InteractiveControls: Component<Props> = (props) => {
   const { argDefinitions, onArgsChange } = props;
-  const [args, setArgs] = createSignal<Record<string, any>>({});
+  const [args, setArgs] = createSignal<Record<string, unknown>>({});
 
   const handleArgsChange = (event: Event) => {
     const target = event.target as HTMLInputElement;
@@ -27,12 +27,17 @@ export const InteractiveControls: Component<Props> = (props) => {
       {key}
       {': '}
       {def.type === 'boolean' && (
-        <input type="checkbox" name={key} checked={args()[key]} on:change={handleArgsChange} />
+        <input
+          type="checkbox"
+          name={key}
+          checked={args()[key] as boolean}
+          on:change={handleArgsChange}
+        />
       )}
       {def.options && (
         <select name={key} on:change={handleArgsChange}>
           <option label="Use default value"></option>
-          <For each={def.options}>{(option) => <option>{option}</option>}</For>
+          <For each={def.options}>{(option) => <option>{String(option)}</option>}</For>
         </select>
       )}
     </label>

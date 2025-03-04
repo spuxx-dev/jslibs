@@ -6,7 +6,7 @@ import type { Argument } from './types';
 
 interface Props {
   componentName: string;
-  argDefinitions: Record<string, Argument<any>>;
+  argDefinitions: Record<string, Argument<unknown>>;
   title?: string;
 }
 
@@ -14,11 +14,12 @@ export const InteractiveSolid: Component<Props> = (props) => {
   const { title, componentName, argDefinitions } = props;
 
   let dispose: (() => void) | undefined;
+  // eslint-disable-next-line prefer-const
   let containerRef: HTMLDivElement | null = null;
 
   const [state, setState] = createSignal<{
     component: Component | null;
-    args: Record<string, any>;
+    args: Record<string, unknown>;
   }>({ component: null, args: {} });
 
   const importComponent = async () => {
@@ -28,7 +29,7 @@ export const InteractiveSolid: Component<Props> = (props) => {
   };
   importComponent();
 
-  const handleArgsChange = (args: Record<string, any>) => {
+  const handleArgsChange = (args: Record<string, unknown>) => {
     setState({ component: state().component!, args });
   };
 
