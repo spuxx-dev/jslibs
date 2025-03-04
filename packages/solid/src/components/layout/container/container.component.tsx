@@ -1,7 +1,7 @@
 import { Dynamic } from 'solid-js/web';
 import { Component } from 'solid-js';
 import { ContainerProps } from './container.types';
-import { classNames } from '@src/main';
+import { attributes, classNames } from '@src/main';
 
 /**
  * A container component. Very flexible and can be used for most layout purposes.
@@ -12,7 +12,7 @@ export const Container: Component<ContainerProps> = (props) => {
 
   return (
     <Dynamic
-      {...props.attrs}
+      {...attributes(props)}
       component={tag}
       spx-variant={variant}
       spx-color={color}

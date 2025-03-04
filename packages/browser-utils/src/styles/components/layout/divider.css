@@ -7,6 +7,7 @@
 
 .spx-divider[spx-vertical] {
   display: flex;
+  min-height: 1em;
   height: 100%;
   align-self: stretch;
   width: 1px;

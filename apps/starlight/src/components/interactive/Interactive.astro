@@ -1,0 +1,12 @@
+---
+import { InteractiveSolid } from './InteractiveSolid';
+import { type Argument } from './types';
+
+interface Props {
+  componentName: string;
+  argDefinitions: Record<string, Argument<any>>;
+  title?: string;
+}
+---
+
+<InteractiveSolid client:only="solid-js" {...Astro.props} />
