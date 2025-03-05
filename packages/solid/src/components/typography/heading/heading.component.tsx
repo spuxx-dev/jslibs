@@ -14,8 +14,7 @@ export const Heading: Component<HeadingProps> = (props) => {
     <>
       {level === 1 && (
         <h1 {...attributes(props)} {...classNames('spx-heading', props.class)}>
-          awd awd awd awd
-          {/* {props.children} */}
+          {props.children}
         </h1>
       )}
       {level === 2 && (
