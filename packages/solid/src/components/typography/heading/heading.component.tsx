@@ -2,13 +2,20 @@ import { type Component } from 'solid-js';
 import { HeadingProps } from './heading.types';
 import { attributes, classNames } from '@src/main';
 
+/**
+ * A component that represents a heading. Supports heading levels 1-6.
+ * @param props - {@link HeadingProps}
+ * @returns The heading component.
+ */
 export const Heading: Component<HeadingProps> = (props) => {
   const { level } = props;
+  console.log(props);
   return (
     <>
       {level === 1 && (
         <h1 {...attributes(props)} {...classNames('spx-heading', props.class)}>
-          {props.children}
+          awd awd awd awd
+          {/* {props.children} */}
         </h1>
       )}
       {level === 2 && (

@@ -47,8 +47,16 @@ export const sidebar: StarlightUserConfigWithPlugins['sidebar'] = [
         label: 'Components',
         items: [
           {
+            label: 'Input',
+            autogenerate: { directory: 'solid/components/input' },
+          },
+          {
             label: 'Layout',
             autogenerate: { directory: 'solid/components/layout' },
+          },
+          {
+            label: 'Typography',
+            autogenerate: { directory: 'solid/components/typography' },
           },
         ],
       },

@@ -36,8 +36,10 @@ export const InteractiveControls: Component<Props> = (props) => {
       )}
       {def.options && (
         <select name={key} on:change={handleArgsChange}>
-          <option label="Use default value"></option>
-          <For each={def.options}>{(option) => <option>{String(option)}</option>}</For>
+          {!def.default && <option label="Use default value"></option>}
+          <For each={def.options}>
+            {(option) => <option selected={option === def.default}>{String(option)}</option>}
+          </For>
         </select>
       )}
     </label>

@@ -9,7 +9,6 @@ import { attributes, classNames } from '@src/main';
  */
 export const Container: Component<ContainerProps> = (props) => {
   const { tag = 'div', variant = undefined, color = 'surface', noPadding = undefined } = props;
-
   return (
     <Dynamic
       {...attributes(props)}
