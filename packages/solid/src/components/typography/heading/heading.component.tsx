@@ -9,7 +9,6 @@ import { attributes, classNames } from '@src/main';
  */
 export const Heading: Component<HeadingProps> = (props) => {
   const { level } = props;
-  console.log(props);
   return (
     <>
       {level === 1 && (
