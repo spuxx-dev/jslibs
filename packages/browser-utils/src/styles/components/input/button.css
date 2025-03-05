@@ -1,4 +1,8 @@
 .spx-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
   padding: 0.25rem 0.75rem;
   background: none;
   border: none;
@@ -11,10 +15,6 @@
   > * {
     position: relative;
     vertical-align: text-top;
-  }
-
-  > *:first-child:not(:only-child) {
-    margin-right: 0.25rem;
   }
 
   iconify-icon {
