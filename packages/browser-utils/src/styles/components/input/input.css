@@ -1,0 +1,127 @@
+.spx-input {
+  --spx-input-pd-x: 0.75rem;
+
+  position: relative;
+  height: fit-content;
+  display: inline-flex;
+  border-radius: var(--spx-border-radius);
+  background: inherit;
+
+  input {
+    height: var(--spx-input-height-default);
+    line-height: var(--spx-input-height-default);
+    box-sizing: border-box;
+    font-size: medium;
+    background: inherit;
+    border: none;
+    border-radius: var(--spx-border-radius);
+    padding: 0px var(--spx-input-pd-x);
+  }
+
+  input:focus-visible {
+    outline: none;
+  }
+
+  label {
+    position: absolute;
+    font-size: medium;
+    top: 50%;
+    transform: translateY(-50%);
+    transition:
+      padding 200ms,
+      font-size 200ms,
+      transform 200ms;
+  }
+}
+
+/* Common */
+
+.spx-input[spx-variant='contained'],
+.spx-input[spx-variant='outlined'] {
+  label {
+    left: var(--spx-input-pd-x);
+  }
+}
+
+/* Contained */
+.spx-input[spx-variant='contained'] {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background: var(--spx-color-input-contained-bg);
+
+  input {
+    color: inherit;
+    box-sizing: border-box;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-top: 1.25rem;
+  }
+
+  label {
+    color: inherit;
+  }
+
+  input:focus {
+    border-bottom: var(--spx-border-width) solid var(--spx-color-input-focus);
+  }
+
+  input:focus + label {
+    transform: translateY(-2.15rem);
+    color: var(--spx-color-input-focus);
+  }
+
+  input:focus + label,
+  input:not(:placeholder-shown) + label {
+    transform: translateY(-1.25rem);
+    font-size: smaller;
+  }
+}
+
+.spx-input[spx-variant='contained']:has(input:invalid) {
+  border-color: var(--spx-color-error);
+
+  label {
+    color: var(--spx-color-error);
+  }
+}
+
+/* Outlined */
+
+.spx-input[spx-variant='outlined'] {
+  background: inherit;
+  color: var(--spx-color-input-outlined-fg);
+  border-color: var(--spx-color-input-outlined-fg);
+
+  input {
+    color: var(--spx-color-text-default);
+  }
+
+  label {
+    padding: 0px 4px;
+    left: calc(var(--spx-input-pd-x) - 4px);
+    background: inherit;
+  }
+
+  input:focus + label {
+    transform: translateY(-2.15rem);
+    color: var(--spx-color-input-focus);
+  }
+
+  input:focus + label,
+  input:not(:placeholder-shown) + label {
+    transform: translateY(-2.15rem);
+    font-size: smaller;
+  }
+}
+
+.spx-input[spx-variant='outlined']:has(input:focus) {
+  border-color: var(--spx-color-input-focus);
+}
+
+.spx-input[spx-variant='outlined']:has(input:invalid) {
+  border-color: var(--spx-color-error);
+
+  label {
+    color: var(--spx-color-error);
+  }
+}

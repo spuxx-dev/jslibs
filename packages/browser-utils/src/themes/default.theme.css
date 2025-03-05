@@ -16,13 +16,14 @@ html *,
   --spx-color-on-background: var(--spx-color-text-default);
   --spx-color-surface: #3f3f46;
   --spx-color-on-surface: var(--spx-color-text-default);
+  --spx-color-accent: #2dd4bf;
+  --spx-color-on-accent: var(--spx-color-text-highlighted);
   --spx-color-primary: #0d9488;
   --spx-color-on-primary: var(--spx-color-text-highlighted);
   --spx-color-secondary: #3f3f46;
   --spx-color-on-secondary: var(--spx-color-text-default);
   --spx-color-gradient: linear-gradient(45deg, var(--spx-color-primary), #a21caf);
   --spx-color-on-gradient: var(--spx-color-text-highlighted);
-
   /* Status Colors */
   --spx-color-info: var(--spx-color-surface);
   --spx-color-on-info: var(--spx-color-text-default);
@@ -32,6 +33,11 @@ html *,
   --spx-color-on-warning: var(--spx-color-text-default);
   --spx-color-error: #b91c1c;
   --spx-color-on-error: var(--spx-color-text-default);
+
+  /* Input Fields, Selects and similar controls */
+  --spx-color-input-contained-bg: var(--spx-color-secondary);
+  --spx-color-input-outlined-fg: var(--spx-color-text-subtle);
+  --spx-color-input-focus: var(--spx-color-accent);
 
   /* Modal Dialog */
   --spx-color-modal: var(--spx-color-surface);

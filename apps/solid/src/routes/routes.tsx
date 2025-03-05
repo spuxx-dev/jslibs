@@ -4,6 +4,7 @@ import { ButtonRoute } from './components/input/button.route';
 import { ContainerRoute } from './components/layout/container.route';
 import { DividerRoute } from './components/layout/divider.route';
 import { DialogRoute } from './dialog.route';
+import { InputRoute } from './components/input/input.route';
 
 export const routes: RouteProps[] = [
   {
@@ -13,6 +14,10 @@ export const routes: RouteProps[] = [
   {
     path: '/components/input/button',
     component: () => ButtonRoute,
+  },
+  {
+    path: '/components/input/input',
+    component: () => InputRoute,
   },
   {
     path: '/components/layout/container',
