@@ -3,6 +3,9 @@ import { JSX, ParentProps } from 'solid-js';
 import { BaseColor, ContentColor } from '@spuxx/browser-utils';
 import { ComponentProps } from '@src/main';
 
+/**
+ * The Button component properties.
+ */
 export interface ButtonProps extends ComponentProps<HTMLButtonElement>, ParentProps {
   /**
    * The variant of the button.
@@ -42,7 +45,7 @@ export interface ButtonProps extends ComponentProps<HTMLButtonElement>, ParentPr
    * An alternative loader to be displayed instead of the default loading indicator.
    * @default undefined
    */
-  loader?: boolean;
+  loader?: JSX.Element;
   /**
    * A callback that will be called when the button is clicked.
    * @param event The click event.

@@ -1,0 +1,39 @@
+---
+title: 'Button'
+description: 'A flexible button component.'
+---
+
+import TypeDoc from '@docs/solid/components/input/button.md';
+import { BaseColor } from '@packages/browser-utils';
+import { Interactive } from '@src/components/interactive';
+
+<Interactive
+  componentName="Button"
+  argDefinitions={{
+    color: {
+      type: 'string',
+      options: Object.values({ ...BaseColor }),
+    },
+    variant: {
+      type: 'string',
+      options: ['contained', 'outlined', 'colored'],
+    },
+    rounded: {
+      type: 'boolean'
+    },
+    icon: {
+      type: 'string',
+      options: ["mdi:star", "mdi:check", "mdi:login"]
+    },
+    loading: {
+      type: 'boolean'
+    },
+    disabled: {
+      type: 'boolean'
+    },
+  }}
+>
+  Click me!
+</Interactive>
+
+<TypeDoc />

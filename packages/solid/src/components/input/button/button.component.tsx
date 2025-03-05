@@ -3,6 +3,11 @@ import { ButtonProps } from './button.types';
 import { Icon, IconifyIcon } from '@iconify-icon/solid';
 import { attributes, classNames } from '@src/main';
 
+/**
+ * A flexible button component.
+ * @param props - {@link ButtonProps}
+ * @returns The button component.
+ */
 export const Button: Component<ButtonProps> = (props) => {
   const { variant = 'contained', color = 'primary', rounded, loading } = props;
   const disabled = loading ? true : props.disabled;
@@ -14,8 +19,8 @@ export const Button: Component<ButtonProps> = (props) => {
       title={props.title}
       spx-variant={variant}
       spx-color={color}
-      spx-rounded={rounded}
-      disabled={disabled}
+      spx-rounded={rounded || undefined}
+      disabled={disabled || undefined}
       onClick={props.onClick}
       {...classNames('spx-button', props.class)}
     >

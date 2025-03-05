@@ -52,13 +52,7 @@ export const InteractiveSolid: Component<Props> = (props) => {
 
         <Show when={state().component}>
           <InteractiveControls argDefinitions={argDefinitions} onArgsChange={handleArgsChange} />
-          <Container
-            variant="contained"
-            color="background"
-            style={{
-              padding: '2rem',
-            }}
-          >
+          <Container variant="contained" color="background">
             <div ref={containerRef!} />
           </Container>
         </Show>
