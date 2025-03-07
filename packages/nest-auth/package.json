@@ -1,5 +1,5 @@
 {
-  "name": "@spuxx/nest-identity",
+  "name": "@spuxx/nest-auth",
   "version": "0.0.0",
   "description": "A package containing auth-related functionalities for my NestJS applications.",
   "license": "MIT",

@@ -1,4 +1,4 @@
-import { AuthOptions } from '@spuxx/nest-utils';
+import { AuthOptions } from '@spuxx/nest-auth';
 import { EnvModule } from '../env/env.module';
 
 export const AuthRole = {

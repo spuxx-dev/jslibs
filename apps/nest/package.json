@@ -19,6 +19,7 @@
     "@nestjs/platform-express": "11.0.11",
     "@nestjs/swagger": "11.0.6",
     "@spuxx/js-utils": "workspace:@spuxx/js-utils@*",
+    "@spuxx/nest-auth": "workspace:@spuxx/nest-auth@*",
     "@spuxx/nest-utils": "workspace:@spuxx/nest-utils@*",
     "class-transformer": "0.5.1",
     "class-validator": "0.14.1",

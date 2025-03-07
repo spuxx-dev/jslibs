@@ -1,11 +1,12 @@
 import { Logger } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
-import { CustomLogger, AuthModule } from '@spuxx/nest-utils';
+import { CustomLogger } from '@spuxx/nest-utils';
 import { auth } from 'express-openid-connect';
 import { AppModule } from './app.module';
 import { authConfig } from './auth/auth.config';
 import { EnvModule } from './env/env.module';
+import { AuthModule } from '@spuxx/nest-auth';
 
 async function bootstrap() {
   const logger = new CustomLogger({
