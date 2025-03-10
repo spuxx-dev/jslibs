@@ -9,15 +9,10 @@ import {
 } from '@nestjs/common';
 import { EnvModule } from './env/env.module';
 import type { Request } from 'express';
-import {
-  AuthGuard,
-  getSession,
-  HttpLoggingInterceptor,
-  isAuthenticated,
-  Roles,
-} from '@spuxx/nest-utils';
+import { HttpLoggingInterceptor } from '@spuxx/nest-utils';
 import { AuthRole } from './auth/auth.config';
 import { ApiException } from '@nanogiants/nestjs-swagger-api-exception-decorator';
+import { AuthGuard, getSession, isAuthenticated, Roles } from '@spuxx/nest-auth';
 
 @Controller()
 @UseInterceptors(HttpLoggingInterceptor)

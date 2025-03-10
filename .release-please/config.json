@@ -2,6 +2,7 @@
   "packages": {
     "packages/js-utils": {},
     "packages/browser-utils": {},
+    "packages/nest-auth": {},
     "packages/nest-utils": {},
     "packages/nest-testing": {},
     "packages/solid": {}

@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import { AppController } from './app.controller';
 import { TestContainer, Supertest } from '@spuxx/nest-testing';
-import { AuthModule } from '@spuxx/nest-utils';
+import { AuthModule } from '@spuxx/nest-auth';
 import { authConfig, AuthRole } from './auth/auth.config';
 
 describe('AppController', () => {
