@@ -20,7 +20,7 @@
     "vite-plugin-solid": "2.11.6"
   },
   "dependencies": {
-    "@solidjs/router": "0.15.2",
+    "@solidjs/router": "0.15.3",
     "@spuxx/browser-utils": "workspace:@spuxx/browser-utils@*",
     "@spuxx/js-utils": "workspace:@spuxx/js-utils@*",
     "@spuxx/solid": "workspace:@spuxx/solid@*",

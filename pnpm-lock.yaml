@@ -158,8 +158,8 @@ importers:
   apps/solid:
     dependencies:
       '@solidjs/router':
-        specifier: 0.15.2
-        version: 0.15.2(solid-js@1.9.4)
+        specifier: 0.15.3
+        version: 0.15.3(solid-js@1.9.4)
       '@spuxx/browser-utils':
         specifier: workspace:@spuxx/browser-utils@*
         version: link:../../packages/browser-utils
@@ -480,7 +480,7 @@ importers:
         version: 2.3.0(solid-js@1.9.4)
       '@solidjs/testing-library':
         specifier: 0.8.10
-        version: 0.8.10(@solidjs/router@0.15.2(solid-js@1.9.4))(solid-js@1.9.4)
+        version: 0.8.10(@solidjs/router@0.15.3(solid-js@1.9.4))(solid-js@1.9.4)
       '@spuxx/browser-utils':
         specifier: workspace:@spuxx/browser-utils@*
         version: link:../browser-utils
@@ -2176,8 +2176,8 @@ packages:
     resolution: {integrity: sha512-doH1gimEu3A46VX6aVxpHTeHrytJAG6HgdxntYnCFiIFHEM/ZGpG8KiZGBChchjQmG0XFIBL552kBTjVcMZXwQ==}
     engines: {node: '>=12'}
 
-  '@solidjs/router@0.15.2':
-    resolution: {integrity: sha512-UWtliRvOnjfYMONQcTGwtf6BEud5QlF0oHC5L+kcSGYn0jARH5KzC3+3LLZ0al7oQo/5Rc50ssMswPuAuxFvAA==}
+  '@solidjs/router@0.15.3':
+    resolution: {integrity: sha512-iEbW8UKok2Oio7o6Y4VTzLj+KFCmQPGEpm1fS3xixwFBdclFVBvaQVeibl1jys4cujfAK5Kn6+uG2uBm3lxOMw==}
     peerDependencies:
       solid-js: ^1.8.6
 
@@ -9408,16 +9408,16 @@ snapshots:
     dependencies:
       escape-string-regexp: 5.0.0
 
-  '@solidjs/router@0.15.2(solid-js@1.9.4)':
+  '@solidjs/router@0.15.3(solid-js@1.9.4)':
     dependencies:
       solid-js: 1.9.4
 
-  '@solidjs/testing-library@0.8.10(@solidjs/router@0.15.2(solid-js@1.9.4))(solid-js@1.9.4)':
+  '@solidjs/testing-library@0.8.10(@solidjs/router@0.15.3(solid-js@1.9.4))(solid-js@1.9.4)':
     dependencies:
       '@testing-library/dom': 10.4.0
       solid-js: 1.9.4
     optionalDependencies:
-      '@solidjs/router': 0.15.2(solid-js@1.9.4)
+      '@solidjs/router': 0.15.3(solid-js@1.9.4)
 
   '@spuxx/js-utils@1.2.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.34.9)(vite@6.1.0(@types/node@22.13.8)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.0)))':
     optionalDependencies:
