@@ -13,7 +13,7 @@
     "test:vitest": "vitest run --coverage"
   },
   "dependencies": {
-    "@nanogiants/nestjs-swagger-api-exception-decorator": "1.7.0",
+    "@nanogiants/nestjs-swagger-api-exception-decorator": "1.7.2",
     "@nestjs/common": "11.0.11",
     "@nestjs/core": "11.0.11",
     "@nestjs/platform-express": "11.0.11",

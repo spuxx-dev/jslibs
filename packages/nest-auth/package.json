@@ -44,7 +44,7 @@
     "test:vitest": "vitest run --coverage"
   },
   "peerDependencies": {
-    "@nanogiants/nestjs-swagger-api-exception-decorator": "^1.6.0",
+    "@nanogiants/nestjs-swagger-api-exception-decorator": "^1.7.2",
     "@nestjs/common": "^11.0.0",
     "@nestjs/core": "^11.0.0",
     "@nestjs/swagger": "^11.0.0",
