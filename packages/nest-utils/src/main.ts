@@ -5,5 +5,6 @@
 export * from './env';
 export * from './logging';
 export * from './transformers';
+export * from './validators';
 export * from './http';
 export * from './mapping';
