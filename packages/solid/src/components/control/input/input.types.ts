@@ -11,6 +11,11 @@ export interface InputProps extends ComponentProps<JSX.InputHTMLAttributes<HTMLI
    */
   label: string;
   /**
+   * The size of the input.
+   * @default undefined
+   */
+  size?: ControlSize;
+  /**
    * The type of the input.
    */
   // type?: JSX.HTMLAttributes<HTMLInputElement>['min'];

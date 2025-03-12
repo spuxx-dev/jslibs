@@ -4,8 +4,8 @@
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 export * from './types/public';
 
-export * from './components/input/button';
-export * from './components/input/input';
+export * from './components/control/button';
+export * from './components/control/input';
 export * from './components/layout/container';
 export * from './components/layout/divider';
 export * from './components/typography/heading';

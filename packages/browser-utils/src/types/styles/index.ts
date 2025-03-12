@@ -46,3 +46,18 @@ export const ModalSize = {
  * The size of a modal dialog.
  */
 export type ModalSize = (typeof ModalSize)[keyof typeof ModalSize];
+
+/**
+ * The size of a control element.
+ */
+export const ControlSize = {
+  small: 'small',
+  medium: 'medium',
+  large: 'large',
+  auto: 'auto',
+  max: 'max',
+};
+/**
+ * The size of a control element.
+ */
+export type ControlSize = (typeof ControlSize)[keyof typeof ControlSize];

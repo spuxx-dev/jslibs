@@ -4,7 +4,7 @@ import { attributes, classNames } from '@src/main';
 import { Icon } from '@iconify-icon/solid';
 
 export const Input: Component<InputProps> = (props) => {
-  const { variant = 'contained', required } = props;
+  const { variant = 'contained', size, required } = props;
   const id = props.attrs?.id ?? crypto.randomUUID();
 
   const handleChange = (event: Event) => {
@@ -18,7 +18,11 @@ export const Input: Component<InputProps> = (props) => {
   };
 
   return (
-    <div {...classNames('spx-input', props.class)} spx-variant={variant}>
+    <div
+      {...classNames('spx-input', props.class)}
+      spx-variant={variant}
+      spx-size={size || undefined}
+    >
       <input
         {...attributes(props)}
         id={id}

@@ -1,6 +1,6 @@
 import { IconifyIcon } from '@iconify-icon/solid';
 import { JSX, ParentProps } from 'solid-js';
-import { BaseColor, ContentColor } from '@spuxx/browser-utils';
+import { BaseColor, ContentColor, ControlSize } from '@spuxx/browser-utils';
 import { ComponentProps } from '@src/main';
 
 /**
@@ -9,6 +9,11 @@ import { ComponentProps } from '@src/main';
 export interface ButtonProps
   extends ComponentProps<JSX.ButtonHTMLAttributes<HTMLInputElement>>,
     ParentProps {
+  /**
+   * The size of the button.
+   * @default undefined
+   */
+  size?: ControlSize;
   /**
    * The variant of the button.
    * @default "contained"

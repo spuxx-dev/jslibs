@@ -47,3 +47,18 @@
 .spx-button[spx-rounded] {
   border-radius: calc(var(--spx-control-height-default) / 2) !important;
 }
+
+.spx-button[spx-size='small'] {
+  min-width: var(--spx-control-width-small);
+  max-width: min(var(--spx-control-width-small), 100%);
+}
+
+.spx-button[spx-size='medium'] {
+  min-width: var(--spx-control-width-medium);
+  max-width: min(var(--spx-control-width-medium), 100%);
+}
+
+.spx-button[spx-size='large'] {
+  min-width: var(--spx-control-width-large);
+  max-width: min(var(--spx-control-width-large), 100%);
+}

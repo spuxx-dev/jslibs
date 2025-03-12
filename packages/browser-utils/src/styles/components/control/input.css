@@ -11,6 +11,7 @@
   input {
     height: var(--spx-input-height-default);
     line-height: var(--spx-input-height-default);
+    width: 100%;
     box-sizing: border-box;
     font-size: medium;
     background: inherit;
@@ -35,6 +36,21 @@
       transform 200ms;
     pointer-events: none;
   }
+}
+
+.spx-input[spx-size='small'] {
+  min-width: var(--spx-control-width-small);
+  max-width: min(var(--spx-control-width-small), 100%);
+}
+
+.spx-input[spx-size='medium'] {
+  min-width: var(--spx-control-width-medium);
+  max-width: min(var(--spx-control-width-medium), 100%);
+}
+
+.spx-input[spx-size='large'] {
+  min-width: var(--spx-control-width-large);
+  max-width: min(var(--spx-control-width-large), 100%);
 }
 
 /* Common */
