@@ -33,7 +33,8 @@ export default defineConfig({
     coverage: {
       provider: 'v8',
       all: true,
-      include: ['**/*.ts'],
+      include: ['src/**/*.ts'],
+      exclude: ['**/types/**'],
       reportsDirectory: 'reports/vitest/coverage',
       reporter: ['text', 'json'],
     },
