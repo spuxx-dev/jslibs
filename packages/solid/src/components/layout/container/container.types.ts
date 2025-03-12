@@ -1,11 +1,13 @@
 import { BaseColor } from '@spuxx/browser-utils';
 import { ComponentProps } from '@src/main';
-import { ParentProps } from 'solid-js';
+import { JSX, ParentProps } from 'solid-js';
 
 /**
  * The Container component's properties.
  */
-export interface ContainerProps extends ComponentProps<HTMLElement>, ParentProps {
+export interface ContainerProps
+  extends ComponentProps<JSX.HTMLAttributes<HTMLHtmlElement>>,
+    ParentProps {
   /**
    * The tag  to use for the container.
    * @default 'div'

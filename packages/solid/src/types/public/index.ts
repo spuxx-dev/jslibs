@@ -5,7 +5,7 @@ import type * as CSS from 'csstype';
  * A property interface for components to extend from. Includes some basic properties used
  * by almost all components.
  */
-export interface ComponentProps<TElement extends HTMLElement = HTMLElement> {
+export interface ComponentProps<TAttributes = JSX.HTMLAttributes<HTMLElement>> {
   /**
    * The component's class names.
    */
@@ -19,5 +19,5 @@ export interface ComponentProps<TElement extends HTMLElement = HTMLElement> {
   /**
    * The component's attributes.
    */
-  attrs?: Omit<JSX.HTMLAttributes<TElement>, 'style'>;
+  attrs?: Omit<TAttributes, 'style'>;
 }

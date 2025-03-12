@@ -1,14 +1,19 @@
 import { ComponentProps } from '@src/main';
 import { BaseColor, ContentColor } from '@spuxx/browser-utils';
+import { JSX } from 'solid-js/jsx-runtime';
 
 /**
  * The Input component properties.
  */
-export interface InputProps extends ComponentProps<HTMLInputElement> {
+export interface InputProps extends ComponentProps<JSX.InputHTMLAttributes<HTMLInputElement>> {
   /**
    * The input label.
    */
   label: string;
+  /**
+   * The type of the input.
+   */
+  // type?: JSX.HTMLAttributes<HTMLInputElement>['min'];
   /**
    * The input variant.
    * @default 'contained'

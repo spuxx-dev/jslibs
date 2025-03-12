@@ -1,10 +1,11 @@
 import { BaseColor, ContentColor } from '@spuxx/browser-utils';
 import { ComponentProps } from '@src/main';
+import { JSX } from 'solid-js/jsx-runtime';
 
 /**
  * The Divider component's properties.
  */
-export interface DividerProps extends ComponentProps<HTMLHRElement> {
+export interface DividerProps extends ComponentProps<JSX.HTMLAttributes<HTMLHRElement>> {
   /**
    * The color of the divider.
    * @default 'text-subtle'

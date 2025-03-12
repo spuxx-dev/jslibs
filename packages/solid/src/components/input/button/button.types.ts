@@ -6,7 +6,9 @@ import { ComponentProps } from '@src/main';
 /**
  * The Button component properties.
  */
-export interface ButtonProps extends ComponentProps<HTMLButtonElement>, ParentProps {
+export interface ButtonProps
+  extends ComponentProps<JSX.ButtonHTMLAttributes<HTMLInputElement>>,
+    ParentProps {
   /**
    * The variant of the button.
    * @default "contained"
