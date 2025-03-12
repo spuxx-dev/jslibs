@@ -94,6 +94,12 @@ export function deepMerge(...sources: Array<RecursiveObject | string>): Recursiv
  * to use the returned value.
  * @param obj The object.
  * @returns The updated object.
+ * @example
+ * ```ts
+ * const obj = { a: 1, b: null, c: 3 };
+ * stripNull(obj);
+ * console.log(obj); // { a: 1, c: 3 }
+ * ```
  */
 export function stripNull<T extends object>(obj: T): T {
   for (const key in obj) {
@@ -109,6 +115,12 @@ export function stripNull<T extends object>(obj: T): T {
  * to use the returned value.
  * @param obj The object.
  * @returns The updated object.
+ * @example
+ * ```ts
+ * const obj = { a: 1, b: undefined, c: 3 };
+ * stripUndefined(obj);
+ * console.log(obj); // { a: 1, c: 3 }
+ * ```
  */
 export function stripUndefined<T extends object>(obj: T): T {
   for (const key in obj) {
