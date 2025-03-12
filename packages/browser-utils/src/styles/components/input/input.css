@@ -6,6 +6,7 @@
   display: inline-flex;
   border-radius: var(--spx-border-radius);
   background: inherit;
+  pointer-events: none;
 
   input {
     height: var(--spx-input-height-default);
@@ -16,6 +17,7 @@
     border: none;
     border-radius: var(--spx-border-radius);
     padding: 0px var(--spx-input-pd-x);
+    pointer-events: all;
   }
 
   input:focus-visible {
@@ -31,6 +33,7 @@
       padding 200ms,
       font-size 200ms,
       transform 200ms;
+    pointer-events: none;
   }
 }
 
@@ -62,7 +65,7 @@
   }
 
   input:focus {
-    border-bottom: var(--spx-border-width) solid var(--spx-color-input-focus);
+    box-shadow: 0 var(--spx-border-width) 0 var(--spx-color-input-focus);
   }
 
   input:focus + label {
@@ -86,7 +89,6 @@
 }
 
 /* Outlined */
-
 .spx-input[spx-variant='outlined'] {
   background: inherit;
   color: var(--spx-color-input-outlined-fg);

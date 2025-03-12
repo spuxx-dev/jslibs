@@ -14,10 +14,10 @@ export const InputRoute: Component = () => {
           <Input label="outlined" variant="outlined" class="m-1" />
         </Container>
         <Container variant="contained" color="background">
-          <Heading level={2}>States</Heading>
+          <Heading level={2}>Validation</Heading>
           <Divider color="gradient" />
-          <Input label="contained, invalid" class="m-1" required />
-          <Input label="outlined, invalid" variant="outlined" class="m-1" required />
+          <Input label="contained, required" class="m-1" required />
+          <Input label="outlined, required" variant="outlined" class="m-1" required />
         </Container>
       </Container>
     </>
