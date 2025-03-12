@@ -1,19 +1,5 @@
 # Changelog
 
-## [1.5.0](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.4.0...browser-utils-v1.5.0) (2025-03-12)
-
-
-### Features
-
-* **docs:** Improve documentation ([28c4c0a](https://github.com/spuxx-dev/jslibs/commit/28c4c0a4dd6f9108d4d83a16f96a22e9604a2ea2))
-
-
-### Bug Fixes
-
-* **divider:** Vertical Divider now has a minimum height of 1em ([0955190](https://github.com/spuxx-dev/jslibs/commit/0955190ed62ff224a9632022352ff1149e1d40d3))
-* Fix an issue that would cause Containers with variant="outlined" to also affect the content color ([7649c6c](https://github.com/spuxx-dev/jslibs/commit/7649c6cc75e4fe2340895a61cebac658bc29eff8))
-* Minor improvements to control and button styles ([f4a7f75](https://github.com/spuxx-dev/jslibs/commit/f4a7f75bd2970f35412cc4446eeae1a0082bda8d))
-
 ## [1.4.0](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.3.0...browser-utils-v1.4.0) (2025-02-09)
 
 

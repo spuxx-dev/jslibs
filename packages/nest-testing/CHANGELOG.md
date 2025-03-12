@@ -1,17 +1,5 @@
 # Changelog
 
-## [2.0.0](https://github.com/spuxx-dev/jslibs/compare/nest-testing-v1.1.0...nest-testing-v2.0.0) (2025-03-12)
-
-
-### ⚠ BREAKING CHANGES
-
-* Update nestjs to 11.0.0
-
-### Features
-
-* Update nestjs to 11.0.0 ([fd159bd](https://github.com/spuxx-dev/jslibs/commit/fd159bda5a390f1ee11f45e0b642fd15a63c13f1))
-* Update nestjs to 11.0.0 ([304c919](https://github.com/spuxx-dev/jslibs/commit/304c91919d865ba302b4316904d8ca9a10b0ba7b))
-
 ## [1.1.0](https://github.com/spuxx-dev/jslibs/compare/nest-testing-v1.0.0...nest-testing-v1.1.0) (2025-02-09)
 
 
