@@ -34,3 +34,4 @@ jobs:
       PATH: ${{ inputs.PATH }}
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      BUILD_COMMAND: pnpm -r --filter './packages/**' build
