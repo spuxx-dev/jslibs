@@ -1,5 +1,30 @@
 # Changelog
 
+## [1.6.0](https://github.com/spuxx-dev/jslibs/compare/js-utils-v1.5.0...js-utils-v1.6.0) (2025-03-12)
+
+
+### Features
+
+* Add `OmitFunctionMembers` helper type ([13fd2fc](https://github.com/spuxx-dev/jslibs/commit/13fd2fc074a2d1e9192e4731e6c79949f75fa510))
+* **docs:** Improve documentation ([4e72f66](https://github.com/spuxx-dev/jslibs/commit/4e72f66b7ee49a49860f3a3b8930eb2aa1ff012b))
+* **http:** Implemented `HttpClientMixin`, offering an accessible API to create simple HttpClients abstractions with support for both fetch and axios ([4157766](https://github.com/spuxx-dev/jslibs/commit/4157766c50100969a19f1d64c83346bd7cebe87a))
+* **http:** Implemented new `transformFetchJson()` util function ([cae5dc2](https://github.com/spuxx-dev/jslibs/commit/cae5dc2eb53f2b567ac4a02f807821b19511bfd2))
+* Migrate monorepo to a more isolated structure and force re-releases ([64e48f4](https://github.com/spuxx-dev/jslibs/commit/64e48f41cf207a367e19d8750f44ace18615428c))
+* **utils:** Add isEmptyArray function ([5ae1597](https://github.com/spuxx-dev/jslibs/commit/5ae1597542d50dfd2a27312f69a5cbe4052a30aa))
+* **utils:** Add new `addTrailingSlash` function ([ca3a0e8](https://github.com/spuxx-dev/jslibs/commit/ca3a0e8f91d9eda54909b2e73526e28ea2251609))
+* **utils:** Add new `stripUndefined` and `stripNull` util functions ([4be0ec1](https://github.com/spuxx-dev/jslibs/commit/4be0ec1a54f0ae08d59b559ca19adf2d33a7683d))
+
+
+### Bug Fixes
+
+* Fixed an issue with the OptionalProperties type not being typed properly ([1a7e07e](https://github.com/spuxx-dev/jslibs/commit/1a7e07eeae1e7166b7fbfc153430c6402621f270))
+* **http:** Fix `HttpClientMixin` exports ([6c2ea5f](https://github.com/spuxx-dev/jslibs/commit/6c2ea5fafdb0737228723feedc8994fefd2c5e02))
+* **http:** Fixed a bug in `HttpClient` that would cause fetch responses not to be handled properly sometimes ([98c69de](https://github.com/spuxx-dev/jslibs/commit/98c69de057373cf908b74e162012c730327ce7ce))
+* **http:** Fixed a bug in `HttpClient` that would cause unhandled errors not to be thrown ([a5d22a8](https://github.com/spuxx-dev/jslibs/commit/a5d22a8d6168f0b9acfdc9f6b4f9a431fead8a94))
+* **http:** Fixed a bug that would cause a wrong endpoint return type in case a transformer is used ([50abbe8](https://github.com/spuxx-dev/jslibs/commit/50abbe828f0d724a1aea74f0aff1c396b2e0429b))
+* **http:** Fixed an issue that would cause `invokeEndpoint` to break in case of an unexpected response type ([0e3f7f8](https://github.com/spuxx-dev/jslibs/commit/0e3f7f8b56fc1b2557b950648d2051b2df049616))
+* **http:** Prevent transformer from being called after an error ([a953ab5](https://github.com/spuxx-dev/jslibs/commit/a953ab502d99354f9f0b9bd8a2a6402c437eb072))
+
 ## [1.5.0](https://github.com/spuxx-dev/jslibs/compare/js-utils-v1.4.0...js-utils-v1.5.0) (2025-03-12)
 
 

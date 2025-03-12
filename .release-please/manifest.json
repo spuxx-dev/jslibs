@@ -1,8 +1,8 @@
 {
-  "packages/js-utils": "1.5.0",
-  "packages/browser-utils": "1.5.0",
-  "packages/nest-utils": "4.0.0",
-  "packages/nest-testing": "2.0.0",
-  "packages/solid": "1.0.0",
-  "packages/nest-auth": "1.0.0"
+  "packages/js-utils": "1.6.0",
+  "packages/browser-utils": "1.6.0",
+  "packages/nest-utils": "5.0.0",
+  "packages/nest-testing": "3.0.0",
+  "packages/solid": "1.1.0",
+  "packages/nest-auth": "2.0.0"
 }

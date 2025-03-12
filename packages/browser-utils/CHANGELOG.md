@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.6.0](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.5.0...browser-utils-v1.6.0) (2025-03-12)
+
+
+### Features
+
+* **docs:** Improve documentation ([28c4c0a](https://github.com/spuxx-dev/jslibs/commit/28c4c0a4dd6f9108d4d83a16f96a22e9604a2ea2))
+* Implemented new service mixin `LocalStorageMixin` ([66f6b1d](https://github.com/spuxx-dev/jslibs/commit/66f6b1d4097f3b0d5a326aa7a4a815c5707b2923))
+* Migrate monorepo to a more isolated structure and force re-releases ([64e48f4](https://github.com/spuxx-dev/jslibs/commit/64e48f41cf207a367e19d8750f44ace18615428c))
+* **modal:** Refactored modal dialog and improved styling ([aa5bdd9](https://github.com/spuxx-dev/jslibs/commit/aa5bdd93aac610c6cd906d4d6fdb9410474b0087))
+* **styles:** `@spuxx/browser-utils` now includes built-in styles and themes ([4040e55](https://github.com/spuxx-dev/jslibs/commit/4040e55a2526512c99aabbf0e38886c72920abb3))
+* **styles:** Added color classes ([aac8136](https://github.com/spuxx-dev/jslibs/commit/aac81367c350678bc4e0594f09be5ff67614c544))
+
+
+### Bug Fixes
+
+* **divider:** Vertical Divider now has a minimum height of 1em ([0955190](https://github.com/spuxx-dev/jslibs/commit/0955190ed62ff224a9632022352ff1149e1d40d3))
+* Fix an issue that would cause Containers with variant="outlined" to also affect the content color ([7649c6c](https://github.com/spuxx-dev/jslibs/commit/7649c6cc75e4fe2340895a61cebac658bc29eff8))
+* Minor improvements to control and button styles ([f4a7f75](https://github.com/spuxx-dev/jslibs/commit/f4a7f75bd2970f35412cc4446eeae1a0082bda8d))
+* **modal:** Fixed modal dialog layout ([9af3ffa](https://github.com/spuxx-dev/jslibs/commit/9af3ffaf5eb6b729295addd0332daf1b1a994f06))
+
 ## [1.5.0](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.4.0...browser-utils-v1.5.0) (2025-03-12)
 
 
