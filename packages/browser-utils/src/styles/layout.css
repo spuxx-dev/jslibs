@@ -2,3 +2,13 @@
   --spx-z-modal: 85;
   --spx-z-modal-overlay: 81;
 }
+
+.spx[spx-size='auto'] {
+  min-width: auto;
+  max-width: 100%;
+}
+
+.spx[spx-size='full'] {
+  min-width: 100%;
+  max-width: 100%;
+}

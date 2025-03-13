@@ -3,7 +3,7 @@ import { ModalHeader } from '../template/modal-header.component';
 import { ModalTemplate } from '../template/modal-template.component';
 import { ModalBody } from '../template/modal-body.component';
 import { ModalFooter } from '../template/modal-footer.component';
-import { Button } from '../../components/input/button';
+import { Button } from '../../components/control/button';
 import { BaseColor, ContentColor } from '@spuxx/browser-utils';
 import { Modal } from '../modal.service';
 

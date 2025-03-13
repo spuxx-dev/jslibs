@@ -1,0 +1,160 @@
+.spx-input {
+  --spx-input-pd-x: 0.75rem;
+
+  position: relative;
+  height: fit-content;
+  display: inline-flex;
+  border-radius: var(--spx-border-radius);
+  background: inherit;
+  pointer-events: none;
+
+  input {
+    height: var(--spx-input-height-default);
+    line-height: var(--spx-input-height-default);
+    width: 100%;
+    box-sizing: border-box;
+    font-size: medium;
+    background: inherit;
+    border: none;
+    border-radius: var(--spx-border-radius);
+    padding: 0px var(--spx-input-pd-x);
+    pointer-events: all;
+  }
+
+  input:focus-visible {
+    outline: none;
+  }
+
+  label {
+    position: absolute;
+    font-size: medium;
+    top: 50%;
+    transform: translateY(-50%);
+    transition:
+      padding 200ms,
+      font-size 200ms,
+      transform 200ms;
+    pointer-events: none;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+  }
+
+  input::-webkit-calendar-picker-indicator,
+  [list]::-webkit-calendar-picker-indicator {
+    display: none !important;
+  }
+
+  &:has(input:disabled) {
+    filter: var(--spx-filter-control-disabled);
+  }
+}
+
+.spx-input[spx-size='small'] {
+  width: var(--spx-control-width-small);
+  max-width: 100%;
+}
+
+.spx-input[spx-size='medium'] {
+  width: var(--spx-control-width-medium);
+  max-width: 100%;
+}
+
+.spx-input[spx-size='large'] {
+  width: var(--spx-control-width-large);
+  max-width: 100%;
+}
+
+/* Common */
+.spx-input[spx-variant='contained'],
+.spx-input[spx-variant='outlined'] {
+  label {
+    left: var(--spx-input-pd-x);
+  }
+}
+
+/* Contained */
+.spx-input[spx-variant='contained'] {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background: var(--spx-color-input-contained-bg);
+
+  input {
+    color: inherit;
+    box-sizing: border-box;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-top: 1.25rem;
+  }
+
+  label {
+    color: var(--spx-color-text-subtle);
+  }
+
+  input:focus {
+    box-shadow: 0 var(--spx-border-width) 0 var(--spx-color-input-focus);
+  }
+
+  input:focus + label {
+    transform: translateY(-2.15rem);
+    color: var(--spx-color-input-focus);
+  }
+
+  input:focus + label,
+  input:not(:placeholder-shown) + label {
+    transform: translateY(-1.15rem);
+    font-size: smaller;
+  }
+}
+
+.spx-input[spx-variant='contained']:has(input:invalid) {
+  border-color: var(--spx-color-error);
+
+  label {
+    color: var(--spx-color-input-error);
+  }
+
+  input {
+    box-shadow: 0 var(--spx-border-width) 0 var(--spx-color-input-error);
+  }
+}
+
+/* Outlined */
+.spx-input[spx-variant='outlined'] {
+  background: inherit;
+  color: var(--spx-color-input-outlined-fg);
+  border-color: var(--spx-color-input-outlined-fg);
+
+  input {
+    color: var(--spx-color-text-default);
+  }
+
+  label {
+    padding: 0px 4px;
+    left: calc(var(--spx-input-pd-x) - 4px);
+    background: inherit;
+  }
+
+  input:focus + label {
+    transform: translateY(-2.15rem);
+    color: var(--spx-color-input-focus);
+  }
+
+  input:focus + label,
+  input:not(:placeholder-shown) + label {
+    transform: translateY(-2.15rem);
+    font-size: smaller;
+  }
+}
+
+.spx-input[spx-variant='outlined']:has(input:focus) {
+  border-color: var(--spx-color-input-focus);
+}
+
+.spx-input[spx-variant='outlined']:has(input:invalid) {
+  border-color: var(--spx-color-input-error);
+
+  label {
+    color: var(--spx-color-input-error);
+  }
+}

@@ -9,7 +9,7 @@ import { attributes, classNames } from '@src/main';
  * @returns The button component.
  */
 export const Button: Component<ButtonProps> = (props) => {
-  const { variant = 'contained', color = 'primary', rounded, loading } = props;
+  const { variant = 'contained', color = 'primary', size, rounded, loading } = props;
   const disabled = loading ? true : props.disabled;
 
   return (
@@ -19,6 +19,7 @@ export const Button: Component<ButtonProps> = (props) => {
       title={props.title}
       spx-variant={variant}
       spx-color={color}
+      spx-size={size || undefined}
       spx-rounded={rounded || undefined}
       disabled={disabled || undefined}
       onClick={props.onClick}

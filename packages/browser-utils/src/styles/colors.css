@@ -8,6 +8,10 @@
   color: var(--spx-color-surface);
 }
 
+.spx[spx-variant='colored'].spx[spx-color='accent'] {
+  color: var(--spx-color-accent);
+}
+
 .spx[spx-variant='colored'].spx[spx-color='primary'] {
   color: var(--spx-color-primary);
 }
@@ -48,6 +52,11 @@
 .spx[spx-variant='contained'].spx[spx-color='surface'] {
   background: var(--spx-color-surface);
   color: var(--spx-color-on-surface);
+}
+
+.spx[spx-variant='contained'].spx[spx-color='accent'] {
+  background: var(--spx-color-accent);
+  color: var(--spx-color-on-accent);
 }
 
 .spx[spx-variant='contained'].spx[spx-color='primary'] {
@@ -94,6 +103,11 @@
 .spx[spx-variant='outlined'].spx[spx-color='surface'] {
   border-color: var(--spx-color-surface);
   color: var(--spx-color-surface);
+}
+
+.spx[spx-variant='outlined'].spx[spx-color='accent'] {
+  border-color: var(--spx-color-accent);
+  color: var(--spx-color-accent);
 }
 
 .spx[spx-variant='outlined'].spx[spx-color='primary'] {
