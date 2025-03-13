@@ -1,6 +1,7 @@
 :root {
   --spx-z-modal: 85;
   --spx-z-modal-overlay: 81;
+  --spx-z-app-bar: 51;
 }
 
 .spx[spx-size='auto'] {

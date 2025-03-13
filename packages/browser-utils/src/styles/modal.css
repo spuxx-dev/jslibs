@@ -19,6 +19,7 @@
   border-radius: var(--spx-border-radius);
   width: fit-content;
   max-width: 80svw;
+  box-shadow: var(--spx-shadow-medium);
 }
 
 .spx-modal[data-open] {

@@ -1,0 +1,32 @@
+.spx-app-bar {
+  position: fixed;
+  z-index: var(--spx-z-app-bar);
+  height: var(--spx-app-bar-height);
+  width: 100svw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: var(--spx-color-app-bar);
+  color: var(--spx-color-on-app-bar);
+  padding: 4px;
+  box-shadow: var(--spx-shadow-medium);
+
+  &[spx-position='top'] {
+    top: 0;
+  }
+
+  &[spx-position='bottom'] {
+    bottom: 0;
+  }
+
+  /* .spx-app-bar-left,
+  .spx-app-bar-right,
+  .spx-app-bar-center {
+    > .spx-button {
+      height: var(--spx-app-bar-height);
+      font-size: x-large;
+    }
+  } */
+}
