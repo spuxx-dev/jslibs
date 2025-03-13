@@ -21,12 +21,7 @@
     bottom: 0;
   }
 
-  /* .spx-app-bar-left,
-  .spx-app-bar-right,
-  .spx-app-bar-center {
-    > .spx-button {
-      height: var(--spx-app-bar-height);
-      font-size: x-large;
-    }
-  } */
+  &:has(.spx-app-bar-section:only-child) {
+    justify-content: center;
+  }
 }

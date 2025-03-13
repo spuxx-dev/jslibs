@@ -1,8 +1,14 @@
 import { AppBarProps, attributes, classNames } from '@src/main';
-import { Component } from 'solid-js';
+import { Component, ParentProps } from 'solid-js';
 import { Dynamic } from 'solid-js/web';
 
-export const AppBar: Component<AppBarProps> = (props) => {
+const Section: Component<ParentProps> = (props) => (
+  <div {...classNames('spx-app-bar-section')}>{props.children}</div>
+);
+
+const AppBar: Component<AppBarProps> & {
+  Section: Component<ParentProps>;
+} = ((props) => {
   const { position = 'top', tag = 'header' } = props;
 
   return (
@@ -12,9 +18,12 @@ export const AppBar: Component<AppBarProps> = (props) => {
       component={tag}
       spx-position={position}
     >
-      <div {...classNames('spx-app-bar-left')}>{props.left}</div>
-      <div {...classNames('spx-app-bar-center')}>{props.center}</div>
-      <div {...classNames('spx-app-bar-right')}>{props.right}</div>
+      {props.children}
     </Dynamic>
   );
+}) as Component<AppBarProps> & {
+  Section: Component<ParentProps>;
 };
+AppBar.Section = Section;
+
+export { AppBar };

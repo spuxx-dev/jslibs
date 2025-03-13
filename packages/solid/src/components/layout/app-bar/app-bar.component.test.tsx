@@ -10,10 +10,7 @@ describe('AppBar', () => {
     expect(appBar.tagName).toBe('HEADER');
     expect(appBar).toHaveClass('spx', 'spx-app-bar');
     expect(appBar).toHaveAttribute('spx-position', 'top');
-    expect(appBar.children).toHaveLength(3);
-    expect(appBar.children[0]).toHaveClass('spx', 'spx-app-bar-left');
-    expect(appBar.children[1]).toHaveClass('spx', 'spx-app-bar-center');
-    expect(appBar.children[2]).toHaveClass('spx', 'spx-app-bar-right');
+    expect(appBar.children).toHaveLength(0);
   });
 
   it('should render with custom values', () => {
@@ -27,7 +24,11 @@ describe('AppBar', () => {
 
   it('should render with children', () => {
     const { getByRole } = render(() => (
-      <AppBar left={<div>Left</div>} center={<div>Center</div>} right={<div>Right</div>} />
+      <AppBar>
+        <AppBar.Section>Left</AppBar.Section>
+        <AppBar.Section>Center</AppBar.Section>
+        <AppBar.Section>Right</AppBar.Section>
+      </AppBar>
     ));
     const appBar = getByRole('banner');
     expect(appBar).toBeInTheDocument();

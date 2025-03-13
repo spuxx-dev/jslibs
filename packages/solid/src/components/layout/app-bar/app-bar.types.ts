@@ -1,10 +1,11 @@
 import { ComponentProps } from '@src/main';
+import { ParentProps } from 'solid-js';
 import { JSX } from 'solid-js/jsx-runtime';
 
 /**
  * The AppBar component properties.
  */
-export interface AppBarProps extends ComponentProps<JSX.HTMLAttributes<HTMLElement>> {
+export interface AppBarProps extends ComponentProps<JSX.HTMLAttributes<HTMLElement>>, ParentProps {
   /**
    * The position of the app bar.
    * @default 'top'
