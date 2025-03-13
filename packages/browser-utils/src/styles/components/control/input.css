@@ -39,6 +39,15 @@
     gap: 2px;
     align-items: center;
   }
+
+  input::-webkit-calendar-picker-indicator,
+  [list]::-webkit-calendar-picker-indicator {
+    display: none !important;
+  }
+
+  &:has(input:disabled) {
+    filter: var(--spx-filter-control-disabled);
+  }
 }
 
 .spx-input[spx-size='small'] {
