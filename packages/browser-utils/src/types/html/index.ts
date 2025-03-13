@@ -31,3 +31,12 @@ export const InputType = {
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types}
  */
 export type InputType = (typeof InputType)[keyof typeof InputType];
+
+/**
+ * Represents an `option` element's data. May be used for `select`, `datalist` and similar
+ * elements.
+ */
+export interface SelectOption {
+  value: string;
+  label: string;
+}
