@@ -51,18 +51,18 @@
 }
 
 .spx-input[spx-size='small'] {
-  min-width: var(--spx-control-width-small);
-  max-width: min(var(--spx-control-width-small), 100%);
+  width: var(--spx-control-width-small);
+  max-width: 100%;
 }
 
 .spx-input[spx-size='medium'] {
-  min-width: var(--spx-control-width-medium);
-  max-width: min(var(--spx-control-width-medium), 100%);
+  width: var(--spx-control-width-medium);
+  max-width: 100%;
 }
 
 .spx-input[spx-size='large'] {
-  min-width: var(--spx-control-width-large);
-  max-width: min(var(--spx-control-width-large), 100%);
+  width: var(--spx-control-width-large);
+  max-width: 100%;
 }
 
 /* Common */
