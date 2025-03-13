@@ -12,18 +12,19 @@ html *,
   --spx-color-text-highlighted: #ffffff;
 
   /* Base Colors */
-  --spx-color-background: #18181b;
+  --spx-color-background: #1a2327;
   --spx-color-on-background: var(--spx-color-text-default);
-  --spx-color-surface: #3f3f46;
+  --spx-color-surface: #303e46;
   --spx-color-on-surface: var(--spx-color-text-default);
-  --spx-color-accent: #2dd4bf;
+  --spx-color-accent: #00bfa5;
   --spx-color-on-accent: var(--spx-color-text-highlighted);
-  --spx-color-primary: #0d9488;
+  --spx-color-primary: #00796b;
   --spx-color-on-primary: var(--spx-color-text-highlighted);
-  --spx-color-secondary: #3f3f46;
+  --spx-color-secondary: #37474f;
   --spx-color-on-secondary: var(--spx-color-text-default);
-  --spx-color-gradient: linear-gradient(45deg, var(--spx-color-primary), #a21caf);
+  --spx-color-gradient: linear-gradient(45deg, var(--spx-color-accent), #aa00ff);
   --spx-color-on-gradient: var(--spx-color-text-highlighted);
+
   /* Status Colors */
   --spx-color-info: var(--spx-color-surface);
   --spx-color-on-info: var(--spx-color-text-default);
@@ -44,7 +45,9 @@ html *,
     var(--spx-color-error) 66%
   );
 
-  /* Modal Dialog */
+  /* App Layout Elements */
+  --spx-color-app-bar: var(--spx-color-surface);
+  --spx-color-on-app-bar: var(--spx-color-on-surface);
   --spx-color-modal: var(--spx-color-surface);
   --spx-color-on-modal: var(--spx-color-on-surface);
 
@@ -52,6 +55,9 @@ html *,
   --spx-filter-control-hover: brightness(1.25);
   --spx-filter-control-hover-contained: brightness(0.8);
   --spx-filter-control-disabled: brightness(0.8) grayscale(0.6);
+
+  /* Shadows */
+  --spx-shadow-medium: 0 0 10px rgba(0, 0, 0, 0.5);
 
   /* Animations */
   transition:
