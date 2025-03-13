@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/spuxx-dev/jslibs/compare/solid-v1.0.0...solid-v1.1.0) (2025-03-13)
+
+
+### Features
+
+* Implement new `Input` control component ([55e73a9](https://github.com/spuxx-dev/jslibs/commit/55e73a987252ae4a9c4008bdbd3250f125db2297))
+* **layout:** Implement `AppBar` layout component ([f8a09d3](https://github.com/spuxx-dev/jslibs/commit/f8a09d3c7a86e05314549effad3a4991ff7985f0))
+
 ## 1.0.0 (2025-03-12)
 
 
