@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.6.0](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.5.0...browser-utils-v1.6.0) (2025-03-13)
+
+
+### Features
+
+* Customize `<a>` tag appearance ([4a3d333](https://github.com/spuxx-dev/jslibs/commit/4a3d3338690777becdc62a04e269573d0daa3655))
+* Implement new `Input` control component ([55e73a9](https://github.com/spuxx-dev/jslibs/commit/55e73a987252ae4a9c4008bdbd3250f125db2297))
+* **layout:** Implement `spx-app-bar` class ([9c90528](https://github.com/spuxx-dev/jslibs/commit/9c905282319171a37cb94604304cb47d37f63cff))
+* **themes:** Improve default theme ([f02ea64](https://github.com/spuxx-dev/jslibs/commit/f02ea64cf1f5fb27f4f0c13f0d4b2f445c1bc0e2))
+* **types:** Add new `InputType` and `SelectOption` utility types ([c567e86](https://github.com/spuxx-dev/jslibs/commit/c567e8690a79676de9f3ea358d60d0a4faa34c44))
+* **types:** Add new `InputType` utility type ([2b46e44](https://github.com/spuxx-dev/jslibs/commit/2b46e4416a527e2449f1811c65eb0d51e4c625c7))
+* **types:** Add new `SelectOption` type ([f07fc5e](https://github.com/spuxx-dev/jslibs/commit/f07fc5ed9829d7b67a22b09ca0fc4a531f520ced))
+
+
+### Bug Fixes
+
+* **button:** Slightly increase icon size for icon-only buttons ([5a7a43b](https://github.com/spuxx-dev/jslibs/commit/5a7a43bfa7904d81a1d688559845b3f537ed2a6a))
+
 ## [1.5.0](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.4.0...browser-utils-v1.5.0) (2025-03-12)
 
 
