@@ -10,6 +10,7 @@ html *,
   --spx-color-text-default: #f5f5f5;
   --spx-color-text-subtle: #a1a1aa;
   --spx-color-text-highlighted: #ffffff;
+  --spx-color-text-link: var(--spx-color-accent);
 
   /* Base Colors */
   --spx-color-background: #1a2327;
