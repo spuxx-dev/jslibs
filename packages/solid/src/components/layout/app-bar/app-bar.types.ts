@@ -11,6 +11,11 @@ export interface AppBarProps extends ComponentProps<JSX.HTMLAttributes<HTMLEleme
    */
   position?: 'top' | 'bottom';
   /**
+   * The tag to use for the app bar.
+   * @default 'header'
+   */
+  tag?: 'header' | 'banner' | 'nav' | 'aside' | 'footer';
+  /**
    * The left-side content of the app bar.
    */
   left?: JSX.Element;
