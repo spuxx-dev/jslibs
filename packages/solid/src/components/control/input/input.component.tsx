@@ -4,6 +4,11 @@ import { attributes, classNames } from '@src/main';
 import { Icon } from '@iconify-icon/solid';
 import { InputType } from '@spuxx/browser-utils';
 
+/**
+ * A flexible input component.
+ * @param props - {@link InputProps}
+ * @returns The input component.
+ */
 export const Input: Component<InputProps> = (props) => {
   const {
     type = InputType.text,

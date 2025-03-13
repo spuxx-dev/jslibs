@@ -1,0 +1,46 @@
+---
+title: 'Input'
+description: 'A flexible input component.'
+---
+
+import TypeDoc from '@docs/solid/components/control/input.md';
+import { BaseColor, ControlSize, InputType } from '@packages/browser-utils';
+import { Interactive } from '@src/components/interactive';
+
+<Interactive
+  componentName="Input"
+  argDefinitions={{
+    label: {
+      type: 'string',
+      options: ["Username", "Email", "Password"]
+    },
+    type: {
+      type: 'string',
+      options: Object.values(InputType),
+      default: "text"
+    },
+    variant: {
+      type: 'string',
+      options: ['contained', 'outlined'],
+      default: "contained"
+    },
+    icon: {
+      type: 'string',
+      options: ['mdi:star', 'mdi:check', 'mdi:login'],
+    },
+    size: {
+      type: 'string',
+      options: Object.values(ControlSize),
+    },
+    required: {
+      type: 'boolean',
+    },
+    disabled: {
+      type: 'boolean',
+    },
+  }}
+>
+  Click me!
+</Interactive>
+
+<TypeDoc />
