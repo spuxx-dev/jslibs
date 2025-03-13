@@ -5,6 +5,7 @@ html.spx-app {
     &:visited {
       color: var(--spx-color-text-link);
     }
+
     &:hover {
       filter: var(--spx-filter-control-hover);
     }
