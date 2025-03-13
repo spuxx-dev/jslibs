@@ -31,6 +31,10 @@ export const sidebar: StarlightUserConfigWithPlugins['sidebar'] = [
         slug: 'browser-utils/styles-and-themes',
       },
       {
+        label: 'Types',
+        autogenerate: { directory: 'browser-utils/types' },
+      },
+      {
         label: 'Services',
         autogenerate: { directory: 'browser-utils/services' },
       },
