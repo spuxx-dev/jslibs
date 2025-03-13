@@ -1,5 +1,12 @@
-import { describe, test, expect } from 'vitest';
-import { deepMerge, isEmptyArray, isEmptyOrWhitespace, sleep } from './misc.utils';
+import { describe, test, expect, it } from 'vitest';
+import {
+  deepMerge,
+  isEmptyArray,
+  isEmptyOrWhitespace,
+  sleep,
+  stripNull,
+  stripUndefined,
+} from './misc.utils';
 
 describe('sleep', () => {
   test('should resolve after the given amount of milliseconds', async () => {
@@ -79,5 +86,45 @@ describe('deepMerge', () => {
 
   test('should return an empty object if sources are empty', () => {
     expect(deepMerge()).toEqual({});
+  });
+});
+
+describe('stripNull', () => {
+  it('should remove null values from an object', () => {
+    const object = {
+      foo: null,
+      bar: 'baz',
+      foz: [null],
+      baz: { qux: null },
+      qux: undefined,
+    };
+
+    const expected = {
+      bar: 'baz',
+      foz: [null],
+      baz: { qux: null },
+      qux: undefined,
+    };
+    expect(stripNull(object)).toEqual(expected);
+  });
+});
+
+describe('stripUndefined', () => {
+  it('should remove undefined values from an object', () => {
+    const object = {
+      foo: undefined,
+      bar: 'baz',
+      foz: [undefined],
+      baz: { qux: undefined },
+      qux: null,
+    };
+
+    const expected = {
+      bar: 'baz',
+      foz: [undefined],
+      baz: { qux: undefined },
+      qux: null,
+    };
+    expect(stripUndefined(object)).toEqual(expected);
   });
 });

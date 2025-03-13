@@ -29,11 +29,15 @@ export class HttpLoggingInterceptor implements NestInterceptor {
     const dateIn = new Date();
     Logger.verbose(
       `Incoming request: ` + `${String(request.method).toUpperCase()} ${request.url}.`,
+      this.constructor.name,
     );
     return next.handle().pipe(
       tap(() => {
         const dateOut = new Date();
-        Logger.verbose(`Request fulfilled after ${dateOut.getTime() - dateIn.getTime()}ms.`);
+        Logger.verbose(
+          `Request fulfilled after ${dateOut.getTime() - dateIn.getTime()}ms.`,
+          this.constructor.name,
+        );
       }),
     );
   }

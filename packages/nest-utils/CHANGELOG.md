@@ -1,5 +1,27 @@
 # Changelog
 
+## [4.0.0](https://github.com/spuxx-dev/jslibs/compare/nest-utils-v3.2.0...nest-utils-v4.0.0) (2025-03-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **auth:** Migrate auth-related functionalities from @spuxx/nest-utils to new package @spuxx/nest-auth
+* **auth:** Migrate auth to new package `@spuxx/nest-auth`
+* Update nestjs to 11.0.0
+
+### Features
+
+* **auth:** Migrate auth to new package `@spuxx/nest-auth` ([8c96838](https://github.com/spuxx-dev/jslibs/commit/8c9683875eb5b11768758c7cd8bebec8cae8f4d0))
+* **auth:** Migrate auth-related functionalities from @spuxx/nest-utils to new package @spuxx/nest-auth ([231847d](https://github.com/spuxx-dev/jslibs/commit/231847d92729177d447e47dfff71fa7eb622cbd8))
+* Update nestjs to 11.0.0 ([fd159bd](https://github.com/spuxx-dev/jslibs/commit/fd159bda5a390f1ee11f45e0b642fd15a63c13f1))
+* Update nestjs to 11.0.0 ([304c919](https://github.com/spuxx-dev/jslibs/commit/304c91919d865ba302b4316904d8ca9a10b0ba7b))
+* **validators:** Add new `IsOptionalUnless` validator ([8bcb005](https://github.com/spuxx-dev/jslibs/commit/8bcb0059967c0a3b519b25cb8b6668d935e8a2ea))
+
+
+### Bug Fixes
+
+* HttpLoggingInterceptor now also logs context ([13319b3](https://github.com/spuxx-dev/jslibs/commit/13319b35ece0f81123bbdc3a29bf5026884ac60a))
+
 ## [3.2.0](https://github.com/spuxx-dev/jslibs/compare/nest-utils-v3.1.0...nest-utils-v3.2.0) (2025-02-09)
 
 

@@ -1,0 +1,16 @@
+name: Releases (@spuxx/nest-auth)
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+    - "nest-auth-*"
+
+jobs:
+  release:
+    name: Release artifact (@spuxx/nest-auth)
+    uses: ./.github/workflows/release.yml
+    with:
+      PATH: packages/nest-auth
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

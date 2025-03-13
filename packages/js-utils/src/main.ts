@@ -8,5 +8,6 @@ export * from './services/intl';
 export * from './services/http-client-mixin';
 
 export * from './utils/misc';
+export * from './utils/http';
 
 export * from './types';

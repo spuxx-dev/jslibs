@@ -2,6 +2,7 @@
   "include": [
     "../packages/js-utils/src",
     "../packages/browser-utils/src",
+    "../packages/nest-auth/src",
     "../packages/nest-utils/src",
     "../packages/nest-testing/src",
     "../packages/solid/src"

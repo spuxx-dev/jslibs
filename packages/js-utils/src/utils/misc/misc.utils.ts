@@ -87,3 +87,46 @@ export function deepMerge(...sources: Array<RecursiveObject | string>): Recursiv
 
   return target;
 }
+
+/**
+ * Strips all null properties from the object. Does not affect nested objects or arrays.
+ * Utilizes `delete`, resulting in the passed reference to be updated, so it is not necessary
+ * to use the returned value.
+ * @param obj The object.
+ * @returns The updated object.
+ * @example
+ * ```ts
+ * const obj = { a: 1, b: null, c: 3 };
+ * stripNull(obj);
+ * console.log(obj); // { a: 1, c: 3 }
+ * ```
+ */
+export function stripNull<T extends object>(obj: T): T {
+  for (const key in obj) {
+    if (obj[key] === null) {
+      delete obj[key];
+    }
+  }
+  return obj;
+}
+/**
+ * Strips all undefined properties from the object. Does not affect nested objects or arrays.
+ * Utilizes `delete`, resulting in the passed reference to be updated, so it is not necessary
+ * to use the returned value.
+ * @param obj The object.
+ * @returns The updated object.
+ * @example
+ * ```ts
+ * const obj = { a: 1, b: undefined, c: 3 };
+ * stripUndefined(obj);
+ * console.log(obj); // { a: 1, c: 3 }
+ * ```
+ */
+export function stripUndefined<T extends object>(obj: T): T {
+  for (const key in obj) {
+    if (obj[key] === undefined) {
+      delete obj[key];
+    }
+  }
+  return obj;
+}
