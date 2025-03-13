@@ -1,5 +1,5 @@
 import { ComponentProps } from '@src/main';
-import { BaseColor, ContentColor } from '@spuxx/browser-utils';
+import { ControlSize } from '@spuxx/browser-utils';
 import { JSX } from 'solid-js/jsx-runtime';
 
 /**
@@ -10,6 +10,10 @@ export interface InputProps extends ComponentProps<JSX.InputHTMLAttributes<HTMLI
    * The input label.
    */
   label: string;
+  /**
+   * An optional icon to render as part of the label.
+   */
+  icon?: string;
   /**
    * The size of the input.
    * @default undefined

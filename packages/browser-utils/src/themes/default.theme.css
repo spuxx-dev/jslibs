@@ -27,7 +27,7 @@ html *,
   /* Status Colors */
   --spx-color-info: var(--spx-color-surface);
   --spx-color-on-info: var(--spx-color-text-default);
-  --spx-color-success: #166534;
+  --spx-color-success: #15803d;
   --spx-color-on-success: var(--spx-color-text-default);
   --spx-color-warning: #ca8a04;
   --spx-color-on-warning: var(--spx-color-text-default);
@@ -38,6 +38,11 @@ html *,
   --spx-color-input-contained-bg: var(--spx-color-secondary);
   --spx-color-input-outlined-fg: var(--spx-color-text-subtle);
   --spx-color-input-focus: var(--spx-color-accent);
+  --spx-color-input-error: color-mix(
+    in srgb,
+    var(--spx-color-on-background),
+    var(--spx-color-error) 66%
+  );
 
   /* Modal Dialog */
   --spx-color-modal: var(--spx-color-surface);

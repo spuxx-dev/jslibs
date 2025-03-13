@@ -46,6 +46,26 @@ export const InputRoute: Component = () => {
           <Input label="large" class="m-1" size="large" />
           <Input label="full" class="m-1" size="full" />
         </Container>
+        <Container variant="contained" color="background">
+          <Heading level={2}>With Icon</Heading>
+          <Divider color="gradient" />
+          <Input label="Username" class="m-1" icon="mdi:account" attrs={{ type: 'text' }} />
+          <Input label="Password" class="m-1" icon="mdi:lock" attrs={{ type: 'password' }} />
+          <Input
+            label="Username"
+            class="m-1"
+            variant="outlined"
+            icon="mdi:account"
+            attrs={{ type: 'text' }}
+          />
+          <Input
+            label="Password"
+            class="m-1"
+            variant="outlined"
+            icon="mdi:lock"
+            attrs={{ type: 'password' }}
+          />
+        </Container>
       </Container>
     </>
   );

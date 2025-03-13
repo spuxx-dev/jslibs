@@ -33,6 +33,7 @@ export const Input: Component<InputProps> = (props) => {
         oninput={handleInput}
       />
       <label for={id}>
+        {props.icon && <Icon icon={props.icon} />}
         {props.label}
         {required && ' *'}
       </label>
