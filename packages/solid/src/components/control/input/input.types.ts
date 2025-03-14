@@ -37,7 +37,6 @@ export interface InputProps extends ComponentProps<JSX.InputHTMLAttributes<HTMLI
   /**
    * The type of the input.
    */
-  // type?: JSX.HTMLAttributes<HTMLInputElement>['min'];
   /**
    * The input variant.
    * @default 'contained'

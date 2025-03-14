@@ -4,9 +4,10 @@
   --spx-control-height-default: 40px;
   --spx-input-height-default: 48px;
 
-  --spx-control-width-small: 8rem;
+  --spx-control-width-small: 10rem;
   --spx-control-width-medium: 16rem;
   --spx-control-width-large: 24rem;
 
+  --spx-input-pd-x: 0.75rem;
   --spx-border-width: 1px;
 }

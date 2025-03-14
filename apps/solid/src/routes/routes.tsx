@@ -5,6 +5,7 @@ import { ContainerRoute } from './components/layout/container.route';
 import { DividerRoute } from './components/layout/divider.route';
 import { DialogRoute } from './dialog.route';
 import { InputRoute } from './components/control/input.route';
+import { SelectRoute } from './components/control/select.route';
 
 export const routes: RouteProps[] = [
   {
@@ -18,6 +19,10 @@ export const routes: RouteProps[] = [
   {
     path: '/components/control/input',
     component: () => InputRoute,
+  },
+  {
+    path: '/components/control/select',
+    component: () => SelectRoute,
   },
   {
     path: '/components/layout/container',

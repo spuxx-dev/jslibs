@@ -1,5 +1,6 @@
 @import './components/control/button.css';
 @import './components/control/input.css';
+@import './components/control/select.css';
 @import './components/layout/divider.css';
 @import './components/layout/container.css';
 @import './components/typography/heading.css';
