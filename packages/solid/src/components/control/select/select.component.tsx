@@ -8,37 +8,35 @@ import { Icon } from '@iconify-icon/solid';
  * @returns The select component.
  */
 export const Select: Component<SelectProps> = (props) => {
-  const { variant = 'contained', size } = props;
+  const { variant = 'contained', size, options } = props;
   const id = props.attrs?.id ?? crypto.randomUUID();
 
   // Ensure that each option has a unique key
-  const _options = [...props.options];
-  for (const option of _options) {
-    if (typeof option.value === 'object') {
-      if (!option.key) {
-        option.key = crypto.randomUUID();
-      }
+  for (const option of props.options) {
+    if (!option.key) {
+      option.key = crypto.randomUUID();
     }
   }
-  const [options, setOptions] = createSignal<SelectOption[]>(_options);
 
   const findOptionByKey = (key: string): SelectOption => {
-    const option = options().find((option) => option.key === key);
-    if (!option) throw new Error(`Option with key ${key} not found.`);
-    return option;
+    const option = options.find((option) => option.key === key);
+    return option!;
   };
 
   const handleChange: JSX.EventHandler<HTMLSelectElement, Event> = (event) => {
     const select = event.currentTarget;
-    if (props.onChange) props.onChange(findOptionByKey(select.value), event);
+    const selectedOption = findOptionByKey(select.value);
+    if (props.onChange) props.onChange(selectedOption, event);
   };
 
   const getSelected = (option: SelectOption): true | undefined => {
     if (props.default) {
       if (typeof props.default === 'number') {
-        return props.default === options().indexOf(option) ? true : undefined;
+        return props.default === options.indexOf(option) ? true : undefined;
+      } else if (typeof props.default === 'string') {
+        return props.default === option.key ? true : undefined;
       } else {
-        return props.default.value === option ? true : undefined;
+        return props.default === option ? true : undefined;
       }
     }
   };
@@ -56,7 +54,7 @@ export const Select: Component<SelectProps> = (props) => {
         disabled={props.disabled || undefined}
         onChange={handleChange}
       >
-        <For each={options()}>
+        <For each={options}>
           {(option) => (
             <option value={option.key} label={option.label} selected={getSelected(option)} />
           )}

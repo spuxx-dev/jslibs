@@ -4,30 +4,29 @@ import { SelectOption } from './select.types';
 import { render } from '@solidjs/testing-library';
 
 describe('Select', () => {
-  const fruits: SelectOption[] = [
-    { value: 'apple', label: 'Apple' },
-    { value: 'banana', label: 'Banana' },
-    { value: 'cherry', label: 'Cherry' },
-  ];
-
-  interface Car {
-    type: string;
-    color: string;
+  interface Fruit {
+    name: string;
+    description: string;
   }
 
-  const cars: SelectOption<Car>[] = [
+  const fruits: SelectOption<Fruit>[] = [
     {
-      value: { type: 'limousine', color: 'black' },
-      label: 'Black Limousine',
+      key: 'apple',
+      value: {
+        name: 'Apple',
+        description: 'A red apple.',
+      },
+      label: 'Apple',
     },
     {
-      value: { type: 'sedan', color: 'red' },
-      label: 'Red Sedan',
+      key: 'banana',
+      value: {
+        name: 'Banana',
+        description: 'A tasty banana.',
+      },
+      label: 'Banana',
     },
-    {
-      value: { type: 'coupe', color: 'blue' },
-      label: 'Blue Coupe',
-    },
+    { key: 'cherry', value: { name: 'Cherry', description: 'A sweet cherry.' }, label: 'Cherry' },
   ];
 
   it('should render with default values', () => {
@@ -43,20 +42,21 @@ describe('Select', () => {
     const label = selectContainer?.querySelector('label');
     expect(label).toBeInTheDocument();
     expect(label).toHaveAttribute('for', select!.id);
+    const icon = label!.querySelector('iconify-icon');
+    expect(icon).not.toBeInTheDocument();
     const options = selectContainer?.querySelectorAll('option');
     expect(options).toHaveLength(3);
-    expect(options![0]).toHaveAttribute('value', 'apple');
-    expect(options![0]).toHaveAttribute('label', 'Apple');
-    expect(options![1]).toHaveAttribute('value', 'banana');
-    expect(options![1]).toHaveAttribute('label', 'Banana');
-    expect(options![2]).toHaveAttribute('value', 'cherry');
-    expect(options![2]).toHaveAttribute('label', 'Cherry');
+    fruits.forEach((fruit, index) => {
+      expect(options![index]).toHaveAttribute('value', fruit.key);
+      expect(options![index]).toHaveAttribute('label', fruit.label);
+    });
   });
 
   it('should render with custom values', () => {
     const { container } = render(() => (
       <Select
         label="Fruits"
+        icon="mdi:fruit-cherries"
         options={fruits}
         variant="outlined"
         size="small"
@@ -71,9 +71,13 @@ describe('Select', () => {
     expect(selectContainer).toHaveAttribute('spx-size', 'small');
     expect(selectContainer).toHaveClass('spx', 'spx-select', 'my-class');
     expect(selectContainer).toHaveStyle({ color: 'rgb(255, 0, 0)' });
-    const select = selectContainer?.querySelector('select');
+    const select = selectContainer!.querySelector('select');
     expect(select).toBeInTheDocument();
     expect(select).toHaveAttribute('disabled');
+    const label = selectContainer!.querySelector('label');
+    expect(label).toBeInTheDocument();
+    const icon = label!.querySelector('iconify-icon');
+    expect(icon).toBeInTheDocument();
   });
 
   it('should call the onChange callback', () => {
@@ -86,17 +90,47 @@ describe('Select', () => {
     select!.value = 'banana';
     select!.dispatchEvent(new Event('change'));
     expect(onChange).toHaveBeenCalledTimes(1);
-    expect(onChange).toHaveBeenCalledWith(fruits[1].value, expect.any(Event));
+    expect(onChange).toHaveBeenCalledWith(fruits[1], expect.any(Event));
   });
 
-  it('should be able to handle complex values', () => {
-    const onChange = vi.fn();
-    const { container } = render(() => <Select label="Cars" options={cars} onChange={onChange} />);
+  it('it should generate random UUIDs if no option keys are provided', () => {
+    const fruitsWithoutKeys = fruits.map((fruit) => ({ ...fruit, key: undefined }));
+    const { container } = render(() => <Select label="Fruits" options={fruitsWithoutKeys} />);
+    const selectContainer = container.querySelector('.spx-select');
+    const options = selectContainer?.querySelectorAll('option');
+    expect(options).toHaveLength(3);
+    fruits.forEach((_fruit, index) => {
+      expect(options![index]).toHaveAttribute('value', expect.stringContaining('-'));
+    });
+  });
+
+  it('should set a default option by value', () => {
+    const { container } = render(() => (
+      <Select label="Fruits" options={fruits} default={fruits[1]} />
+    ));
     const select = container.querySelector('select');
-    expect(select).toBeInTheDocument();
-    select!.value = '1';
-    select!.dispatchEvent(new Event('change'));
-    expect(onChange).toHaveBeenCalledTimes(1);
-    expect(onChange).toHaveBeenCalledWith(cars[1].value, expect.any(Event));
+    expect(select).toHaveValue(fruits[1].key);
+  });
+
+  it('should set a default option by key', () => {
+    const { container } = render(() => (
+      <Select label="Fruits" options={fruits} default={fruits[1].key} />
+    ));
+    const select = container.querySelector('select');
+    expect(select).toHaveValue(fruits[1].key);
+  });
+
+  it('should set a default option by index', () => {
+    const { container } = render(() => <Select label="Fruits" options={fruits} default={1} />);
+    const select = container.querySelector('select');
+    expect(select).toHaveValue(fruits[1].key);
+  });
+
+  it('should use the provided id instead of generating a random one', () => {
+    const { container } = render(() => (
+      <Select label="Fruits" options={fruits} attrs={{ id: 'my-select' }} />
+    ));
+    const select = container.querySelector('select');
+    expect(select).toHaveAttribute('id', 'my-select');
   });
 });

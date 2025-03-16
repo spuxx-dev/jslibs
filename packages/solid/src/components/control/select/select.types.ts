@@ -5,6 +5,7 @@ import { DOMElement, JSX } from 'solid-js/jsx-runtime';
 /**
  * An option for the Select component.
  */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export interface SelectOption<T = any> {
   /**
    * The value of the option.
@@ -17,6 +18,7 @@ export interface SelectOption<T = any> {
   /**
    * The key of the option. Must be a unique string. If none is provided, a random
    * key will be generated. The key will be used to map the option to the select element.
+   * ⚠️ Note: If a key is generated, the original object will be mutated.
    * @default crypto.randomUUID()
    */
   key?: string;
@@ -25,6 +27,7 @@ export interface SelectOption<T = any> {
 /**
  * The Select component properties.
  */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export interface SelectProps<T = any>
   extends ComponentProps<JSX.SelectHTMLAttributes<HTMLSelectElement>> {
   /**
@@ -41,7 +44,7 @@ export interface SelectProps<T = any>
    * will be selected.
    * @default undefined
    */
-  default?: SelectOption<T> | number;
+  default?: SelectOption<T> | number | string;
   /**
    * An optional icon to render as part of the label.
    * @default undefined
