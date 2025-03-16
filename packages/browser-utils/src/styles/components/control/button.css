@@ -42,6 +42,7 @@
 .spx-button:not(:has(.spx-button-content)) {
   padding: 0px;
   aspect-ratio: 1/1;
+  font-size: larger;
 }
 
 .spx-button[spx-rounded] {

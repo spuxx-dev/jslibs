@@ -3,7 +3,7 @@ html.spx-app {
   color: var(--spx-color-on-background);
   height: 100svh;
   width: 100svw;
-  overflow-y: hidden;
+  overflow-y: auto;
   overflow-x: hidden;
   font-family:
     ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
@@ -18,6 +18,19 @@ html.spx-app {
       margin: 0 auto;
       box-sizing: border-box;
       padding: 1rem;
+    }
+  }
+
+  &:has(.spx-app-bar[spx-position='top']) {
+    scroll-margin: var(--spx-app-bar-height);
+    > body {
+      padding-top: var(--spx-app-bar-height);
+    }
+  }
+
+  &:has(.spx-app-bar[spx-position='bottom']) {
+    > body {
+      padding-bottom: var(--spx-app-bar-height);
     }
   }
 }

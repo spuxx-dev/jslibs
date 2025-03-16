@@ -1,0 +1,13 @@
+html.spx-app {
+  a:not(:has(.spx-button)) {
+    text-decoration: none;
+
+    &:visited {
+      color: var(--spx-color-text-link);
+    }
+
+    &:hover {
+      filter: var(--spx-filter-control-hover);
+    }
+  }
+}

@@ -84,18 +84,12 @@ export const InputRoute: Component = () => {
           <For each={variants}>
             {(variant) => (
               <>
-                <Input
-                  label="Username"
-                  class="m-1"
-                  icon="mdi:account"
-                  attrs={{ type: 'text' }}
-                  variant={variant}
-                />
+                <Input label="Username" class="m-1" icon="mdi:account" variant={variant} />
                 <Input
                   label="Password"
                   class="m-1"
                   icon="mdi:lock"
-                  attrs={{ type: 'password' }}
+                  type="password"
                   variant={variant}
                 />
               </>
@@ -108,21 +102,24 @@ export const InputRoute: Component = () => {
           <For each={variants}>
             {(variant) => (
               <>
-                <Input
-                  label="Username"
-                  class="m-1"
-                  icon="mdi:account"
-                  attrs={{ type: 'text' }}
-                  variant={variant}
-                />
+                <Input label="Username" class="m-1" icon="mdi:account" variant={variant} />
                 <Input
                   label="Password"
                   class="m-1"
                   icon="mdi:lock"
-                  attrs={{ type: 'password' }}
+                  type="password"
                   variant={variant}
                 />
               </>
+            )}
+          </For>
+        </Container>
+        <Container variant="contained" color="surface">
+          <Heading level={2}>On Surface</Heading>
+          <Divider color="gradient" />
+          <For each={variants}>
+            {(variant) => (
+              <Input label="Username" class="m-1" icon="mdi:account" variant={variant} />
             )}
           </For>
         </Container>

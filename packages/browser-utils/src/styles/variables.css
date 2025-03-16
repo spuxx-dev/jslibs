@@ -1,6 +1,7 @@
 :root {
   --spx-main-content-width: 1440px;
 
+  --spx-app-bar-height: 48px;
   --spx-control-height-default: 40px;
   --spx-input-height-default: 48px;
 

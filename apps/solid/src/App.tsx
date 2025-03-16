@@ -4,16 +4,17 @@ import '@spuxx/browser-utils/themes';
 import { For, type Component } from 'solid-js';
 import './styles/index.css';
 import { routes } from './routes/routes';
+import { AppLayout } from './layout/app.layout';
 
 const App: Component = () => {
   return (
-    <main>
+    <AppLayout>
       <Router>
         <For each={routes}>
           {(route) => <Route path={route.path} component={route.component} />}
         </For>
       </Router>
-    </main>
+    </AppLayout>
   );
 };
 
