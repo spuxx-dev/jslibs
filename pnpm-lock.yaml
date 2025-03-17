@@ -89,7 +89,7 @@ importers:
         version: 5.0.0
       '@vitest/coverage-v8':
         specifier: 3.0.8
-        version: 3.0.8(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7))(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.7.3(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0))
+        version: 3.0.8(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7))(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.7.3(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0))
       express-openid-connect:
         specifier: 2.17.1
         version: 2.17.1(express@5.0.1)
@@ -245,7 +245,7 @@ importers:
     devDependencies:
       '@vitest/coverage-v8':
         specifier: 3.0.8
-        version: 3.0.8(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7))(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.7.3(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0))
+        version: 3.0.8(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7))(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.7.3(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0))
       vite:
         specifier: 6.2.1
         version: 6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0)
@@ -269,7 +269,7 @@ importers:
         version: 0.14.4
       '@vitest/coverage-v8':
         specifier: 3.0.8
-        version: 3.0.8(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7))(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.6.0(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0))
+        version: 3.0.8(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7))(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.6.0(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0))
       axios:
         specifier: 1.8.2
         version: 1.8.2
@@ -287,7 +287,7 @@ importers:
         version: 5.1.4(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))
       vitest:
         specifier: 3.0.7
-        version: 3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.6.0(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0)
+        version: 3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.6.0(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0)
 
   packages/nest-auth:
     dependencies:
@@ -333,7 +333,7 @@ importers:
         version: 5.0.0
       '@vitest/coverage-v8':
         specifier: 3.0.8
-        version: 3.0.8(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7))(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.7.3(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0))
+        version: 3.0.8(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7))(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.7.3(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0))
       typescript:
         specifier: 5.7.3
         version: 5.7.3
@@ -376,7 +376,7 @@ importers:
         version: 5.0.0
       '@vitest/coverage-v8':
         specifier: 3.0.8
-        version: 3.0.8(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7))(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.7.3(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0))
+        version: 3.0.8(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7))(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.7.3(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0))
       typescript:
         specifier: 5.7.3
         version: 5.7.3
@@ -437,7 +437,7 @@ importers:
         version: 5.0.0
       '@vitest/coverage-v8':
         specifier: 3.0.8
-        version: 3.0.8(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7))(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.7.3(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0))
+        version: 3.0.8(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7))(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.7.3(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0))
       dotenv:
         specifier: 16.4.7
         version: 16.4.7
@@ -9989,7 +9989,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7)':
+  '@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7)':
     dependencies:
       '@testing-library/dom': 10.4.0
       '@testing-library/user-event': 14.6.1(@testing-library/dom@10.4.0)
@@ -10030,7 +10030,7 @@ snapshots:
       - utf-8-validate
       - vite
 
-  '@vitest/coverage-v8@3.0.8(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7))(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.6.0(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0))':
+  '@vitest/coverage-v8@3.0.8(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7))(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.6.0(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@bcoe/v8-coverage': 1.0.2
@@ -10044,13 +10044,13 @@ snapshots:
       std-env: 3.8.1
       test-exclude: 7.0.1
       tinyrainbow: 2.0.0
-      vitest: 3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.6.0(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0)
+      vitest: 3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.6.0(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0)
     optionalDependencies:
-      '@vitest/browser': 3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7)
+      '@vitest/browser': 3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7)
     transitivePeerDependencies:
       - supports-color
 
-  '@vitest/coverage-v8@3.0.8(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7))(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.7.3(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0))':
+  '@vitest/coverage-v8@3.0.8(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7))(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.7.3(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@bcoe/v8-coverage': 1.0.2
@@ -10066,7 +10066,7 @@ snapshots:
       tinyrainbow: 2.0.0
       vitest: 3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7)(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.7.3(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0)
     optionalDependencies:
-      '@vitest/browser': 3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7)
+      '@vitest/browser': 3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7)
     transitivePeerDependencies:
       - supports-color
 
@@ -15742,7 +15742,7 @@ snapshots:
     optionalDependencies:
       vite: 6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0)
 
-  vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.6.0(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0):
+  vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(@vitest/browser@3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7))(happy-dom@8.9.0(encoding@0.1.13))(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.6.0(@types/node@22.13.10)(typescript@5.7.3))(terser@5.39.0)(yaml@2.7.0):
     dependencies:
       '@vitest/expect': 3.0.7
       '@vitest/mocker': 3.0.7(msw@2.6.0(@types/node@22.13.10)(typescript@5.7.3))(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))
@@ -15767,7 +15767,7 @@ snapshots:
     optionalDependencies:
       '@types/debug': 4.1.12
       '@types/node': 22.13.10
-      '@vitest/browser': 3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7)
+      '@vitest/browser': 3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7)
       happy-dom: 8.9.0(encoding@0.1.13)
       jsdom: 26.0.0
     transitivePeerDependencies:
@@ -15809,7 +15809,7 @@ snapshots:
     optionalDependencies:
       '@types/debug': 4.1.12
       '@types/node': 22.13.10
-      '@vitest/browser': 3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7)
+      '@vitest/browser': 3.0.7(@types/node@22.13.10)(typescript@5.7.3)(vitest@3.0.7)
       happy-dom: 8.9.0(encoding@0.1.13)
       jsdom: 26.0.0
     transitivePeerDependencies:
