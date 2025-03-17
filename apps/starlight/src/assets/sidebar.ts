@@ -64,6 +64,10 @@ export const sidebar: StarlightUserConfigWithPlugins['sidebar'] = [
           },
         ],
       },
+      {
+        label: 'Layout',
+        autogenerate: { directory: 'solid/layout' },
+      },
     ],
   },
 ];
