@@ -24,12 +24,12 @@ export const Input: Component<InputProps> = (props) => {
     options && forceOption ? options.map((o) => o.value).join('|') : props.attrs?.pattern;
 
   const handleChange: JSX.EventHandler<HTMLInputElement, Event> = (event) => {
-    const input = event.currentTarget as HTMLInputElement;
+    const input = event.currentTarget;
     if (props.onChange) props.onChange(input.value, event);
   };
 
   const handleInput: JSX.EventHandler<HTMLInputElement, Event> = (event) => {
-    const input = event.currentTarget as HTMLInputElement;
+    const input = event.currentTarget;
     if (props.onInput) props.onInput(input.value, event);
   };
 

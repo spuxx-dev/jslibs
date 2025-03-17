@@ -1,6 +1,4 @@
 .spx-input {
-  --spx-input-pd-x: 0.75rem;
-
   position: relative;
   height: fit-content;
   display: inline-flex;

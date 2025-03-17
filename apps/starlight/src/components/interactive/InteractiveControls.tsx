@@ -1,5 +1,5 @@
 import { Container } from '@packages/solid';
-import { createSignal, For, type Component } from 'solid-js';
+import { createSignal, For, Show, type Component } from 'solid-js';
 import { isEmptyOrWhitespace } from '@spuxx/js-utils';
 import type { Argument } from './types';
 
@@ -10,6 +10,7 @@ interface Props {
 
 export const InteractiveControls: Component<Props> = (props) => {
   const { argDefinitions, onArgsChange } = props;
+
   const [args, setArgs] = createSignal<Record<string, unknown>>({});
 
   const handleArgsChange = (event: Event) => {
@@ -23,26 +24,30 @@ export const InteractiveControls: Component<Props> = (props) => {
   };
 
   const controls = Object.entries(argDefinitions).map(([key, def]) => (
-    <label>
-      {key}
-      {': '}
-      {def.type === 'boolean' && (
-        <input
-          type="checkbox"
-          name={key}
-          checked={args()[key] as boolean}
-          on:change={handleArgsChange}
-        />
-      )}
-      {def.options && (
-        <select name={key} on:change={handleArgsChange}>
-          {!def.default && <option label="Use default value"></option>}
-          <For each={def.options}>
-            {(option) => <option selected={option === def.default}>{String(option)}</option>}
-          </For>
-        </select>
-      )}
-    </label>
+    <Show when={!def.hide}>
+      <label>
+        {key}
+        {': '}
+        {def.type === 'boolean' && (
+          <input
+            type="checkbox"
+            name={key}
+            checked={args()[key] as boolean}
+            on:change={handleArgsChange}
+          />
+        )}
+        {def.options && (
+          <select name={key} on:change={handleArgsChange}>
+            {!def.default && <option label="Use default value"></option>}
+            <For each={def.options}>
+              {(option) => (
+                <option selected={option === def.default || undefined}>{String(option)}</option>
+              )}
+            </For>
+          </select>
+        )}
+      </label>
+    </Show>
   ));
 
   return (
