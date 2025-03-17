@@ -10,7 +10,7 @@ export * from './components/control/select';
 export * from './components/layout/container';
 export * from './components/layout/divider';
 export * from './components/typography/heading';
-export * from './layout/app-bar';
+export * from './layout';
 export * from './modal';
 
 export * from './utils/component.utils';

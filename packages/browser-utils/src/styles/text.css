@@ -1,6 +1,7 @@
 html.spx-app {
   a:not(:has(.spx-button)) {
     text-decoration: none;
+    color: var(--spx-color-text-link);
 
     &:visited {
       color: var(--spx-color-text-link);
