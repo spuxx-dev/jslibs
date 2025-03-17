@@ -56,7 +56,7 @@
     "rxjs": "^7.8.0"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "16.0.0",
+    "@rollup/plugin-node-resolve": "16.0.1",
     "@spuxx/js-utils": "1.3.0",
     "@spuxx/nest-testing": "workspace:@spuxx/nest-testing@*",
     "@types/express": "5.0.0",
