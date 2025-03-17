@@ -11,6 +11,7 @@ export const SelectRoute: Component = () => {
   ];
 
   const handleChange = (value: unknown) => {
+    // eslint-disable-next-line no-console
     console.log(value);
   };
 

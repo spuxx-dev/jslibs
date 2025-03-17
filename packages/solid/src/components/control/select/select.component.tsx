@@ -1,4 +1,4 @@
-import { Component, createSignal, For, JSX } from 'solid-js';
+import { Component, For, JSX } from 'solid-js';
 import { SelectOption, SelectProps } from './select.types';
 import { attributes, classNames } from '@src/main';
 import { Icon } from '@iconify-icon/solid';
