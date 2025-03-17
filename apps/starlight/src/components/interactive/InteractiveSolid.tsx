@@ -42,7 +42,6 @@ export const InteractiveSolid: Component<Props> = (props) => {
       handleArgsChange(args);
       return;
     }
-    console.log(args);
     if (dispose) {
       dispose();
     }
