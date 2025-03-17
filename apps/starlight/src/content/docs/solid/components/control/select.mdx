@@ -1,24 +1,28 @@
 ---
-title: 'Input'
-description: 'A flexible input component.'
+title: 'Select'
+description: 'A flexible select component.'
 ---
 
-import TypeDoc from '@docs/solid/components/control/input.md';
+import TypeDoc from '@docs/solid/components/control/select.md';
 import { BaseColor, ControlSize, InputType } from '@packages/browser-utils';
 import { Interactive } from '@src/components/interactive';
 
 <Interactive
-  componentName="Input"
+  componentName="Select"
   argDefinitions={{
     label: {
       type: 'string',
-      options: ['Username', 'Email', 'Password'],
-      default: 'Username',
+      options: ['Fruits', 'Cars', 'Animals'],
+      default: 'Fruits',
     },
-    type: {
+    options: {
       type: 'string',
-      options: Object.values(InputType),
-      default: 'text',
+      hide: true,
+      default: [
+        { label: 'Option 1', value: 'option-1' },
+        { label: 'Option 2', value: 'option-2' },
+        { label: 'Option 3', value: 'option-3' }
+      ],
     },
     variant: {
       type: 'string',
@@ -32,9 +36,7 @@ import { Interactive } from '@src/components/interactive';
     size: {
       type: 'string',
       options: Object.values(ControlSize),
-    },
-    required: {
-      type: 'boolean',
+      default: 'small',
     },
     disabled: {
       type: 'boolean',

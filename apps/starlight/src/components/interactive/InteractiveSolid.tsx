@@ -30,11 +30,19 @@ export const InteractiveSolid: Component<Props> = (props) => {
   importComponent();
 
   const handleArgsChange = (args: Record<string, unknown>) => {
+    for (const [key, def] of Object.entries(argDefinitions)) {
+      if (!args[key]) args[key] = def.default;
+    }
     setState({ component: state().component!, args });
   };
 
   createEffect(() => {
     const { component, args } = state();
+    if (Object.keys(args).length === 0) {
+      handleArgsChange(args);
+      return;
+    }
+    console.log(args);
     if (dispose) {
       dispose();
     }
