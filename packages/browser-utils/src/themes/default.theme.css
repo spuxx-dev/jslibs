@@ -49,8 +49,11 @@ html *,
   /* App Layout Elements */
   --spx-color-app-bar: var(--spx-color-surface);
   --spx-color-on-app-bar: var(--spx-color-on-surface);
+  --spx-color-modal-overlay: rgba(0, 0, 0, 0.5);
   --spx-color-modal: var(--spx-color-surface);
   --spx-color-on-modal: var(--spx-color-on-surface);
+  --spx-color-sidebar: var(--spx-color-surface);
+  --spx-color-on-sidebar: var(--spx-color-on-surface);
 
   /* Filters */
   --spx-filter-control-hover: brightness(1.25);

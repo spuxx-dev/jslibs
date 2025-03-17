@@ -3,9 +3,9 @@
   top: 0;
   left: 0;
   z-index: var(--spx-z-modal-overlay);
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  width: 100svw;
+  height: 100svh;
+  background-color: var(--spx-color-modal-overlay);
 }
 
 .spx-modal {
