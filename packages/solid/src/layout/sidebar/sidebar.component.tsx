@@ -30,12 +30,12 @@ const Sidebar: Component<SidebarProps> & {
       closeOnEscapeKeyDown={UserAgent.isMobile}
     >
       <Drawer.Portal>
-        {/* <Show when={UserAgent.isMobile}>
+        <Show when={UserAgent.isMobile}>
           <Drawer.Overlay
             {...classNames('spx-sidebar-overlay')}
             data-open={Layout.state.sidebarOpen}
           />
-        </Show> */}
+        </Show>
         <Drawer.Content
           {...attributes(props)}
           {...classNames('spx-sidebar', props.class)}

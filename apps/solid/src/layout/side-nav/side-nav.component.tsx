@@ -4,11 +4,6 @@ import { For, Show } from 'solid-js';
 import { routes } from '../../routes/routes';
 
 export const SideNav = () => {
-  const handleLinkClick = () => {
-    if (UserAgent.isDesktop) return;
-    Layout.closeSidebar();
-  };
-
   return (
     <Sidebar>
       <Sidebar.Toolbar>
@@ -18,7 +13,7 @@ export const SideNav = () => {
             title="Close"
             variant="colored"
             color="text-default"
-            onClick={handleLinkClick}
+            onClick={UserAgent.closeSidebarOnMobile}
           />
         </Show>
         <ButtonLink
@@ -27,7 +22,7 @@ export const SideNav = () => {
           href="/"
           variant="colored"
           color="text-default"
-          onClick={handleLinkClick}
+          onClick={UserAgent.closeSidebarOnMobile}
         />
         <Button icon="mdi:account" title="Account" variant="colored" color="text-default" />
         <Button icon="mdi:gear" title="Settings" variant="colored" color="text-default" />

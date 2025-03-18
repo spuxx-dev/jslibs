@@ -1,3 +1,4 @@
+import { UserAgent } from '@spuxx/browser-utils';
 import { ServiceMixin } from '@spuxx/js-utils';
 import { createSignal } from 'solid-js';
 
@@ -22,6 +23,14 @@ export class Layout extends ServiceMixin<Layout>() {
    * Closes the sidebar.
    */
   static closeSidebar = (): void => {
+    this.setState({ ...this.state, sidebarOpen: false });
+  };
+
+  /**
+   * Closes the sidebar if the current viewport is considered a mobile device.
+   */
+  static closeSidebarOnMobile = (): void => {
+    if (UserAgent.isDesktop) return;
     this.setState({ ...this.state, sidebarOpen: false });
   };
 
