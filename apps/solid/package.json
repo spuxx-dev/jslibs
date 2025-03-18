@@ -25,6 +25,6 @@
     "@spuxx/browser-utils": "workspace:@spuxx/browser-utils@*",
     "@spuxx/js-utils": "workspace:@spuxx/js-utils@*",
     "@spuxx/solid": "workspace:@spuxx/solid@*",
-    "solid-js": "1.9.4"
+    "solid-js": "1.9.5"
   }
 }
