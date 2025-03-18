@@ -41,4 +41,12 @@ export class UserAgent extends ServiceMixin<UserAgent>() {
     const { desktopBreakpoint } = UserAgent.options;
     return viewportWidth >= desktopBreakpoint;
   }
+
+  /**
+   * Whether the current viewport is considered a mobile.
+   * @returns Whether the current viewport is considered a mobile.
+   */
+  static get isMobile() {
+    return !UserAgent.isDesktop;
+  }
 }
