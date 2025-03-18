@@ -1,25 +1,33 @@
 import { Button, ButtonLink, Layout, Sidebar } from '@spuxx/solid';
-import { For } from 'solid-js';
+import { UserAgent } from '@spuxx/browser-utils';
+import { For, Show } from 'solid-js';
 import { routes } from '../../routes/routes';
 
 export const SideNav = () => {
+  const handleLinkClick = () => {
+    if (UserAgent.isDesktop) return;
+    Layout.closeSidebar();
+  };
+
   return (
     <Sidebar>
       <Sidebar.Toolbar>
-        <Button
-          icon="mdi:backburger"
-          title="Close"
-          variant="colored"
-          color="text-default"
-          onClick={Layout.closeSidebar}
-        />
+        <Show when={!UserAgent.isDesktop}>
+          <Button
+            icon="mdi:backburger"
+            title="Close"
+            variant="colored"
+            color="text-default"
+            onClick={handleLinkClick}
+          />
+        </Show>
         <ButtonLink
           icon="mdi:home"
           title="Home"
           href="/"
           variant="colored"
           color="text-default"
-          onClick={Layout.closeSidebar}
+          onClick={handleLinkClick}
         />
         <Button icon="mdi:account" title="Account" variant="colored" color="text-default" />
         <Button icon="mdi:gear" title="Settings" variant="colored" color="text-default" />

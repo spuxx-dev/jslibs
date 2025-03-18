@@ -17,7 +17,7 @@ html.spx-app {
       max-width: 100%;
       margin: 0 auto;
       box-sizing: border-box;
-      padding: 1rem;
+      padding: 0.25rem;
     }
   }
 
@@ -35,11 +35,31 @@ html.spx-app {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 960px) {
   html.spx-app {
     > body {
+      #root {
+        transition-property: margin-left, margin-right, width;
+        transition-timing-function: var(--spx-sidebar-transition-timing-function);
+        transition-duration: var(--spx-sidebar-transition-duration);
+      }
+
       main {
-        padding: 0.25rem;
+        padding: 1rem;
+      }
+
+      &:has(.spx-sidebar[data-open]:not([data-closing])[data-side='left']) {
+        #root {
+          width: calc(100% - var(--spx-sidebar-width-full));
+          margin-left: var(--spx-sidebar-width-full);
+        }
+      }
+
+      &:has(.spx-sidebar[data-open]:not([data-closing])[data-side='right']) {
+        #root {
+          width: calc(100% - var(--spx-sidebar-width-full));
+          margin-right: var(--spx-sidebar-width-full);
+        }
       }
     }
   }

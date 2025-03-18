@@ -2,7 +2,7 @@
   position: fixed;
   z-index: var(--spx-z-app-bar);
   height: var(--spx-app-bar-height);
-  width: 100svw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -23,5 +23,23 @@
 
   &:has(.spx-app-bar-section:only-child) {
     justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  html.spx-app {
+    > body {
+      .spx-app-bar {
+        transition-property: width;
+        transition-timing-function: var(--spx-sidebar-transition-timing-function);
+        transition-duration: var(--spx-sidebar-transition-duration);
+      }
+
+      &:has(.spx-sidebar[data-open]:not([data-closing])) {
+        .spx-app-bar {
+          width: calc(100% - var(--spx-sidebar-width-full));
+        }
+      }
+    }
   }
 }

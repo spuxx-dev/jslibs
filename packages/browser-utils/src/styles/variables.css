@@ -9,6 +9,8 @@
   --spx-control-width-medium: 16rem;
   --spx-control-width-large: 24rem;
 
+  --spx-sidebar-transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
+  --spx-sidebar-transition-duration: 500ms;
   --spx-sidebar-width-full: 300px;
 
   --spx-input-pd-x: 0.75rem;

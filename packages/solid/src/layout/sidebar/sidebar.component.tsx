@@ -1,4 +1,4 @@
-import { Component } from 'solid-js';
+import { Component, Show } from 'solid-js';
 import Drawer from '@corvu/drawer';
 import { SidebarProps } from './sidebar.types';
 import { Layout } from '../layout.service';
@@ -7,6 +7,7 @@ import { SidebarToolbar } from './areas/toolbar';
 import { SidebarToolbarProps } from './areas/toolbar/sidebar-toolbar.types';
 import { SidebarContentProps } from './areas/content/sidebar-content.types';
 import { SidebarContent } from './areas/content/sidebar-content.component';
+import { UserAgent } from '@spuxx/browser-utils';
 
 const Sidebar: Component<SidebarProps> & {
   Toolbar: Component<SidebarToolbarProps>;
@@ -19,12 +20,22 @@ const Sidebar: Component<SidebarProps> & {
   };
 
   return (
-    <Drawer open={Layout.state.sidebarOpen} side={side} onOpenChange={handleOpenChange}>
+    <Drawer
+      open={Layout.state.sidebarOpen}
+      side={side}
+      onOpenChange={handleOpenChange}
+      modal={UserAgent.isMobile}
+      trapFocus={UserAgent.isMobile}
+      closeOnOutsidePointer={UserAgent.isMobile}
+      closeOnEscapeKeyDown={UserAgent.isMobile}
+    >
       <Drawer.Portal>
-        <Drawer.Overlay
-          {...classNames('spx-sidebar-overlay')}
-          data-open={Layout.state.sidebarOpen}
-        />
+        {/* <Show when={UserAgent.isMobile}>
+          <Drawer.Overlay
+            {...classNames('spx-sidebar-overlay')}
+            data-open={Layout.state.sidebarOpen}
+          />
+        </Show> */}
         <Drawer.Content
           {...attributes(props)}
           {...classNames('spx-sidebar', props.class)}

@@ -9,8 +9,8 @@
 
   &[data-transitioning] {
     transition-property: background-color;
-    transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
-    transition-duration: 500ms;
+    transition-timing-function: var(--spx-sidebar-transition-timing-function);
+    transition-duration: var(--spx-sidebar-transition-duration);
   }
 
   &[data-open] {
@@ -40,8 +40,8 @@
 
   &[data-transitioning] {
     transition-property: transform;
-    transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
-    transition-duration: 500ms;
+    transition-timing-function: var(--spx-sidebar-transition-timing-function);
+    transition-duration: var(--spx-sidebar-transition-duration);
   }
 
   &[data-open] {
