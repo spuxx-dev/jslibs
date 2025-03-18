@@ -12,11 +12,24 @@ export class Layout extends ServiceMixin<Layout>() {
   state = createSignal<LayoutState>({ sidebarOpen: false });
 
   /**
+   * Opens the sidebar.
+   */
+  static openSidebar = (): void => {
+    this.setState({ ...this.state, sidebarOpen: true });
+  };
+
+  /**
+   * Closes the sidebar.
+   */
+  static closeSidebar = (): void => {
+    this.setState({ ...this.state, sidebarOpen: false });
+  };
+
+  /**
    * Toggles the sidebar.
    */
   static toggleSidebar = (): void => {
     this.setState({ ...this.state, sidebarOpen: !this.state.sidebarOpen });
-    console.log(this.state.sidebarOpen);
   };
 
   /**

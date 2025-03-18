@@ -27,6 +27,8 @@
   transform: translate(-50%, -50%);
   background-color: var(--spx-color-sidebar);
   box-shadow: var(--spx-shadow-medium);
+  display: flex;
+  flex-direction: column;
 
   &[data-side='left'] {
     left: 0;
@@ -44,5 +46,44 @@
 
   &[data-open] {
     width: var(--spx-sidebar-width-full);
+  }
+}
+
+.spx-sidebar-toolbar {
+  display: flex;
+  flex-direction: row;
+  height: var(--spx-app-bar-height);
+  padding: 4px;
+  gap: 4px;
+
+  > * {
+    flex-grow: 1;
+  }
+}
+
+.spx-sidebar-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 4px;
+  gap: 4px;
+}
+
+.spx-sidebar-nav {
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      a {
+        justify-content: start;
+        flex-grow: 1;
+      }
+    }
   }
 }

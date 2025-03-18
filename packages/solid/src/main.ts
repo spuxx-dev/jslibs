@@ -5,6 +5,7 @@
 export * from './types/public';
 
 export * from './components/control/button';
+export * from './components/control/button-link';
 export * from './components/control/input';
 export * from './components/control/select';
 export * from './components/layout/container';
