@@ -1,9 +1,3 @@
-@starting-style {
-  .spx-sidebar-overlay {
-    background-color: transparent;
-  }
-}
-
 .spx-sidebar-overlay {
   position: absolute;
   top: 0;
@@ -13,12 +7,14 @@
   height: 100svh;
   background-color: transparent;
 
-  &[data-open] {
-    background-color: var(--spx-color-modal-overlay);
+  &[data-transitioning] {
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
+    transition-duration: 500ms;
   }
 
-  &[data-transitioning] {
-    transition: background-color 500ms;
+  &[data-open] {
+    background-color: var(--spx-color-modal-overlay);
   }
 }
 
