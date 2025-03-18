@@ -25,10 +25,8 @@ import { AuthService } from '../providers/auth.service';
  */
 @Injectable()
 export class AuthGuard implements CanActivate {
-  constructor(
-    private reflector: Reflector,
-    private readonly service: AuthService,
-  ) {}
+  constructor(private readonly service: AuthService) {}
+  private readonly reflector = new Reflector();
 
   /**
    * Is triggered when the guarded function is being executed. If it returns false,

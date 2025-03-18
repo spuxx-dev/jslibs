@@ -55,7 +55,7 @@
     "rxjs": "^7.8.0"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "16.0.0",
+    "@rollup/plugin-node-resolve": "16.0.1",
     "@spuxx/js-utils": "1.3.0",
     "@spuxx/nest-testing": "workspace:@spuxx/nest-testing@*",
     "@types/dotenv": "8.2.3",
@@ -65,11 +65,11 @@
     "sequelize": "6.37.6",
     "sequelize-typescript": "2.1.6",
     "sqlite3": "5.1.7",
-    "typescript": "5.7.3",
+    "typescript": "5.8.2",
     "unplugin-swc": "1.5.1",
     "vite": "6.2.1",
-    "vite-plugin-dts": "4.5.0",
+    "vite-plugin-dts": "4.5.3",
     "vite-tsconfig-paths": "5.1.4",
-    "vitest": "3.0.7"
+    "vitest": "3.0.9"
   }
 }
