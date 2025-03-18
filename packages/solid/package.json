@@ -56,7 +56,7 @@
     "solid-js": "1.9.4",
     "typescript": "5.8.2",
     "vite": "6.2.1",
-    "vite-plugin-dts": "4.5.0",
+    "vite-plugin-dts": "4.5.3",
     "vite-plugin-solid": "2.11.6",
     "vite-tsconfig-paths": "5.1.4",
     "vitest": "3.0.9"

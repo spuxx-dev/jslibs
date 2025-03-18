@@ -64,7 +64,7 @@
     "typescript": "5.8.2",
     "unplugin-swc": "1.5.1",
     "vite": "6.2.1",
-    "vite-plugin-dts": "4.5.0",
+    "vite-plugin-dts": "4.5.3",
     "vite-tsconfig-paths": "5.1.4",
     "vitest": "3.0.9"
   }
