@@ -5,7 +5,7 @@ import { routes } from '../../routes/routes';
 
 export const SideNav = () => {
   return (
-    <Sidebar position="left">
+    <Sidebar side="left">
       <Sidebar.Toolbar>
         <Show when={!UserAgent.isDesktop}>
           <Button

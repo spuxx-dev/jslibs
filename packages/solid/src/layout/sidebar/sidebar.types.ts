@@ -11,5 +11,5 @@ export interface SidebarProps
    * Where the sidebar should be positioned.
    * @default 'left'
    */
-  position?: 'left' | 'right';
+  side?: 'left' | 'right';
 }

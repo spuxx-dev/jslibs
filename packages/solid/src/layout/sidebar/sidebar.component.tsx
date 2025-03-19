@@ -4,17 +4,17 @@ import { SidebarProps } from './sidebar.types';
 import { Layout } from '../layout.service';
 import { attributes, classNames } from '@src/main';
 import { SidebarToolbar } from './areas/toolbar';
-import { SidebarToolbarProps } from './areas/toolbar/sidebar-toolbar.types';
-import { SidebarContentProps } from './areas/content/sidebar-content.types';
 import { SidebarContent } from './areas/content/sidebar-content.component';
 import { UserAgent } from '@spuxx/browser-utils';
 
 const Sidebar: Component<SidebarProps> & {
-  Toolbar: Component<SidebarToolbarProps>;
-  Content: Component<SidebarContentProps>;
+  Toolbar: typeof SidebarToolbar;
+  Content: typeof SidebarContent;
 } = (props) => {
-  const { position = 'left' } = props;
+  const { side = 'left' } = props;
   const handleOpenChange = (open: boolean) => {
+    // The value check is here mostly for safety and we don't usually run into it.
+    /* v8 ignore next */
     if (open) return;
     Layout.toggleSidebar();
   };
@@ -22,7 +22,7 @@ const Sidebar: Component<SidebarProps> & {
   return (
     <Drawer
       open={Layout.state.sidebarOpen}
-      side={position}
+      side={side}
       onOpenChange={handleOpenChange}
       noOutsidePointerEvents={UserAgent.isMobile}
       trapFocus={UserAgent.isMobile}
@@ -39,7 +39,7 @@ const Sidebar: Component<SidebarProps> & {
         <Drawer.Content
           {...attributes(props)}
           {...classNames('spx-sidebar', props.class)}
-          data-side={position}
+          data-side={side}
         >
           {props.children}
         </Drawer.Content>
