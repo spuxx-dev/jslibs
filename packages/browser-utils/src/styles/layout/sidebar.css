@@ -13,18 +13,18 @@
     transition-duration: var(--spx-sidebar-transition-duration);
   }
 
-  &[data-open] {
+  &[data-open]:not([data-closing]) {
     background-color: var(--spx-color-modal-overlay);
   }
 }
 
 .spx-sidebar {
-  position: fixed;
+  position: absolute;
   top: 0;
   height: 100%;
   max-width: 90svw;
   z-index: var(--spx-z-sidebar);
-  transform: translate(-50%, -50%);
+  width: var(--spx-sidebar-width-full);
   background-color: var(--spx-color-sidebar);
   box-shadow: var(--spx-shadow-medium);
   display: flex;
@@ -42,10 +42,6 @@
     transition-property: transform;
     transition-timing-function: var(--spx-sidebar-transition-timing-function);
     transition-duration: var(--spx-sidebar-transition-duration);
-  }
-
-  &[data-open] {
-    width: var(--spx-sidebar-width-full);
   }
 }
 

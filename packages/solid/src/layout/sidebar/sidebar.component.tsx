@@ -13,7 +13,7 @@ const Sidebar: Component<SidebarProps> & {
   Toolbar: Component<SidebarToolbarProps>;
   Content: Component<SidebarContentProps>;
 } = (props) => {
-  const { side = 'left' } = props;
+  const { position = 'left' } = props;
   const handleOpenChange = (open: boolean) => {
     if (open) return;
     Layout.toggleSidebar();
@@ -22,9 +22,9 @@ const Sidebar: Component<SidebarProps> & {
   return (
     <Drawer
       open={Layout.state.sidebarOpen}
-      side={side}
+      side={position}
       onOpenChange={handleOpenChange}
-      modal={UserAgent.isMobile}
+      noOutsidePointerEvents={UserAgent.isMobile}
       trapFocus={UserAgent.isMobile}
       closeOnOutsidePointer={UserAgent.isMobile}
       closeOnEscapeKeyDown={UserAgent.isMobile}
@@ -39,7 +39,7 @@ const Sidebar: Component<SidebarProps> & {
         <Drawer.Content
           {...attributes(props)}
           {...classNames('spx-sidebar', props.class)}
-          data-side={side}
+          data-side={position}
         >
           {props.children}
         </Drawer.Content>

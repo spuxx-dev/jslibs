@@ -38,14 +38,15 @@ html.spx-app {
 @media only screen and (min-width: 960px) {
   html.spx-app {
     > body {
-      #root {
-        transition-property: margin-left, margin-right, width;
-        transition-timing-function: var(--spx-sidebar-transition-timing-function);
-        transition-duration: var(--spx-sidebar-transition-duration);
-      }
-
       main {
         padding: 1rem;
+      }
+
+      #root {
+        width: 100%;
+        transition-property: margin, width;
+        transition-timing-function: var(--spx-sidebar-transition-timing-function);
+        transition-duration: var(--spx-sidebar-transition-duration);
       }
 
       &:has(.spx-sidebar[data-open]:not([data-closing])[data-side='left']) {

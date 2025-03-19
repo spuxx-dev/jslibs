@@ -8,8 +8,8 @@ export interface SidebarProps
   extends ComponentProps<JSX.HTMLAttributes<HTMLHtmlElement>>,
     ParentProps {
   /**
-   * The side from which the sidebar should open.
+   * Where the sidebar should be positioned.
    * @default 'left'
    */
-  side?: 'left' | 'right';
+  position?: 'left' | 'right';
 }

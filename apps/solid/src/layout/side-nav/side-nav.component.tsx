@@ -5,7 +5,7 @@ import { routes } from '../../routes/routes';
 
 export const SideNav = () => {
   return (
-    <Sidebar>
+    <Sidebar position="left">
       <Sidebar.Toolbar>
         <Show when={!UserAgent.isDesktop}>
           <Button
@@ -13,7 +13,7 @@ export const SideNav = () => {
             title="Close"
             variant="colored"
             color="text-default"
-            onClick={UserAgent.closeSidebarOnMobile}
+            onClick={Layout.closeSidebar}
           />
         </Show>
         <ButtonLink
@@ -22,7 +22,7 @@ export const SideNav = () => {
           href="/"
           variant="colored"
           color="text-default"
-          onClick={UserAgent.closeSidebarOnMobile}
+          onClick={Layout.closeSidebarOnMobile}
         />
         <Button icon="mdi:account" title="Account" variant="colored" color="text-default" />
         <Button icon="mdi:gear" title="Settings" variant="colored" color="text-default" />
