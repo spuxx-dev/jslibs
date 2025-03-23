@@ -1,12 +1,18 @@
+import { Layout } from '@spuxx/solid';
 import { AppBar, Button } from '@spuxx/solid';
 
 export const TopAppBar = () => {
   return (
     <AppBar>
       <AppBar.Section>
-        <a href="/">
-          <Button icon="mdi:menu" title="Menu" variant="colored" color="text-default" rounded />
-        </a>
+        <Button
+          icon="mdi:menu"
+          title="Menu"
+          variant="colored"
+          color="text-default"
+          rounded
+          onClick={Layout.toggleSidebar}
+        />
       </AppBar.Section>
       <AppBar.Section>
         <a href="/">
