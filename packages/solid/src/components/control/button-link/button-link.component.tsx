@@ -11,9 +11,14 @@ import { attributes, classNames } from '@src/main';
 export const ButtonLink: Component<ButtonLinkProps> = (props) => {
   const { variant = 'contained', color = 'primary', size, rounded } = props;
 
+  const handleClick = (event: MouseEvent) => {
+    if (props.onClick) {
+      props.onClick(event);
+    }
+  };
+
   return (
     <a
-      type="button"
       {...attributes(props)}
       href={props.href}
       title={props.title}
@@ -21,7 +26,7 @@ export const ButtonLink: Component<ButtonLinkProps> = (props) => {
       spx-color={color}
       spx-size={size || undefined}
       spx-rounded={rounded || undefined}
-      onClick={props.onClick}
+      onClick={handleClick}
       {...classNames('spx-button', props.class)}
     >
       {/* Icon */}
