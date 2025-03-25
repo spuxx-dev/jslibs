@@ -85,8 +85,8 @@ importers:
         specifier: workspace:@spuxx/nest-testing@*
         version: link:../../packages/nest-testing
       '@types/express':
-        specifier: 5.0.0
-        version: 5.0.0
+        specifier: 5.0.1
+        version: 5.0.1
       '@vitest/coverage-v8':
         specifier: 3.0.8
         version: 3.0.8(@vitest/browser@3.0.9(@types/node@22.13.13)(typescript@5.7.3)(vitest@3.0.9))(vitest@3.0.9(@types/debug@4.1.12)(@types/node@22.13.13)(@vitest/browser@3.0.9(@types/node@22.13.13)(typescript@5.7.3)(vitest@3.0.9))(happy-dom@8.9.0)(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.7.3(@types/node@22.13.13)(typescript@5.8.2))(terser@5.39.0)(yaml@2.7.0))
@@ -329,8 +329,8 @@ importers:
         specifier: workspace:@spuxx/nest-testing@*
         version: link:../nest-testing
       '@types/express':
-        specifier: 5.0.0
-        version: 5.0.0
+        specifier: 5.0.1
+        version: 5.0.1
       '@vitest/coverage-v8':
         specifier: 3.0.8
         version: 3.0.8(@vitest/browser@3.0.9(@types/node@22.13.13)(typescript@5.7.3)(vitest@3.0.9))(vitest@3.0.9(@types/debug@4.1.12)(@types/node@22.13.13)(@vitest/browser@3.0.9(@types/node@22.13.13)(typescript@5.7.3)(vitest@3.0.9))(happy-dom@8.9.0)(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.7.3(@types/node@22.13.13)(typescript@5.8.2))(terser@5.39.0)(yaml@2.7.0))
@@ -372,8 +372,8 @@ importers:
         specifier: 3.1.0
         version: 3.1.0(ghb3ialrgjcka3blcgnlkd7wca)
       '@types/express':
-        specifier: 5.0.0
-        version: 5.0.0
+        specifier: 5.0.1
+        version: 5.0.1
       '@vitest/coverage-v8':
         specifier: 3.0.8
         version: 3.0.8(@vitest/browser@3.0.9(@types/node@22.13.13)(typescript@5.7.3)(vitest@3.0.9))(vitest@3.0.9(@types/debug@4.1.12)(@types/node@22.13.13)(@vitest/browser@3.0.9(@types/node@22.13.13)(typescript@5.7.3)(vitest@3.0.9))(happy-dom@8.9.0)(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.7.3(@types/node@22.13.13)(typescript@5.8.2))(terser@5.39.0)(yaml@2.7.0))
@@ -433,8 +433,8 @@ importers:
         specifier: 8.2.3
         version: 8.2.3
       '@types/express':
-        specifier: 5.0.0
-        version: 5.0.0
+        specifier: 5.0.1
+        version: 5.0.1
       '@vitest/coverage-v8':
         specifier: 3.0.8
         version: 3.0.8(@vitest/browser@3.0.9(@types/node@22.13.13)(typescript@5.7.3)(vitest@3.0.9))(vitest@3.0.9(@types/debug@4.1.12)(@types/node@22.13.13)(@vitest/browser@3.0.9(@types/node@22.13.13)(typescript@5.7.3)(vitest@3.0.9))(happy-dom@8.9.0)(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2)(msw@2.7.3(@types/node@22.13.13)(typescript@5.8.2))(terser@5.39.0)(yaml@2.7.0))
@@ -2353,8 +2353,8 @@ packages:
   '@types/express-serve-static-core@5.0.6':
     resolution: {integrity: sha512-3xhRnjJPkULekpSzgtoNYYcTWgEZkp4myc+Saevii5JPnHNvHMRlBSHDbs7Bh1iPPoVTERHEZXyhyLbMEsExsA==}
 
-  '@types/express@5.0.0':
-    resolution: {integrity: sha512-DvZriSMehGHL1ZNLzi6MidnsDhUZM/x2pRdDIKdwbUNqqwHxMlRdkxtn6/EPKyqKpHqTl/4nRZsRNLpZxZRpPQ==}
+  '@types/express@5.0.1':
+    resolution: {integrity: sha512-UZUw8vjpWFXuDnjFTh7/5c2TWDlQqeXHi6hcN7F2XSVT5P+WmUnnbFS3KA6Jnc6IsEqI2qCVu2bK0R0J4A8ZQQ==}
 
   '@types/hast@3.0.4':
     resolution: {integrity: sha512-WPs+bbQw5aCj+x6laNGWLH3wviHtoCv/P3+otBhbOhJgG8qtpdAMlTCxLtsTWA7LH1Oh/bFCHsBn0TPS5m30EQ==}
@@ -2400,9 +2400,6 @@ packages:
 
   '@types/node@22.13.13':
     resolution: {integrity: sha512-ClsL5nMwKaBRwPcCvH8E7+nU4GxHVx1axNvMZTFHMEfNI7oahimt26P5zjVCRrjiIWj6YFXfE1v3dEp94wLcGQ==}
-
-  '@types/node@22.13.8':
-    resolution: {integrity: sha512-G3EfaZS+iOGYWLLRCEAXdWK9my08oHNZ+FHluRiggIYJPOXzhOiDgpVCUHaUvyIC5/fj7C/p637jdzC666AOKQ==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -9401,7 +9398,7 @@ snapshots:
   '@types/body-parser@1.19.5':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 22.13.8
+      '@types/node': 22.13.13
 
   '@types/cacheable-request@6.0.3':
     dependencies:
@@ -9412,7 +9409,7 @@ snapshots:
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 22.13.8
+      '@types/node': 22.13.13
 
   '@types/cookie@0.6.0': {}
 
@@ -9444,16 +9441,15 @@ snapshots:
 
   '@types/express-serve-static-core@5.0.6':
     dependencies:
-      '@types/node': 22.13.8
+      '@types/node': 22.13.13
       '@types/qs': 6.9.18
       '@types/range-parser': 1.2.7
       '@types/send': 0.17.4
 
-  '@types/express@5.0.0':
+  '@types/express@5.0.1':
     dependencies:
       '@types/body-parser': 1.19.5
       '@types/express-serve-static-core': 5.0.6
-      '@types/qs': 6.9.18
       '@types/serve-static': 1.15.7
 
   '@types/hast@3.0.4':
@@ -9498,10 +9494,6 @@ snapshots:
     dependencies:
       undici-types: 6.20.0
 
-  '@types/node@22.13.8':
-    dependencies:
-      undici-types: 6.20.0
-
   '@types/normalize-package-data@2.4.4': {}
 
   '@types/npm-package-arg@6.1.4': {}
@@ -9526,17 +9518,17 @@ snapshots:
 
   '@types/sax@1.2.7':
     dependencies:
-      '@types/node': 22.13.10
+      '@types/node': 22.13.13
 
   '@types/send@0.17.4':
     dependencies:
       '@types/mime': 1.3.5
-      '@types/node': 22.13.8
+      '@types/node': 22.13.13
 
   '@types/serve-static@1.15.7':
     dependencies:
       '@types/http-errors': 2.0.4
-      '@types/node': 22.13.8
+      '@types/node': 22.13.13
       '@types/send': 0.17.4
 
   '@types/statuses@2.0.5': {}
@@ -12238,7 +12230,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 22.13.10
+      '@types/node': 22.13.13
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
