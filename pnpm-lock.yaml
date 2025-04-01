@@ -207,8 +207,8 @@ importers:
         specifier: 4.2.3
         version: 4.2.3(astro@5.5.4(@types/node@22.13.14)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(terser@5.39.0)(typescript@5.8.2)(yaml@2.7.0))
       '@astrojs/solid-js':
-        specifier: 5.0.5
-        version: 5.0.5(@testing-library/jest-dom@6.6.3)(@types/node@22.13.14)(jiti@2.4.2)(lightningcss@1.29.2)(solid-js@1.9.5)(terser@5.39.0)(yaml@2.7.0)
+        specifier: 5.0.7
+        version: 5.0.7(@testing-library/jest-dom@6.6.3)(@types/node@22.13.14)(jiti@2.4.2)(lightningcss@1.29.2)(solid-js@1.9.5)(terser@5.39.0)(yaml@2.7.0)
       '@astrojs/starlight':
         specifier: 0.32.2
         version: 0.32.2(astro@5.5.4(@types/node@22.13.14)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(terser@5.39.0)(typescript@5.8.2)(yaml@2.7.0))
@@ -625,8 +625,8 @@ packages:
   '@astrojs/sitemap@3.2.1':
     resolution: {integrity: sha512-uxMfO8f7pALq0ADL6Lk68UV6dNYjJ2xGUzyjjVj60JLBs5a6smtlkBYv3tQ0DzoqwS7c9n4FUx5lgv0yPo/fgA==}
 
-  '@astrojs/solid-js@5.0.5':
-    resolution: {integrity: sha512-i+hsqm5u4Jaf+2CznCMh/oHFiBlmZz3jpTqQS1x5gilCzX3SOtVMLmbHHEpQ3wiZF1QToa4gcgEDqmeUqwW2Ow==}
+  '@astrojs/solid-js@5.0.7':
+    resolution: {integrity: sha512-L4h88kGMiASNfug/n5Sxcjudei9anedxkah1Hpom/3JySONywcQy3w4oVuF3VVE1pUD/le5NeK1anFddT528DA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0}
     peerDependencies:
       solid-devtools: ^0.30.1
@@ -7802,7 +7802,7 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.24.2
 
-  '@astrojs/solid-js@5.0.5(@testing-library/jest-dom@6.6.3)(@types/node@22.13.14)(jiti@2.4.2)(lightningcss@1.29.2)(solid-js@1.9.5)(terser@5.39.0)(yaml@2.7.0)':
+  '@astrojs/solid-js@5.0.7(@testing-library/jest-dom@6.6.3)(@types/node@22.13.14)(jiti@2.4.2)(lightningcss@1.29.2)(solid-js@1.9.5)(terser@5.39.0)(yaml@2.7.0)':
     dependencies:
       solid-js: 1.9.5
       vite: 6.2.4(@types/node@22.13.14)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0)
