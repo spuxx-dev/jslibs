@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/spuxx-dev/jslibs/compare/nest-auth-v1.0.0...nest-auth-v1.0.1) (2025-04-15)
+
+
+### Bug Fixes
+
+* **auth:** `AuthGuard` should now be more stable due to creating its own instance of `Reflector` ([9d3a0d9](https://github.com/spuxx-dev/jslibs/commit/9d3a0d9722282a4ea720cd33d58af1e6764bf5bc))
+
 ## 1.0.0 (2025-03-12)
 
 

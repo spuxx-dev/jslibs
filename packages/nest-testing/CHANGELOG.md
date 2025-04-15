@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/spuxx-dev/jslibs/compare/nest-testing-v2.0.0...nest-testing-v2.0.1) (2025-04-15)
+
+
+### Bug Fixes
+
+* TestContainer now specifically provides Reflector, which should help with flakey tests ([d87cc2d](https://github.com/spuxx-dev/jslibs/commit/d87cc2d244755702d0143fba189ee8f131fddf18))
+
 ## [2.0.0](https://github.com/spuxx-dev/jslibs/compare/nest-testing-v1.1.0...nest-testing-v2.0.0) (2025-03-12)
 
 

@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.1.0](https://github.com/spuxx-dev/jslibs/compare/solid-v1.0.0...solid-v1.1.0) (2025-04-15)
+
+
+### Features
+
+* **controls:** Add `ButtonLink` control ([1627b14](https://github.com/spuxx-dev/jslibs/commit/1627b144df9aaf4de347866f8bb9540384b32613))
+* **controls:** Add new `Select` control component ([6d45bc1](https://github.com/spuxx-dev/jslibs/commit/6d45bc18e03d32c088bfd29a886f4f42cda6f3bd))
+* Implement new `Input` control component ([55e73a9](https://github.com/spuxx-dev/jslibs/commit/55e73a987252ae4a9c4008bdbd3250f125db2297))
+* **layout:** Add `Sidebar` component as well as `Layout` service ([#147](https://github.com/spuxx-dev/jslibs/issues/147)) ([527f20d](https://github.com/spuxx-dev/jslibs/commit/527f20d3461c7509d5e63dec2f4cc64bef65a7a3))
+* **layout:** Implement `AppBar` layout component ([f8a09d3](https://github.com/spuxx-dev/jslibs/commit/f8a09d3c7a86e05314549effad3a4991ff7985f0))
+
 ## 1.0.0 (2025-03-12)
 
 
