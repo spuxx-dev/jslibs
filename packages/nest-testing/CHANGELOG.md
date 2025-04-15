@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.2](https://github.com/spuxx-dev/jslibs/compare/nest-testing-v2.0.1...nest-testing-v2.0.2) (2025-04-15)
+
+
+### Bug Fixes
+
+* Fix imports of `AuthModule` and `AuthOptions` ([7b9ab84](https://github.com/spuxx-dev/jslibs/commit/7b9ab84be1319a5aa52666794941d7426a2e8aea))
+
 ## [2.0.1](https://github.com/spuxx-dev/jslibs/compare/nest-testing-v2.0.0...nest-testing-v2.0.1) (2025-04-15)
 
 
