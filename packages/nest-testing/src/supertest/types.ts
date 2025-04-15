@@ -1,4 +1,4 @@
-import { SessionResource } from '@spuxx/nest-utils';
+import { type SessionResource } from '@spuxx/nest-auth';
 
 export interface SupertestOptions {
   /**

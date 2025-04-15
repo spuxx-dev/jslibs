@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { INestApplication } from '@nestjs/common';
 import supertest, { Request } from 'supertest';
-import { SessionResource } from '@spuxx/nest-utils';
+import { SessionResource } from '@spuxx/nest-auth';
 import { SupertestOptions } from './types';
 
 /**

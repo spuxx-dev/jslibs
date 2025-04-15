@@ -1,5 +1,5 @@
 import { DynamicModule, ForwardReference, LoggerService, Provider, Type } from '@nestjs/common';
-import { SessionResource } from '@spuxx/nest-utils';
+import { SessionResource } from '@spuxx/nest-auth';
 import { TestContainer } from './test-container';
 
 /**

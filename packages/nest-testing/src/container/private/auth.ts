@@ -1,6 +1,6 @@
 import { Injectable, MiddlewareConsumer, Module, NestMiddleware, NestModule } from '@nestjs/common';
 import { Request, Response, NextFunction } from 'express';
-import { SessionResource } from '@spuxx/nest-utils';
+import { type SessionResource } from '@spuxx/nest-auth';
 import { vitest } from 'vitest';
 
 @Injectable()

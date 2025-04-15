@@ -1,12 +1,7 @@
 import { Controller, Get, Injectable, Module } from '@nestjs/common';
 import { TestContainer } from './test-container';
-import {
-  AUTH_OPTIONS_KEY,
-  AuthModule,
-  AuthService,
-  defaultAuthOptions,
-  Mapper,
-} from '@spuxx/nest-utils';
+import { Mapper } from '@spuxx/nest-utils';
+import { AUTH_OPTIONS_KEY, AuthModule, AuthService, defaultAuthOptions } from '@spuxx/nest-auth';
 import { describe, expect, it, vi } from 'vitest';
 
 describe('TestContainer', () => {
