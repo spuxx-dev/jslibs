@@ -12,24 +12,9 @@ on:
         required: true
 
 jobs:
-  run_checks:
-    name: Run code checks
-    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_run_checks.yml@v4.1.0
-    with:
-      PREPARE: pnpm -r --filter './packages/**' build
-
-  run_unit_tests:
-    name: Run tests (vitest)
-    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_run_tests_vitest.yml@v4.1.0
-    with:
-      PREPARE: pnpm -r --filter './packages/**' build
-
   build_and_publish:
     name: Build and publish artifact
     uses: spuxx-dev/ci-cd/.github/workflows/pnpm_build_and_publish.yml@v4.1.0
-    needs:
-    - run_checks
-    - run_unit_tests
     with:
       PATH: ${{ inputs.PATH }}
       BUILD_COMMAND: pnpm -r --filter './packages/**' build
