@@ -10,12 +10,12 @@
   "dependencies": {
     "@spuxx/browser-utils": "workspace:@spuxx/browser-utils@*",
     "@spuxx/js-utils": "workspace:@spuxx/js-utils@*",
-    "react": "19.0.0",
+    "react": "19.1.0",
     "react-dom": "19.0.0"
   },
   "devDependencies": {
     "@modyfi/vite-plugin-yaml": "1.1.1",
-    "@types/react": "19.0.12",
+    "@types/react": "19.1.2",
     "@types/react-dom": "19.0.4",
     "@vitejs/plugin-react": "4.3.4",
     "typescript": "5.8.3",
