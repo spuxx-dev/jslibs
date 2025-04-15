@@ -1,4 +1,5 @@
 import { INestApplication } from '@nestjs/common';
+import { Reflector } from '@nestjs/core';
 import { Test, TestingModule } from '@nestjs/testing';
 import { type OmitFunctionMembers } from '@spuxx/js-utils';
 import { AuthModule, AuthOptions, MappingModule } from '@spuxx/nest-utils';
@@ -76,6 +77,12 @@ export class TestContainer {
 
     // Auto-add non-conditional components
     imports.push(MappingModule, MockOidcModule);
+
+    // Specifically provide Reflector since it tends to break in tests otherwise
+    providers.push({
+      provide: Reflector,
+      useClass: Reflector,
+    });
 
     // Create the precompiled version of the module
     let builder = Test.createTestingModule({
