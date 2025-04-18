@@ -14,10 +14,18 @@ export default defineConfig({
     starlight({
       title: '@spuxx/jslibs',
       favicon: '/favicon.png',
-      social: {
-        github: 'https://github.com/spuxx-dev/jslibs',
-        blueSky: 'https://bsky.app/profile/spuxx.bsky.social',
-      },
+      social: [
+        {
+          label: 'GitHub',
+          icon: 'github',
+          href: 'https://github.com/spuxx-dev/jslibs',
+        },
+        {
+          label: 'BlueSky',
+          icon: 'blueSky',
+          href: 'https://bsky.app/profile/spuxx.bsky.social',
+        },
+      ],
       customCss: ['./src/styles/global.css'],
       sidebar,
     }),

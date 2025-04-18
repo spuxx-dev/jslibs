@@ -1,0 +1,22 @@
+---
+title: 'Icon'
+description: 'An icon component that can be used to display an icon. Used the <iconify-icon> under the hood.'
+---
+
+import TypeDoc from '@docs/solid/components/typography/icon.md';
+import { Interactive } from '@src/components/interactive';
+
+An icon component that can be used to display an icon. Used the `<iconify-icon>` under the hood.
+
+<Interactive
+  componentName="Icon"
+  argDefinitions={{
+    icon: {
+      type: 'string',
+      options: ['mdi:home', 'mdi:account', 'mdi:heart', 'mdi:alert'],
+      default: 'mdi:home',
+    },
+  }}
+></Interactive>
+
+<TypeDoc />
