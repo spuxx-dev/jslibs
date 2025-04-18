@@ -34,14 +34,6 @@ export default defineConfig({
   test: {
     watch: false,
     globals: true,
-    deps: {
-      optimizer: {
-        web: {
-          // Required for @iconify-icon/solid not to break the test build
-          include: ['@iconify-icon/solid'],
-        },
-      },
-    },
     reporters: ['default', 'junit'],
     outputFile: 'reports/junit/junit.xml',
     coverage: {

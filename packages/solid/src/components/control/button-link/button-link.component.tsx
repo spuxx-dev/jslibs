@@ -1,7 +1,7 @@
 import { JSX, Show, type Component } from 'solid-js';
-import { Icon, IconifyIcon } from '@iconify-icon/solid';
 import { ButtonLinkProps } from './button-link.types';
 import { attributes, classNames } from '@src/main';
+import { Icon } from '@src/components/typography/icon';
 
 /**
  * A link component that is styled like a button.
@@ -31,7 +31,7 @@ export const ButtonLink: Component<ButtonLinkProps> = (props) => {
     >
       {/* Icon */}
       <Show when={typeof props.icon === 'string'}>
-        <Icon icon={props.icon as IconifyIcon} />
+        <Icon icon={props.icon as string} />
       </Show>
       <Show when={typeof props.icon === 'object'}>{props.icon as JSX.Element}</Show>
 

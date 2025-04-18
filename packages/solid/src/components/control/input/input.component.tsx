@@ -1,8 +1,8 @@
-import { Component, For, JSX } from 'solid-js';
+import { Component, For, JSX, Show } from 'solid-js';
 import { InputProps } from './input.types';
 import { attributes, classNames } from '@src/main';
-import { Icon } from '@iconify-icon/solid';
 import { InputType } from '@spuxx/browser-utils';
+import { Icon } from '@src/components/typography/icon';
 
 /**
  * A flexible input component.
@@ -54,7 +54,9 @@ export const Input: Component<InputProps> = (props) => {
         disabled={props.disabled || undefined}
       />
       <label for={id}>
-        {props.icon && <Icon icon={props.icon} />}
+        <Show when={props.icon}>
+          <Icon icon={props.icon!} />
+        </Show>
         {props.label}
         {required && ' *'}
       </label>

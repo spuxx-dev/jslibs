@@ -1,4 +1,3 @@
-import { IconifyIcon } from '@iconify-icon/solid';
 import { JSX, ParentProps } from 'solid-js';
 import { BaseColor, ContentColor, ControlSize } from '@spuxx/browser-utils';
 import { ComponentProps } from '@src/main';
@@ -30,9 +29,9 @@ export interface ButtonLinkProps
   color?: BaseColor | ContentColor;
   /**
    * The icon that should be rendered to the left of the button's content.
-   * Supports both {@link IconifyIcon} and {@link JSX.Element}.
+   * Supports both an icon name and {@link JSX.Element}.
    */
-  icon?: IconifyIcon | JSX.Element;
+  icon?: string | JSX.Element;
   /**
    * The title of the button link.
    */

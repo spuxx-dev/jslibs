@@ -1,7 +1,7 @@
-import { Component, For, JSX } from 'solid-js';
+import { Component, For, JSX, Show } from 'solid-js';
 import { SelectOption, SelectProps } from './select.types';
 import { attributes, classNames } from '@src/main';
-import { Icon } from '@iconify-icon/solid';
+import { Icon } from '@src/components/typography/icon';
 /**
  * A flexible select component.
  * @param props - {@link SelectProps}
@@ -61,7 +61,9 @@ export const Select: Component<SelectProps> = (props) => {
         </For>
       </select>
       <label for={id}>
-        {props.icon && <Icon icon={props.icon} />}
+        <Show when={props.icon}>
+          <Icon icon={props.icon!} />
+        </Show>
         {props.label}
       </label>
       <Icon icon="mdi:chevron-down" />

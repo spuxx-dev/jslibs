@@ -1,7 +1,7 @@
-import { Icon } from '@iconify-icon/solid';
 import { Component, Show } from 'solid-js';
 import { Label, Close } from '@corvu/dialog';
 import { BaseColor } from '@spuxx/browser-utils';
+import { Icon } from '@src/components/typography/icon';
 
 interface Props {
   /**
@@ -34,7 +34,9 @@ export const ModalHeader: Component<Props> = (props) => {
   return (
     <div class="spx spx-modal-header" spx-variant="contained" spx-color={props.color}>
       <Label>
-        {props.icon && <Icon icon={props.icon} class="spx-modal-icon" />}
+        <Show when={props.icon}>
+          <Icon icon={props.icon!} />
+        </Show>
         {props.title}
       </Label>
       <Show when={!hideClose}>

@@ -1,7 +1,7 @@
 import { JSX, Show, type Component } from 'solid-js';
 import { ButtonProps } from './button.types';
-import { Icon, IconifyIcon } from '@iconify-icon/solid';
 import { attributes, classNames } from '@src/main';
+import { Icon } from '@src/components/typography/icon';
 
 /**
  * A flexible button component.
@@ -29,13 +29,14 @@ export const Button: Component<ButtonProps> = (props) => {
       <Show when={loading}>
         <Show when={props.loader}>{props.loader}</Show>
         <Show when={!props.loader}>
-          <Icon icon="svg-spinners:ring-resize" />
+          {/* @ts-expect-error TypeScript doesn't know about iconify-icon. */}
+          <iconify-icon icon="svg-spinners:ring-resize"></iconify-icon>
         </Show>
       </Show>
 
       {/* Icon */}
       <Show when={typeof props.icon === 'string' && !loading}>
-        <Icon icon={props.icon as IconifyIcon} />
+        <Icon icon={props.icon as string} />
       </Show>
       <Show when={typeof props.icon === 'object'}>{props.icon as JSX.Element}</Show>
 
