@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/spuxx-dev/jslibs/compare/solid-v1.1.0...solid-v1.2.0) (2025-04-18)
+
+
+### Features
+
+* **typography:** Implement custom `Icon` wrapper for `<iconify-icon>` web component ([0dc39b0](https://github.com/spuxx-dev/jslibs/commit/0dc39b08e591046c64f463d39dbe2449a1ff17ba))
+
 ## [1.1.0](https://github.com/spuxx-dev/jslibs/compare/solid-v1.0.0...solid-v1.1.0) (2025-04-15)
 
 
