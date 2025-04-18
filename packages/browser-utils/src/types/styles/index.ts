@@ -4,6 +4,7 @@
 export const BaseColor = {
   background: 'background',
   surface: 'surface',
+  accent: 'accent',
   gradient: 'gradient',
   primary: 'primary',
   secondary: 'secondary',
