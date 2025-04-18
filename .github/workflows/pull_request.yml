@@ -22,23 +22,9 @@ jobs:
     with:
       PREPARE: pnpm -r --filter './packages/**' build
 
-  dependabot:
-    runs-on: ubuntu-latest
-    if: github.event.pull_request.user.login == 'dependabot[bot]'
+  dependabot_auto_merge:
+    name: Auto-merge dependabot PR
+    uses: spuxx-dev/ci-cd/.github/workflows/dependabot_auto_merge.yml@v4.1.0
     needs:
-    - run_checks
-    - run_unit_tests
-    steps:
-    - name: Dependabot metadata
-      id: metadata
-      uses: dependabot/fetch-metadata@d7267f607e9d3fb96fc2fbe83e0af444713e90b7
-      with:
-        github-token: "${{ secrets.GITHUB_TOKEN }}"
-    - name: Enable auto-merge for Dependabot PRs
-      if: |
-        steps.metadata.outputs.update-type == 'version-update:semver-minor' ||
-        steps.metadata.outputs.update-type == 'version-update:semver-patch'
-      run: gh pr merge --auto --merge "$PR_URL"
-      env:
-        PR_URL: ${{github.event.pull_request.html_url}}
-        GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - run_checks
+      - run_unit_tests
