@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.6.0...browser-utils-v1.6.1) (2025-04-18)
+
+
+### Bug Fixes
+
+* **user-agent:** Make UserAgent service more SSR-friendly ([c676c00](https://github.com/spuxx-dev/jslibs/commit/c676c0045d28f5b995fec45b507db96ecced8f4f))
+
 ## [1.6.0](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.5.0...browser-utils-v1.6.0) (2025-04-15)
 
 
