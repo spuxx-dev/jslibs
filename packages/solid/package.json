@@ -27,6 +27,10 @@
     ".": {
       "types": "./dist/main.d.ts",
       "import": "./dist/main.js"
+    },
+    "./server": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/server.js"
     }
   },
   "files": [
@@ -37,7 +41,7 @@
   ],
   "scripts": {
     "dev": "concurrently \"cd ../browser-utils && npm run dev\" \"vite build --watch\"",
-    "build": "vite build",
+    "build": "vite build && vite build -c vite.server.config.ts",
     "types": "tsc --noEmit",
     "test": "pnpm test:vitest",
     "test:vitest": "playwright install && vitest --workspace=vitest.workspace.ts --browser.headless",
