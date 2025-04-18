@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/spuxx-dev/jslibs/compare/solid-v1.2.0...solid-v1.3.0) (2025-04-18)
+
+
+### Features
+
+* **ssr:** Package now exposes an additional 'server' entrypoint file to support SSR apps ([3a50a31](https://github.com/spuxx-dev/jslibs/commit/3a50a317b6201098b5a5812aa12562224385cc5c))
+
 ## [1.2.0](https://github.com/spuxx-dev/jslibs/compare/solid-v1.1.0...solid-v1.2.0) (2025-04-18)
 
 
