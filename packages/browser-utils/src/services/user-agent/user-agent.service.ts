@@ -37,6 +37,7 @@ export class UserAgent extends ServiceMixin<UserAgent>() {
    * @returns Whether the current viewport is considered a desktop.
    */
   static get isDesktop() {
+    if (typeof window === 'undefined' || typeof document === 'undefined') return false;
     const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth);
     const { desktopBreakpoint } = UserAgent.options;
     return viewportWidth >= desktopBreakpoint;
@@ -47,6 +48,7 @@ export class UserAgent extends ServiceMixin<UserAgent>() {
    * @returns Whether the current viewport is considered a mobile.
    */
   static get isMobile() {
+    if (typeof window === 'undefined' || typeof document === 'undefined') return false;
     return !UserAgent.isDesktop;
   }
 }
