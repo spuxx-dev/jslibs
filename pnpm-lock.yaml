@@ -107,7 +107,7 @@ importers:
         version: 5.8.3
       unplugin-swc:
         specifier: 1.5.1
-        version: 1.5.1(@swc/core@1.7.22)(rollup@4.39.0)
+        version: 1.5.1(@swc/core@1.7.22)(rollup@4.40.0)
       vite:
         specifier: 6.2.6
         version: 6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)
@@ -135,7 +135,7 @@ importers:
     devDependencies:
       '@modyfi/vite-plugin-yaml':
         specifier: 1.1.1
-        version: 1.1.1(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
+        version: 1.1.1(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
       '@types/react':
         specifier: 19.1.2
         version: 19.1.2
@@ -205,13 +205,13 @@ importers:
         version: 0.9.4(prettier@3.5.3)(typescript@5.8.3)
       '@astrojs/mdx':
         specifier: 4.2.3
-        version: 4.2.3(astro@5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.39.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
+        version: 4.2.3(astro@5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
       '@astrojs/solid-js':
-        specifier: 5.0.7
-        version: 5.0.7(@testing-library/jest-dom@6.6.3)(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(solid-js@1.9.5)(terser@5.39.0)(yaml@2.7.1)
+        specifier: 5.0.8
+        version: 5.0.8(@testing-library/jest-dom@6.6.3)(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(solid-js@1.9.5)(terser@5.39.0)(yaml@2.7.1)
       '@astrojs/starlight':
         specifier: 0.33.2
-        version: 0.33.2(astro@5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.39.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
+        version: 0.33.2(astro@5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
       '@spuxx/browser-utils':
         specifier: workspace:@spuxx/browser-utils@*
         version: link:../../packages/browser-utils
@@ -223,7 +223,7 @@ importers:
         version: link:../../packages/solid
       astro:
         specifier: 5.5.4
-        version: 5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.39.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)
+        version: 5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)
       sharp:
         specifier: 0.34.1
         version: 0.34.1
@@ -241,7 +241,7 @@ importers:
     dependencies:
       '@spuxx/js-utils':
         specifier: 1.3.0
-        version: 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))
+        version: 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))
     devDependencies:
       '@vitest/coverage-v8':
         specifier: 3.1.1
@@ -251,7 +251,7 @@ importers:
         version: 6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)
       vite-plugin-dts:
         specifier: 4.5.3
-        version: 4.5.3(@types/node@22.14.1)(rollup@4.39.0)(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
+        version: 4.5.3(@types/node@22.14.1)(rollup@4.40.0)(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
       vite-tsconfig-paths:
         specifier: 5.1.4
         version: 5.1.4(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
@@ -263,7 +263,7 @@ importers:
     devDependencies:
       '@modyfi/vite-plugin-yaml':
         specifier: 1.1.1
-        version: 1.1.1(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
+        version: 1.1.1(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
       '@types/axios':
         specifier: 0.14.4
         version: 0.14.4
@@ -281,7 +281,7 @@ importers:
         version: 6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)
       vite-plugin-dts:
         specifier: 4.5.3
-        version: 4.5.3(@types/node@22.14.1)(rollup@4.39.0)(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
+        version: 4.5.3(@types/node@22.14.1)(rollup@4.40.0)(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
       vite-tsconfig-paths:
         specifier: 5.1.4
         version: 5.1.4(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
@@ -321,13 +321,13 @@ importers:
     devDependencies:
       '@rollup/plugin-node-resolve':
         specifier: 16.0.1
-        version: 16.0.1(rollup@4.39.0)
+        version: 16.0.1(rollup@4.40.0)
       '@spuxx/js-utils':
         specifier: 1.3.0
-        version: 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))
+        version: 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))
       '@spuxx/nest-testing':
         specifier: 2.0.2
-        version: 2.0.2(6awytcu5m65i7h7sgydkulbno4)
+        version: 2.0.2(lpvvwtrglhrenj5cymdk4dad3q)
       '@types/express':
         specifier: 5.0.1
         version: 5.0.1
@@ -339,13 +339,13 @@ importers:
         version: 5.8.3
       unplugin-swc:
         specifier: 1.5.1
-        version: 1.5.1(@swc/core@1.7.22)(rollup@4.39.0)
+        version: 1.5.1(@swc/core@1.7.22)(rollup@4.40.0)
       vite:
         specifier: 6.2.6
         version: 6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)
       vite-plugin-dts:
         specifier: 4.5.3
-        version: 4.5.3(@types/node@22.14.1)(rollup@4.39.0)(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
+        version: 4.5.3(@types/node@22.14.1)(rollup@4.40.0)(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
       vite-tsconfig-paths:
         specifier: 5.1.4
         version: 5.1.4(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
@@ -366,17 +366,17 @@ importers:
         version: 11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11))
       '@spuxx/js-utils':
         specifier: ^1.3.0
-        version: 1.5.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))
+        version: 1.5.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))
       supertest:
         specifier: ^7.0.0
         version: 7.0.0
     devDependencies:
       '@spuxx/nest-auth':
         specifier: 1.0.1
-        version: 1.0.1(hveln7yubaflmxqf4orv4jm6xq)
+        version: 1.0.1(o7l654anfqwzzowvxbu4gsetva)
       '@spuxx/nest-utils':
         specifier: 4.0.0
-        version: 4.0.0(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/swagger@11.1.4(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2))(@spuxx/js-utils@1.5.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))))(class-transformer@0.5.1)(class-validator@0.14.1)(dotenv@16.5.0)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 4.0.0(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/swagger@11.1.4(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2))(@spuxx/js-utils@1.5.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))))(class-transformer@0.5.1)(class-validator@0.14.1)(dotenv@16.5.0)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@types/express':
         specifier: 5.0.1
         version: 5.0.1
@@ -388,13 +388,13 @@ importers:
         version: 5.8.3
       unplugin-swc:
         specifier: 1.5.1
-        version: 1.5.1(@swc/core@1.7.22)(rollup@4.39.0)
+        version: 1.5.1(@swc/core@1.7.22)(rollup@4.40.0)
       vite:
         specifier: 6.2.6
         version: 6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)
       vite-plugin-dts:
         specifier: 4.5.3
-        version: 4.5.3(@types/node@22.14.1)(rollup@4.39.0)(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
+        version: 4.5.3(@types/node@22.14.1)(rollup@4.40.0)(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
       vite-tsconfig-paths:
         specifier: 5.1.4
         version: 5.1.4(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
@@ -428,13 +428,13 @@ importers:
     devDependencies:
       '@rollup/plugin-node-resolve':
         specifier: 16.0.1
-        version: 16.0.1(rollup@4.39.0)
+        version: 16.0.1(rollup@4.40.0)
       '@spuxx/js-utils':
         specifier: 1.3.0
-        version: 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))
+        version: 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))
       '@spuxx/nest-testing':
         specifier: 2.0.2
-        version: 2.0.2(6awytcu5m65i7h7sgydkulbno4)
+        version: 2.0.2(lpvvwtrglhrenj5cymdk4dad3q)
       '@types/dotenv':
         specifier: 8.2.3
         version: 8.2.3
@@ -461,13 +461,13 @@ importers:
         version: 5.8.3
       unplugin-swc:
         specifier: 1.5.1
-        version: 1.5.1(@swc/core@1.7.22)(rollup@4.39.0)
+        version: 1.5.1(@swc/core@1.7.22)(rollup@4.40.0)
       vite:
         specifier: 6.2.6
         version: 6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)
       vite-plugin-dts:
         specifier: 4.5.3
-        version: 4.5.3(@types/node@22.14.1)(rollup@4.39.0)(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
+        version: 4.5.3(@types/node@22.14.1)(rollup@4.40.0)(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
       vite-tsconfig-paths:
         specifier: 5.1.4
         version: 5.1.4(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
@@ -485,7 +485,7 @@ importers:
         version: 0.2.3(solid-js@1.9.5)
       '@spuxx/js-utils':
         specifier: ^1.3.0
-        version: 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))
+        version: 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))
     devDependencies:
       '@solidjs/testing-library':
         specifier: 0.8.10
@@ -522,7 +522,7 @@ importers:
         version: 6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)
       vite-plugin-dts:
         specifier: 4.5.3
-        version: 4.5.3(@types/node@22.14.1)(rollup@4.39.0)(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
+        version: 4.5.3(@types/node@22.14.1)(rollup@4.40.0)(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
       vite-plugin-solid:
         specifier: 2.11.6
         version: 2.11.6(@testing-library/jest-dom@6.6.3)(solid-js@1.9.5)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
@@ -621,8 +621,8 @@ packages:
   '@astrojs/sitemap@3.3.0':
     resolution: {integrity: sha512-nYE4lKQtk+Kbrw/w0G0TTgT724co0jUsU4tPlHY9au5HmTBKbwiCLwO/15b1/y13aZ4Kr9ZbMeMHlXuwn0ty4Q==}
 
-  '@astrojs/solid-js@5.0.7':
-    resolution: {integrity: sha512-L4h88kGMiASNfug/n5Sxcjudei9anedxkah1Hpom/3JySONywcQy3w4oVuF3VVE1pUD/le5NeK1anFddT528DA==}
+  '@astrojs/solid-js@5.0.8':
+    resolution: {integrity: sha512-Q598DN21LzNvDfAYIXaPVHZPqJXtLcQmkxDt5cs0o2qLsuGGcUynub2MDvdr8XnaSfjsy6zkAedFE1z+B6KXng==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0}
     peerDependencies:
       solid-devtools: ^0.30.1
@@ -2118,8 +2118,18 @@ packages:
     cpu: [arm]
     os: [android]
 
+  '@rollup/rollup-android-arm-eabi@4.40.0':
+    resolution: {integrity: sha512-+Fbls/diZ0RDerhE8kyC6hjADCXA1K4yVNlH0EYfd2XjyH0UGgzaQ8MlT0pCXAThfxv3QUAczHaL+qSv1E4/Cg==}
+    cpu: [arm]
+    os: [android]
+
   '@rollup/rollup-android-arm64@4.39.0':
     resolution: {integrity: sha512-It9+M1zE31KWfqh/0cJLrrsCPiF72PoJjIChLX+rEcujVRCb4NLQ5QzFkzIZW8Kn8FTbvGQBY5TkKBau3S8cCQ==}
+    cpu: [arm64]
+    os: [android]
+
+  '@rollup/rollup-android-arm64@4.40.0':
+    resolution: {integrity: sha512-PPA6aEEsTPRz+/4xxAmaoWDqh67N7wFbgFUJGMnanCFs0TV99M0M8QhhaSCks+n6EbQoFvLQgYOGXxlMGQe/6w==}
     cpu: [arm64]
     os: [android]
 
@@ -2128,8 +2138,18 @@ packages:
     cpu: [arm64]
     os: [darwin]
 
+  '@rollup/rollup-darwin-arm64@4.40.0':
+    resolution: {integrity: sha512-GwYOcOakYHdfnjjKwqpTGgn5a6cUX7+Ra2HeNj/GdXvO2VJOOXCiYYlRFU4CubFM67EhbmzLOmACKEfvp3J1kQ==}
+    cpu: [arm64]
+    os: [darwin]
+
   '@rollup/rollup-darwin-x64@4.39.0':
     resolution: {integrity: sha512-mKXpNZLvtEbgu6WCkNij7CGycdw9cJi2k9v0noMb++Vab12GZjFgUXD69ilAbBh034Zwn95c2PNSz9xM7KYEAQ==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@rollup/rollup-darwin-x64@4.40.0':
+    resolution: {integrity: sha512-CoLEGJ+2eheqD9KBSxmma6ld01czS52Iw0e2qMZNpPDlf7Z9mj8xmMemxEucinev4LgHalDPczMyxzbq+Q+EtA==}
     cpu: [x64]
     os: [darwin]
 
@@ -2138,8 +2158,18 @@ packages:
     cpu: [arm64]
     os: [freebsd]
 
+  '@rollup/rollup-freebsd-arm64@4.40.0':
+    resolution: {integrity: sha512-r7yGiS4HN/kibvESzmrOB/PxKMhPTlz+FcGvoUIKYoTyGd5toHp48g1uZy1o1xQvybwwpqpe010JrcGG2s5nkg==}
+    cpu: [arm64]
+    os: [freebsd]
+
   '@rollup/rollup-freebsd-x64@4.39.0':
     resolution: {integrity: sha512-8RXIWvYIRK9nO+bhVz8DwLBepcptw633gv/QT4015CpJ0Ht8punmoHU/DuEd3iw9Hr8UwUV+t+VNNuZIWYeY7Q==}
+    cpu: [x64]
+    os: [freebsd]
+
+  '@rollup/rollup-freebsd-x64@4.40.0':
+    resolution: {integrity: sha512-mVDxzlf0oLzV3oZOr0SMJ0lSDd3xC4CmnWJ8Val8isp9jRGl5Dq//LLDSPFrasS7pSm6m5xAcKaw3sHXhBjoRw==}
     cpu: [x64]
     os: [freebsd]
 
@@ -2148,8 +2178,18 @@ packages:
     cpu: [arm]
     os: [linux]
 
+  '@rollup/rollup-linux-arm-gnueabihf@4.40.0':
+    resolution: {integrity: sha512-y/qUMOpJxBMy8xCXD++jeu8t7kzjlOCkoxxajL58G62PJGBZVl/Gwpm7JK9+YvlB701rcQTzjUZ1JgUoPTnoQA==}
+    cpu: [arm]
+    os: [linux]
+
   '@rollup/rollup-linux-arm-musleabihf@4.39.0':
     resolution: {integrity: sha512-+YDwhM6gUAyakl0CD+bMFpdmwIoRDzZYaTWV3SDRBGkMU/VpIBYXXEvkEcTagw/7VVkL2vA29zU4UVy1mP0/Yw==}
+    cpu: [arm]
+    os: [linux]
+
+  '@rollup/rollup-linux-arm-musleabihf@4.40.0':
+    resolution: {integrity: sha512-GoCsPibtVdJFPv/BOIvBKO/XmwZLwaNWdyD8TKlXuqp0veo2sHE+A/vpMQ5iSArRUz/uaoj4h5S6Pn0+PdhRjg==}
     cpu: [arm]
     os: [linux]
 
@@ -2158,8 +2198,18 @@ packages:
     cpu: [arm64]
     os: [linux]
 
+  '@rollup/rollup-linux-arm64-gnu@4.40.0':
+    resolution: {integrity: sha512-L5ZLphTjjAD9leJzSLI7rr8fNqJMlGDKlazW2tX4IUF9P7R5TMQPElpH82Q7eNIDQnQlAyiNVfRPfP2vM5Avvg==}
+    cpu: [arm64]
+    os: [linux]
+
   '@rollup/rollup-linux-arm64-musl@4.39.0':
     resolution: {integrity: sha512-vYanR6MtqC7Z2SNr8gzVnzUul09Wi1kZqJaek3KcIlI/wq5Xtq4ZPIZ0Mr/st/sv/NnaPwy/D4yXg5x0B3aUUA==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@rollup/rollup-linux-arm64-musl@4.40.0':
+    resolution: {integrity: sha512-ATZvCRGCDtv1Y4gpDIXsS+wfFeFuLwVxyUBSLawjgXK2tRE6fnsQEkE4csQQYWlBlsFztRzCnBvWVfcae/1qxQ==}
     cpu: [arm64]
     os: [linux]
 
@@ -2168,8 +2218,18 @@ packages:
     cpu: [loong64]
     os: [linux]
 
+  '@rollup/rollup-linux-loongarch64-gnu@4.40.0':
+    resolution: {integrity: sha512-wG9e2XtIhd++QugU5MD9i7OnpaVb08ji3P1y/hNbxrQ3sYEelKJOq1UJ5dXczeo6Hj2rfDEL5GdtkMSVLa/AOg==}
+    cpu: [loong64]
+    os: [linux]
+
   '@rollup/rollup-linux-powerpc64le-gnu@4.39.0':
     resolution: {integrity: sha512-0pCNnmxgduJ3YRt+D+kJ6Ai/r+TaePu9ZLENl+ZDV/CdVczXl95CbIiwwswu4L+K7uOIGf6tMo2vm8uadRaICQ==}
+    cpu: [ppc64]
+    os: [linux]
+
+  '@rollup/rollup-linux-powerpc64le-gnu@4.40.0':
+    resolution: {integrity: sha512-vgXfWmj0f3jAUvC7TZSU/m/cOE558ILWDzS7jBhiCAFpY2WEBn5jqgbqvmzlMjtp8KlLcBlXVD2mkTSEQE6Ixw==}
     cpu: [ppc64]
     os: [linux]
 
@@ -2178,8 +2238,18 @@ packages:
     cpu: [riscv64]
     os: [linux]
 
+  '@rollup/rollup-linux-riscv64-gnu@4.40.0':
+    resolution: {integrity: sha512-uJkYTugqtPZBS3Z136arevt/FsKTF/J9dEMTX/cwR7lsAW4bShzI2R0pJVw+hcBTWF4dxVckYh72Hk3/hWNKvA==}
+    cpu: [riscv64]
+    os: [linux]
+
   '@rollup/rollup-linux-riscv64-musl@4.39.0':
     resolution: {integrity: sha512-m6cwI86IvQ7M93MQ2RF5SP8tUjD39Y7rjb1qjHgYh28uAPVU8+k/xYWvxRO3/tBN2pZkSMa5RjnPuUIbrwVxeA==}
+    cpu: [riscv64]
+    os: [linux]
+
+  '@rollup/rollup-linux-riscv64-musl@4.40.0':
+    resolution: {integrity: sha512-rKmSj6EXQRnhSkE22+WvrqOqRtk733x3p5sWpZilhmjnkHkpeCgWsFFo0dGnUGeA+OZjRl3+VYq+HyCOEuwcxQ==}
     cpu: [riscv64]
     os: [linux]
 
@@ -2188,8 +2258,18 @@ packages:
     cpu: [s390x]
     os: [linux]
 
+  '@rollup/rollup-linux-s390x-gnu@4.40.0':
+    resolution: {integrity: sha512-SpnYlAfKPOoVsQqmTFJ0usx0z84bzGOS9anAC0AZ3rdSo3snecihbhFTlJZ8XMwzqAcodjFU4+/SM311dqE5Sw==}
+    cpu: [s390x]
+    os: [linux]
+
   '@rollup/rollup-linux-x64-gnu@4.39.0':
     resolution: {integrity: sha512-t9jqYw27R6Lx0XKfEFe5vUeEJ5pF3SGIM6gTfONSMb7DuG6z6wfj2yjcoZxHg129veTqU7+wOhY6GX8wmf90dA==}
+    cpu: [x64]
+    os: [linux]
+
+  '@rollup/rollup-linux-x64-gnu@4.40.0':
+    resolution: {integrity: sha512-RcDGMtqF9EFN8i2RYN2W+64CdHruJ5rPqrlYw+cgM3uOVPSsnAQps7cpjXe9be/yDp8UC7VLoCoKC8J3Kn2FkQ==}
     cpu: [x64]
     os: [linux]
 
@@ -2198,8 +2278,18 @@ packages:
     cpu: [x64]
     os: [linux]
 
+  '@rollup/rollup-linux-x64-musl@4.40.0':
+    resolution: {integrity: sha512-HZvjpiUmSNx5zFgwtQAV1GaGazT2RWvqeDi0hV+AtC8unqqDSsaFjPxfsO6qPtKRRg25SisACWnJ37Yio8ttaw==}
+    cpu: [x64]
+    os: [linux]
+
   '@rollup/rollup-win32-arm64-msvc@4.39.0':
     resolution: {integrity: sha512-jDrLm6yUtbOg2TYB3sBF3acUnAwsIksEYjLeHL+TJv9jg+TmTwdyjnDex27jqEMakNKf3RwwPahDIt7QXCSqRQ==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@rollup/rollup-win32-arm64-msvc@4.40.0':
+    resolution: {integrity: sha512-UtZQQI5k/b8d7d3i9AZmA/t+Q4tk3hOC0tMOMSq2GlMYOfxbesxG4mJSeDp0EHs30N9bsfwUvs3zF4v/RzOeTQ==}
     cpu: [arm64]
     os: [win32]
 
@@ -2208,8 +2298,18 @@ packages:
     cpu: [ia32]
     os: [win32]
 
+  '@rollup/rollup-win32-ia32-msvc@4.40.0':
+    resolution: {integrity: sha512-+m03kvI2f5syIqHXCZLPVYplP8pQch9JHyXKZ3AGMKlg8dCyr2PKHjwRLiW53LTrN/Nc3EqHOKxUxzoSPdKddA==}
+    cpu: [ia32]
+    os: [win32]
+
   '@rollup/rollup-win32-x64-msvc@4.39.0':
     resolution: {integrity: sha512-yAkUOkIKZlK5dl7u6dg897doBgLXmUHhIINM2c+sND3DZwnrdQkkSiDh7N75Ll4mM4dxSkYfXqU9fW3lLkMFug==}
+    cpu: [x64]
+    os: [win32]
+
+  '@rollup/rollup-win32-x64-msvc@4.40.0':
+    resolution: {integrity: sha512-lpPE1cLfP5oPzVjKMx10pgBmKELQnFJXHgvtHCtuJWOv8MxqdEIMNtgHgBFf7Ea2/7EuVwa9fodWUfXAlXZLZQ==}
     cpu: [x64]
     os: [win32]
 
@@ -6317,6 +6417,11 @@ packages:
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
+  rollup@4.40.0:
+    resolution: {integrity: sha512-Noe455xmA96nnqH5piFtLobsGbCij7Tu+tb3c1vYjNbTkfzGqXqQXG3wJaYXkRZuQ0vEYN4bhwg7QnIrqB5B+w==}
+    engines: {node: '>=18.0.0', npm: '>=8.0.0'}
+    hasBin: true
+
   router@2.1.0:
     resolution: {integrity: sha512-/m/NSLxeYEgWNtyC+WtNHCF7jbGxOibVWKnn+1Psff4dJGOfoXP+MuC/f2CwSmyiHdOIzYnYFp4W6GxWfekaLA==}
     engines: {node: '>= 18'}
@@ -7894,12 +7999,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.2.3(astro@5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.39.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))':
+  '@astrojs/mdx@4.2.3(astro@5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))':
     dependencies:
       '@astrojs/markdown-remark': 6.3.1
       '@mdx-js/mdx': 3.1.0(acorn@8.14.1)
       acorn: 8.14.1
-      astro: 5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.39.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)
+      astro: 5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)
       es-module-lexer: 1.6.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -7923,7 +8028,7 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.24.2
 
-  '@astrojs/solid-js@5.0.7(@testing-library/jest-dom@6.6.3)(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(solid-js@1.9.5)(terser@5.39.0)(yaml@2.7.1)':
+  '@astrojs/solid-js@5.0.8(@testing-library/jest-dom@6.6.3)(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(solid-js@1.9.5)(terser@5.39.0)(yaml@2.7.1)':
     dependencies:
       solid-js: 1.9.5
       vite: 6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)
@@ -7943,16 +8048,16 @@ snapshots:
       - tsx
       - yaml
 
-  '@astrojs/starlight@0.33.2(astro@5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.39.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))':
+  '@astrojs/starlight@0.33.2(astro@5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))':
     dependencies:
-      '@astrojs/mdx': 4.2.3(astro@5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.39.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
+      '@astrojs/mdx': 4.2.3(astro@5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
       '@astrojs/sitemap': 3.3.0
       '@pagefind/default-ui': 1.3.0
       '@types/hast': 3.0.4
       '@types/js-yaml': 4.0.9
       '@types/mdast': 4.0.4
-      astro: 5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.39.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)
-      astro-expressive-code: 0.41.1(astro@5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.39.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
+      astro: 5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)
+      astro-expressive-code: 0.41.1(astro@5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
       bcp-47: 2.1.0
       hast-util-from-html: 2.0.3
       hast-util-select: 6.0.4
@@ -9014,9 +9119,9 @@ snapshots:
 
   '@microsoft/tsdoc@0.15.1': {}
 
-  '@modyfi/vite-plugin-yaml@1.1.0(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))':
+  '@modyfi/vite-plugin-yaml@1.1.0(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))':
     dependencies:
-      '@rollup/pluginutils': 5.1.0(rollup@4.39.0)
+      '@rollup/pluginutils': 5.1.0(rollup@4.40.0)
       js-yaml: 4.1.0
       tosource: 2.0.0-alpha.3
       vite: 6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)
@@ -9024,9 +9129,9 @@ snapshots:
       - rollup
     optional: true
 
-  '@modyfi/vite-plugin-yaml@1.1.1(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))':
+  '@modyfi/vite-plugin-yaml@1.1.1(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))':
     dependencies:
-      '@rollup/pluginutils': 5.1.0(rollup@4.39.0)
+      '@rollup/pluginutils': 5.1.0(rollup@4.40.0)
       js-yaml: 4.1.0
       tosource: 2.0.0-alpha.3
       vite: 6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)
@@ -9370,90 +9475,150 @@ snapshots:
 
   '@polka/url@1.0.0-next.28': {}
 
-  '@rollup/plugin-node-resolve@16.0.1(rollup@4.39.0)':
+  '@rollup/plugin-node-resolve@16.0.1(rollup@4.40.0)':
     dependencies:
-      '@rollup/pluginutils': 5.1.4(rollup@4.39.0)
+      '@rollup/pluginutils': 5.1.4(rollup@4.40.0)
       '@types/resolve': 1.20.2
       deepmerge: 4.3.1
       is-module: 1.0.0
       resolve: 1.22.10
     optionalDependencies:
-      rollup: 4.39.0
+      rollup: 4.40.0
 
-  '@rollup/pluginutils@5.1.0(rollup@4.39.0)':
+  '@rollup/pluginutils@5.1.0(rollup@4.40.0)':
     dependencies:
       '@types/estree': 1.0.7
       estree-walker: 2.0.2
       picomatch: 2.3.1
     optionalDependencies:
-      rollup: 4.39.0
+      rollup: 4.40.0
 
-  '@rollup/pluginutils@5.1.4(rollup@4.39.0)':
+  '@rollup/pluginutils@5.1.4(rollup@4.40.0)':
     dependencies:
       '@types/estree': 1.0.6
       estree-walker: 2.0.2
       picomatch: 4.0.2
     optionalDependencies:
-      rollup: 4.39.0
+      rollup: 4.40.0
 
   '@rollup/rollup-android-arm-eabi@4.39.0':
+    optional: true
+
+  '@rollup/rollup-android-arm-eabi@4.40.0':
     optional: true
 
   '@rollup/rollup-android-arm64@4.39.0':
     optional: true
 
+  '@rollup/rollup-android-arm64@4.40.0':
+    optional: true
+
   '@rollup/rollup-darwin-arm64@4.39.0':
+    optional: true
+
+  '@rollup/rollup-darwin-arm64@4.40.0':
     optional: true
 
   '@rollup/rollup-darwin-x64@4.39.0':
     optional: true
 
+  '@rollup/rollup-darwin-x64@4.40.0':
+    optional: true
+
   '@rollup/rollup-freebsd-arm64@4.39.0':
+    optional: true
+
+  '@rollup/rollup-freebsd-arm64@4.40.0':
     optional: true
 
   '@rollup/rollup-freebsd-x64@4.39.0':
     optional: true
 
+  '@rollup/rollup-freebsd-x64@4.40.0':
+    optional: true
+
   '@rollup/rollup-linux-arm-gnueabihf@4.39.0':
+    optional: true
+
+  '@rollup/rollup-linux-arm-gnueabihf@4.40.0':
     optional: true
 
   '@rollup/rollup-linux-arm-musleabihf@4.39.0':
     optional: true
 
+  '@rollup/rollup-linux-arm-musleabihf@4.40.0':
+    optional: true
+
   '@rollup/rollup-linux-arm64-gnu@4.39.0':
+    optional: true
+
+  '@rollup/rollup-linux-arm64-gnu@4.40.0':
     optional: true
 
   '@rollup/rollup-linux-arm64-musl@4.39.0':
     optional: true
 
+  '@rollup/rollup-linux-arm64-musl@4.40.0':
+    optional: true
+
   '@rollup/rollup-linux-loongarch64-gnu@4.39.0':
+    optional: true
+
+  '@rollup/rollup-linux-loongarch64-gnu@4.40.0':
     optional: true
 
   '@rollup/rollup-linux-powerpc64le-gnu@4.39.0':
     optional: true
 
+  '@rollup/rollup-linux-powerpc64le-gnu@4.40.0':
+    optional: true
+
   '@rollup/rollup-linux-riscv64-gnu@4.39.0':
+    optional: true
+
+  '@rollup/rollup-linux-riscv64-gnu@4.40.0':
     optional: true
 
   '@rollup/rollup-linux-riscv64-musl@4.39.0':
     optional: true
 
+  '@rollup/rollup-linux-riscv64-musl@4.40.0':
+    optional: true
+
   '@rollup/rollup-linux-s390x-gnu@4.39.0':
+    optional: true
+
+  '@rollup/rollup-linux-s390x-gnu@4.40.0':
     optional: true
 
   '@rollup/rollup-linux-x64-gnu@4.39.0':
     optional: true
 
+  '@rollup/rollup-linux-x64-gnu@4.40.0':
+    optional: true
+
   '@rollup/rollup-linux-x64-musl@4.39.0':
+    optional: true
+
+  '@rollup/rollup-linux-x64-musl@4.40.0':
     optional: true
 
   '@rollup/rollup-win32-arm64-msvc@4.39.0':
     optional: true
 
+  '@rollup/rollup-win32-arm64-msvc@4.40.0':
+    optional: true
+
   '@rollup/rollup-win32-ia32-msvc@4.39.0':
     optional: true
 
+  '@rollup/rollup-win32-ia32-msvc@4.40.0':
+    optional: true
+
   '@rollup/rollup-win32-x64-msvc@4.39.0':
+    optional: true
+
+  '@rollup/rollup-win32-x64-msvc@4.40.0':
     optional: true
 
   '@rushstack/node-core-library@5.12.0(@types/node@22.14.1)':
@@ -9600,68 +9765,68 @@ snapshots:
     optionalDependencies:
       '@solidjs/router': 0.15.3(solid-js@1.9.5)
 
-  '@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))':
+  '@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))':
     optionalDependencies:
-      '@modyfi/vite-plugin-yaml': 1.1.0(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
+      '@modyfi/vite-plugin-yaml': 1.1.0(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
 
-  '@spuxx/js-utils@1.5.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))':
+  '@spuxx/js-utils@1.5.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))':
     optionalDependencies:
-      '@modyfi/vite-plugin-yaml': 1.1.1(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
+      '@modyfi/vite-plugin-yaml': 1.1.1(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
 
-  '@spuxx/nest-auth@1.0.1(hveln7yubaflmxqf4orv4jm6xq)':
+  '@spuxx/nest-auth@1.0.1(o7l654anfqwzzowvxbu4gsetva)':
     dependencies:
       '@nanogiants/nestjs-swagger-api-exception-decorator': 1.7.2(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/swagger@11.1.4(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2))
       '@nestjs/common': 11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core': 11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/swagger': 11.1.4(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)
-      '@spuxx/js-utils': 1.5.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))
+      '@spuxx/js-utils': 1.5.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))
       class-transformer: 0.5.1
       class-validator: 0.14.1
       express-openid-connect: 2.18.0(express@5.0.1)
       reflect-metadata: 0.2.2
       rxjs: 7.8.2
 
-  '@spuxx/nest-auth@1.0.2(vyzlwf4acolpgxut6r4nnofnpu)':
+  '@spuxx/nest-auth@1.0.2(tnvxgs7w7uitv7rh3dgvhwug74)':
     dependencies:
       '@nanogiants/nestjs-swagger-api-exception-decorator': 1.7.2(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/swagger@11.1.4(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2))
       '@nestjs/common': 11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core': 11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/swagger': 11.1.4(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)
-      '@spuxx/js-utils': 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))
+      '@spuxx/js-utils': 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))
       class-transformer: 0.5.1
       class-validator: 0.14.1
       express-openid-connect: 2.18.0(express@5.0.1)
       reflect-metadata: 0.2.2
       rxjs: 7.8.2
 
-  '@spuxx/nest-testing@2.0.2(6awytcu5m65i7h7sgydkulbno4)':
+  '@spuxx/nest-testing@2.0.2(lpvvwtrglhrenj5cymdk4dad3q)':
     dependencies:
       '@nestjs/common': 11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core': 11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/testing': 11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11))
-      '@spuxx/js-utils': 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))
-      '@spuxx/nest-auth': 1.0.2(vyzlwf4acolpgxut6r4nnofnpu)
-      '@spuxx/nest-utils': 4.0.0(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/swagger@11.1.4(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2))(@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))))(class-transformer@0.5.1)(class-validator@0.14.1)(dotenv@16.5.0)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@spuxx/js-utils': 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))
+      '@spuxx/nest-auth': 1.0.2(tnvxgs7w7uitv7rh3dgvhwug74)
+      '@spuxx/nest-utils': 4.0.0(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/swagger@11.1.4(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2))(@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))))(class-transformer@0.5.1)(class-validator@0.14.1)(dotenv@16.5.0)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       supertest: 7.0.0
 
-  '@spuxx/nest-utils@4.0.0(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/swagger@11.1.4(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2))(@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))))(class-transformer@0.5.1)(class-validator@0.14.1)(dotenv@16.5.0)(reflect-metadata@0.2.2)(rxjs@7.8.2)':
+  '@spuxx/nest-utils@4.0.0(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/swagger@11.1.4(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2))(@spuxx/js-utils@1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))))(class-transformer@0.5.1)(class-validator@0.14.1)(dotenv@16.5.0)(reflect-metadata@0.2.2)(rxjs@7.8.2)':
     dependencies:
       '@nestjs/common': 11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core': 11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/swagger': 11.1.4(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)
-      '@spuxx/js-utils': 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))
+      '@spuxx/js-utils': 1.3.0(@modyfi/vite-plugin-yaml@1.1.0(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))
       class-transformer: 0.5.1
       class-validator: 0.14.1
       dotenv: 16.5.0
       reflect-metadata: 0.2.2
       rxjs: 7.8.2
 
-  '@spuxx/nest-utils@4.0.0(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/swagger@11.1.4(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2))(@spuxx/js-utils@1.5.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))))(class-transformer@0.5.1)(class-validator@0.14.1)(dotenv@16.5.0)(reflect-metadata@0.2.2)(rxjs@7.8.2)':
+  '@spuxx/nest-utils@4.0.0(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/swagger@11.1.4(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2))(@spuxx/js-utils@1.5.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))))(class-transformer@0.5.1)(class-validator@0.14.1)(dotenv@16.5.0)(reflect-metadata@0.2.2)(rxjs@7.8.2)':
     dependencies:
       '@nestjs/common': 11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core': 11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/swagger': 11.1.4(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.0.11(@nestjs/common@11.0.17(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/platform-express@11.0.11)(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)
-      '@spuxx/js-utils': 1.5.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))
+      '@spuxx/js-utils': 1.5.0(@modyfi/vite-plugin-yaml@1.1.1(rollup@4.40.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)))
       class-transformer: 0.5.1
       class-validator: 0.14.1
       dotenv: 16.5.0
@@ -10630,19 +10795,19 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-expressive-code@0.41.1(astro@5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.39.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)):
+  astro-expressive-code@0.41.1(astro@5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)):
     dependencies:
-      astro: 5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.39.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)
+      astro: 5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)
       rehype-expressive-code: 0.41.1
 
-  astro@5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.39.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1):
+  astro@5.5.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1):
     dependencies:
       '@astrojs/compiler': 2.11.0
       '@astrojs/internal-helpers': 0.6.1
       '@astrojs/markdown-remark': 6.3.1
       '@astrojs/telemetry': 3.2.0
       '@oslojs/encoding': 1.1.0
-      '@rollup/pluginutils': 5.1.4(rollup@4.39.0)
+      '@rollup/pluginutils': 5.1.4(rollup@4.40.0)
       acorn: 8.14.1
       aria-query: 5.3.2
       axobject-query: 4.1.0
@@ -14625,6 +14790,33 @@ snapshots:
       '@rollup/rollup-win32-x64-msvc': 4.39.0
       fsevents: 2.3.3
 
+  rollup@4.40.0:
+    dependencies:
+      '@types/estree': 1.0.7
+    optionalDependencies:
+      '@rollup/rollup-android-arm-eabi': 4.40.0
+      '@rollup/rollup-android-arm64': 4.40.0
+      '@rollup/rollup-darwin-arm64': 4.40.0
+      '@rollup/rollup-darwin-x64': 4.40.0
+      '@rollup/rollup-freebsd-arm64': 4.40.0
+      '@rollup/rollup-freebsd-x64': 4.40.0
+      '@rollup/rollup-linux-arm-gnueabihf': 4.40.0
+      '@rollup/rollup-linux-arm-musleabihf': 4.40.0
+      '@rollup/rollup-linux-arm64-gnu': 4.40.0
+      '@rollup/rollup-linux-arm64-musl': 4.40.0
+      '@rollup/rollup-linux-loongarch64-gnu': 4.40.0
+      '@rollup/rollup-linux-powerpc64le-gnu': 4.40.0
+      '@rollup/rollup-linux-riscv64-gnu': 4.40.0
+      '@rollup/rollup-linux-riscv64-musl': 4.40.0
+      '@rollup/rollup-linux-s390x-gnu': 4.40.0
+      '@rollup/rollup-linux-x64-gnu': 4.40.0
+      '@rollup/rollup-linux-x64-musl': 4.40.0
+      '@rollup/rollup-win32-arm64-msvc': 4.40.0
+      '@rollup/rollup-win32-ia32-msvc': 4.40.0
+      '@rollup/rollup-win32-x64-msvc': 4.40.0
+      fsevents: 2.3.3
+    optional: true
+
   router@2.1.0:
     dependencies:
       is-promise: 4.0.0
@@ -15574,9 +15766,9 @@ snapshots:
 
   unpipe@1.0.0: {}
 
-  unplugin-swc@1.5.1(@swc/core@1.7.22)(rollup@4.39.0):
+  unplugin-swc@1.5.1(@swc/core@1.7.22)(rollup@4.40.0):
     dependencies:
-      '@rollup/pluginutils': 5.1.4(rollup@4.39.0)
+      '@rollup/pluginutils': 5.1.4(rollup@4.40.0)
       '@swc/core': 1.7.22
       load-tsconfig: 0.2.5
       unplugin: 1.12.0
@@ -15681,10 +15873,10 @@ snapshots:
       - tsx
       - yaml
 
-  vite-plugin-dts@4.5.3(@types/node@22.14.1)(rollup@4.39.0)(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)):
+  vite-plugin-dts@4.5.3(@types/node@22.14.1)(rollup@4.40.0)(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1)):
     dependencies:
       '@microsoft/api-extractor': 7.52.1(@types/node@22.14.1)
-      '@rollup/pluginutils': 5.1.4(rollup@4.39.0)
+      '@rollup/pluginutils': 5.1.4(rollup@4.40.0)
       '@volar/typescript': 2.4.11
       '@vue/language-core': 2.2.0(typescript@5.8.3)
       compare-versions: 6.1.1
