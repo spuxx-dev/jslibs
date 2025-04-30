@@ -11,4 +11,22 @@ html.spx-app {
       filter: var(--spx-filter-control-hover);
     }
   }
+
+  pre.astro-code {
+    padding: 0.5rem;
+    border-radius: var(--spx-border-radius);
+  }
+
+  pre.astro-code,
+  code,
+  blockquote {
+    background: var(--spx-color-surface) !important;
+  }
+
+  blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--spx-border-radius);
+  }
 }
