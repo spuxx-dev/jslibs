@@ -26,6 +26,12 @@
   }
 }
 
+.spx-app-bar-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 @media only screen and (min-width: 960px) {
   html.spx-app {
     > body {
