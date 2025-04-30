@@ -4,6 +4,7 @@
   justify-content: center;
   gap: 0.25rem;
   padding: 0.25rem 0.75rem;
+  box-sizing: border-box;
   background: none;
   border: none;
   border-radius: var(--spx-border-radius);
@@ -62,4 +63,8 @@
 .spx-button[spx-size='large'] {
   min-width: var(--spx-control-width-large);
   max-width: min(var(--spx-control-width-large), 100%);
+}
+
+a.spx-button {
+  text-decoration: none;
 }
