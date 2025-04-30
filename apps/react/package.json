@@ -17,9 +17,9 @@
     "@modyfi/vite-plugin-yaml": "1.1.1",
     "@types/react": "19.1.2",
     "@types/react-dom": "19.0.4",
-    "@vitejs/plugin-react": "4.3.4",
+    "@vitejs/plugin-react": "4.4.1",
     "typescript": "5.8.3",
-    "vite": "6.2.6",
+    "vite": "6.3.3",
     "vite-tsconfig-paths": "5.1.4"
   }
 }
