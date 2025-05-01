@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.7.0](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.6.1...browser-utils-v1.7.0) (2025-04-30)
+
+
+### Features
+
+* **styles:** Add new spacing variables ([ca54e17](https://github.com/spuxx-dev/jslibs/commit/ca54e17913015174c0ee8dde733c3611c96ce65f))
+
+
+### Bug Fixes
+
+* Fixed a layouting problem with AppBar.Section ([eed9ed9](https://github.com/spuxx-dev/jslibs/commit/eed9ed9dd630b56ef4ea83ab5afb4244fad0b0ca))
+* Fixed a visual issue with Button and ButtonLink ([c0a1873](https://github.com/spuxx-dev/jslibs/commit/c0a1873d246496e178b0490e3083524052e6ed84))
+* Improved code block visuals ([dd67500](https://github.com/spuxx-dev/jslibs/commit/dd67500c177ee0c4c09c74c999a78cf6f76d5627))
+* **types:** Add missing `BaseColor.accent` ([0df509f](https://github.com/spuxx-dev/jslibs/commit/0df509ffd4a9dff3a650f4ad9a36501bb27d9ee3))
+
 ## [1.6.1](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.6.0...browser-utils-v1.6.1) (2025-04-18)
 
 
