@@ -17,7 +17,7 @@
     "@nestjs/common": "11.0.17",
     "@nestjs/core": "11.0.20",
     "@nestjs/platform-express": "11.1.0",
-    "@nestjs/swagger": "11.1.4",
+    "@nestjs/swagger": "11.2.0",
     "@spuxx/js-utils": "workspace:@spuxx/js-utils@*",
     "@spuxx/nest-auth": "workspace:@spuxx/nest-auth@*",
     "@spuxx/nest-utils": "workspace:@spuxx/nest-utils@*",
