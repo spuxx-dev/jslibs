@@ -39,24 +39,16 @@ export default defineConfig({
     coverage: {
       enabled: true,
       all: true,
-      provider: 'v8',
+      provider: 'istanbul',
       include: ['src/**/*.{ts,tsx}'],
       exclude: ['src/main.ts', '**/index.ts', '**/*types.ts', '**/*.d.ts'],
       reportsDirectory: 'reports/vitest/coverage',
       reporter: ['text', 'json'],
     },
-    // browser: {
-    //   enabled: false,
-    //   provider: 'playwright',
-    //   // TODO: When we uncomment this, we run into this issue:
-    //   // https://github.com/solidjs/vite-plugin-solid/issues/170
-    //   // instances: [
-    //   // { browser: 'chromium' },
-    //   // TODO: According to vitest, only istanbul supports collecting coverage from
-    //   // multiple browser instances. Do we need to switch to istanbul?
-    //   // { browser: "firefox" },
-    //   // { browser: "webkit" },
-    //   // ],
-    // },
+    browser: {
+      enabled: false,
+      provider: 'playwright',
+      instances: [{ browser: 'firefox' }],
+    },
   },
 });
