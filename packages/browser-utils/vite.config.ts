@@ -32,12 +32,17 @@ export default defineConfig({
     reporters: ['default', 'junit'],
     outputFile: 'reports/junit/junit.xml',
     coverage: {
-      provider: 'v8',
+      provider: 'istanbul',
       all: true,
       include: ['src/**/*.ts'],
       exclude: ['src/main.ts', '**/index.ts', '**/*types.ts', '**/*.d.ts'],
       reportsDirectory: 'reports/vitest/coverage',
       reporter: ['text', 'json'],
+    },
+    browser: {
+      enabled: false,
+      provider: 'playwright',
+      instances: [{ browser: 'chromium' }, { browser: 'firefox' }],
     },
   },
 });
