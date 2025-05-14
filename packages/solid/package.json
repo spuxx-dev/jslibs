@@ -73,7 +73,8 @@
   },
   "dependencies": {
     "@corvu/dialog": "0.2.4",
-    "@corvu/drawer": "0.2.3"
+    "@corvu/drawer": "0.2.4",
+    "@corvu/accordion": "0.2.5"
   },
   "pnpm": {
     "patchedDependencies": {

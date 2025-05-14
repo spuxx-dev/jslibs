@@ -36,6 +36,9 @@ html *,
   --spx-color-error: #b91c1c;
   --spx-color-on-error: var(--spx-color-text-default);
 
+  /* Additional Colors */
+  --spx-color-sidebar-item-active: var(--spx-color-accent);
+
   /* Input Fields, Selects and similar controls */
   --spx-color-input-contained-bg: var(--spx-color-secondary);
   --spx-color-input-outlined-fg: var(--spx-color-text-subtle);

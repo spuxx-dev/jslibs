@@ -1,9 +1,11 @@
 import { Button, ButtonLink, Layout, Sidebar } from '@spuxx/solid';
 import { UserAgent } from '@spuxx/browser-utils';
 import { For, Show } from 'solid-js';
-import { routes } from '../../routes/routes';
+import { getNavigationGroups } from '../../components/navigation';
 
 export const SideNav = () => {
+  const groups = getNavigationGroups();
+
   return (
     <Sidebar side="left">
       <Sidebar.Toolbar>
@@ -28,18 +30,25 @@ export const SideNav = () => {
         <Button icon="mdi:gear" title="Settings" variant="colored" color="text-default" />
       </Sidebar.Toolbar>
       <Sidebar.Content>
-        <nav>
-          <ul>
-            <For each={routes}>
-              {(route) => (
-                <li>
-                  <ButtonLink class="decoration-transparent" href={route.path}>
-                    {route.path}
-                  </ButtonLink>
-                </li>
-              )}
-            </For>
-          </ul>
+        <nav class="all-inherit">
+          <For each={groups}>
+            {(group) => (
+              <Sidebar.Group title={group.title} icon="mdi:home">
+                <For each={group.routes}>
+                  {(route) => (
+                    <ButtonLink
+                      class="decoration-transparent"
+                      href={route.path}
+                      variant="colored"
+                      color="text-default"
+                    >
+                      {route.path}
+                    </ButtonLink>
+                  )}
+                </For>
+              </Sidebar.Group>
+            )}
+          </For>
         </nav>
       </Sidebar.Content>
     </Sidebar>

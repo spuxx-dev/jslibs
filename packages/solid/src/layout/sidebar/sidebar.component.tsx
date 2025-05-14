@@ -6,10 +6,12 @@ import { attributes, classNames } from '@src/main';
 import { SidebarToolbar } from './areas/toolbar';
 import { SidebarContent } from './areas/content/sidebar-content.component';
 import { UserAgent } from '@spuxx/browser-utils';
+import { SidebarGroup } from './components/group/sidebar-group.component';
 
 const Sidebar: Component<SidebarProps> & {
   Toolbar: typeof SidebarToolbar;
   Content: typeof SidebarContent;
+  Group: typeof SidebarGroup;
 } = (props) => {
   const { side = 'left' } = props;
   const handleOpenChange = (open: boolean) => {
@@ -50,5 +52,6 @@ const Sidebar: Component<SidebarProps> & {
 
 Sidebar.Toolbar = SidebarToolbar;
 Sidebar.Content = SidebarContent;
+Sidebar.Group = SidebarGroup;
 
 export { Sidebar };

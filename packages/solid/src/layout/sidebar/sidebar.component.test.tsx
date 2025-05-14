@@ -125,4 +125,52 @@ describe('Sidebar', () => {
       expect(content).toHaveStyle({ color: 'rgb(255,0,0)' });
     });
   });
+
+  describe('Group', () => {
+    it('should render with default values', () => {
+      const { container } = render(() => <Sidebar.Group title="Hello World!"></Sidebar.Group>);
+      const group = container.querySelector('.spx-sidebar-group') as HTMLDivElement;
+      expect(group).toBeInTheDocument();
+      expect(group).toHaveClass('spx', 'spx-sidebar-group');
+      const trigger = group.querySelector('button') as HTMLButtonElement;
+      expect(trigger).toHaveTextContent('Hello World!');
+      expect(trigger).toHaveClass('spx-button', 'spx-sidebar-group-trigger');
+      expect(trigger).toHaveAttribute('spx-variant', 'colored');
+      expect(trigger).toHaveAttribute('spx-color', 'text-default');
+    });
+
+    it('should render with custom values', () => {
+      const { container } = render(() => (
+        <Sidebar.Group
+          title="Hello World!"
+          class="my-class"
+          style={{ color: 'rgb(255,0,0)' }}
+          attrs={{ id: '123' }}
+          variant="outlined"
+          color="primary"
+        ></Sidebar.Group>
+      ));
+      const group = container.querySelector('.spx-sidebar-group') as HTMLDivElement;
+      expect(group).toBeInTheDocument();
+      expect(group).toHaveClass('spx', 'spx-sidebar-group', 'my-class');
+      expect(group).toHaveStyle({ color: 'rgb(255,0,0)' });
+      expect(group).toHaveAttribute('id', '123');
+      const trigger = group.querySelector('button') as HTMLButtonElement;
+      expect(trigger).toHaveAttribute('spx-variant', 'outlined');
+      expect(trigger).toHaveAttribute('spx-color', 'primary');
+    });
+
+    it('should show and hide the content when trigger is clicked', async () => {
+      const { container, queryByText } = render(() => (
+        <Sidebar.Group title="Hello World!">Foo</Sidebar.Group>
+      ));
+      const group = container.querySelector('.spx-sidebar-group') as HTMLDivElement;
+      const trigger = group.querySelector('button') as HTMLButtonElement;
+      expect(queryByText('Foo')).not.toBeInTheDocument();
+      trigger.click();
+      expect(queryByText('Foo')).toBeInTheDocument();
+      trigger.click();
+      expect(queryByText('Foo')).not.toBeInTheDocument();
+    });
+  });
 });
