@@ -15,7 +15,7 @@
   "dependencies": {
     "@nanogiants/nestjs-swagger-api-exception-decorator": "1.7.2",
     "@nestjs/common": "11.1.0",
-    "@nestjs/core": "11.0.20",
+    "@nestjs/core": "11.1.0",
     "@nestjs/platform-express": "11.1.0",
     "@nestjs/swagger": "11.2.0",
     "@spuxx/js-utils": "workspace:@spuxx/js-utils@*",
@@ -30,7 +30,7 @@
     "@spuxx/nest-testing": "workspace:@spuxx/nest-testing@*",
     "@types/express": "5.0.1",
     "@vitest/coverage-v8": "3.1.1",
-    "express-openid-connect": "2.18.0",
+    "express-openid-connect": "2.18.1",
     "source-map-support": "0.5.21",
     "ts-loader": "9.5.2",
     "ts-node": "10.9.2",
