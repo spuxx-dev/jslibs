@@ -18,7 +18,7 @@
     "@spuxx/browser-utils": "workspace:@spuxx/browser-utils@*",
     "@spuxx/js-utils": "workspace:@spuxx/js-utils@*",
     "@spuxx/solid": "workspace:@spuxx/solid@*",
-    "astro": "5.7.8",
+    "astro": "5.7.13",
     "sharp": "0.34.1",
     "solid-js": "1.9.6",
     "typescript": "5.8.3",
