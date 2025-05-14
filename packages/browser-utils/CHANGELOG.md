@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.7.0...browser-utils-v1.8.0) (2025-05-14)
+
+
+### Features
+
+* **layout:** Implement sidebar group component and styles ([619c817](https://github.com/spuxx-dev/jslibs/commit/619c8174c3e9d6659a63041a2ffb1bf8698825e5))
+
 ## [1.7.0](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.6.1...browser-utils-v1.7.0) (2025-04-30)
 
 
