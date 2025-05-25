@@ -40,6 +40,7 @@ export default defineConfig({
       enabled: true,
       all: true,
       provider: 'v8',
+      thresholds: { branches: 95, lines: 95 },
       include: ['src/**/*.{ts,tsx}'],
       exclude: ['src/main.ts', '**/index.ts', '**/*types.ts', '**/*.d.ts'],
       reportsDirectory: 'reports/vitest/coverage',

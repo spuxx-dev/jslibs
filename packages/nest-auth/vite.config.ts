@@ -61,6 +61,7 @@ export default defineConfig({
     coverage: {
       provider: 'v8',
       all: true,
+      thresholds: { branches: 95, lines: 95 },
       include: ['**/*.ts'],
       reportsDirectory: 'reports/vitest/coverage',
       reporter: ['text', 'json'],
