@@ -47,30 +47,3 @@ export default defineConfig({
     },
   },
 });
-
-// export default defineConfig(
-//   mergeConfig(defaultConfig, {
-//     plugins: [
-//       // Server build
-//       solidPlugin({
-//         ssr: true,
-//         solid: {
-//           generate: 'ssr',
-//           hydratable: true,
-//         },
-//       }),
-//     ],
-//     build: {
-//       emptyOutDir: false,
-//       rollupOptions: {
-//         output: [
-//           {
-//             // Server build
-//             dir: 'dist',
-//             entryFileNames: 'server.js',
-//           },
-//         ],
-//       },
-//     },
-//   }),
-// );
