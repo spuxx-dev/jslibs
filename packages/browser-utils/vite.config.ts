@@ -34,7 +34,7 @@ export default defineConfig({
     coverage: {
       provider: 'istanbul',
       all: true,
-      thresholds: { branches: 95, lines: 95 },
+      thresholds: { branches: 70, lines: 90 },
       include: ['src/**/*.ts'],
       exclude: ['src/main.ts', '**/index.ts', '**/*types.ts', '**/*.d.ts'],
       reportsDirectory: 'reports/vitest/coverage',

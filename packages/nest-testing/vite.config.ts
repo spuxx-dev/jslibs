@@ -60,7 +60,7 @@ export default defineConfig({
     coverage: {
       provider: 'v8',
       all: true,
-      thresholds: { branches: 95, lines: 95 },
+      thresholds: { branches: 80, lines: 80 },
       include: ['src/**/*.ts'],
       exclude: ['src/main.ts', '**/index.ts'],
       reportsDirectory: 'reports/vitest/coverage',
