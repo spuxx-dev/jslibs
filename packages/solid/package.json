@@ -45,8 +45,8 @@
     "types": "tsc --noEmit",
     "test": "pnpm test:vitest",
     "test:vitest": "playwright install && vitest --browser.headless",
-    "test:vitest:browser": "playwright install && vitest --workspace=vitest.workspace.ts",
-    "test:vitest:watch": "playwright install && vitest --workspace=vitest.workspace.ts --inspect --no-file-parallelism --watch"
+    "test:vitest:browser": "playwright install && vitest",
+    "test:vitest:watch": "playwright install && vitest --inspect --no-file-parallelism --watch"
   },
   "devDependencies": {
     "@solidjs/testing-library": "0.8.10",

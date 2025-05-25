@@ -39,16 +39,17 @@ export default defineConfig({
     coverage: {
       enabled: true,
       all: true,
-      provider: 'istanbul',
+      provider: 'v8',
       include: ['src/**/*.{ts,tsx}'],
       exclude: ['src/main.ts', '**/index.ts', '**/*types.ts', '**/*.d.ts'],
       reportsDirectory: 'reports/vitest/coverage',
       reporter: ['text', 'json'],
     },
     browser: {
-      enabled: false,
+      enabled: true,
       provider: 'playwright',
-      instances: [{ browser: 'firefox' }],
+      name: 'chromium', // deprecated, but I think the vite solid package uses it still
+      instances: [{ name: 'chromium', browser: 'chromium' }],
     },
   },
 });

@@ -12,6 +12,7 @@ describe('ButtonLink', () => {
     expect(link).toHaveAttribute('spx-variant', 'contained');
     expect(link).toHaveAttribute('spx-color', 'primary');
     expect(link).not.toHaveAttribute('spx-rounded');
+    expect(link).not.toHaveAttribute('aria-current');
   });
 
   it('should render with custom values', () => {
@@ -22,6 +23,7 @@ describe('ButtonLink', () => {
         variant="outlined"
         color="secondary"
         rounded
+        active
         class="my-class"
         style={{ width: '1337px' }}
         attrs={{
@@ -38,6 +40,7 @@ describe('ButtonLink', () => {
     expect(link).toHaveAttribute('spx-variant', 'outlined');
     expect(link).toHaveAttribute('spx-color', 'secondary');
     expect(link).toHaveAttribute('spx-rounded');
+    expect(link).toHaveAttribute('aria-current', 'page');
     expect(link).toHaveClass('my-class');
     expect(link).toHaveAttribute('id', 'link');
     expect(link).toHaveStyle({ width: '1337px' });
