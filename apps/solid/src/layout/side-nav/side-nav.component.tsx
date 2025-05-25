@@ -1,10 +1,12 @@
 import { Button, ButtonLink, Layout, Sidebar } from '@spuxx/solid';
 import { UserAgent } from '@spuxx/browser-utils';
-import { For, Show } from 'solid-js';
+import { Component, For, Show } from 'solid-js';
 import { getNavigationGroups } from '../../components/navigation';
+import { useLocation } from '@solidjs/router';
 
-export const SideNav = () => {
+export const SideNav: Component = () => {
   const groups = getNavigationGroups();
+  const location = useLocation();
 
   return (
     <Sidebar side="left">
@@ -37,10 +39,12 @@ export const SideNav = () => {
                 <For each={group.routes}>
                   {(route) => (
                     <ButtonLink
-                      class="decoration-transparent"
+                      class="decoration-transsparent"
                       href={route.path}
                       variant="colored"
                       color="text-default"
+                      active={location.pathname === route.path}
+                      onClick={Layout.closeSidebarOnMobile}
                     >
                       {route.path}
                     </ButtonLink>

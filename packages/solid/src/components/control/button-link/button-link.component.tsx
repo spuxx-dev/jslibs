@@ -26,6 +26,7 @@ export const ButtonLink: Component<ButtonLinkProps> = (props) => {
       spx-color={color}
       spx-size={size || undefined}
       spx-rounded={rounded || undefined}
+      aria-current={props.active ? 'page' : undefined}
       onClick={handleClick}
       {...classNames('spx-button', props.class)}
     >
@@ -36,7 +37,13 @@ export const ButtonLink: Component<ButtonLinkProps> = (props) => {
       <Show when={typeof props.icon === 'object'}>{props.icon as JSX.Element}</Show>
 
       {/* Content */}
-      {props.children && <span class="spx-button-content">{props.children}</span>}
+      {props.children && (
+        <span class="spx-button-content">
+          {' '}
+          {props.active}
+          {props.children}
+        </span>
+      )}
     </a>
   );
 };

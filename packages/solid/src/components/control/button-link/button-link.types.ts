@@ -42,6 +42,13 @@ export interface ButtonLinkProps
    */
   rounded?: boolean;
   /**
+   * If enabled, the button link is displayed as active. This may be used to e.g.
+   * display the currently active route. Also sets the `aria-current` attribute
+   * on the anchor element to `page`.
+   @default false
+   */
+  active?: boolean;
+  /**
    * A callback that will be called when the button link is clicked.
    * @param event The click event.
    */

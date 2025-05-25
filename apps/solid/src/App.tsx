@@ -8,13 +8,9 @@ import { AppLayout } from './layout/app.layout';
 
 const App: Component = () => {
   return (
-    <AppLayout>
-      <Router>
-        <For each={routes}>
-          {(route) => <Route path={route.path} component={route.component} />}
-        </For>
-      </Router>
-    </AppLayout>
+    <Router root={AppLayout}>
+      <For each={routes}>{(route) => <Route path={route.path} component={route.component} />}</For>
+    </Router>
   );
 };
 
