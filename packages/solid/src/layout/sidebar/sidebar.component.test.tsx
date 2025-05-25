@@ -137,12 +137,14 @@ describe('Sidebar', () => {
       expect(trigger).toHaveClass('spx-button', 'spx-sidebar-group-trigger');
       expect(trigger).toHaveAttribute('spx-variant', 'colored');
       expect(trigger).toHaveAttribute('spx-color', 'text-default');
+      expect(trigger.querySelector('iconify-icon[icon="mdi:star"]')).not.toBeInTheDocument();
     });
 
     it('should render with custom values', () => {
       const { container } = render(() => (
         <Sidebar.Group
           title="Hello World!"
+          icon="mdi:star"
           class="my-class"
           style={{ color: 'rgb(255,0,0)' }}
           attrs={{ id: '123' }}
@@ -158,6 +160,7 @@ describe('Sidebar', () => {
       const trigger = group.querySelector('button') as HTMLButtonElement;
       expect(trigger).toHaveAttribute('spx-variant', 'outlined');
       expect(trigger).toHaveAttribute('spx-color', 'primary');
+      expect(trigger.querySelector('iconify-icon[icon="mdi:star"]')).toBeInTheDocument();
     });
 
     it('should show and hide the content when trigger is clicked', async () => {
