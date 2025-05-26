@@ -102,12 +102,14 @@
 .spx-sidebar-group-content {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: var(--spx-spacing-xs);
   overflow: hidden;
+  padding-left: var(--spx-spacing-md);
 
   .spx-button,
   .spx-button-link {
     justify-content: start;
+    min-height: fit-content;
   }
 }
 

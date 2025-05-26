@@ -45,6 +45,7 @@ export const SideNav: Component = () => {
                       color="text-default"
                       active={location.pathname === route.path}
                       onClick={Layout.closeSidebarOnMobile}
+                      icon="mdi:gear"
                     >
                       {route.path}
                     </ButtonLink>
