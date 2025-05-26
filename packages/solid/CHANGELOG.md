@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.0](https://github.com/spuxx-dev/jslibs/compare/solid-v1.3.0...solid-v1.4.0) (2025-05-26)
+
+
+### Features
+
+* **components:** ButtonLink now implements 'active' property that sets aria-current and highlights the button ([b031134](https://github.com/spuxx-dev/jslibs/commit/b03113422eb7d08486c3ec3a642c181348e0a110))
+* **layout:** Implement sidebar group component and styles ([619c817](https://github.com/spuxx-dev/jslibs/commit/619c8174c3e9d6659a63041a2ffb1bf8698825e5))
+
 ## [1.3.0](https://github.com/spuxx-dev/jslibs/compare/solid-v1.2.0...solid-v1.3.0) (2025-04-18)
 
 
