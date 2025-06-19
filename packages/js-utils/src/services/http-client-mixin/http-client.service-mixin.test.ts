@@ -1,4 +1,4 @@
-import { describe, expect, it, assert, vi, test } from 'vitest';
+import { describe, expect, it, assert, vi } from 'vitest';
 import axios, { type AxiosResponse } from 'axios';
 import { HttpClientMixin } from './http-client.service-mixin';
 import { HttpClientOptions } from './types';

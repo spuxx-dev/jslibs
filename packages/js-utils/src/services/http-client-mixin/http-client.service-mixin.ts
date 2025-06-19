@@ -172,9 +172,9 @@ export function HttpClientMixin<TEndpoints extends Endpoints>(
         const axiosError = error as AxiosError<object>;
         httpError = new HttpError({
           name: 'AxiosError',
-          status: axiosError.response?.status ?? axiosError.status,
-          message: axiosError.response?.statusText ?? axiosError.message,
-          body: axiosError.response?.data ?? undefined,
+          status: axiosError.response.status,
+          message: axiosError.response.statusText,
+          body: axiosError.response.data,
         });
       } else {
         httpError = new HttpError({
