@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/spuxx-dev/jslibs/compare/js-utils-v2.0.0...js-utils-v2.0.1) (2025-06-19)
+
+
+### Bug Fixes
+
+* Fixed an issue with the endpoint transformer function not being awaited ([25e6b13](https://github.com/spuxx-dev/jslibs/commit/25e6b132ea3311346107ddbd4f6ae7133341aecf))
+
 ## [2.0.0](https://github.com/spuxx-dev/jslibs/compare/js-utils-v1.5.0...js-utils-v2.0.0) (2025-06-19)
 
 
