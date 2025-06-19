@@ -70,7 +70,7 @@ export function HttpClientMixin<TEndpoints extends Endpoints>(
 
       // Execute the endpoint function
       const promise = endpointDef
-        .function({ signal: abortController.signal, args })
+        .function({ signal: abortController.signal, args: args as never })
         .then(async (response) => {
           // Process the response
           return await Client.handleResponse(request, response);
