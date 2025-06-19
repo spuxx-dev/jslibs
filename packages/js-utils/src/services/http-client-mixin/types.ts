@@ -29,9 +29,19 @@ export type ErrorHandler = {
 export type EndpointFunctionArgs = Record<string, any> | void;
 
 /**
- * A set of parameters available when the endpoint is invoked.
+ * The set of parameters that are exposed when using an endpoint.
  */
 export interface EndpointParams<TArgs extends EndpointFunctionArgs = void> {
+  /**
+   * The arguments to be passed to the endpoint function.
+   */
+  args: TArgs;
+}
+
+/**
+ * A set of parameters available internally when the endpoint is invoked.
+ */
+export interface PrivateEndpointParams<TArgs extends EndpointFunctionArgs = void> {
   /**
    * The arguments to be passed to the endpoint function.
    */
@@ -48,7 +58,7 @@ export interface EndpointParams<TArgs extends EndpointFunctionArgs = void> {
  * @returns A promise of the response from the server.
  */
 export type EndpointFunction<TArgs extends EndpointFunctionArgs = void> = (
-  params: EndpointParams<TArgs>,
+  params: PrivateEndpointParams<TArgs>,
 ) => Promise<any>;
 
 /**

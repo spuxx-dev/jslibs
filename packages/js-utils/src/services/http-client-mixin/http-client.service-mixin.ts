@@ -2,7 +2,7 @@
 import { type AxiosError } from 'axios';
 import { ServiceMixin } from '../mixin';
 import {
-  EndpointFunctionArgs,
+  EndpointParams,
   HttpRequestStatus,
   type EndpointDefinition,
   type Endpoints,
@@ -15,7 +15,7 @@ type HttpClient<T extends Endpoints> = {
   [K in keyof T]: T[K] extends EndpointDefinition<infer TArgs, any, any>
     ? TArgs extends void
       ? () => HttpRequest<T[K]>
-      : (args: TArgs) => HttpRequest<T[K]>
+      : (params: EndpointParams<TArgs>) => HttpRequest<T[K]>
     : never;
 } & {
   new (...args: any[]): object;
@@ -64,9 +64,11 @@ export function HttpClientMixin<TEndpoints extends Endpoints>(
      */
     static invokeEndpoint(
       endpointDef: EndpointDefinition,
-      args: EndpointFunctionArgs,
+      params: EndpointParams,
     ): HttpRequest<typeof endpointDef> {
       const abortController = new AbortController();
+
+      const { args } = { ...params };
 
       // Execute the endpoint function
       const promise = endpointDef
@@ -75,7 +77,7 @@ export function HttpClientMixin<TEndpoints extends Endpoints>(
           // Process the response
           return await Client.handleResponse(request, response);
         })
-        .catch(async (error: unknown) => {
+        .catch(async (error: Error) => {
           // Process the error
           await Client.handleError(request, error);
         });
@@ -123,7 +125,13 @@ export function HttpClientMixin<TEndpoints extends Endpoints>(
       return response;
     }
 
-    private static async handleError(request: HttpRequest, error: unknown): Promise<void> {
+    private static async handleError(request: HttpRequest, error: Error): Promise<void> {
+      // Check whether request was aborted
+      if (error.name === 'AbortError') {
+        request.setStatus(HttpRequestStatus.aborted);
+        return;
+      }
+
       request.setStatus(HttpRequestStatus.error);
 
       // Determine error details
@@ -184,9 +192,9 @@ export function HttpClientMixin<TEndpoints extends Endpoints>(
   Object.entries(endpoints).forEach(([key, endpointDef]) => {
     (Client as any)[key] = function (
       this: typeof Client,
-      args: Parameters<(typeof endpointDef)['function']>[0]['args'],
+      params: EndpointParams<Parameters<(typeof endpointDef)['function']>[0]['args']>,
     ): HttpRequest<typeof endpointDef> {
-      return Client.invokeEndpoint(endpointDef, args);
+      return Client.invokeEndpoint(endpointDef, params);
     };
   });
 

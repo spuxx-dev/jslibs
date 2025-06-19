@@ -1,4 +1,4 @@
-import { describe, expect, it, test, vi } from 'vitest';
+import { describe, expect, it, assert, vi, test } from 'vitest';
 import axios, { type AxiosResponse } from 'axios';
 import { HttpClientMixin } from './http-client.service-mixin';
 import { HttpClientOptions } from './types';
@@ -71,13 +71,16 @@ describe('HttpClientMixin', () => {
   it('should abort the request', async () => {
     const endpoints = {
       getJoke: defineEndpoint({
-        function: async (): Promise<Response> => {
-          return fetch('https://api.chucknorris.io/jokes/500');
+        function: async ({ signal }): Promise<Response> => {
+          return fetch('https://api.chucknorris.io/jokes/500', { signal });
         },
       }),
     };
     class HttpClient extends HttpClientMixin({ endpoints }) {}
-    await HttpClient.getJoke().promise;
+    const request = HttpClient.getJoke();
+    request.abort();
+    await request.promise;
+    expect(request.status).toBe('aborted');
   });
 
   it('should pass down arguments', async () => {
@@ -91,7 +94,7 @@ describe('HttpClientMixin', () => {
     };
     class HttpClient extends HttpClientMixin({ endpoints }) {}
     expect.assertions(2);
-    const request = HttpClient.findById({ id: '123', include: ['foo', 'bar'] });
+    const request = HttpClient.findById({ args: { id: '123', include: ['foo', 'bar'] } });
     await request.promise;
   });
 });

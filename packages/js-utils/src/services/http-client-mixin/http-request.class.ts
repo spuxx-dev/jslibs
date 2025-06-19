@@ -112,7 +112,6 @@ export function createHttpRequest<TEndpointDef extends EndpointDefinition>(
 
     async abort() {
       this._abortController.abort();
-      this.setStatus(HttpRequestStatus.aborted);
     }
 
     get result() {
