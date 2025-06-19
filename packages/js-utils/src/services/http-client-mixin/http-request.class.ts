@@ -35,10 +35,6 @@ export interface HttpRequest<T extends EndpointDefinition = EndpointDefinition> 
    */
   setError(error: HttpError): void;
   /**
-   * Returns the `AbortController`'s signal.
-   */
-  get abortSignal(): AbortSignal;
-  /**
    * Aborts the request. Does nothing if the request has already resolved.
    */
   abort(): void;
@@ -104,10 +100,6 @@ export function createHttpRequest<TEndpointDef extends EndpointDefinition>(
 
     setError(error: HttpError) {
       this._error = error;
-    }
-
-    get abortSignal() {
-      return this._abortController.signal;
     }
 
     async abort() {
