@@ -1,4 +1,4 @@
-import { afterEach, describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import { fireEvent, render, screen } from '@solidjs/testing-library';
 import { Sidebar } from './sidebar.component';
 import { Layout } from '../layout.service';
@@ -66,6 +66,22 @@ describe('Sidebar', () => {
     fireEvent.pointerUp(sidebar!);
     await sleep(50);
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+  });
+
+  it('should trigger onContentPresentChange when the visiblity of the sidebar changes', async () => {
+    const onContentPresentChange = vi.fn();
+    render(() => (
+      <Sidebar onContentPresentChange={onContentPresentChange}>
+        <Sidebar.Content>Drag me!</Sidebar.Content>
+      </Sidebar>
+    ));
+    expect(onContentPresentChange).not.toHaveBeenCalled();
+    Layout.openSidebar();
+    await sleep(50);
+    expect(onContentPresentChange).toHaveBeenCalledWith(true);
+    Layout.closeSidebar();
+    await sleep(50);
+    expect(onContentPresentChange).toHaveBeenCalledWith(false);
   });
 
   describe('Toolbar', () => {

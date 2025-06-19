@@ -20,11 +20,15 @@ const Sidebar: Component<SidebarProps> & {
     if (open) return;
     Layout.toggleSidebar();
   };
+  const onContentPresentChange = (present: boolean) => {
+    if (props.onContentPresentChange) props.onContentPresentChange(present);
+  };
 
   return (
     <Drawer
       open={Layout.state.sidebarOpen}
       side={side}
+      onContentPresentChange={onContentPresentChange}
       onOpenChange={handleOpenChange}
       noOutsidePointerEvents={UserAgent.isMobile}
       trapFocus={UserAgent.isMobile}

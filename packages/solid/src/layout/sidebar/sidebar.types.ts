@@ -12,4 +12,9 @@ export interface SidebarProps
    * @default 'left'
    */
   side?: 'left' | 'right';
+  /**
+   * Callback function to be called when the visibility ofte of the sidebar changes.
+   * @param present Whether the sidebar content is visible.
+   */
+  onContentPresentChange?: (present: boolean) => void;
 }
