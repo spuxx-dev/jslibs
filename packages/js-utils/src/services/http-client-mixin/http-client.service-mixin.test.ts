@@ -68,21 +68,6 @@ describe('HttpClientMixin', () => {
     expect(request.transformedResult).toBe('FOO');
   });
 
-  it('should abort the request', async () => {
-    const endpoints = {
-      getJoke: defineEndpoint({
-        function: async ({ signal }): Promise<Response> => {
-          return fetch('https://api.chucknorris.io/jokes/500', { signal });
-        },
-      }),
-    };
-    class HttpClient extends HttpClientMixin({ endpoints }) {}
-    const request = HttpClient.getJoke();
-    request.abort();
-    await request.promise;
-    expect(request.status).toBe('aborted');
-  });
-
   it('should pass down arguments', async () => {
     const endpoints = {
       findById: defineEndpoint<{ id: string; include: string[] }>({
@@ -347,6 +332,21 @@ describe('fetch support', () => {
     expect(handler403).toHaveBeenCalled();
     expect(handlerAll).not.toHaveBeenCalled();
   });
+
+  it('should abort the request (fetch)', async () => {
+    const endpoints = {
+      getJoke: defineEndpoint({
+        function: async ({ signal }): Promise<Response> => {
+          return fetch('https://api.chucknorris.io/jokes/500', { signal });
+        },
+      }),
+    };
+    class HttpClient extends HttpClientMixin({ endpoints }) {}
+    const request = HttpClient.getJoke();
+    request.abort();
+    await request.promise;
+    expect(request.status).toBe('aborted');
+  });
 });
 
 describe('axios support', () => {
@@ -477,5 +477,20 @@ describe('axios support', () => {
     expect(handler401).not.toHaveBeenCalled();
     expect(handler403).toHaveBeenCalled();
     expect(handlerAll).not.toHaveBeenCalled();
+  });
+
+  it('should abort the request (axios)', async () => {
+    const endpoints = {
+      getJoke: defineEndpoint({
+        function: async ({ signal }): Promise<Response> => {
+          return axios.get('https://api.chucknorris.io/jokes/500', { signal });
+        },
+      }),
+    };
+    class HttpClient extends HttpClientMixin({ endpoints }) {}
+    const request = HttpClient.getJoke();
+    request.abort();
+    await request.promise;
+    expect(request.status).toBe('aborted');
   });
 });

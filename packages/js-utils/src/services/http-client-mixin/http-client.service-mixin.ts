@@ -127,7 +127,7 @@ export function HttpClientMixin<TEndpoints extends Endpoints>(
 
     private static async handleError(request: HttpRequest, error: Error): Promise<void> {
       // Check whether request was aborted
-      if (error.name === 'AbortError') {
+      if (error.name === 'AbortError' || error.name === 'CanceledError') {
         request.setStatus(HttpRequestStatus.aborted);
         return;
       }
