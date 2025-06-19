@@ -12,7 +12,7 @@ export default function SessionPanel(): React.ReactElement {
   useEffect(() => {
     const getSession = async () => {
       try {
-        const session: Session = await Api.getSession();
+        const session: Session = await Api.getSession().promise;
         setSession(session);
       } catch (error) {
         // Do nothing
