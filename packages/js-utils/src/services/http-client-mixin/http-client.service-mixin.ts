@@ -40,14 +40,31 @@ type HttpClient<T extends Endpoints> = {
  *       return json.value;
  *     },
  *   }),
+ *   getSpecificJoke: defineEndpoint<{ id: string}>({
+ *     function: async ({ args }) => {
+ *       const response = await fetch(`https://api.chucknorris.io/jokes/${args.id}`);
+ *     },
+ *     transformer: async (response: Response): string => {
+ *       const json = await response.json();
+ *       return json.value;
+ *     },
+ *   }),
  * }
  *
  * // Create your client
  * class HttpClient extends HttpClientMixin({ endpoints }) {}
  *
  * // Use your client
- * const joke = await HttpClient.getRandomJoke();
+ * const randomJoke = await HttpClient.getRandomJoke().promise;
  * console.log(joke); // Chuck Norris can divide by zero.
+ * const specificJoke = await HttpClient.getSpecificJoke({ args: { id: '123' } }).promise;
+ * console.log(specificJoke); // Chuck Norris can divide by zero.
+ *
+ * // Invoking an endpoint returns an `HttpRequest` object that offers various
+ * // methods to interact with the request
+ * const request = HttpClient.getRandomJoke();
+ * request.abort();
+ * console.log(request.status); // 'aborted'
  */
 export function HttpClientMixin<TEndpoints extends Endpoints>(
   options: HttpClientOptions<TEndpoints>,
