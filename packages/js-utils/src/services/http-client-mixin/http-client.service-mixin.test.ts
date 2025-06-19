@@ -100,7 +100,7 @@ describe('HttpClientMixin', () => {
 });
 
 describe('basic error handling', () => {
-  test.todo('should trigger the error handler', async () => {
+  it('should trigger the error handler', async () => {
     const endpoints = {
       throw: defineEndpoint({
         function: async (): Promise<Response> => {
@@ -108,15 +108,19 @@ describe('basic error handling', () => {
         },
         errorHandlers: [
           {
-            function: () => {
-              throw new Error('Caught!');
+            function: (error) => {
+              expect(error).toMatchObject({
+                message: 'Oops!',
+              });
             },
           },
         ],
       }),
     };
     class HttpClient extends HttpClientMixin({ endpoints }) {}
-    await expect(HttpClient.throw()).rejects.toThrowError('Caught!');
+    expect.assertions(1);
+    const request = HttpClient.throw();
+    await request.promise;
   });
 
   it("'continue' flag should work as expected", async () => {
@@ -190,7 +194,7 @@ describe('basic error handling', () => {
     expect(localHandlerCallTime!.getTime()).toBeLessThan(globalHandlerCallTime!.getTime());
   });
 
-  test.todo('should throw an error if transformation fails', () => {
+  it('should throw an error if transformation fails', async () => {
     const endpoints = {
       getJoke: defineEndpoint({
         function: async (): Promise<Response> => {
@@ -202,7 +206,15 @@ describe('basic error handling', () => {
       }),
     };
     class HttpClient extends HttpClientMixin({ endpoints }) {}
-    expect(HttpClient.getJoke()).toThrowError('Oops!');
+    const request = HttpClient.getJoke();
+    try {
+      await request.promise;
+      assert.fail('Expected an error to be thrown');
+    } catch (error) {
+      expect(error).toMatchObject({
+        message: 'Oops!',
+      });
+    }
   });
 });
 
