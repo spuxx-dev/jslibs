@@ -1,4 +1,4 @@
-import { EndpointDefinition, EndpointFunction } from './types';
+import { EndpointDefinition, EndpointFunction, EndpointFunctionArgs } from './types';
 
 /**
  * A very simple transformer that will transform the response from a fetch call into a JSON object
@@ -19,14 +19,15 @@ export async function transformFetchJson<TResult>(response: Response): Promise<T
 
 /**
  * A helper function to create an endpoint definition in a type-safe way.
- * @param definition - The endpoint definition.
+ * @param definition The endpoint definition.
  * @returns The endpoint definition.
  */
 export function defineEndpoint<
-  TFunction extends EndpointFunction,
+  TArgs extends EndpointFunctionArgs = void,
+  TFunction extends EndpointFunction<TArgs> = EndpointFunction<TArgs>,
   TTransformedResult = Awaited<ReturnType<TFunction>>,
 >(
-  definition: EndpointDefinition<TFunction, TTransformedResult>,
-): EndpointDefinition<TFunction, TTransformedResult> {
+  definition: EndpointDefinition<TArgs, TFunction, TTransformedResult>,
+): EndpointDefinition<TArgs, TFunction, TTransformedResult> {
   return definition;
 }
