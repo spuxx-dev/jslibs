@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/spuxx-dev/jslibs/compare/solid-v1.4.0...solid-v1.5.0) (2025-06-19)
+
+
+### Features
+
+* **layout:** Sidebar now exposes onContentPresentChange callback function ([0fa7d09](https://github.com/spuxx-dev/jslibs/commit/0fa7d097bc5782b8db4394a4a368461c5d55f6fc))
+
 ## [1.4.0](https://github.com/spuxx-dev/jslibs/compare/solid-v1.3.0...solid-v1.4.0) (2025-05-26)
 
 
