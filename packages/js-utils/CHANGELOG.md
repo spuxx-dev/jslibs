@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/spuxx-dev/jslibs/compare/js-utils-v1.5.0...js-utils-v2.0.0) (2025-06-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* **http:** HttpClientMixin now provides a more feature-rich API that allows more fine-grained control over request handling ([#284](https://github.com/spuxx-dev/jslibs/issues/284))
+
+### Features
+
+* **http:** HttpClientMixin now provides a more feature-rich API that allows more fine-grained control over request handling ([#284](https://github.com/spuxx-dev/jslibs/issues/284)) ([4ac294c](https://github.com/spuxx-dev/jslibs/commit/4ac294ced70cdbdbb67edc1996f4e5cdbbb432c0))
+
 ## [1.5.0](https://github.com/spuxx-dev/jslibs/compare/js-utils-v1.4.0...js-utils-v1.5.0) (2025-03-12)
 
 
