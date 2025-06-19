@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+import { HttpError } from './http-error.class';
+
 /**
  * Defines how the client should handle errors.
  */
@@ -24,12 +26,40 @@ export type ErrorHandler = {
   continue?: boolean;
 };
 
+export type EndpointFunctionArgs = Record<string, any> | void;
+
+/**
+ * The set of parameters that are exposed when using an endpoint.
+ */
+export interface EndpointParams<TArgs extends EndpointFunctionArgs = void> {
+  /**
+   * The arguments to be passed to the endpoint function.
+   */
+  args: TArgs;
+}
+
+/**
+ * A set of parameters available internally when the endpoint is invoked.
+ */
+export interface PrivateEndpointParams<TArgs extends EndpointFunctionArgs = void> {
+  /**
+   * The arguments to be passed to the endpoint function.
+   */
+  args: TArgs;
+  /**
+   * An `AbortSignal` that can be used to cancel the request.
+   */
+  signal: AbortSignal;
+}
+
 /**
  * An endpoint function that will be called when the endpoint is invoked.
- * @param args The arguments to be passed to the endpoint function.
+ * @param params The `EndpointParams` of the invoked endpoint.
  * @returns A promise of the response from the server.
  */
-export type EndpointFunction = (...args: any[]) => Promise<any>;
+export type EndpointFunction<TArgs extends EndpointFunctionArgs = void> = (
+  params: PrivateEndpointParams<TArgs>,
+) => Promise<any>;
 
 /**
  * The definition of an endpoint to be used by the client.
@@ -37,7 +67,8 @@ export type EndpointFunction = (...args: any[]) => Promise<any>;
  * @typeParam TTransformedResult - The type of the transformed result.
  */
 export interface EndpointDefinition<
-  TFunction extends EndpointFunction = EndpointFunction,
+  TArgs extends EndpointFunctionArgs = never,
+  TFunction extends EndpointFunction<TArgs> = EndpointFunction<TArgs>,
   TTransformedResult = any,
 > {
   /**
@@ -81,20 +112,19 @@ export interface HttpClientOptions<TEndpoints extends Endpoints> {
 }
 
 /**
- * Represents an error that occurred during an HTTP request triggered by the client.
+ * The status of an HTTP request.
  */
-export class HttpError extends Error {
-  /**
-   * The status code of the response that caused the error.
-   */
-  status?: number;
-  /**
-   * The response body that came with the error.
-   */
-  body?: object | string;
+export const HttpRequestStatus = {
+  pending: 'pending',
+  success: 'success',
+  error: 'error',
+  aborted: 'aborted',
+} as const;
+/**
+ * The status of an HTTP request.
+ */
+export type HttpRequestStatus = (typeof HttpRequestStatus)[keyof typeof HttpRequestStatus];
 
-  constructor(init: HttpError) {
-    super();
-    Object.assign(this, init);
-  }
-}
+export type TransformedReturnType<T extends EndpointDefinition> = T['transformer'] extends undefined
+  ? Awaited<ReturnType<T['function']>>
+  : Awaited<ReturnType<NonNullable<T['transformer']>>>;

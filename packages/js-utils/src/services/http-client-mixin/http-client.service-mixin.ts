@@ -2,18 +2,21 @@
 import { type AxiosError } from 'axios';
 import { ServiceMixin } from '../mixin';
 import {
-  HttpError,
+  EndpointParams,
+  HttpRequestStatus,
   type EndpointDefinition,
   type Endpoints,
   type HttpClientOptions,
 } from './types';
-
-type TransformedReturnType<T extends EndpointDefinition> = T['transformer'] extends undefined
-  ? Awaited<ReturnType<T['function']>>
-  : Awaited<ReturnType<NonNullable<T['transformer']>>>;
+import { createHttpRequest, HttpRequest } from './http-request.class';
+import { HttpError } from './http-error.class';
 
 type HttpClient<T extends Endpoints> = {
-  [K in keyof T]: (...args: Parameters<T[K]['function']>) => Promise<TransformedReturnType<T[K]>>;
+  [K in keyof T]: T[K] extends EndpointDefinition<infer TArgs, any, any>
+    ? TArgs extends void
+      ? () => HttpRequest<T[K]>
+      : (params: EndpointParams<TArgs>) => HttpRequest<T[K]>
+    : never;
 } & {
   new (...args: any[]): object;
 };
@@ -59,26 +62,47 @@ export function HttpClientMixin<TEndpoints extends Endpoints>(
      * @param args - The arguments to pass to the endpoint function.
      * @returns A promise that resolves to the result of the endpoint function and its transformer.
      */
-    static async invokeEndpoint(endpointDef: EndpointDefinition, ...args: any[]): Promise<any> {
-      let response: any;
-      try {
-        // Call the endpoint function with the provided arguments
-        response = await endpointDef.function(...args);
-        if (
-          response?.constructor.name === 'HttpResponse' ||
-          response?.constructor.name === 'Response'
-        ) {
-          // In case of fetch, we need to do further processing
-          response = await Client.handleFetchResponse(response);
-        }
-      } catch (error: unknown) {
-        await Client.handleError(endpointDef, error);
-        return;
-      }
+    static invokeEndpoint(
+      endpointDef: EndpointDefinition,
+      params: EndpointParams,
+    ): HttpRequest<typeof endpointDef> {
+      const abortController = new AbortController();
 
-      if (typeof endpointDef.transformer === 'function') {
-        return endpointDef.transformer(response);
+      const { args } = { ...params };
+
+      // Execute the endpoint function
+      const promise = endpointDef
+        .function({ signal: abortController.signal, args: args as never })
+        .then(async (response) => {
+          // Process the response
+          return await Client.handleResponse(request, response);
+        })
+        .catch(async (error: Error) => {
+          // Process the error
+          await Client.handleError(request, error);
+        });
+      const request = createHttpRequest(endpointDef, promise, abortController);
+      return request;
+    }
+
+    private static async handleResponse(request: HttpRequest, response: Response): Promise<any> {
+      if (
+        response?.constructor.name === 'HttpResponse' ||
+        response?.constructor.name === 'Response'
+      ) {
+        // In case of fetch, we need to do further processing
+        response = await Client.handleFetchResponse(response);
+      }
+      request.setResult(response);
+
+      // Transform result if necessary
+      if (typeof request.endpointDefinition.transformer === 'function') {
+        const transformedResponse = request.endpointDefinition.transformer(response);
+        request.setTransformedResult(transformedResponse);
+        request.setStatus(HttpRequestStatus.success);
+        return transformedResponse;
       } else {
+        request.setStatus(HttpRequestStatus.success);
         return response;
       }
     }
@@ -101,32 +125,25 @@ export function HttpClientMixin<TEndpoints extends Endpoints>(
       return response;
     }
 
-    private static async handleError(endpointDef: EndpointDefinition, error: unknown) {
+    private static async handleError(request: HttpRequest, error: Error): Promise<void> {
+      // Check whether request was aborted
+      if (error.name === 'AbortError' || error.name === 'CanceledError') {
+        request.setStatus(HttpRequestStatus.aborted);
+        return;
+      }
+
+      request.setStatus(HttpRequestStatus.error);
+
+      // Determine error details
+      const httpError = Client.determineErrorDetails(error);
+      request.setError(httpError);
+
       // Combine endpoint-specific and global error handlers
-      const endpointErrorHandlers = endpointDef.errorHandlers || [];
+      const endpointErrorHandlers = request.endpointDefinition.errorHandlers || [];
       const allErrorHandlers = [
         ...endpointErrorHandlers,
         ...(Client.instance.options.globalErrorHandlers ?? []),
       ];
-
-      // Determine error details
-      let httpError: HttpError;
-      if (error instanceof HttpError) {
-        httpError = error;
-      } else if ((error as AxiosError).name === 'AxiosError') {
-        const axiosError = error as AxiosError<object>;
-        httpError = new HttpError({
-          name: 'AxiosError',
-          status: axiosError.response?.status ?? axiosError.status,
-          message: axiosError.response?.statusText ?? axiosError.message,
-          body: axiosError.response?.data ?? undefined,
-        });
-      } else {
-        httpError = new HttpError({
-          name: 'UnknownError',
-          message: (error as Error).message,
-        });
-      }
 
       // Execute all error handlers sequentially
       let errorHasBeenHandled = false;
@@ -146,6 +163,27 @@ export function HttpClientMixin<TEndpoints extends Endpoints>(
         throw error;
       }
     }
+
+    private static determineErrorDetails(error: unknown): HttpError {
+      let httpError: HttpError;
+      if (error instanceof HttpError) {
+        httpError = error;
+      } else if ((error as AxiosError).name === 'AxiosError') {
+        const axiosError = error as AxiosError<object>;
+        httpError = new HttpError({
+          name: 'AxiosError',
+          status: axiosError.response.status,
+          message: axiosError.response.statusText,
+          body: axiosError.response.data,
+        });
+      } else {
+        httpError = new HttpError({
+          name: 'UnknownError',
+          message: (error as Error).message,
+        });
+      }
+      return httpError;
+    }
   }
 
   const { endpoints } = options;
@@ -154,9 +192,9 @@ export function HttpClientMixin<TEndpoints extends Endpoints>(
   Object.entries(endpoints).forEach(([key, endpointDef]) => {
     (Client as any)[key] = function (
       this: typeof Client,
-      ...args: Parameters<typeof endpointDef.function>
-    ): Promise<TransformedReturnType<typeof endpointDef>> {
-      return Client.invokeEndpoint(endpointDef, ...args);
+      params: EndpointParams<Parameters<(typeof endpointDef)['function']>[0]['args']>,
+    ): HttpRequest<typeof endpointDef> {
+      return Client.invokeEndpoint(endpointDef, params);
     };
   });
 
