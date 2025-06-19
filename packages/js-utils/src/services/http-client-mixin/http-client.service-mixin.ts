@@ -114,7 +114,7 @@ export function HttpClientMixin<TEndpoints extends Endpoints>(
 
       // Transform result if necessary
       if (typeof request.endpointDefinition.transformer === 'function') {
-        const transformedResponse = request.endpointDefinition.transformer(response);
+        const transformedResponse = await request.endpointDefinition.transformer(response);
         request.setTransformedResult(transformedResponse);
         request.setStatus(HttpRequestStatus.success);
         return transformedResponse;
