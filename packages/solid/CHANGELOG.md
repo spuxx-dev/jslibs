@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/spuxx-dev/jslibs/compare/solid-v1.5.0...solid-v1.5.1) (2025-06-20)
+
+
+### Bug Fixes
+
+* Fixed an issue where deconstructing props would break reactivity of some components ([5087a66](https://github.com/spuxx-dev/jslibs/commit/5087a665924266c1d0ab592bcc23d943f42bf99f))
+
 ## [1.5.0](https://github.com/spuxx-dev/jslibs/compare/solid-v1.4.0...solid-v1.5.0) (2025-06-19)
 
 
