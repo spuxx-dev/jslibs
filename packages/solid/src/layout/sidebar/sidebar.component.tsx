@@ -1,4 +1,4 @@
-import { Component, Show } from 'solid-js';
+import { Component, mergeProps, Show } from 'solid-js';
 import Drawer from '@corvu/drawer';
 import { SidebarProps } from './sidebar.types';
 import { Layout } from '../layout.service';
@@ -13,7 +13,7 @@ const Sidebar: Component<SidebarProps> & {
   Content: typeof SidebarContent;
   Group: typeof SidebarGroup;
 } = (props) => {
-  const { side = 'left' } = props;
+  const p = mergeProps<[Partial<SidebarProps>, SidebarProps]>({ side: 'left' }, props);
   const handleOpenChange = (open: boolean) => {
     // The value check is here mostly for safety and we don't usually run into it.
     /* v8 ignore next */
@@ -21,13 +21,13 @@ const Sidebar: Component<SidebarProps> & {
     Layout.toggleSidebar();
   };
   const onContentPresentChange = (present: boolean) => {
-    if (props.onContentPresentChange) props.onContentPresentChange(present);
+    if (p.onContentPresentChange) p.onContentPresentChange(present);
   };
 
   return (
     <Drawer
       open={Layout.state.sidebarOpen}
-      side={side}
+      side={p.side}
       onContentPresentChange={onContentPresentChange}
       onOpenChange={handleOpenChange}
       noOutsidePointerEvents={UserAgent.isMobile}
@@ -43,11 +43,11 @@ const Sidebar: Component<SidebarProps> & {
           />
         </Show>
         <Drawer.Content
-          {...attributes(props)}
-          {...classNames('spx-sidebar', props.class)}
-          data-side={side}
+          {...attributes(p)}
+          {...classNames('spx-sidebar', p.class)}
+          data-side={p.side}
         >
-          {props.children}
+          {p.children}
         </Drawer.Content>
       </Drawer.Portal>
     </Drawer>

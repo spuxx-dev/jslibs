@@ -1,4 +1,4 @@
-import { Component, For, JSX, Show } from 'solid-js';
+import { Component, For, JSX, mergeProps, Show } from 'solid-js';
 import { SelectOption, SelectProps } from './select.types';
 import { attributes, classNames } from '@src/main';
 import { Icon } from '@src/components/typography/icon';
@@ -8,63 +8,62 @@ import { Icon } from '@src/components/typography/icon';
  * @returns The select component.
  */
 export const Select: Component<SelectProps> = (props) => {
-  const { variant = 'contained', size, options } = props;
-  const id = props.attrs?.id ?? crypto.randomUUID();
+  const p = mergeProps<[Partial<SelectProps>, SelectProps]>(
+    {
+      variant: 'contained',
+      options: [],
+    },
+    props,
+  );
+  const id = p.attrs?.id ?? crypto.randomUUID();
 
   // Ensure that each option has a unique key
-  for (const option of props.options) {
-    if (!option.key) {
-      option.key = crypto.randomUUID();
-    }
+  for (const option of p.options) {
+    option.key = option.key ?? crypto.randomUUID();
   }
 
   const findOptionByKey = (key: string): SelectOption => {
-    const option = options.find((option) => option.key === key);
+    const option = p.options.find((option) => option.key === key);
     return option!;
   };
 
   const handleChange: JSX.EventHandler<HTMLSelectElement, Event> = (event) => {
     const select = event.currentTarget;
     const selectedOption = findOptionByKey(select.value);
-    if (props.onChange) props.onChange(selectedOption, event);
+    if (p.onChange) p.onChange(selectedOption, event);
   };
 
   const getSelected = (option: SelectOption): true | undefined => {
-    if (props.default) {
-      if (typeof props.default === 'number') {
-        return props.default === options.indexOf(option) ? true : undefined;
-      } else if (typeof props.default === 'string') {
-        return props.default === option.key ? true : undefined;
+    if (p.default) {
+      if (typeof p.default === 'number') {
+        return p.default === p.options.indexOf(option) ? true : undefined;
+      } else if (typeof p.default === 'string') {
+        return p.default === option.key ? true : undefined;
       } else {
-        return props.default === option ? true : undefined;
+        return p.default === option ? true : undefined;
       }
     }
   };
 
   return (
     <div
-      {...classNames('spx-select', props.class)}
-      style={props.style}
-      spx-variant={variant}
-      spx-size={size || undefined}
+      {...classNames('spx-select', p.class)}
+      style={p.style}
+      spx-variant={p.variant}
+      spx-size={p.size || undefined}
     >
-      <select
-        {...attributes(props)}
-        id={id}
-        disabled={props.disabled || undefined}
-        onChange={handleChange}
-      >
-        <For each={options}>
+      <select {...attributes(p)} id={id} disabled={p.disabled || undefined} onChange={handleChange}>
+        <For each={p.options}>
           {(option) => (
             <option value={option.key} label={option.label} selected={getSelected(option)} />
           )}
         </For>
       </select>
       <label for={id}>
-        <Show when={props.icon}>
-          <Icon icon={props.icon!} />
+        <Show when={p.icon}>
+          <Icon icon={p.icon!} />
         </Show>
-        {props.label}
+        {p.label}
       </label>
       <Icon icon="mdi:chevron-down" />
     </div>

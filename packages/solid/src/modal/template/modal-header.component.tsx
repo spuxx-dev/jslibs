@@ -1,4 +1,4 @@
-import { Component, Show } from 'solid-js';
+import { Component, mergeProps, Show } from 'solid-js';
 import { Label, Close } from '@corvu/dialog';
 import { BaseColor } from '@spuxx/browser-utils';
 import { Icon } from '@src/components/typography/icon';
@@ -29,17 +29,22 @@ interface Props {
  * A template for creating modal headers.
  */
 export const ModalHeader: Component<Props> = (props) => {
-  const { hideClose = false } = props;
+  const p = mergeProps<[Partial<Props>, Props]>(
+    {
+      hideClose: false,
+    },
+    props,
+  );
 
   return (
-    <div class="spx spx-modal-header" spx-variant="contained" spx-color={props.color}>
+    <div class="spx spx-modal-header" spx-variant="contained" spx-color={p.color}>
       <Label>
-        <Show when={props.icon}>
-          <Icon icon={props.icon!} />
+        <Show when={p.icon}>
+          <Icon icon={p.icon!} />
         </Show>
-        {props.title}
+        {p.title}
       </Label>
-      <Show when={!hideClose}>
+      <Show when={!p.hideClose}>
         <Close class="spx spx-button" spx-color="text-default" spx-rounded>
           <Icon icon="mdi:close" />
         </Close>

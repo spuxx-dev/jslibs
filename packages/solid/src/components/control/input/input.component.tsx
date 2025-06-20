@@ -1,4 +1,4 @@
-import { Component, For, JSX, Show } from 'solid-js';
+import { Component, For, JSX, mergeProps, Show } from 'solid-js';
 import { InputProps } from './input.types';
 import { attributes, classNames } from '@src/main';
 import { InputType } from '@spuxx/browser-utils';
@@ -10,59 +10,58 @@ import { Icon } from '@src/components/typography/icon';
  * @returns The input component.
  */
 export const Input: Component<InputProps> = (props) => {
-  const {
-    type = InputType.text,
-    variant = 'contained',
-    size,
-    required,
-    options,
-    forceOption,
-  } = props;
-  const id = props.attrs?.id ?? crypto.randomUUID();
+  const p = mergeProps<[Partial<InputProps>, InputProps]>(
+    {
+      type: InputType.text,
+      variant: 'contained',
+    },
+    props,
+  );
+  const id = p.attrs?.id ?? crypto.randomUUID();
   const listId = `${id}-options`;
   const pattern =
-    options && forceOption ? options.map((o) => o.value).join('|') : props.attrs?.pattern;
+    p.options && p.forceOption ? p.options.map((o) => o.value).join('|') : p.attrs?.pattern;
 
   const handleChange: JSX.EventHandler<HTMLInputElement, Event> = (event) => {
     const input = event.currentTarget;
-    if (props.onChange) props.onChange(input.value, event);
+    if (p.onChange) p.onChange(input.value, event);
   };
 
   const handleInput: JSX.EventHandler<HTMLInputElement, Event> = (event) => {
     const input = event.currentTarget;
-    if (props.onInput) props.onInput(input.value, event);
+    if (p.onInput) p.onInput(input.value, event);
   };
 
   return (
     <div
-      {...classNames('spx-input', props.class)}
-      style={props.style}
-      spx-variant={variant}
-      spx-size={size || undefined}
+      {...classNames('spx-input', p.class)}
+      style={p.style}
+      spx-variant={p.variant}
+      spx-size={p.size || undefined}
     >
       <input
-        {...attributes(props)}
+        {...attributes(p)}
         id={id}
-        type={type}
-        list={options ? listId : undefined}
+        type={p.type}
+        list={p.options ? listId : undefined}
         placeholder=" "
         aria-placeholder={undefined}
-        required={required || undefined}
+        required={p.required || undefined}
         onchange={handleChange}
         oninput={handleInput}
         pattern={pattern}
-        disabled={props.disabled || undefined}
+        disabled={p.disabled || undefined}
       />
       <label for={id}>
-        <Show when={props.icon}>
-          <Icon icon={props.icon!} />
+        <Show when={p.icon}>
+          <Icon icon={p.icon!} />
         </Show>
-        {props.label}
-        {required && ' *'}
+        {p.label}
+        {p.required && ' *'}
       </label>
-      {options && (
+      {p.options && (
         <datalist id={listId}>
-          <For each={options}>
+          <For each={p.options}>
             {(option) => <option value={option.value} label={option.label} />}
           </For>
         </datalist>

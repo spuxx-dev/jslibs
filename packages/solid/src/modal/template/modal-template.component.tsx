@@ -1,4 +1,4 @@
-import { Component, ParentProps } from 'solid-js';
+import { Component, mergeProps, ParentProps } from 'solid-js';
 import { Modal } from '../modal.service';
 import { ModalOptions } from '../modal.types';
 import { Content, Overlay, Portal, Root } from '@corvu/dialog';
@@ -25,14 +25,20 @@ interface Props extends ModalOptions, ParentProps {}
  * ```
  */
 export const ModalTemplate: Component<Props> = (options) => {
-  const { size = 'auto', preventClose = false, onClose } = options;
+  const p = mergeProps<[Partial<Props>, Props]>(
+    {
+      size: 'auto',
+      preventClose: false,
+    },
+    options,
+  );
 
   const handleOpenChange = (value: boolean) => {
     // The value check is here mostly for safety and we don't usually run into it.
     /* v8 ignore next */
     if (value) return;
     Modal.close();
-    if (typeof onClose === 'function') onClose();
+    if (typeof p.onClose === 'function') p.onClose();
   };
 
   const handleContentPresentChange = (value: boolean) => {
@@ -51,15 +57,15 @@ export const ModalTemplate: Component<Props> = (options) => {
       modal={true}
       trapFocus={true}
       preventScroll={true}
-      closeOnEscapeKeyDown={!preventClose}
-      closeOnOutsidePointer={!preventClose}
+      closeOnEscapeKeyDown={!p.preventClose}
+      closeOnOutsidePointer={!p.preventClose}
       onOpenChange={handleOpenChange}
       onContentPresentChange={handleContentPresentChange}
     >
       <Portal forceMount={true}>
         <Overlay class="spx-modal-overlay" />
-        <Content class="spx-modal" data-size={size}>
-          {options.children}
+        <Content class="spx-modal" data-size={p.size}>
+          {p.children}
         </Content>
       </Portal>
     </Root>
