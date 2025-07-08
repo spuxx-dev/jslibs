@@ -43,7 +43,7 @@
     "eslint-config-prettier": "10.1.5",
     "eslint-plugin-prettier": "5.4.1",
     "nyc": "17.1.0",
-    "prettier": "3.6.0",
+    "prettier": "3.6.2",
     "release-please": "17.1.0",
     "vitest": "3.2.4"
   }
