@@ -7,11 +7,16 @@ import { DialogRoute } from './dialog.route';
 import { InputRoute } from './components/control/input.route';
 import { SelectRoute } from './components/control/select.route';
 import { ButtonLinkRoute } from './components/control/button-link.route';
+import { AccordionRoute } from './components/control/accordion.route';
 
 export const routes: RouteProps[] = [
   {
     path: '/',
     component: IndexRoute,
+  },
+  {
+    path: '/components/control/accordion',
+    component: () => AccordionRoute,
   },
   {
     path: '/components/control/button',
