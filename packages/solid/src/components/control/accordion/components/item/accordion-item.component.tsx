@@ -1,8 +1,7 @@
 import { Component, JSX, mergeProps, Show } from 'solid-js';
 import { Item, Trigger, Content } from '@corvu/accordion';
-import { classNames } from 'dist/main';
 import { AccordionItemProps } from './accordion-item.types';
-import { Icon } from '@src/main';
+import { classNames, Icon } from '@src/main';
 
 export const AccordionItem: Component<AccordionItemProps> = (props) => {
   const p = mergeProps<[Partial<AccordionItemProps>, AccordionItemProps]>(
@@ -29,7 +28,9 @@ export const AccordionItem: Component<AccordionItemProps> = (props) => {
         </div>
         <Icon class="spx-accordion-item-chevron" icon="mdi:chevron-down" />
       </Trigger>
-      <Content>{p.children}</Content>
+      <Content class="spx spx-accordion-item-content" spx-variant={p.variant} spx-color={p.color}>
+        {p.children}
+      </Content>
     </Item>
   );
 };

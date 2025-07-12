@@ -4,6 +4,7 @@
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 export * from './types/public';
 
+export * from './components/control/accordion';
 export * from './components/control/button';
 export * from './components/control/button-link';
 export * from './components/control/input';
