@@ -11,7 +11,7 @@
     "@spuxx/browser-utils": "workspace:@spuxx/browser-utils@*",
     "@spuxx/js-utils": "workspace:@spuxx/js-utils@*",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.1"
   },
   "devDependencies": {
     "@modyfi/vite-plugin-yaml": "1.1.1",
