@@ -26,6 +26,7 @@ export const SideNav: Component = () => {
           href="/"
           variant="colored"
           color="text-default"
+          active={location.pathname === '/'}
           onClick={Layout.closeSidebarOnMobile}
         />
         <Button icon="mdi:account" title="Account" variant="colored" color="text-default" />
