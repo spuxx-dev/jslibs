@@ -90,9 +90,6 @@ a.spx-button {
     &[spx-variant='outlined'],
     &[spx-variant='colored'] {
       color: var(--spx-color-text-link) !important;
-      &::before {
-        background: color-mix(in hsl, var(--spx-color-text-link), transparent 80%);
-      }
     }
   }
 }
