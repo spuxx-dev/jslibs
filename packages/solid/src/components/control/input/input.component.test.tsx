@@ -30,6 +30,7 @@ describe('Input', () => {
     const { container } = render(() => (
       <Input
         label="Username"
+        value="Chuck Norris"
         variant="outlined"
         size="small"
         class="my-class"
@@ -48,6 +49,7 @@ describe('Input', () => {
     const input = inputContainer?.querySelector('input');
     expect(input).toBeInTheDocument();
     expect(input).toHaveAttribute('type', 'email');
+    expect(input).toHaveValue('Chuck Norris');
     expect(input).toHaveAttribute('required');
     expect(input).toHaveAttribute('disabled');
   });

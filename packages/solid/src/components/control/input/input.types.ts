@@ -20,6 +20,13 @@ export interface InputProps extends ComponentProps<JSX.InputHTMLAttributes<HTMLI
    */
   type?: InputType;
   /**
+   * The input value.
+   * If not provided, the input will be uncontrolled and will manage its own state.
+   * If provided, the input will be controlled and will use this value as its current value.
+   * @default undefined
+   */
+  value?: string;
+  /**
    * An optional list of options for the input. Will be rendered into a <datalist> element that
    * is linked to the input and will be used to provide suggestions as the user types.
    */

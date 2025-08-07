@@ -43,6 +43,7 @@ export const Input: Component<InputProps> = (props) => {
         {...attributes(p)}
         id={id}
         type={p.type}
+        value={p.value}
         list={p.options ? listId : undefined}
         placeholder=" "
         aria-placeholder={undefined}
