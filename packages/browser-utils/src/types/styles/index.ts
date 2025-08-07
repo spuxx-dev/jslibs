@@ -57,7 +57,7 @@ export const ControlSize = {
   large: 'large',
   auto: 'auto',
   max: 'max',
-}; as const
+} as const;
 /**
  * The size of a control element.
  */
