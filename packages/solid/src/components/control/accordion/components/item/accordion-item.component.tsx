@@ -29,7 +29,7 @@ export const AccordionItem: Component<AccordionItemProps> = (props) => {
         <Icon class="spx-accordion-item-chevron" icon="mdi:chevron-down" />
       </Trigger>
       <Content class="spx spx-accordion-item-content" spx-variant={p.variant} spx-color={p.color}>
-        {p.children}
+        <div class="spx-accordion-item-content-inner"> {p.children}</div>
       </Content>
     </Item>
   );
