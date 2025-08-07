@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/spuxx-dev/jslibs/compare/solid-v1.6.0...solid-v1.6.1) (2025-08-07)
+
+
+### Bug Fixes
+
+* **components:** Input now accepts a value ([4b658f6](https://github.com/spuxx-dev/jslibs/commit/4b658f6a3634b21ecbcd43fef9d0d30723d95c81))
+
 ## [1.6.0](https://github.com/spuxx-dev/jslibs/compare/solid-v1.5.1...solid-v1.6.0) (2025-08-07)
 
 

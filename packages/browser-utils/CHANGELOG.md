@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.9.1](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.9.0...browser-utils-v1.9.1) (2025-08-07)
+
+
+### Bug Fixes
+
+* **components:** Fix some minor visual issues with accordions ([17e09e4](https://github.com/spuxx-dev/jslibs/commit/17e09e4ab8c6247f8a6c325fa7886a7471d26cad))
+* **types:** Fix broken ModalSize and ControlSize types ([ae31bb1](https://github.com/spuxx-dev/jslibs/commit/ae31bb15011de854603c5f6923927badb311fb2b))
+
 ## [1.9.0](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.8.0...browser-utils-v1.9.0) (2025-08-07)
 
 
