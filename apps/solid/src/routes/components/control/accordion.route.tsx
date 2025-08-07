@@ -41,6 +41,32 @@ export const AccordionRoute: Component = () => {
           <Accordion.Item title="Item 2">{text}</Accordion.Item>
           <Accordion.Item title="Item 3">{text}</Accordion.Item>
         </Accordion>
+        <Accordion class="m-1">
+          <Accordion.Item title="Item 1" variant="outlined" color="primary">
+            {text}
+          </Accordion.Item>
+          <Accordion.Item title="Item 2" variant="outlined" color="primary">
+            {text}
+          </Accordion.Item>
+          <Accordion.Item title="Item 3" variant="outlined" color="primary">
+            {text}
+          </Accordion.Item>
+        </Accordion>
+      </Container>
+      <Container>
+        <Heading level={2}>With Icon</Heading>
+        <Divider color="gradient" />
+        <Accordion class="m-1">
+          <Accordion.Item title="Pear" icon="mdi:fruit-pear">
+            {text}
+          </Accordion.Item>
+          <Accordion.Item title="Cherries" icon="mdi:fruit-cherries">
+            {text}
+          </Accordion.Item>
+          <Accordion.Item title="Watermelon" icon="mdi:fruit-watermelon">
+            {text}
+          </Accordion.Item>
+        </Accordion>
       </Container>
     </Container>
   );
