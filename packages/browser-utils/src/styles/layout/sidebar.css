@@ -108,7 +108,7 @@
 
 .spx-sidebar-group-chevron {
   rotate: 0deg;
-  transition: rotate 200ms ease;
+  transition: rotate var(--spx-animation-duration-default) ease;
   font-size: x-large !important;
 }
 
@@ -128,11 +128,11 @@
 }
 
 .spx-sidebar-group-content[data-collapsed] {
-  animation: sidebar-group-content-collapse 200ms ease-in-out;
+  animation: sidebar-group-content-collapse var(--spx-animation-duration-default) ease-in-out;
 }
 
 .spx-sidebar-group-content[data-expanded] {
-  animation: sidebar-group-content-expand 200ms ease-in-out;
+  animation: sidebar-group-content-expand var(--spx-animation-duration-default) ease-in-out;
 }
 
 @keyframes sidebar-group-content-collapse {

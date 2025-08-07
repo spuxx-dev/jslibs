@@ -29,9 +29,9 @@
     top: 50%;
     transform: translateY(-50%);
     transition:
-      padding 200ms,
-      font-size 200ms,
-      transform 200ms;
+      padding var(--spx-animation-duration-default),
+      font-size var(--spx-animation-duration-default),
+      transform var(--spx-animation-duration-default);
     pointer-events: none;
     display: flex;
     gap: 2px;
