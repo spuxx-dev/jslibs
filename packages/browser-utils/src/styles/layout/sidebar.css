@@ -63,6 +63,17 @@
   flex-grow: 1;
   padding: 4px;
   gap: 4px;
+
+  a.spx-button {
+    &[aria-current='page'] {
+      &[spx-variant='outlined'],
+      &[spx-variant='colored'] {
+        &::before {
+          background: color-mix(in hsl, var(--spx-color-text-link), transparent 80%);
+        }
+      }
+    }
+  }
 }
 
 .spx-sidebar-group {
