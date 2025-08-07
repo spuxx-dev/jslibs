@@ -42,7 +42,7 @@ export const ModalSize = {
   large: 'large',
   auto: 'auto',
   max: 'max',
-};
+} as const;
 /**
  * The size of a modal dialog.
  */
@@ -57,7 +57,7 @@ export const ControlSize = {
   large: 'large',
   auto: 'auto',
   max: 'max',
-};
+}; as const
 /**
  * The size of a control element.
  */
