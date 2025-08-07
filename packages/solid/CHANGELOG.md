@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/spuxx-dev/jslibs/compare/solid-v1.5.1...solid-v1.6.0) (2025-08-07)
+
+
+### Features
+
+* **components:** Add new accordion control component ([#351](https://github.com/spuxx-dev/jslibs/issues/351)) ([bf8244d](https://github.com/spuxx-dev/jslibs/commit/bf8244d9483caf74fa15ca5bbf13e6c1a175c030))
+
 ## [1.5.1](https://github.com/spuxx-dev/jslibs/compare/solid-v1.5.0...solid-v1.5.1) (2025-06-20)
 
 

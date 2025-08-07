@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.9.0](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.8.0...browser-utils-v1.9.0) (2025-08-07)
+
+
+### Features
+
+* **components:** Add new accordion control component ([#351](https://github.com/spuxx-dev/jslibs/issues/351)) ([bf8244d](https://github.com/spuxx-dev/jslibs/commit/bf8244d9483caf74fa15ca5bbf13e6c1a175c030))
+
+
+### Bug Fixes
+
+* Fixed a small visual issue with active links ([659ec49](https://github.com/spuxx-dev/jslibs/commit/659ec49f957f7d00d6d8508ca72dbefb985afc97))
+
 ## [1.8.0](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.7.0...browser-utils-v1.8.0) (2025-05-26)
 
 
