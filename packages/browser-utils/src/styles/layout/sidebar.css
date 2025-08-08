@@ -19,7 +19,7 @@
 }
 
 .spx-sidebar {
-  position: absolute;
+  position: fixed;
   top: 0;
   height: 100%;
   max-width: 90svw;
