@@ -62,3 +62,12 @@ export const ControlSize = {
  * The size of a control element.
  */
 export type ControlSize = (typeof ControlSize)[keyof typeof ControlSize];
+
+/**
+ * The hover effect applied to an element.
+ */
+export const HoverEffect = {
+  none: 'none',
+  scale: 'scale',
+} as const;
+export type HoverEffect = (typeof HoverEffect)[keyof typeof HoverEffect];

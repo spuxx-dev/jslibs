@@ -1,0 +1,67 @@
+import { Divider, Heading, Container, Card } from '@spuxx/solid';
+import { loremMedium, loremShort } from '../../../utils';
+
+export const CardRoute = () => {
+  const now = new Date().toLocaleString();
+
+  return (
+    <Container tag="article">
+      <Heading level={1}>Card</Heading>
+      <Divider color="gradient" />
+      <Container class="my-4">
+        <Heading level={2}>Variants & Colors</Heading>
+        <Divider color="gradient" />
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <Card hoverEffect="scale">
+            <Card.Header
+              title="Contained, surface color (default)"
+              subtitle={now}
+              avatar="mdi:account-circle"
+            />
+            <Card.Content>{loremShort}</Card.Content>
+          </Card>
+          <Card variant="outlined" color="gradient" hoverEffect="scale">
+            <Card.Header title="Outlined, gradient color" subtitle={now} />
+            <Card.Content>{loremShort}</Card.Content>
+          </Card>
+          <Card variant="colored" color="accent" hoverEffect="scale">
+            <Card.Header title="Colored, accent color" subtitle={now} avatar="mdi:account-circle" />
+            <Card.Content>{loremShort}</Card.Content>
+          </Card>
+        </div>
+      </Container>
+      <Container class="my-4">
+        <Heading level={2}>Hover Effects</Heading>
+        <Divider color="gradient" />
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <Card>
+            <Card.Header title="Hover Effect: None (default)" />
+            <Card.Content>{loremShort}</Card.Content>
+          </Card>
+          <Card hoverEffect="scale">
+            <Card.Header title="Hover Effect: Scale" />
+            <Card.Content>{loremShort}</Card.Content>
+          </Card>
+        </div>
+      </Container>
+      <Container class="my-4">
+        <Heading level={2}>Maximum height</Heading>
+        <Divider color="gradient" />
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <Card>
+            <Card.Header title="Scrollable Content" subtitle={now} avatar="mdi:arrow-down-circle" />
+            <Card.Content>
+              {loremMedium}
+              <br />
+              <br />
+              {loremMedium}
+              <br />
+              <br />
+              {loremMedium}
+            </Card.Content>
+          </Card>
+        </div>
+      </Container>
+    </Container>
+  );
+};
