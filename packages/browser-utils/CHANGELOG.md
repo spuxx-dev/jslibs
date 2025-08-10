@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.0](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.9.1...browser-utils-v1.10.0) (2025-08-10)
+
+
+### Features
+
+* **components:** Add new Card component ([e4b46c7](https://github.com/spuxx-dev/jslibs/commit/e4b46c72cd6c06c2ab019f6a03c3db993d211003))
+
 ## [1.9.1](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.9.0...browser-utils-v1.9.1) (2025-08-07)
 
 
