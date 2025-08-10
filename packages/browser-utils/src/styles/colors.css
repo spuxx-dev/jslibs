@@ -1,5 +1,4 @@
 /* Variant: colored/no variant */
-
 .spx[spx-variant='colored'].spx[spx-color='background'] {
   color: var(--spx-color-background);
 }

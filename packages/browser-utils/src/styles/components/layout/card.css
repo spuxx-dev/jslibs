@@ -11,18 +11,21 @@
   > *:last-child {
     padding-bottom: var(--spx-spacing-md);
   }
+
+  > *:not(:first-child):not(:only-child) {
+    padding-top: var(--spx-spacing-md);
+  }
 }
 
 .spx-card-content {
-  padding-left: var(--spx-spacing-md);
-  padding-right: var(--spx-spacing-md);
+  padding-inline: var(--spx-spacing-md);
 }
 
 .spx-card-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--spx-spacing-md);
+  padding-inline: var(--spx-spacing-md);
   gap: var(--spx-spacing-sm);
 }
 
@@ -33,6 +36,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
   iconify-icon {
     font-size: var(--spx-card-avatar-size);
@@ -49,4 +53,12 @@
 
 .spx-card-header-details-subtitle {
   opacity: 0.7;
+}
+
+.spx-card-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spx-spacing-xs);
+  padding-inline: var(--spx-spacing-md);
 }
