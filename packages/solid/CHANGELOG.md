@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/spuxx-dev/jslibs/compare/solid-v1.6.1...solid-v1.7.0) (2025-08-10)
+
+
+### Features
+
+* **components:** Add new Card component ([e4b46c7](https://github.com/spuxx-dev/jslibs/commit/e4b46c72cd6c06c2ab019f6a03c3db993d211003))
+
 ## [1.6.1](https://github.com/spuxx-dev/jslibs/compare/solid-v1.6.0...solid-v1.6.1) (2025-08-07)
 
 
