@@ -8,6 +8,7 @@ import { InputRoute } from './components/control/input.route';
 import { SelectRoute } from './components/control/select.route';
 import { ButtonLinkRoute } from './components/control/button-link.route';
 import { AccordionRoute } from './components/control/accordion.route';
+import { CardRoute } from './components/layout/card.route';
 
 export const routes: RouteProps[] = [
   {
@@ -33,6 +34,10 @@ export const routes: RouteProps[] = [
   {
     path: '/components/control/select',
     component: () => SelectRoute,
+  },
+  {
+    path: '/components/layout/card',
+    component: () => CardRoute,
   },
   {
     path: '/components/layout/container',

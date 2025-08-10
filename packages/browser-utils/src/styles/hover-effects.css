@@ -1,0 +1,7 @@
+.spx[spx-hover-effect='scale'] {
+  transition: scale var(--spx-animation-duration-default);
+
+  &:hover {
+    scale: 1.05;
+  }
+}

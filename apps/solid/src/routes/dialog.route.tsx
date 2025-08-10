@@ -8,6 +8,7 @@ import {
   ModalPortal,
 } from '@spuxx/solid';
 import { Component } from 'solid-js';
+import { loremMedium } from '../utils';
 
 export const DialogRoute: Component = () => {
   return (
@@ -22,18 +23,12 @@ export const DialogRoute: Component = () => {
           onClick={() => {
             Modal.show(ConfirmModal, {
               title: 'Hello World!',
-              // color: 'gradient',
-              content: `Cum consequatur occaecati dolorem quo ducimus harum est placeat.
-              Quam perspiciatis exercitationem animi ut.
-              Dolorem eum rerum labore. Sit est facere ratione.
-              Maxime incidunt et blanditiis.`,
+              content: loremMedium,
               onConfirm: () => Modal.close(),
               confirmLabel: 'Confirm',
               confirmIcon: 'mdi:check',
-              // confirmColor: 'gradient',
               onClose: () => Modal.close(),
               cancelLabel: 'Cancel',
-              // cancelColor: 'gradient',
               size: 'medium',
             });
           }}

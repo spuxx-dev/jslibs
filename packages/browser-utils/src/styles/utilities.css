@@ -1,3 +1,20 @@
 .all-inherit {
   all: inherit;
 }
+
+.spx-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--spx-color-background) transparent;
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--spx-color-background);
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--spx-color-background);
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
