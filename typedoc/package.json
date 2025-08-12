@@ -9,7 +9,7 @@
   "devDependencies": {
     "p-limit": "^6.2.0",
     "typedoc": "0.28",
-    "typedoc-plugin-markdown": "4.8.0",
+    "typedoc-plugin-markdown": "4.8.1",
     "typedoc-plugin-md": "0.6.0",
     "typescript": "5.9.2"
   }
