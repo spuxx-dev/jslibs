@@ -159,7 +159,7 @@ importers:
         version: 7.1.2(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0)
       vite-plugin-solid:
         specifier: 2.11.8
-        version: 2.11.8(@testing-library/jest-dom@6.6.4)(solid-js@1.9.9)(vite@7.1.2(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))
+        version: 2.11.8(@testing-library/jest-dom@6.7.0)(solid-js@1.9.9)(vite@7.1.2(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))
 
   apps/starlight:
     devDependencies:
@@ -171,7 +171,7 @@ importers:
         version: 4.3.4(astro@5.13.2(@types/node@24.3.0)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.46.3)(terser@5.43.1)(typescript@5.9.2)(yaml@2.8.0))
       '@astrojs/solid-js':
         specifier: 5.1.0
-        version: 5.1.0(@testing-library/jest-dom@6.6.4)(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(solid-js@1.9.9)(terser@5.43.1)(yaml@2.8.0)
+        version: 5.1.0(@testing-library/jest-dom@6.7.0)(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(solid-js@1.9.9)(terser@5.43.1)(yaml@2.8.0)
       '@astrojs/starlight':
         specifier: 0.35.2
         version: 0.35.2(astro@5.13.2(@types/node@24.3.0)(encoding@0.1.13)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.46.3)(terser@5.43.1)(typescript@5.9.2)(yaml@2.8.0))
@@ -198,7 +198,7 @@ importers:
         version: 5.9.2
       vite-plugin-solid:
         specifier: 2.11.8
-        version: 2.11.8(@testing-library/jest-dom@6.6.4)(solid-js@1.9.9)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))
+        version: 2.11.8(@testing-library/jest-dom@6.7.0)(solid-js@1.9.9)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))
 
   packages/browser-utils:
     dependencies:
@@ -460,8 +460,8 @@ importers:
         specifier: workspace:@spuxx/browser-utils@*
         version: link:../browser-utils
       '@testing-library/jest-dom':
-        specifier: 6.6.4
-        version: 6.6.4
+        specifier: 6.7.0
+        version: 6.7.0
       '@vitest/browser':
         specifier: 3.2.4
         version: 3.2.4(msw@2.10.4(@types/node@24.3.0)(typescript@5.9.2))(playwright@1.54.2)(vite@7.1.2(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))(vitest@3.2.4)
@@ -491,7 +491,7 @@ importers:
         version: 4.5.3(@types/node@24.3.0)(rollup@4.46.3)(typescript@5.9.2)(vite@7.1.2(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))
       vite-plugin-solid:
         specifier: 2.11.8
-        version: 2.11.8(@testing-library/jest-dom@6.6.4)(solid-js@1.9.9)(vite@7.1.2(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))
+        version: 2.11.8(@testing-library/jest-dom@6.7.0)(solid-js@1.9.9)(vite@7.1.2(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))
       vite-tsconfig-paths:
         specifier: 5.1.4
         version: 5.1.4(typescript@5.9.2)(vite@7.1.2(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))
@@ -519,8 +519,8 @@ importers:
 
 packages:
 
-  '@adobe/css-tools@4.4.3':
-    resolution: {integrity: sha512-VQKMkwriZbaOgVCby1UDY/LDk5fIjhQicCvVPFqfe+69fWaPWydbWJ3wRt59/YzIwda1I81loas3oCoHxnqvdA==}
+  '@adobe/css-tools@4.4.4':
+    resolution: {integrity: sha512-Elp+iwUx5rN5+Y8xLt5/GRoG20WGoDCQ/1Fb+1LiGtvwbDavuSk0jhD/eZdckHAuzcDzccnkv+rEjyWfRx18gg==}
 
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
@@ -2398,8 +2398,8 @@ packages:
     resolution: {integrity: sha512-pemlzrSESWbdAloYml3bAJMEfNh1Z7EduzqPKprCH5S341frlpYnUEW0H72dLxa6IsYr+mPno20GiSm+h9dEdQ==}
     engines: {node: '>=18'}
 
-  '@testing-library/jest-dom@6.6.4':
-    resolution: {integrity: sha512-xDXgLjVunjHqczScfkCJ9iyjdNOVHvvCdqHSSxwM9L0l/wHkTRum67SDc020uAlCoqktJplgO2AAQeLP1wgqDQ==}
+  '@testing-library/jest-dom@6.7.0':
+    resolution: {integrity: sha512-RI2e97YZ7MRa+vxP4UUnMuMFL2buSsf0ollxUbTgrbPLKhMn8KVTx7raS6DYjC7v1NDVrioOvaShxsguLNISCA==}
     engines: {node: '>=14', npm: '>=6', yarn: '>=1'}
 
   '@testing-library/user-event@14.6.1':
@@ -7677,7 +7677,7 @@ packages:
 
 snapshots:
 
-  '@adobe/css-tools@4.4.3': {}
+  '@adobe/css-tools@4.4.4': {}
 
   '@ampproject/remapping@2.3.0':
     dependencies:
@@ -7849,11 +7849,11 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.25.76
 
-  '@astrojs/solid-js@5.1.0(@testing-library/jest-dom@6.6.4)(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(solid-js@1.9.9)(terser@5.43.1)(yaml@2.8.0)':
+  '@astrojs/solid-js@5.1.0(@testing-library/jest-dom@6.7.0)(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(solid-js@1.9.9)(terser@5.43.1)(yaml@2.8.0)':
     dependencies:
       solid-js: 1.9.9
       vite: 6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0)
-      vite-plugin-solid: 2.11.8(@testing-library/jest-dom@6.6.4)(solid-js@1.9.9)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))
+      vite-plugin-solid: 2.11.8(@testing-library/jest-dom@6.7.0)(solid-js@1.9.9)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))
     transitivePeerDependencies:
       - '@testing-library/jest-dom'
       - '@types/node'
@@ -9621,13 +9621,12 @@ snapshots:
       lz-string: 1.5.0
       pretty-format: 27.5.1
 
-  '@testing-library/jest-dom@6.6.4':
+  '@testing-library/jest-dom@6.7.0':
     dependencies:
-      '@adobe/css-tools': 4.4.3
+      '@adobe/css-tools': 4.4.4
       aria-query: 5.3.2
       css.escape: 1.5.1
       dom-accessibility-api: 0.6.3
-      lodash: 4.17.21
       picocolors: 1.1.1
       redent: 3.0.0
 
@@ -15502,7 +15501,7 @@ snapshots:
       - rollup
       - supports-color
 
-  vite-plugin-solid@2.11.8(@testing-library/jest-dom@6.6.4)(solid-js@1.9.9)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0)):
+  vite-plugin-solid@2.11.8(@testing-library/jest-dom@6.7.0)(solid-js@1.9.9)(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0)):
     dependencies:
       '@babel/core': 7.28.0
       '@types/babel__core': 7.20.5
@@ -15513,11 +15512,11 @@ snapshots:
       vite: 6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0)
       vitefu: 1.1.1(vite@6.3.5(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))
     optionalDependencies:
-      '@testing-library/jest-dom': 6.6.4
+      '@testing-library/jest-dom': 6.7.0
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-solid@2.11.8(@testing-library/jest-dom@6.6.4)(solid-js@1.9.9)(vite@7.1.2(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0)):
+  vite-plugin-solid@2.11.8(@testing-library/jest-dom@6.7.0)(solid-js@1.9.9)(vite@7.1.2(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0)):
     dependencies:
       '@babel/core': 7.28.0
       '@types/babel__core': 7.20.5
@@ -15528,7 +15527,7 @@ snapshots:
       vite: 7.1.2(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0)
       vitefu: 1.1.1(vite@7.1.2(@types/node@24.3.0)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))
     optionalDependencies:
-      '@testing-library/jest-dom': 6.6.4
+      '@testing-library/jest-dom': 6.7.0
     transitivePeerDependencies:
       - supports-color
 
