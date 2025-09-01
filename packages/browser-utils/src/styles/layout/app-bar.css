@@ -11,7 +11,7 @@
   background: var(--spx-color-app-bar);
   color: var(--spx-color-on-app-bar);
   padding: 4px;
-  box-shadow: var(--spx-shadow-medium);
+  box-shadow: var(--spx-shadow-md);
 
   &[spx-position='top'] {
     top: 0;

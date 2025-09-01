@@ -64,7 +64,7 @@ html *,
   --spx-filter-control-disabled: brightness(0.8) grayscale(0.6);
 
   /* Shadows */
-  --spx-shadow-medium: 0 0 10px rgba(0, 0, 0, 0.5);
+  --spx-shadow-md: 0 0 10px rgba(0, 0, 0, 0.5);
 
   /* Animations */
   transition:

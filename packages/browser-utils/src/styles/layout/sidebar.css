@@ -26,7 +26,7 @@
   z-index: var(--spx-z-sidebar);
   width: var(--spx-sidebar-width-full);
   background-color: var(--spx-color-sidebar);
-  box-shadow: var(--spx-shadow-medium);
+  box-shadow: var(--spx-shadow-md);
   display: flex;
   flex-direction: column;
 
