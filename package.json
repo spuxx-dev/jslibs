@@ -38,13 +38,13 @@
     "@nestjs/cli": "11.0.10",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
-    "concurrently": "9.2.0",
+    "concurrently": "9.2.1",
     "eslint": "8.57.0",
     "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-prettier": "5.5.3",
+    "eslint-plugin-prettier": "5.5.4",
     "nyc": "17.1.0",
     "prettier": "3.6.2",
-    "release-please": "17.1.1",
+    "release-please": "17.1.2",
     "vitest": "3.2.4"
   }
 }
