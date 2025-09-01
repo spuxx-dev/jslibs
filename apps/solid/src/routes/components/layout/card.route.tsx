@@ -113,7 +113,7 @@ export const CardRoute = () => {
             <Card.Header
               title="spuxx"
               subtitle="Yep, that's me!"
-              avatar={<img src="https://spuxx.dev/spuxx.png" />}
+              avatar={<img src="https://spuxx.dev/spuxx.png" alt="spuxx" />}
             />
           </Card>
         </div>

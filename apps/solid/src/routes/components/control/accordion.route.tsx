@@ -1,4 +1,4 @@
-import { Container, Divider, Heading, Accordion } from '@spuxx/solid';
+import { Container, Divider, Heading, Accordion, Button } from '@spuxx/solid';
 import { Component } from 'solid-js';
 import { loremMedium } from '../../../utils';
 
@@ -61,6 +61,55 @@ export const AccordionRoute: Component = () => {
             {loremMedium}
           </Accordion.Item>
           <Accordion.Item title="Watermelon" icon="mdi:fruit-watermelon">
+            {loremMedium}
+          </Accordion.Item>
+        </Accordion>
+      </Container>
+      <Container>
+        <Heading level={2}>With Actions</Heading>
+        <Divider color="gradient" />
+        <Accordion class="m-1">
+          <Accordion.Item
+            title="Lorem Ipsum"
+            icon="mdi:text"
+            actions={
+              <>
+                <Button
+                  variant="colored"
+                  color="text-default"
+                  icon="mdi:delete"
+                  title="Delete"
+                ></Button>
+                <Button
+                  variant="colored"
+                  color="text-default"
+                  icon="mdi:info"
+                  title="Delete"
+                ></Button>
+              </>
+            }
+          >
+            {loremMedium}
+          </Accordion.Item>
+        </Accordion>
+        <Accordion class="m-1">
+          <Accordion.Item
+            title="Lorem Ipsum"
+            icon="mdi:text"
+            variant="outlined"
+            color="primary"
+            actions={
+              <>
+                <Button
+                  variant="outlined"
+                  color="primary"
+                  icon="mdi:delete"
+                  title="Delete"
+                ></Button>
+                <Button variant="outlined" color="primary" icon="mdi:info" title="Delete"></Button>
+              </>
+            }
+          >
             {loremMedium}
           </Accordion.Item>
         </Accordion>

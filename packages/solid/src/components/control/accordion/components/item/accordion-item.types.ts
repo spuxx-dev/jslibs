@@ -27,4 +27,8 @@ export interface AccordionItemProps
    * @default "surface"
    */
   color?: BaseColor | ContentColor;
+  /**
+   * A list of action elements that should be rendered to the right of the item's title.
+   */
+  actions?: JSX.Element;
 }

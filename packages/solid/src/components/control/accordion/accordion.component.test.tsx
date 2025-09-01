@@ -1,6 +1,7 @@
 import { render } from '@solidjs/testing-library';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { Accordion } from './accordion.component';
+import { Button } from '../button';
 
 describe('Accordion', () => {
   it('should render with default values', () => {
@@ -16,16 +17,16 @@ describe('Accordion', () => {
     expect(item2).toBeInTheDocument();
     expect(item1.parentElement).toHaveClass('spx spx-button spx-accordion-item-trigger');
     expect(item2.parentElement).toHaveClass('spx spx-button spx-accordion-item-trigger');
-    expect(item1.parentElement!.parentElement).toHaveClass('spx spx-accordion');
-    expect(item2.parentElement!.parentElement).toHaveClass('spx spx-accordion');
+    expect(item1.parentElement!.parentElement!.parentElement).toHaveClass('spx spx-accordion');
+    expect(item2.parentElement!.parentElement!.parentElement).toHaveClass('spx spx-accordion');
     expect(item1.parentElement!.querySelector('.spx-accordion-item-chevron')).toBeInTheDocument();
     expect(item2.parentElement!.querySelector('.spx-accordion-item-chevron')).toBeInTheDocument();
     expect(item1.querySelector('iconify-icon')).not.toBeInTheDocument();
     expect(item2.querySelector('iconify-icon')).not.toBeInTheDocument();
-    expect(item1.parentElement).toHaveAttribute('spx-variant', 'contained');
-    expect(item2.parentElement).toHaveAttribute('spx-variant', 'contained');
-    expect(item1.parentElement).toHaveAttribute('spx-color', 'surface');
-    expect(item2.parentElement).toHaveAttribute('spx-color', 'surface');
+    expect(item1.parentElement!.parentElement).toHaveAttribute('spx-variant', 'contained');
+    expect(item2.parentElement!.parentElement).toHaveAttribute('spx-variant', 'contained');
+    expect(item1.parentElement!.parentElement).toHaveAttribute('spx-color', 'surface');
+    expect(item2.parentElement!.parentElement).toHaveAttribute('spx-color', 'surface');
   });
 
   it('should render with custom values', () => {
@@ -42,9 +43,11 @@ describe('Accordion', () => {
     expect(item1.parentElement).toHaveClass('spx-button');
     expect(item1.querySelector('iconify-icon')).toBeInTheDocument();
     expect(item1.querySelector('iconify-icon')).toHaveAttribute('icon', 'mdi:star');
-    expect(item1.parentElement).toHaveAttribute('spx-variant', 'outlined');
-    expect(item1.parentElement).toHaveAttribute('spx-color', 'gradient');
-    expect(item1.parentElement!.querySelector('.spx-accordion-item-chevron')).toBeInTheDocument();
+    expect(item1.parentElement!.parentElement).toHaveAttribute('spx-variant', 'outlined');
+    expect(item1.parentElement!.parentElement).toHaveAttribute('spx-color', 'gradient');
+    expect(
+      item1.parentElement!.parentElement!.querySelector('.spx-accordion-item-chevron'),
+    ).toBeInTheDocument();
   });
 
   it('should open and close items', async () => {
@@ -74,5 +77,22 @@ describe('Accordion', () => {
     // Click to close Item 2
     item2.click();
     expect(queryByText('Content 2')).not.toBeInTheDocument();
+  });
+
+  it('should render with actions', () => {
+    const clickSpy = vi.fn();
+    const { getByText } = render(() => (
+      <Accordion>
+        <Accordion.Item title="With actions" actions={<Button onClick={clickSpy}>Action</Button>}>
+          Content 1
+        </Accordion.Item>
+      </Accordion>
+    ));
+    const item1 = getByText('With actions');
+    expect(item1).toBeInTheDocument();
+    const button = getByText('Action');
+    expect(button).toBeInTheDocument();
+    button.click();
+    expect(clickSpy).toHaveBeenCalled();
   });
 });

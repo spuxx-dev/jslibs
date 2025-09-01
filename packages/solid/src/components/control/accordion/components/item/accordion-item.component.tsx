@@ -14,20 +14,21 @@ export const AccordionItem: Component<AccordionItemProps> = (props) => {
 
   return (
     <Item>
-      <Trigger
-        {...classNames('spx-button', 'spx-accordion-item-trigger')}
-        spx-variant={p.variant}
-        spx-color={p.color}
-      >
-        <div class="spx-button-content spx-accordion-item-title">
-          <Show when={typeof p.icon === 'string'}>
-            <Icon icon={p.icon as string} />
-          </Show>
-          <Show when={typeof p.icon === 'object'}>{p.icon as JSX.Element}</Show>
-          {p.title}
-        </div>
-        <Icon class="spx-accordion-item-chevron" icon="mdi:chevron-down" />
-      </Trigger>
+      <h3 {...classNames('spx-accordion-item-header')} spx-variant={p.variant} spx-color={p.color}>
+        <Trigger {...classNames('spx-button', 'spx-accordion-item-trigger')}>
+          <Icon class="spx-accordion-item-chevron" icon="mdi:chevron-right" />
+          <div class="spx-button-content spx-accordion-item-title">
+            <Show when={typeof p.icon === 'string'}>
+              <Icon icon={p.icon as string} />
+            </Show>
+            <Show when={typeof p.icon === 'object'}>{p.icon as JSX.Element}</Show>
+            {p.title}
+          </div>
+        </Trigger>
+        <Show when={p.actions}>
+          <div class="spx-accordion-item-actions">{p.actions}</div>
+        </Show>
+      </h3>
       <Content class="spx spx-accordion-item-content" spx-variant={p.variant} spx-color={p.color}>
         <div class="spx-accordion-item-content-inner"> {p.children}</div>
       </Content>
