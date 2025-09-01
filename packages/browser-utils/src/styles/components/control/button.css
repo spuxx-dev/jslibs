@@ -9,6 +9,7 @@
   border: none;
   border-radius: var(--spx-border-radius);
   color: var(--spx-color-on-secondary);
+  min-height: var(--spx-control-height-default);
   height: var(--spx-control-height-default);
   font-size: medium;
 

@@ -21,6 +21,7 @@ export const SidebarGroup: Component<SidebarGroupProps> = (props) => {
             spx-variant={p.variant}
             spx-color={p.color}
           >
+            <Icon class="spx-sidebar-group-chevron" icon="mdi:chevron-right" />
             <div class="spx-button-content spx-sidebar-group-title">
               <Show when={typeof p.icon === 'string'}>
                 <Icon icon={p.icon as string} />
@@ -28,7 +29,6 @@ export const SidebarGroup: Component<SidebarGroupProps> = (props) => {
               <Show when={typeof p.icon === 'object'}>{p.icon as JSX.Element}</Show>
               {p.title}
             </div>
-            <Icon class="spx-sidebar-group-chevron" icon="mdi:chevron-down" />
           </Trigger>
           <Content class="spx-sidebar-group-content">{p.children}</Content>
         </Item>

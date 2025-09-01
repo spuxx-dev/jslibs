@@ -85,13 +85,14 @@
     }
 
     .spx-sidebar-group-chevron {
-      rotate: 180deg;
+      rotate: 90deg;
     }
   }
 }
 
 .spx-sidebar-group-trigger {
   width: 100%;
+  padding-left: var(--spx-spacing-sm) !important;
 
   .spx-sidebar-group-title {
     display: flex;
@@ -101,7 +102,7 @@
     gap: 0.25rem;
 
     iconify-icon {
-      width: 20px;
+      width: 20px !important;
     }
   }
 }
@@ -109,7 +110,7 @@
 .spx-sidebar-group-chevron {
   rotate: 0deg;
   transition: rotate var(--spx-animation-duration-default) ease;
-  font-size: x-large !important;
+  width: 20px !important;
 }
 
 .spx-sidebar-group-content {
@@ -120,10 +121,13 @@
   padding: var(--spx-spacing-xs);
   padding-left: var(--spx-spacing-md);
 
+  > * {
+    height: fit-content !important;
+  }
+
   .spx-button,
   .spx-button-link {
     justify-content: start;
-    min-height: fit-content;
   }
 }
 
