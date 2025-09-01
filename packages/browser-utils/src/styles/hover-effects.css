@@ -5,3 +5,44 @@
     scale: 1.05;
   }
 }
+
+.spx[spx-hover-effect='stylized-shadow'] {
+  transition:
+    box-shadow var(--spx-animation-duration-default),
+    transform var(--spx-animation-duration-default);
+
+  &:hover {
+    transform: translate(-5px, -5px);
+
+    &[spx-color='surface'] {
+      box-shadow: 10px 10px 0px color-mix(in srgb, var(--spx-color-surface), transparent 50%);
+    }
+    &[spx-color='surface'] {
+      box-shadow: 10px 10px 0px color-mix(in srgb, var(--spx-color-surface), transparent 50%);
+    }
+    &[spx-color='accent'] {
+      box-shadow: 10px 10px 0px color-mix(in srgb, var(--spx-color-accent), transparent 50%);
+    }
+    &[spx-color='primary'] {
+      box-shadow: 10px 10px 0px color-mix(in srgb, var(--spx-color-primary), transparent 50%);
+    }
+    &[spx-color='secondary'] {
+      box-shadow: 10px 10px 0px color-mix(in srgb, var(--spx-color-secondary), transparent 50%);
+    }
+    &[spx-color='info'] {
+      box-shadow: 10px 10px 0px color-mix(in srgb, var(--spx-color-info), transparent 50%);
+    }
+    &[spx-color='success'] {
+      box-shadow: 10px 10px 0px color-mix(in srgb, var(--spx-color-success), transparent 50%);
+    }
+    &[spx-color='warning'] {
+      box-shadow: 10px 10px 0px color-mix(in srgb, var(--spx-color-warning), transparent 50%);
+    }
+    &[spx-color='error'] {
+      box-shadow: 10px 10px 0px color-mix(in srgb, var(--spx-color-error), transparent 50%);
+    }
+    &[spx-color='gradient'] {
+      box-shadow: 10px 10px 0px color-mix(in srgb, var(--spx-color-accent), transparent 50%);
+    }
+  }
+}

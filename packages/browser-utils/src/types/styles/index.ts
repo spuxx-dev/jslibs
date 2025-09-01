@@ -69,5 +69,6 @@ export type ControlSize = (typeof ControlSize)[keyof typeof ControlSize];
 export const HoverEffect = {
   none: 'none',
   scale: 'scale',
+  stylizedShadow: 'stylized-shadow',
 } as const;
 export type HoverEffect = (typeof HoverEffect)[keyof typeof HoverEffect];

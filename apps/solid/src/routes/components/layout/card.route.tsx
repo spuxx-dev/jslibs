@@ -63,7 +63,11 @@ export const CardRoute = () => {
             <Card.Content>{loremShort}</Card.Content>
           </Card>
           <Card hoverEffect="scale">
-            <Card.Header title="Hover Effect: Scale" />
+            <Card.Header title="Hover Effect: scale" />
+            <Card.Content>{loremShort}</Card.Content>
+          </Card>
+          <Card hoverEffect="stylized-shadow" color="surface">
+            <Card.Header title="Hover Effect: stylized-shadow" />
             <Card.Content>{loremShort}</Card.Content>
           </Card>
         </div>
