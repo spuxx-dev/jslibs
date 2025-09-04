@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.8.0](https://github.com/spuxx-dev/jslibs/compare/solid-v1.7.0...solid-v1.8.0) (2025-09-04)
+
+
+### Features
+
+* **components:** Accordion items may now include actions to be displayed in their header ([4779952](https://github.com/spuxx-dev/jslibs/commit/47799521b03bf6a128cd40b5e202692e7f50fa92))
+
+
+### Bug Fixes
+
+* **layout:** Fix a bug that would prevent scrolling the body content on desktop devices when sidebar was open ([a83d68c](https://github.com/spuxx-dev/jslibs/commit/a83d68c17ac7ba1802373b00ecb4dab874d2799b))
+* **layout:** Fix group visuals and icon alignment in sidebar ([e140424](https://github.com/spuxx-dev/jslibs/commit/e14042494f4ba72894f4b2003f366d2d2bad600f))
+
 ## [1.7.0](https://github.com/spuxx-dev/jslibs/compare/solid-v1.6.1...solid-v1.7.0) (2025-08-10)
 
 

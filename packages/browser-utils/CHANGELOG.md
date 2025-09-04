@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.11.0](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.10.0...browser-utils-v1.11.0) (2025-09-04)
+
+
+### Features
+
+* **components:** Accordion items may now include actions to be displayed in their header ([4779952](https://github.com/spuxx-dev/jslibs/commit/47799521b03bf6a128cd40b5e202692e7f50fa92))
+* **styles:** Add new 'stylized-shadow' hover effect ([c6555ae](https://github.com/spuxx-dev/jslibs/commit/c6555ae7337c85c36ca1713c6d3d09a2d6e01d44))
+* **styles:** Renamed --spx-shadow-medium to --spx-shadow-md ([1b7173f](https://github.com/spuxx-dev/jslibs/commit/1b7173fa2df64f3de360eb415137210709343497))
+
+
+### Bug Fixes
+
+* **layout:** Fix group visuals and icon alignment in sidebar ([e140424](https://github.com/spuxx-dev/jslibs/commit/e14042494f4ba72894f4b2003f366d2d2bad600f))
+
 ## [1.10.0](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.9.1...browser-utils-v1.10.0) (2025-08-10)
 
 
