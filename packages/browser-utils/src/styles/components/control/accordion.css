@@ -71,6 +71,7 @@
     flex-grow: 1;
     border: none;
     border-radius: 0px;
+    height: fit-content;
   }
 
   &[data-expanded] {
