@@ -31,6 +31,7 @@ const Sidebar: Component<SidebarProps> & {
       onContentPresentChange={onContentPresentChange}
       onOpenChange={handleOpenChange}
       noOutsidePointerEvents={UserAgent.isMobile}
+      preventScroll={UserAgent.isMobile}
       trapFocus={UserAgent.isMobile}
       closeOnOutsidePointer={UserAgent.isMobile}
       closeOnEscapeKeyDown={UserAgent.isMobile}
