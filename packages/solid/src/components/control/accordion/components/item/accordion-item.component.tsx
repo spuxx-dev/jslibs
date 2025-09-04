@@ -15,7 +15,11 @@ export const AccordionItem: Component<AccordionItemProps> = (props) => {
   return (
     <Item>
       <h3 {...classNames('spx-accordion-item-header')} spx-variant={p.variant} spx-color={p.color}>
-        <Trigger {...classNames('spx-button', 'spx-accordion-item-trigger')}>
+        <Trigger
+          {...classNames('spx-button', 'spx-accordion-item-trigger')}
+          spx-variant={p.variant}
+          spx-color={p.color}
+        >
           <Icon class="spx-accordion-item-chevron" icon="mdi:chevron-right" />
           <div class="spx-button-content spx-accordion-item-title">
             <Show when={typeof p.icon === 'string'}>

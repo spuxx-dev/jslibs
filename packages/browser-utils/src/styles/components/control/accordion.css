@@ -31,12 +31,6 @@
     border-top-right-radius: 0px;
   }
 
-  &:has(.spx-accordion-item-trigger[data-expanded]) {
-    .spx-accordion-item-actions > * {
-      border-bottom-right-radius: 0px;
-    }
-  }
-
   &[spx-variant='outlined'] {
     margin-top: 0px !important;
     margin-bottom: 0px !important;
@@ -61,6 +55,8 @@
       border-bottom-width: 0px;
 
       .spx-accordion-item-actions {
+        border-bottom-right-radius: 0px;
+
         > *[spx-variant='outlined'] {
           border-bottom-width: var(--spx-border-width);
         }
@@ -73,6 +69,7 @@
   &.spx-button {
     justify-content: start;
     flex-grow: 1;
+    border: none;
     border-radius: 0px;
   }
 
