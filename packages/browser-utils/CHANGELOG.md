@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.11.1](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.11.0...browser-utils-v1.11.1) (2025-09-05)
+
+
+### Bug Fixes
+
+* **components:** Fix a bug where accordion would not adjust its height to the header's title contents ([239c27d](https://github.com/spuxx-dev/jslibs/commit/239c27d76ce3ad89e415516b0a5b87e45d5cadda))
+* **components:** Fix a small visual bug with accordion component ([97f7fec](https://github.com/spuxx-dev/jslibs/commit/97f7fec44cf2080c1b31a6c6231b54b4bd1cf290))
+* **types:** Fix ModalSize and ControlSize Enums ([9a942f0](https://github.com/spuxx-dev/jslibs/commit/9a942f024f19d54ab91df0859ef303bd2bd367ae))
+
 ## [1.11.0](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.10.0...browser-utils-v1.11.0) (2025-09-04)
 
 

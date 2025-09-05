@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.1](https://github.com/spuxx-dev/jslibs/compare/solid-v1.8.0...solid-v1.8.1) (2025-09-05)
+
+
+### Bug Fixes
+
+* **components:** Fix a small visual bug with accordion component ([97f7fec](https://github.com/spuxx-dev/jslibs/commit/97f7fec44cf2080c1b31a6c6231b54b4bd1cf290))
+
 ## [1.8.0](https://github.com/spuxx-dev/jslibs/compare/solid-v1.7.0...solid-v1.8.0) (2025-09-04)
 
 
