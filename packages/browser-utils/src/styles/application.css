@@ -1,8 +1,6 @@
 html.spx-app {
   background: var(--spx-color-background);
   color: var(--spx-color-on-background);
-  height: 100svh;
-  width: 100svw;
   overflow-y: auto;
   overflow-x: hidden;
   font-family:
