@@ -41,7 +41,7 @@ jobs:
     # - run_unit_tests
     strategy:
       matrix:
-        node-version: [22]
+        node-version: [24]
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -71,7 +71,7 @@ jobs:
       uses: withastro/action@v3
       with:
         path: ./apps/starlight
-        node-version: 22
+        node-version: 24
         package-manager: pnpm@latest
 
     - name: Deploy to GitHub Pages
