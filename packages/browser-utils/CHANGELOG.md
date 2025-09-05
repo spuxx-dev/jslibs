@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.2](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.11.1...browser-utils-v1.11.2) (2025-09-05)
+
+
+### Bug Fixes
+
+* **types:** Properly fix ModalSize and ControlSize Enums (for real this time!) ([bb564aa](https://github.com/spuxx-dev/jslibs/commit/bb564aada7c3928395ad45b97c50511d2ad833b6))
+
 ## [1.11.1](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.11.0...browser-utils-v1.11.1) (2025-09-05)
 
 
