@@ -13,7 +13,7 @@
   "devDependencies": {
     "@astrojs/check": "0.9.4",
     "@astrojs/mdx": "4.3.4",
-    "@astrojs/solid-js": "5.1.0",
+    "@astrojs/solid-js": "5.1.1",
     "@astrojs/starlight": "0.35.2",
     "@spuxx/browser-utils": "workspace:@spuxx/browser-utils@*",
     "@spuxx/js-utils": "workspace:@spuxx/js-utils@*",
