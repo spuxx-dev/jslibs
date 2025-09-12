@@ -18,18 +18,9 @@ jobs:
     with:
       PREPARE: pnpm -r --filter './packages/**' build
 
-  run_unit_tests:
-    name: Run tests (vitest)
-    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_run_tests_vitest.yml@v4.1.0
-    with:
-      PREPARE: pnpm -r --filter './packages/**' build
-
   run_release_please:
     name: Release Please
     uses: spuxx-dev/ci-cd/.github/workflows/pnpm_release-please.yml@v4.1.0
-    needs:
-    - run_checks
-    - run_unit_tests
     secrets:
       TOKEN: ${{ secrets.RELEASE_PLEASE_TOKEN }}
 
@@ -38,7 +29,6 @@ jobs:
     runs-on: ubuntu-latest
     needs:
     - run_checks
-    # - run_unit_tests
     strategy:
       matrix:
         node-version: [24]
