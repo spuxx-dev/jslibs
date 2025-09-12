@@ -1,5 +1,5 @@
 html.spx-app {
-  a:not(:has(.spx-button)):not(.spx-button) {
+  a:not(:has(.spx-button, .spx-card)):not(.spx-button, .spx-card) {
     text-decoration: none;
     color: var(--spx-color-text-link);
 
