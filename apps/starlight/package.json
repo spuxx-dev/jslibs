@@ -14,7 +14,7 @@
     "@astrojs/check": "0.9.4",
     "@astrojs/mdx": "4.3.5",
     "@astrojs/solid-js": "5.1.1",
-    "@astrojs/starlight": "0.35.2",
+    "@astrojs/starlight": "0.35.3",
     "@spuxx/browser-utils": "workspace:@spuxx/browser-utils@*",
     "@spuxx/js-utils": "workspace:@spuxx/js-utils@*",
     "@spuxx/solid": "workspace:@spuxx/solid@*",
