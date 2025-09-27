@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.12.0](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.11.3...browser-utils-v1.12.0) (2025-09-27)
+
+
+### Features
+
+* **styles:** Make gradient more customizable by creating new variables ([23c0f99](https://github.com/spuxx-dev/jslibs/commit/23c0f9955e10d43b56226cf4121a8078fdb49106))
+* **styles:** Update code and blockquote styles ([2a44a81](https://github.com/spuxx-dev/jslibs/commit/2a44a811696e966f2f9d070bfc607a011e4c7512))
+
 ## [1.11.3](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.11.2...browser-utils-v1.11.3) (2025-09-12)
 
 
