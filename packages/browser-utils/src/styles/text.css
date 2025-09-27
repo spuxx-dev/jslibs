@@ -18,15 +18,16 @@ html.spx-app {
   }
 
   pre.astro-code,
-  code,
-  blockquote {
-    background: var(--spx-color-surface) !important;
+  code {
+    background: var(--spx-color-surface);
   }
 
   blockquote {
     margin-left: 0;
     margin-right: 0;
     padding: 0.5rem 1.5rem;
+    background: var(--spx-color-surface);
     border-radius: var(--spx-border-radius);
+    border: var(--spx-color-primary);
   }
 }
