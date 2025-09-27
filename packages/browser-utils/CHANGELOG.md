@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.3](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.11.2...browser-utils-v1.11.3) (2025-09-12)
+
+
+### Bug Fixes
+
+* **styles:** Fix link color decoration being applied to card elements ([838d660](https://github.com/spuxx-dev/jslibs/commit/838d660d61ae5da030072e70e175d5781641124c))
+
 ## [1.11.2](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.11.1...browser-utils-v1.11.2) (2025-09-05)
 
 
