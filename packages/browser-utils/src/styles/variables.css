@@ -1,28 +1,35 @@
 :root {
+  /* Global layout */
   --spx-main-content-width: 1440px;
 
+  /* Element sizing */
   --spx-app-bar-height: 48px;
   --spx-control-height-default: 40px;
   --spx-input-height-default: 48px;
-
   --spx-control-width-small: 10rem;
   --spx-control-width-medium: 16rem;
   --spx-control-width-large: 24rem;
 
+  /* Spacing */
   --spx-spacing-xs: 0.25rem;
   --spx-spacing-sm: 0.5rem;
   --spx-spacing-md: 1rem;
   --spx-spacing-lg: 1.5rem;
 
+  /* Sidebar */
   --spx-sidebar-transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
   --spx-sidebar-transition-duration: 500ms;
   --spx-sidebar-width-full: 300px;
 
+  /* Input */
   --spx-input-pd-x: 0.75rem;
 
+  /* Card */
   --spx-card-max-height: 480px;
 
+  /* Borders */
   --spx-border-width: 1px;
 
+  /* Animations and transitions */
   --spx-animation-duration-default: 200ms;
 }
