@@ -19,7 +19,7 @@
     "@spuxx/js-utils": "workspace:@spuxx/js-utils@*",
     "@spuxx/solid": "workspace:@spuxx/solid@*",
     "astro": "5.14.1",
-    "sharp": "0.34.3",
+    "sharp": "0.34.4",
     "solid-js": "1.9.9",
     "typescript": "5.9.2",
     "vite-plugin-solid": "2.11.8"
