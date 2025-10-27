@@ -6,6 +6,10 @@ on:
     tags:
     - "nest-utils-*"
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   release:
     name: Release artifact (@spuxx/nest-utils)
