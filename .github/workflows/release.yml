@@ -7,9 +7,6 @@ on:
         required: true
         type: string
         description: "Path to the package to be released"
-    secrets:
-      NPM_TOKEN:
-        required: true
 
 jobs:
   build_and_publish:
