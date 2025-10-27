@@ -14,9 +14,7 @@ on:
 jobs:
   build_and_publish:
     name: Build and publish artifact
-    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_build_and_publish.yml@v4.1.0
+    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_build_and_publish.yml@v5.0.0
     with:
       PATH: ${{ inputs.PATH }}
       BUILD_COMMAND: pnpm -r --filter './packages/**' build
-    secrets:
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

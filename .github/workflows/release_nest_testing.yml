@@ -16,5 +16,4 @@ jobs:
     uses: ./.github/workflows/release.yml
     with:
       PATH: packages/nest-testing
-    secrets:
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      
