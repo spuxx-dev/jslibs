@@ -1,12 +1,5 @@
 # Changelog
 
-## [2.1.0](https://github.com/spuxx-dev/jslibs/compare/js-utils-v2.0.1...js-utils-v2.1.0) (2025-10-28)
-
-
-### Features
-
-* **ci:** Migrate to npm's trusted publishing ([9b68860](https://github.com/spuxx-dev/jslibs/commit/9b68860bb9bb7dde742ba65b049ab2dfc8a684b7))
-
 ## [2.0.1](https://github.com/spuxx-dev/jslibs/compare/js-utils-v2.0.0...js-utils-v2.0.1) (2025-06-19)
 
 
