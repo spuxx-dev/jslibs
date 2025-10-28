@@ -8,5 +8,3 @@ export * from './transformers';
 export * from './validators';
 export * from './http';
 export * from './mapping';
-
-// Publish me

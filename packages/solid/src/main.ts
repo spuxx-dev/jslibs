@@ -18,5 +18,3 @@ export * from './layout';
 export * from './modal';
 
 export * from './utils/component.utils';
-
-// Publish me
