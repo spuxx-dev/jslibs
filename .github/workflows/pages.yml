@@ -7,8 +7,6 @@ jobs:
   deploy_pages:
     name: Deploy Starlight App to GitHub Pages
     runs-on: ubuntu-latest
-    needs:
-    - run_checks
     strategy:
       matrix:
         node-version: [24]
