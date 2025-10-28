@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/spuxx-dev/jslibs/compare/nest-auth-v1.0.2...nest-auth-v1.1.0) (2025-10-28)
+
+
+### Features
+
+* **ci:** New versions are now published through npm's trusted publishing feature ([916f54f](https://github.com/spuxx-dev/jslibs/commit/916f54f1aba7c4b9bef0ffdefa01e5d475f7d23b))
+
 ## [1.0.2](https://github.com/spuxx-dev/jslibs/compare/nest-auth-v1.0.1...nest-auth-v1.0.2) (2025-04-15)
 
 
