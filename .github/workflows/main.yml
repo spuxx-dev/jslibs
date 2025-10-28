@@ -12,58 +12,18 @@ permissions:
   id-token: write
 
 jobs:
-  run_checks:
-    name: Run code checks
-    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_run_checks.yml@v4.1.0
-    with:
-      PREPARE: pnpm -r --filter './packages/**' build
-
   run_release_please:
     name: Release Please
-    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_release-please.yml@v4.1.0
+    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_release-please.yml@v5.0.0
     secrets:
       TOKEN: ${{ secrets.RELEASE_PLEASE_TOKEN }}
 
+  quality_gates:
+    name: Quality Gates
+    uses: ./.github/workflows/quality_gates.yml
+
   deploy_pages:
-    name: Deploy Starlight App to GitHub Pages
-    runs-on: ubuntu-latest
+    name: Deploy GitHub Pages
+    uses: ./.github/workflows/pages.yml
     needs:
-    - run_checks
-    strategy:
-      matrix:
-        node-version: [24]
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-
-    - name: Setup pnpm
-      uses: pnpm/action-setup@v4
-
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'pnpm'
-
-    - name: Install dependencies
-      run: pnpm install
-      
-    - name: Build dependencies
-      run: pnpm -r --filter './packages/**' build
-
-    - name: Generate docs
-      run: pnpm run docs:generate
-
-    - name: Build and deploy
-      uses: withastro/action@v3
-      with:
-        path: ./apps/starlight
-        node-version: 24
-        package-manager: pnpm@latest
-
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+    - quality_gates

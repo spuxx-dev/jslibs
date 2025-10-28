@@ -1,0 +1,49 @@
+name: Deploy GitHub Pages
+
+on:
+  workflow_call:
+
+jobs:
+  deploy_pages:
+    name: Deploy Starlight App to GitHub Pages
+    runs-on: ubuntu-latest
+    needs:
+    - run_checks
+    strategy:
+      matrix:
+        node-version: [24]
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup pnpm
+      uses: pnpm/action-setup@v4
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'pnpm'
+
+    - name: Install dependencies
+      run: pnpm install
+      
+    - name: Build dependencies
+      run: pnpm -r --filter './packages/**' build
+
+    - name: Generate docs
+      run: pnpm run docs:generate
+
+    - name: Build and deploy
+      uses: withastro/action@v3
+      with:
+        path: ./apps/starlight
+        node-version: 24
+        package-manager: pnpm@latest
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4

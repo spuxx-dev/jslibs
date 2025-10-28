@@ -10,25 +10,14 @@ permissions:
   pull-requests: write
 
 jobs:
-  run_checks:
-    name: Run code checks
-    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_run_checks.yml@v5.0.0
-    if: github.head_ref != 'release-please--branches--main'
-    with:
-      PREPARE: pnpm -r --filter './packages/**' build
-
-  run_unit_tests:
-    name: Run tests (vitest)
-    uses: spuxx-dev/ci-cd/.github/workflows/pnpm_run_tests_vitest.yml@v5.0.0
-    if: github.head_ref != 'release-please--branches--main'
-    with:
-      PREPARE: pnpm -r --filter './packages/**' build
+  quality_gates:
+    name: Quality Gates
+    uses: ./.github/workflows/quality_gates.yml
 
   dependabot_auto_merge:
     name: Auto-merge dependabot PR
     uses: spuxx-dev/ci-cd/.github/workflows/dependabot_auto_merge.yml@v5.0.0
     needs:
-      - run_checks
-      - run_unit_tests
+      - quality_gates
     with:
       merge-method: squash
