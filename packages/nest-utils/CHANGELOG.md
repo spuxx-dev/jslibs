@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.1.0](https://github.com/spuxx-dev/jslibs/compare/nest-utils-v4.0.0...nest-utils-v4.1.0) (2025-10-28)
+
+
+### Features
+
+* **ci:** New versions are now published through npm's trusted publishing feature ([916f54f](https://github.com/spuxx-dev/jslibs/commit/916f54f1aba7c4b9bef0ffdefa01e5d475f7d23b))
+
 ## [4.0.0](https://github.com/spuxx-dev/jslibs/compare/nest-utils-v3.2.0...nest-utils-v4.0.0) (2025-03-12)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/spuxx-dev/jslibs/compare/solid-v1.8.1...solid-v1.9.0) (2025-10-28)
+
+
+### Features
+
+* **ci:** New versions are now published through npm's trusted publishing feature ([916f54f](https://github.com/spuxx-dev/jslibs/commit/916f54f1aba7c4b9bef0ffdefa01e5d475f7d23b))
+
 ## [1.8.1](https://github.com/spuxx-dev/jslibs/compare/solid-v1.8.0...solid-v1.8.1) (2025-09-05)
 
 
