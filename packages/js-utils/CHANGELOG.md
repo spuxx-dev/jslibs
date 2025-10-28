@@ -1,22 +1,5 @@
 # Changelog
 
-## [3.0.0](https://github.com/spuxx-dev/jslibs/compare/js-utils-v2.1.0...js-utils-v3.0.0) (2025-10-27)
-
-
-### ⚠ BREAKING CHANGES
-
-* **http:** HttpClientMixin now provides a more feature-rich API that allows more fine-grained control over request handling ([#284](https://github.com/spuxx-dev/jslibs/issues/284))
-
-### Features
-
-* **ci:** Migrate to npm's trusted publishing ([9b68860](https://github.com/spuxx-dev/jslibs/commit/9b68860bb9bb7dde742ba65b049ab2dfc8a684b7))
-* **http:** HttpClientMixin now provides a more feature-rich API that allows more fine-grained control over request handling ([#284](https://github.com/spuxx-dev/jslibs/issues/284)) ([4ac294c](https://github.com/spuxx-dev/jslibs/commit/4ac294ced70cdbdbb67edc1996f4e5cdbbb432c0))
-
-
-### Bug Fixes
-
-* Fixed an issue with the endpoint transformer function not being awaited ([25e6b13](https://github.com/spuxx-dev/jslibs/commit/25e6b132ea3311346107ddbd4f6ae7133341aecf))
-
 ## [2.1.0](https://github.com/spuxx-dev/jslibs/compare/js-utils-v2.0.1...js-utils-v2.1.0) (2025-10-27)
 
 
