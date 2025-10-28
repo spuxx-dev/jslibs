@@ -1,7 +1,6 @@
 # jslibs
 
 ![Main pipeline](https://github.com/spuxx-dev/jslibs/actions/workflows/main.yml/badge.svg)
-![Release pipeline](https://github.com/spuxx-dev/jslibs/actions/workflows/create_release.yml/badge.svg)
 ![License](https://img.shields.io/github/license/spuxx-dev/jslibs)
 
 <!-- vscode-markdown-toc -->
