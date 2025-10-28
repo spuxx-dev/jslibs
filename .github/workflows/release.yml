@@ -8,6 +8,10 @@ on:
         type: string
         description: "Path to the package to be released"
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   build_and_publish:
     name: Build and publish artifact
