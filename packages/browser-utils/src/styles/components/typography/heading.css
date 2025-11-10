@@ -1,3 +1,8 @@
-.spx-heading:has(+ .spx-divider) {
-  margin-bottom: 0;
+.spx-heading {
+  display: flex;
+  align-items: center;
+
+  &:has(+ .spx-divider) {
+    margin-bottom: 0;
+  }
 }
