@@ -1,5 +1,3 @@
-/// <reference types="vitest/config" />
-/// <reference types="@vitest/browser/matchers" />
 import { defineConfig } from 'vite';
 import solidPlugin from 'vite-plugin-solid';
 import dts from 'vite-plugin-dts';
@@ -29,28 +27,6 @@ export default defineConfig({
     },
     rollupOptions: {
       external: [/^solid-js($|\/)/, ...Object.keys(peerDependencies)],
-    },
-  },
-  test: {
-    watch: false,
-    globals: true,
-    reporters: ['default', 'junit'],
-    outputFile: 'reports/junit/junit.xml',
-    coverage: {
-      enabled: true,
-      all: true,
-      provider: 'v8',
-      thresholds: { branches: 95, lines: 95 },
-      include: ['src/**/*.{ts,tsx}'],
-      exclude: ['src/main.ts', '**/index.ts', '**/*types.ts', '**/*.d.ts'],
-      reportsDirectory: 'reports/vitest/coverage',
-      reporter: ['text', 'json'],
-    },
-    browser: {
-      enabled: true,
-      provider: 'playwright',
-      name: 'chromium', // deprecated, but I think the vite solid package uses it still
-      instances: [{ name: 'chromium', browser: 'chromium' }],
     },
   },
 });

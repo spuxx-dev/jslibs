@@ -1,11 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import { Config } from '.';
-import { test, expect, vi, beforeEach, afterEach } from 'vitest';
-
-beforeEach(() => {
-  // Provide a 'window' object so that the Config service can access it.
-  vi.stubGlobal('window', {});
-});
+import { test, expect, afterEach } from 'vitest';
 
 afterEach(() => {
   Config.destroy();

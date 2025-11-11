@@ -1,34 +1,19 @@
-import { test, expect, vi, beforeEach } from 'vitest';
+import { test, expect, vi } from 'vitest';
+import { page } from 'vitest/browser';
 import { UserAgent } from '.';
 
-beforeEach(() => {
-  // UserAgent uses the bigger value of either document.documentElement.clientWidth and window.innerWidth.
-  // We stick to stubbing window.innerWidth during tests to reduce the amount of test code.
-  vi.stubGlobal('document', {
-    documentElement: {
-      clientWidth: 0,
-    },
-  });
-});
-
-test('properly recognizes a desktop viewport', () => {
-  vi.stubGlobal('window', {
-    innerWidth: 1600,
-  });
+test('properly recognizes a desktop viewport', async () => {
+  await page.viewport(1600, 900);
   expect(UserAgent.isDesktop).toBe(true);
 });
 
-test('properly recognizes a mobile viewport', () => {
-  vi.stubGlobal('window', {
-    innerWidth: 400,
-  });
+test('properly recognizes a mobile viewport', async () => {
+  await page.viewport(400, 800);
   expect(UserAgent.isDesktop).toBe(false);
 });
 
-test('acknowledges a custom threshold', () => {
-  vi.stubGlobal('window', {
-    innerWidth: 1600,
-  });
+test('acknowledges a custom threshold', async () => {
+  await page.viewport(1600, 900);
   UserAgent.setOptions({ desktopBreakpoint: 2000 });
   expect(UserAgent.isDesktop).toBe(false);
 });

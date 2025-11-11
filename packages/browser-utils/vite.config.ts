@@ -1,5 +1,4 @@
-/// <reference types="vitest" />
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vitest/config';
 import { resolve } from 'path';
 import dts from 'vite-plugin-dts';
 import tsconfigPaths from 'vite-tsconfig-paths';
@@ -24,26 +23,6 @@ export default defineConfig({
       },
       name: '@spuxx/browser-utils',
       formats: ['es'],
-    },
-  },
-  test: {
-    environment: 'jsdom',
-    silent: true,
-    reporters: ['default', 'junit'],
-    outputFile: 'reports/junit/junit.xml',
-    coverage: {
-      provider: 'istanbul',
-      all: true,
-      thresholds: { branches: 70, lines: 90 },
-      include: ['src/**/*.ts'],
-      exclude: ['src/main.ts', '**/index.ts', '**/*types.ts', '**/*.d.ts'],
-      reportsDirectory: 'reports/vitest/coverage',
-      reporter: ['text', 'json'],
-    },
-    browser: {
-      enabled: false,
-      provider: 'playwright',
-      instances: [{ browser: 'chromium' }, { browser: 'firefox' }],
     },
   },
 });
