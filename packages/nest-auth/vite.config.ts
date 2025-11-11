@@ -59,10 +59,11 @@ export default defineConfig({
     reporters: ['default', 'junit'],
     outputFile: 'reports/junit/junit.xml',
     coverage: {
+      enabled: true,
       provider: 'v8',
-      all: true,
       thresholds: { branches: 95, lines: 95 },
       include: ['**/*.ts'],
+      exclude: ['*.module.ts', 'main.ts', 'index.ts'],
       reportsDirectory: 'reports/vitest/coverage',
       reporter: ['text', 'json'],
     },
