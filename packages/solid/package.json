@@ -63,7 +63,7 @@
     "vite-plugin-dts": "4.5.3",
     "vite-plugin-solid": "2.11.10",
     "vite-tsconfig-paths": "5.1.4",
-    "vitest": "3.2.4"
+    "vitest": "4.0.8"
   },
   "peerDependencies": {
     "@spuxx/browser-utils": "workspace:@spuxx/browser-utils@*",
