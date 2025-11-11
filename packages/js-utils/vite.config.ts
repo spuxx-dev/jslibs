@@ -31,8 +31,8 @@ export default defineConfig({
     reporters: ['default', 'junit'],
     outputFile: 'reports/junit/junit.xml',
     coverage: {
+      enabled: true,
       provider: 'v8',
-      all: true,
       thresholds: { branches: 95, lines: 95 },
       include: ['src/**/*.ts'],
       exclude: ['src/main.ts', 'src/**/index.ts', '**/types/**'],

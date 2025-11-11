@@ -52,20 +52,4 @@ export default defineConfig({
       external: [...Object.keys(peerDependencies)],
     },
   },
-  test: {
-    environment: 'node',
-    silent: true,
-    setupFiles: './tests/vitest.setup.ts',
-    reporters: ['default', 'junit'],
-    outputFile: 'reports/junit/junit.xml',
-    coverage: {
-      provider: 'v8',
-      all: true,
-      thresholds: { branches: 95, lines: 95 },
-      include: ['src/**/*.ts'],
-      exclude: ['src/main.ts', 'src/**/index.ts', 'src/**/*types.ts'],
-      reportsDirectory: 'reports/vitest/coverage',
-      reporter: ['text', 'json'],
-    },
-  },
 });

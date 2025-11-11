@@ -6,6 +6,10 @@ import { ModalPortal } from '../modal-portal.component';
 
 describe(
   'ConfirmModal',
+  {
+    sequential: true,
+    concurrent: false,
+  },
   () => {
     let unmount: () => void;
     beforeEach(() => {
@@ -78,9 +82,5 @@ describe(
       cancelButton.click();
       expect(dialog).not.toBeInTheDocument();
     });
-  },
-  {
-    sequential: true,
-    concurrent: false,
   },
 );

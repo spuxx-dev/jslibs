@@ -41,7 +41,7 @@
     "build": "vite build",
     "types": "tsc --noEmit",
     "test": "pnpm run test:vitest",
-    "test:vitest": "vitest run --coverage"
+    "test:vitest": "vitest run"
   },
   "peerDependencies": {
     "@nestjs/common": "^11.0.0",

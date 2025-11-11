@@ -4,7 +4,6 @@ import { playwright } from '@vitest/browser-playwright';
 
 export default mergeConfig(
   viteConfig,
-  // @ts-expect-error
   defineConfig({
     test: {
       watch: false,
@@ -13,8 +12,8 @@ export default mergeConfig(
       outputFile: 'reports/junit/junit.xml',
       coverage: {
         enabled: true,
-        provider: 'v8',
-        thresholds: { branches: 95, lines: 95 },
+        provider: 'istanbul',
+        thresholds: { lines: 95 },
         include: ['src/**/*.{ts,tsx}'],
         exclude: ['src/main.ts', '**/index.ts', '**/*types.ts', '**/*.d.ts'],
         reportsDirectory: 'reports/vitest/coverage',

@@ -1,4 +1,3 @@
-/// <reference types="vitest" />
 import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import swc from 'unplugin-swc';
@@ -38,21 +37,6 @@ export default defineConfig({
       input: {
         main: './src/main.ts',
       },
-    },
-  },
-  test: {
-    environment: 'node',
-    silent: true,
-    setupFiles: './tests/vitest.setup.ts',
-    reporters: ['default', 'junit'],
-    outputFile: 'reports/junit/junit.xml',
-    coverage: {
-      provider: 'v8',
-      all: true,
-      include: ['src/**/*.ts'],
-      exclude: ['src/main.ts', '**/index.ts'],
-      reportsDirectory: 'reports/vitest/coverage',
-      reporter: ['text', 'json'],
     },
   },
 });
