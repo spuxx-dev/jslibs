@@ -483,6 +483,9 @@ importers:
       iconify-icon:
         specifier: 3.0.2
         version: 3.0.2
+      playwright:
+        specifier: 1.56.1
+        version: 1.56.1
       solid-js:
         specifier: 1.9.10
         version: 1.9.10
