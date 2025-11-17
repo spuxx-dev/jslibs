@@ -10,6 +10,7 @@ export default mergeConfig(
       setupFiles: './tests/vitest.setup.ts',
       reporters: ['default', 'junit'],
       outputFile: 'reports/junit/junit.xml',
+      exclude: ['**/node_modules/**', '**/dist/**'],
       coverage: {
         enabled: true,
         provider: 'v8',
