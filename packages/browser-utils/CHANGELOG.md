@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.13.1](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.13.0...browser-utils-v1.13.1) (2025-11-17)
+
+
+### Bug Fixes
+
+* **components:** Fix wrong alignment in headings ([fdee480](https://github.com/spuxx-dev/jslibs/commit/fdee48059024210399c7951d3677ac7b201b84ab))
+
+
+### Build System
+
+* **deps-dev:** bump @vitest/coverage-istanbul from 3.2.4 to 4.0.8 ([#453](https://github.com/spuxx-dev/jslibs/issues/453)) ([e5a67f2](https://github.com/spuxx-dev/jslibs/commit/e5a67f21ac187b544da75a59e7f80554d420781c))
+* **deps-dev:** bump vite from 7.1.11 to 7.2.2 ([#447](https://github.com/spuxx-dev/jslibs/issues/447)) ([cf9630c](https://github.com/spuxx-dev/jslibs/commit/cf9630c2f0be3ed960e718550f5dd9c1365bd9a9))
+* **deps-dev:** bump vitest from 3.2.4 to 4.0.8 ([#445](https://github.com/spuxx-dev/jslibs/issues/445)) ([867d2ea](https://github.com/spuxx-dev/jslibs/commit/867d2ea6ec9229c765c87ddc05302be398188d75))
+
 ## [1.13.0](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.12.0...browser-utils-v1.13.0) (2025-10-28)
 
 
