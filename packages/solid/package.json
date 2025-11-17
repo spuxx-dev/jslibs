@@ -52,7 +52,7 @@
     "@solidjs/testing-library": "0.8.10",
     "@spuxx/browser-utils": "workspace:@spuxx/browser-utils@*",
     "@testing-library/jest-dom": "6.9.1",
-    "@vitest/browser": "4.0.8",
+    "@vitest/browser": "4.0.10",
     "@vitest/browser-playwright": "4.0.10",
     "@vitest/coverage-istanbul": "4.0.8",
     "csstype": "3.1.3",
