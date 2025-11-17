@@ -9,6 +9,7 @@ export * from './components/control/button';
 export * from './components/control/button-link';
 export * from './components/control/input';
 export * from './components/control/select';
+export * from './components/control/switch';
 export * from './components/layout/cards';
 export * from './components/layout/container';
 export * from './components/layout/divider';

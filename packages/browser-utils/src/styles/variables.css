@@ -6,6 +6,8 @@
   --spx-app-bar-height: 48px;
   --spx-control-height-default: 40px;
   --spx-input-height-default: 48px;
+  --spx-switch-height-default: 32px;
+  --spx-switch-width-default: 64px;
   --spx-control-width-small: 10rem;
   --spx-control-width-medium: 16rem;
   --spx-control-width-large: 24rem;

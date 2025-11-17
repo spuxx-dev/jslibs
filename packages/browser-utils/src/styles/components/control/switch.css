@@ -1,0 +1,18 @@
+.spx-switch {
+  height: var(--spx-control-height-default);
+}
+
+.spx-switch-input {
+  display: none;
+}
+
+.spx-switch-slider {
+  height: var(--spx-switch-height-default);
+  width: var(--spx-switch-width-default);
+
+  &:before {
+  }
+}
+
+.spx-switch-input:checked + .spx-switch-slider {
+}
