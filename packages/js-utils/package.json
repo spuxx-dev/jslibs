@@ -54,7 +54,7 @@
     "@modyfi/vite-plugin-yaml": "1.1.1",
     "@vitest/coverage-v8": "4.0.10",
     "axios": "1.12.2",
-    "msw": "2.12.2",
+    "msw": "2.12.3",
     "vite": "7.2.2",
     "vite-plugin-dts": "4.5.3",
     "vite-tsconfig-paths": "5.1.4",
