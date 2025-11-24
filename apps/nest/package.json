@@ -30,7 +30,7 @@
     "@spuxx/nest-testing": "workspace:@spuxx/nest-testing@*",
     "@types/express": "5.0.5",
     "@vitest/coverage-v8": "4.0.10",
-    "express-openid-connect": "2.19.2",
+    "express-openid-connect": "2.19.3",
     "source-map-support": "0.5.21",
     "ts-loader": "9.5.4",
     "ts-node": "10.9.2",
