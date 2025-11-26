@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.1.1](https://github.com/spuxx-dev/jslibs/compare/js-utils-v2.1.0...js-utils-v2.1.1) (2025-11-17)
+
+
+### Build System
+
+* **deps-dev:** bump @vitest/coverage-v8 from 3.2.4 to 4.0.8 ([#446](https://github.com/spuxx-dev/jslibs/issues/446)) ([94ad756](https://github.com/spuxx-dev/jslibs/commit/94ad756e781e88e39b1f967449e5cc43718f0779))
+* **deps-dev:** bump vite from 7.1.11 to 7.2.2 ([#447](https://github.com/spuxx-dev/jslibs/issues/447)) ([cf9630c](https://github.com/spuxx-dev/jslibs/commit/cf9630c2f0be3ed960e718550f5dd9c1365bd9a9))
+* **deps-dev:** bump vitest from 3.2.4 to 4.0.8 ([#445](https://github.com/spuxx-dev/jslibs/issues/445)) ([867d2ea](https://github.com/spuxx-dev/jslibs/commit/867d2ea6ec9229c765c87ddc05302be398188d75))
+
 ## [2.1.0](https://github.com/spuxx-dev/jslibs/compare/js-utils-v2.0.1...js-utils-v2.1.0) (2025-10-28)
 
 
