@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@spuxx/nest-testing": "workspace:@spuxx/nest-testing@*",
-    "@types/express": "5.0.5",
+    "@types/express": "5.0.6",
     "@vitest/coverage-v8": "4.0.13",
     "express-openid-connect": "2.19.3",
     "source-map-support": "0.5.21",
