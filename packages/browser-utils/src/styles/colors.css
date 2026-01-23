@@ -147,3 +147,46 @@
   background-clip: text;
   color: transparent;
 }
+
+/* Opacity variables */
+:root {
+  --spx-color-surface-90: color-mix(var(--spx-color-surface), transparent 10%);
+  --spx-color-surface-80: color-mix(var(--spx-color-surface), transparent 20%);
+  --spx-color-surface-70: color-mix(var(--spx-color-surface), transparent 30%);
+  --spx-color-surface-60: color-mix(var(--spx-color-surface), transparent 40%);
+  --spx-color-surface-50: color-mix(var(--spx-color-surface), transparent 50%);
+  --spx-color-surface-40: color-mix(var(--spx-color-surface), transparent 60%);
+  --spx-color-surface-30: color-mix(var(--spx-color-surface), transparent 70%);
+  --spx-color-surface-20: color-mix(var(--spx-color-surface), transparent 80%);
+  --spx-color-surface-10: color-mix(var(--spx-color-surface), transparent 90%);
+
+  --spx-color-accent-90: color-mix(var(--spx-color-accent), transparent 10%);
+  --spx-color-accent-80: color-mix(var(--spx-color-accent), transparent 20%);
+  --spx-color-accent-70: color-mix(var(--spx-color-accent), transparent 30%);
+  --spx-color-accent-60: color-mix(var(--spx-color-accent), transparent 40%);
+  --spx-color-accent-50: color-mix(var(--spx-color-accent), transparent 50%);
+  --spx-color-accent-40: color-mix(var(--spx-color-accent), transparent 60%);
+  --spx-color-accent-30: color-mix(var(--spx-color-accent), transparent 70%);
+  --spx-color-accent-20: color-mix(var(--spx-color-accent), transparent 80%);
+  --spx-color-accent-10: color-mix(var(--spx-color-accent), transparent 90%);
+
+  --spx-color-primary-90: color-mix(var(--spx-color-primary), transparent 10%);
+  --spx-color-primary-80: color-mix(var(--spx-color-primary), transparent 20%);
+  --spx-color-primary-70: color-mix(var(--spx-color-primary), transparent 30%);
+  --spx-color-primary-60: color-mix(var(--spx-color-primary), transparent 40%);
+  --spx-color-primary-50: color-mix(var(--spx-color-primary), transparent 50%);
+  --spx-color-primary-40: color-mix(var(--spx-color-primary), transparent 60%);
+  --spx-color-primary-30: color-mix(var(--spx-color-primary), transparent 70%);
+  --spx-color-primary-20: color-mix(var(--spx-color-primary), transparent 80%);
+  --spx-color-primary-10: color-mix(var(--spx-color-primary), transparent 90%);
+
+  --spx-color-secondary-90: color-mix(var(--spx-color-secondary), transparent 10%);
+  --spx-color-secondary-80: color-mix(var(--spx-color-secondary), transparent 20%);
+  --spx-color-secondary-70: color-mix(var(--spx-color-secondary), transparent 30%);
+  --spx-color-secondary-60: color-mix(var(--spx-color-secondary), transparent 40%);
+  --spx-color-secondary-50: color-mix(var(--spx-color-secondary), transparent 50%);
+  --spx-color-secondary-40: color-mix(var(--spx-color-secondary), transparent 60%);
+  --spx-color-secondary-30: color-mix(var(--spx-color-secondary), transparent 70%);
+  --spx-color-secondary-20: color-mix(var(--spx-color-secondary), transparent 80%);
+  --spx-color-secondary-10: color-mix(var(--spx-color-secondary), transparent 90%);
+}
