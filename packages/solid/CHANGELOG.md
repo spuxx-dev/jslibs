@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.9.1](https://github.com/spuxx-dev/jslibs/compare/solid-v1.9.0...solid-v1.9.1) (2026-01-23)
+
+
+### Build System
+
+* **deps-dev:** bump @vitest/browser from 3.2.4 to 4.0.8 ([#443](https://github.com/spuxx-dev/jslibs/issues/443)) ([7ba796f](https://github.com/spuxx-dev/jslibs/commit/7ba796f9db60969e452d4d490f1c4fdba2ccbfe1))
+* **deps-dev:** bump @vitest/browser from 4.0.8 to 4.0.10 ([#462](https://github.com/spuxx-dev/jslibs/issues/462)) ([ebfc058](https://github.com/spuxx-dev/jslibs/commit/ebfc058cf559d62cc27f79f7192fcb1752ac9772))
+* **deps-dev:** bump @vitest/browser-playwright from 4.0.10 to 4.0.13 ([#469](https://github.com/spuxx-dev/jslibs/issues/469)) ([666ebc2](https://github.com/spuxx-dev/jslibs/commit/666ebc206e5ef2ca7575060018393eb1f4db87aa))
+* **deps-dev:** bump @vitest/browser-playwright from 4.0.13 to 4.0.14 ([#480](https://github.com/spuxx-dev/jslibs/issues/480)) ([af6fbf7](https://github.com/spuxx-dev/jslibs/commit/af6fbf7c9663277538ff2b6d32dd58d28611156e))
+* **deps-dev:** bump @vitest/browser-playwright from 4.0.8 to 4.0.10 ([#459](https://github.com/spuxx-dev/jslibs/issues/459)) ([d992ee8](https://github.com/spuxx-dev/jslibs/commit/d992ee8978c419728423eb1a6c3fe0d38420b18f))
+* **deps-dev:** bump @vitest/coverage-v8 from 3.2.4 to 4.0.8 ([#446](https://github.com/spuxx-dev/jslibs/issues/446)) ([94ad756](https://github.com/spuxx-dev/jslibs/commit/94ad756e781e88e39b1f967449e5cc43718f0779))
+* **deps-dev:** bump iconify-icon from 3.0.1 to 3.0.2 ([#433](https://github.com/spuxx-dev/jslibs/issues/433)) ([c9f484e](https://github.com/spuxx-dev/jslibs/commit/c9f484e7c66aa3bc3fe8fa4c8752c236b08e668b))
+* **deps-dev:** bump playwright from 1.56.0 to 1.56.1 ([#437](https://github.com/spuxx-dev/jslibs/issues/437)) ([2637328](https://github.com/spuxx-dev/jslibs/commit/2637328be7f642d1d9f68fba6de2eb18876a95ea))
+* **deps-dev:** bump vite from 7.1.11 to 7.2.2 ([#447](https://github.com/spuxx-dev/jslibs/issues/447)) ([cf9630c](https://github.com/spuxx-dev/jslibs/commit/cf9630c2f0be3ed960e718550f5dd9c1365bd9a9))
+* **deps-dev:** bump vite-plugin-solid from 2.11.8 to 2.11.10 ([#448](https://github.com/spuxx-dev/jslibs/issues/448)) ([7c340e4](https://github.com/spuxx-dev/jslibs/commit/7c340e4a65587a2b4c635a8e6ac89fe6749bf177))
+* **deps-dev:** bump vitest from 3.2.4 to 4.0.8 ([#445](https://github.com/spuxx-dev/jslibs/issues/445)) ([867d2ea](https://github.com/spuxx-dev/jslibs/commit/867d2ea6ec9229c765c87ddc05302be398188d75))
+* **deps-dev:** bump vitest from 4.0.10 to 4.0.13 ([#471](https://github.com/spuxx-dev/jslibs/issues/471)) ([ad530da](https://github.com/spuxx-dev/jslibs/commit/ad530dafc699cdd24b69cd40b45eeca724eb84f9))
+* **deps-dev:** bump vitest from 4.0.8 to 4.0.10 ([#460](https://github.com/spuxx-dev/jslibs/issues/460)) ([8c76815](https://github.com/spuxx-dev/jslibs/commit/8c768157c05e7e41a09e7991e25e4b2a31e75822))
+* **deps:** bump solid-js from 1.9.9 to 1.9.10 ([#436](https://github.com/spuxx-dev/jslibs/issues/436)) ([ffbec3a](https://github.com/spuxx-dev/jslibs/commit/ffbec3ae5e3e6e929b2ed4ec875b1602f15c253a))
+
 ## [1.9.0](https://github.com/spuxx-dev/jslibs/compare/solid-v1.8.1...solid-v1.9.0) (2025-10-28)
 
 
