@@ -517,8 +517,8 @@ importers:
         specifier: '0.28'
         version: 0.28.2(typescript@5.9.3)
       typedoc-plugin-markdown:
-        specifier: 4.9.0
-        version: 4.9.0(typedoc@0.28.2(typescript@5.9.3))
+        specifier: 4.10.0
+        version: 4.10.0(typedoc@0.28.2(typescript@5.9.3))
       typedoc-plugin-md:
         specifier: 0.7.1
         version: 0.7.1(typedoc@0.28.2(typescript@5.9.3))
@@ -6114,6 +6114,10 @@ packages:
     resolution: {integrity: sha512-4EK3+xJl8Ts67nLYNwqw/dsFVnCf+qR7RgXSK9jEEm9unao3njwMDdmsdvoKBKHzxd7tCYz5e5M+SnMjdtXGQQ==}
     engines: {node: '>=0.6'}
 
+  qs@6.15.0:
+    resolution: {integrity: sha512-mAZTtNCeetKMH+pSjrb76NAM8V9a05I9aBZOHztWy/UqcJdQYNsf59vrRKWnojAT9Y+GbIvoTBC++CPHqpDBhQ==}
+    engines: {node: '>=0.6'}
+
   quansync@0.2.10:
     resolution: {integrity: sha512-t41VRkMYbkHyCYmOvx/6URnN80H7k4X0lLdBMGsz+maAwrJQYB1djpV6vHrQIBE0WBSGqhtEHrK9U3DWWH8v7A==}
 
@@ -7160,8 +7164,8 @@ packages:
   typedarray@0.0.6:
     resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
 
-  typedoc-plugin-markdown@4.9.0:
-    resolution: {integrity: sha512-9Uu4WR9L7ZBgAl60N/h+jqmPxxvnC9nQAlnnO/OujtG2ubjnKTVUFY1XDhcMY+pCqlX3N2HsQM2QTYZIU9tJuw==}
+  typedoc-plugin-markdown@4.10.0:
+    resolution: {integrity: sha512-psrg8Rtnv4HPWCsoxId+MzEN8TVK5jeKCnTbnGAbTBqcDapR9hM41bJT/9eAyKn9C2MDG9Qjh3MkltAYuLDoXg==}
     engines: {node: '>= 18'}
     peerDependencies:
       typedoc: 0.28.x
@@ -14572,6 +14576,10 @@ snapshots:
     dependencies:
       side-channel: 1.1.0
 
+  qs@6.15.0:
+    dependencies:
+      side-channel: 1.1.0
+
   quansync@0.2.10: {}
 
   queue-microtask@1.2.3: {}
@@ -15552,7 +15560,7 @@ snapshots:
       formidable: 3.5.4
       methods: 1.1.2
       mime: 2.6.0
-      qs: 6.14.1
+      qs: 6.15.0
     transitivePeerDependencies:
       - supports-color
 
@@ -15885,13 +15893,13 @@ snapshots:
 
   typedarray@0.0.6: {}
 
-  typedoc-plugin-markdown@4.9.0(typedoc@0.28.2(typescript@5.9.3)):
+  typedoc-plugin-markdown@4.10.0(typedoc@0.28.2(typescript@5.9.3)):
     dependencies:
       typedoc: 0.28.2(typescript@5.9.3)
 
   typedoc-plugin-md@0.7.1(typedoc@0.28.2(typescript@5.9.3)):
     dependencies:
-      typedoc-plugin-markdown: 4.9.0(typedoc@0.28.2(typescript@5.9.3))
+      typedoc-plugin-markdown: 4.10.0(typedoc@0.28.2(typescript@5.9.3))
     optionalDependencies:
       typedoc: 0.28.2(typescript@5.9.3)
 
