@@ -59,7 +59,7 @@
     "iconify-icon": "3.0.2",
     "solid-js": "1.9.10",
     "typescript": "5.9.3",
-    "vite": "7.2.2",
+    "vite": "7.3.1",
     "vite-plugin-dts": "4.5.3",
     "vite-plugin-solid": "2.11.10",
     "vite-tsconfig-paths": "5.1.4",
