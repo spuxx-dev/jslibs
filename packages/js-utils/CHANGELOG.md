@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.1.1](https://github.com/spuxx-dev/jslibs/compare/js-utils-v2.1.0...js-utils-v2.1.1) (2026-01-23)
+
+
+### Build System
+
+* **deps-dev:** bump @vitest/coverage-v8 from 3.2.4 to 4.0.8 ([#446](https://github.com/spuxx-dev/jslibs/issues/446)) ([94ad756](https://github.com/spuxx-dev/jslibs/commit/94ad756e781e88e39b1f967449e5cc43718f0779))
+* **deps-dev:** bump @vitest/coverage-v8 from 4.0.10 to 4.0.13 ([#474](https://github.com/spuxx-dev/jslibs/issues/474)) ([50ef5b1](https://github.com/spuxx-dev/jslibs/commit/50ef5b124d9235ca5413fe6b081a47a714070888))
+* **deps-dev:** bump @vitest/coverage-v8 from 4.0.8 to 4.0.10 ([#456](https://github.com/spuxx-dev/jslibs/issues/456)) ([348c919](https://github.com/spuxx-dev/jslibs/commit/348c9192e920b4f216a7c2a71a0c380e400b6e16))
+* **deps-dev:** bump msw from 2.11.3 to 2.12.2 ([#457](https://github.com/spuxx-dev/jslibs/issues/457)) ([2ef2676](https://github.com/spuxx-dev/jslibs/commit/2ef267644c7f7d61989f97545eb9678672cf6284))
+* **deps-dev:** bump msw from 2.12.2 to 2.12.3 ([#466](https://github.com/spuxx-dev/jslibs/issues/466)) ([0811531](https://github.com/spuxx-dev/jslibs/commit/0811531d019de630b80f29c260ae2d8cda714ba1))
+* **deps-dev:** bump vite from 7.1.11 to 7.2.2 ([#447](https://github.com/spuxx-dev/jslibs/issues/447)) ([cf9630c](https://github.com/spuxx-dev/jslibs/commit/cf9630c2f0be3ed960e718550f5dd9c1365bd9a9))
+* **deps-dev:** bump vitest from 3.2.4 to 4.0.8 ([#445](https://github.com/spuxx-dev/jslibs/issues/445)) ([867d2ea](https://github.com/spuxx-dev/jslibs/commit/867d2ea6ec9229c765c87ddc05302be398188d75))
+* **deps-dev:** bump vitest from 4.0.10 to 4.0.13 ([#471](https://github.com/spuxx-dev/jslibs/issues/471)) ([ad530da](https://github.com/spuxx-dev/jslibs/commit/ad530dafc699cdd24b69cd40b45eeca724eb84f9))
+* **deps-dev:** bump vitest from 4.0.8 to 4.0.10 ([#460](https://github.com/spuxx-dev/jslibs/issues/460)) ([8c76815](https://github.com/spuxx-dev/jslibs/commit/8c768157c05e7e41a09e7991e25e4b2a31e75822))
+
 ## [2.1.0](https://github.com/spuxx-dev/jslibs/compare/js-utils-v2.0.1...js-utils-v2.1.0) (2025-10-28)
 
 
