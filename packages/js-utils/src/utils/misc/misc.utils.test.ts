@@ -87,6 +87,11 @@ describe('deepMerge', () => {
   test('should return an empty object if sources are empty', () => {
     expect(deepMerge()).toEqual({});
   });
+
+  test('should ignore string sources', () => {
+    const object = { foo: 'bar' };
+    expect(deepMerge('ignored', object, 'also-ignored')).toEqual({ foo: 'bar' });
+  });
 });
 
 describe('stripNull', () => {
