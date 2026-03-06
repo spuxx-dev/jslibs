@@ -82,7 +82,7 @@ export function deepMerge(...sources: Array<RecursiveObject | string>): Recursiv
           target[key] = source[key];
         }
       }
-    }
+    } else continue;
   }
 
   return target;

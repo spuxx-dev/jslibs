@@ -88,9 +88,9 @@ describe('deepMerge', () => {
     expect(deepMerge()).toEqual({});
   });
 
-  test('should ignore string sources', () => {
+  test('should ignore non-object sources', () => {
     const object = { foo: 'bar' };
-    expect(deepMerge('ignored', object, 'also-ignored')).toEqual({ foo: 'bar' });
+    expect(deepMerge('ignored', object, 'also-ignored')).toEqual(object);
   });
 });
 
