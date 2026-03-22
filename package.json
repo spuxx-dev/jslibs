@@ -32,7 +32,8 @@
     "lint": "eslint . --ext ts,tsx",
     "prettier-check": "prettier --check .",
     "format": "prettier --write .",
-    "docs:generate": "cd typedoc && node generate.js && cd .. && prettier --write ./typedoc/output"
+    "docs:generate": "cd typedoc && node generate.js && cd .. && prettier --write ./typedoc/output",
+    "build": "pnpm -r build"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
