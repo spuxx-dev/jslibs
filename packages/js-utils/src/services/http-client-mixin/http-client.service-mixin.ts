@@ -126,12 +126,7 @@ export function HttpClientMixin<TEndpoints extends Endpoints>(
 
     private static async handleFetchResponse(response: Response): Promise<Response> {
       if (!response.ok) {
-        let body: object | string = '';
-        try {
-          body = await response.json();
-        } catch (error) {
-          body = await response.text();
-        }
+        const body = await response.json().catch(() => response.text());
         throw new HttpError({
           name: 'FetchError',
           status: response.status,

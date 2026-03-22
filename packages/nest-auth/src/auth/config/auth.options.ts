@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/naming-convention */
 import { ConfigParams as ExpressOidcConfig } from 'express-openid-connect';
 
 export interface AuthOptions {

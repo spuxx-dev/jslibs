@@ -91,16 +91,16 @@ test('should throw an error if the fallback locale is not part of the supported 
 test("should throw an exception if the service hasn't been initialized yet", () => {
   Intl.destroy();
   expect(() => {
-    Intl.currentDictionary;
+    void Intl.currentDictionary;
   }).toThrow();
   expect(() => {
-    Intl.currentLocale;
+    void Intl.currentLocale;
   }).toThrow();
   expect(() => {
-    Intl.dictionaries;
+    void Intl.dictionaries;
   }).toThrow();
   expect(() => {
-    Intl.fallbackLocale;
+    void Intl.fallbackLocale;
   }).toThrow();
   expect(() => {
     intl('hello-world');

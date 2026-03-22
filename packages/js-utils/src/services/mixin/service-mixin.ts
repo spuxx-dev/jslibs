@@ -21,7 +21,6 @@ export function ServiceMixin<TService>() {
      * Service classes should not be instantiated directly. Instead, access the `instance` property
      * to get the existing singleton instance or to create a new one if it does not yet exist.
      */
-    // eslint-disable-next-line @typescript-eslint/no-empty-function
     protected constructor() {}
 
     /**

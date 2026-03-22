@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/naming-convention */
 import { Config } from '.';
 import { test, expect, afterEach } from 'vitest';
 

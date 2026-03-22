@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/naming-convention */
 import { ApiProperty } from '@nestjs/swagger';
 import { Expose } from 'class-transformer';
 

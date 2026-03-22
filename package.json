@@ -35,16 +35,17 @@
     "docs:generate": "cd typedoc && node generate.js && cd .. && prettier --write ./typedoc/output"
   },
   "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@eslint/json": "1.2.0",
+    "@eslint/markdown": "7.5.1",
     "@nestjs/cli": "11.0.12",
-    "@typescript-eslint/eslint-plugin": "7.18.0",
-    "@typescript-eslint/parser": "7.18.0",
     "concurrently": "9.2.1",
-    "eslint": "8.57.0",
-    "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-prettier": "5.5.4",
+    "eslint": "10.1.0",
+    "globals": "17.4.0",
     "nyc": "18.0.0",
     "prettier": "3.6.2",
     "release-please": "17.2.0",
+    "typescript-eslint": "8.57.1",
     "vitest": "4.0.13"
   }
 }

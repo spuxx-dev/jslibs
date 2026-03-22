@@ -55,10 +55,8 @@ export function IsOptionalUnless<T extends object, K extends keyof T>(
 interface ValidationMetadataArgs {
   type: string;
   name?: string;
-  // eslint-disable-next-line @typescript-eslint/ban-types
   target: Function | string;
   propertyName: string;
-  // eslint-disable-next-line @typescript-eslint/ban-types
   constraintCls?: Function;
   constraints?: any[];
   validationOptions?: ValidationOptions;
@@ -72,10 +70,8 @@ interface ValidationMetadataArgs {
 class ValidationMetadata {
   type: string;
   name?: string;
-  // eslint-disable-next-line @typescript-eslint/ban-types
   target: Function | string;
   propertyName: string;
-  // eslint-disable-next-line @typescript-eslint/ban-types
   constraintCls: Function;
   constraints: any[];
   message: string | ((args: ValidationArguments) => string);

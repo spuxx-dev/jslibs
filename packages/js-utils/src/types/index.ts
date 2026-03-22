@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-types */
 /**
  * A type that extracts the optional properties from another type.
  * @typeParam T The type to extract optional properties from.

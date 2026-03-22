@@ -1,5 +1,4 @@
 /* eslint-disable no-console */
-/* eslint-disable no-undef */
 import { promises as fs } from 'fs';
 import { existsSync } from 'fs';
 import path from 'path';
