@@ -113,7 +113,7 @@ Make sure to define its value in either the default, Vite or injected config.`,
 
   private _getInjectedConfig(): object | void {
     const injectedConfigKey = Config.getOptions().injectedConfigKey ?? 'INJECTED_CONFIG';
-    const injectedConfig: object | undefined = window[injectedConfigKey];
+    const injectedConfig = window[injectedConfigKey] as object | undefined;
     if (injectedConfig) {
       debug(`Injected config found: ${JSON.stringify(injectedConfig)}`, 'Config');
       return injectedConfig;
