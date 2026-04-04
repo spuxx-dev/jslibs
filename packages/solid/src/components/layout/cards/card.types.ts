@@ -6,8 +6,7 @@ import { JSX, ParentProps } from 'solid-js';
  * The Card component's properties.
  */
 export interface CardProps
-  extends ComponentProps<JSX.HTMLAttributes<HTMLHtmlElement>>,
-    ParentProps {
+  extends ComponentProps<JSX.HTMLAttributes<HTMLHtmlElement>>, ParentProps {
   /**
    * The tag  to use for the card. Note that cards may contain `<header>` and `<footer>` tags,
    * in which case you should use `section`, `article` or `aside`.

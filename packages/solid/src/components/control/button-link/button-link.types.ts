@@ -6,8 +6,7 @@ import { ComponentProps } from '@src/main';
  * The `ButtonLink` component properties.
  */
 export interface ButtonLinkProps
-  extends ComponentProps<JSX.AnchorHTMLAttributes<HTMLAnchorElement>>,
-    ParentProps {
+  extends ComponentProps<JSX.AnchorHTMLAttributes<HTMLAnchorElement>>, ParentProps {
   /**
    * The `href` attribute of the button link.
    */

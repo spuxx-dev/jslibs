@@ -5,7 +5,6 @@ import { JSX, ParentProps } from 'solid-js';
  * The Accordion component properties.
  */
 export interface AccordionProps
-  extends ComponentProps<JSX.ButtonHTMLAttributes<HTMLInputElement>>,
-    ParentProps {
+  extends ComponentProps<JSX.ButtonHTMLAttributes<HTMLInputElement>>, ParentProps {
   useGutters?: boolean;
 }

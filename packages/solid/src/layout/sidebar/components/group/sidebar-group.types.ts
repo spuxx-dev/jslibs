@@ -3,8 +3,7 @@ import type { JSX, ParentProps } from 'solid-js';
 import type { BaseColor, ContentColor } from '@spuxx/browser-utils';
 
 export interface SidebarGroupProps
-  extends ComponentProps<JSX.HTMLAttributes<HTMLElement>>,
-    ParentProps {
+  extends ComponentProps<JSX.HTMLAttributes<HTMLElement>>, ParentProps {
   /**
    * The title of the group.
    */

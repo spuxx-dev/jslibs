@@ -28,8 +28,9 @@ export interface SelectOption<T = any> {
  * The Select component properties.
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export interface SelectProps<T = any>
-  extends ComponentProps<JSX.SelectHTMLAttributes<HTMLSelectElement>> {
+export interface SelectProps<T = any> extends ComponentProps<
+  JSX.SelectHTMLAttributes<HTMLSelectElement>
+> {
   /**
    * The select label.
    */

@@ -6,8 +6,7 @@ import { ComponentProps } from '@src/main';
  * The Button component properties.
  */
 export interface ButtonProps
-  extends ComponentProps<JSX.ButtonHTMLAttributes<HTMLInputElement>>,
-    ParentProps {
+  extends ComponentProps<JSX.ButtonHTMLAttributes<HTMLInputElement>>, ParentProps {
   /**
    * The size of the button.
    * @default undefined

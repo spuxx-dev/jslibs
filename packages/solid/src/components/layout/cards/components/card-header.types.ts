@@ -5,8 +5,7 @@ import { JSX, ParentProps } from 'solid-js';
  * The CardHeader component properties.
  */
 export interface CardHeaderProps
-  extends ComponentProps<JSX.ButtonHTMLAttributes<HTMLButtonElement>>,
-    ParentProps {
+  extends ComponentProps<JSX.ButtonHTMLAttributes<HTMLButtonElement>>, ParentProps {
   /**
    * The title of the card header.
    */

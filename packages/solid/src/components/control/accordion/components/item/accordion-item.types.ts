@@ -6,8 +6,7 @@ import { JSX, ParentProps } from 'solid-js';
  * The AccordionItem component properties.
  */
 export interface AccordionItemProps
-  extends ComponentProps<JSX.ButtonHTMLAttributes<HTMLButtonElement>>,
-    ParentProps {
+  extends ComponentProps<JSX.ButtonHTMLAttributes<HTMLButtonElement>>, ParentProps {
   /**
    * The title of the item.
    */

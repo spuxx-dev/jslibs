@@ -6,8 +6,7 @@ import { JSX, ParentProps } from 'solid-js';
  * The Container component's properties.
  */
 export interface ContainerProps
-  extends ComponentProps<JSX.HTMLAttributes<HTMLHtmlElement>>,
-    ParentProps {
+  extends ComponentProps<JSX.HTMLAttributes<HTMLHtmlElement>>, ParentProps {
   /**
    * The tag  to use for the container.
    * @default 'div'
