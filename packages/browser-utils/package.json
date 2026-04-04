@@ -52,9 +52,9 @@
     "@spuxx/js-utils": "1.3.0"
   },
   "devDependencies": {
-    "@vitest/browser": "4.0.10",
-    "@vitest/browser-playwright": "4.0.14",
-    "@vitest/coverage-istanbul": "4.0.8",
+    "@vitest/browser": "4.1.2",
+    "@vitest/browser-playwright": "4.1.2",
+    "@vitest/coverage-istanbul": "4.1.2",
     "vite": "7.3.1",
     "vite-plugin-dts": "4.5.3",
     "vite-tsconfig-paths": "5.1.4",

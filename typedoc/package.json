@@ -7,10 +7,9 @@
     "generate": "node generate.js"
   },
   "devDependencies": {
-    "p-limit": "^7.2.0",
-    "typedoc": "0.28",
+    "p-limit": "7.3.0",
+    "typedoc": "0.28.18",
     "typedoc-plugin-markdown": "4.10.0",
-    "typedoc-plugin-md": "0.7.1",
     "typescript": "5.9.3"
   }
 }

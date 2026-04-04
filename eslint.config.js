@@ -61,5 +61,11 @@ export default defineConfig([
     },
   },
   // Excludes
-  globalIgnores(['**/dist/**', '**/node_modules/**', '**/reports/**', '**/.astro/**']),
+  globalIgnores([
+    '**/dist/**',
+    '**/node_modules/**',
+    '**/reports/**',
+    '**/.astro/**',
+    'typedoc/output/**',
+  ]),
 ]);
