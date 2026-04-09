@@ -3,6 +3,7 @@ import viteConfig from './vite.config';
 import { playwright } from '@vitest/browser-playwright';
 
 export default mergeConfig(
+  // @ts-expect-error TODO remove
   viteConfig,
   defineConfig({
     test: {
