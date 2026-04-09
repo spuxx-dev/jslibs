@@ -56,16 +56,15 @@
     "rxjs": "^7.8.0"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "16.0.3",
+    "@rollup/plugin-swc": "0.4.0",
+    "@swc/core": "1.15.24",
     "@spuxx/js-utils": "1.3.0",
-    "@spuxx/nest-testing": "2.0.2",
+    "@spuxx/nest-testing": "workspace:@spuxx/nest-testing@*",
     "@types/express": "5.0.6",
     "@vitest/coverage-v8": "4.0.13",
-    "typescript": "5.9.3",
-    "unplugin-swc": "1.5.9",
-    "vite": "7.3.1",
-    "vite-plugin-dts": "4.5.3",
-    "vite-tsconfig-paths": "5.1.4",
+    "typescript": "6.0.2",
+    "unplugin-dts": "1.0.0-beta.6",
+    "vite": "8.0.3",
     "vitest": "4.1.2"
   }
 }

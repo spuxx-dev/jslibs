@@ -1,40 +1,42 @@
-/// <reference types="vitest" />
-import { defineConfig } from 'vite';
+import { defineConfig, withFilter } from 'vite';
 import { resolve } from 'path';
 import { peerDependencies } from './package.json';
-import dts from 'vite-plugin-dts';
-import tsconfigPaths from 'vite-tsconfig-paths';
-
-import swc from 'unplugin-swc';
+import dts from 'unplugin-dts/vite';
+import swc from '@rollup/plugin-swc';
 
 export default defineConfig({
   plugins: [
     dts({
-      include: ['src/**/*'],
-      exclude: ['*.{test,spec}.*'],
-      tsconfigPath: './tsconfig.json',
-      rollupTypes: true,
+      entryRoot: 'src',
+      exclude: ['**/*.{test,spec}.ts'],
     }),
-    tsconfigPaths(),
-    // esbuild doesn't support a couple of features that nestjs requires, so instead
-    // we use swc. For example, see: https://github.com/nestjs/nest/issues/9228
-    swc.vite({
-      module: { type: 'es6' },
-      jsc: {
-        target: 'esnext',
-        parser: {
-          syntax: 'typescript',
-          decorators: true,
+    // Rolldown's Oxc transformer does not yet support legacy decorator lowering,
+    // which is required by NestJS. SWC handles that transform instead.
+    // See: https://vite.dev/guide/migration#javascript-transforms-by-oxc
+    withFilter(
+      swc({
+        swc: {
+          jsc: {
+            target: 'esnext',
+            parser: {
+              syntax: 'typescript',
+              decorators: true,
+            },
+            transform: {
+              legacyDecorator: true,
+              decoratorMetadata: true,
+            },
+            keepClassNames: true,
+          },
         },
-        transform: {
-          legacyDecorator: true,
-          decoratorMetadata: true,
-        },
-        keepClassNames: true,
-        preserveAllComments: true,
-      },
-    }),
+      }),
+      // Only run SWC on files that actually contain decorators
+      { transform: { code: '@' } },
+    ),
   ],
+  resolve: {
+    tsconfigPaths: true,
+  },
   ssr: {
     target: 'node',
   },
@@ -45,10 +47,10 @@ export default defineConfig({
       entry: {
         main: resolve(__dirname, 'src/main.ts'),
       },
-      name: '@spuxx/nest-testing',
+      name: '@spuxx/nest-utils',
       formats: ['es'],
     },
-    rollupOptions: {
+    rolldownOptions: {
       external: [...Object.keys(peerDependencies)],
     },
   },

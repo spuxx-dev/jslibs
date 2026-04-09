@@ -41,7 +41,7 @@ export interface HttpRequest<T extends EndpointDefinition = EndpointDefinition> 
   /**
    * The raw result of the endpoint function.
    */
-  get result(): Awaited<ReturnType<T['function']>>;
+  get result(): Awaited<ReturnType<T['function']>> | undefined;
   /**
    * Sets the raw result of the endpoint function.
    * @param result The new raw result to save.
@@ -50,12 +50,12 @@ export interface HttpRequest<T extends EndpointDefinition = EndpointDefinition> 
   /**
    * The transformed result of the endpoint function.
    */
-  get transformedResult(): Awaited<ReturnType<T['transformer']>>;
+  get transformedResult(): Awaited<ReturnType<NonNullable<T['transformer']>>> | undefined;
   /**
    * Sets the transformed result of the endpoint function.
    * @param result The new transformed result to save.
    */
-  setTransformedResult(result: Awaited<ReturnType<T['transformer']>>): void;
+  setTransformedResult(result: Awaited<ReturnType<NonNullable<T['transformer']>>>): void;
 }
 
 export function createHttpRequest<TEndpointDef extends EndpointDefinition>(
@@ -69,8 +69,10 @@ export function createHttpRequest<TEndpointDef extends EndpointDefinition>(
     private _status: HttpRequestStatus = 'pending';
     private _error: HttpError | null = null;
     private _abortController: AbortController;
-    private _result: Awaited<ReturnType<TEndpointDef['function']>>;
-    private _transformedResult: Awaited<ReturnType<TEndpointDef['transformer']>>;
+    private _result: Awaited<ReturnType<TEndpointDef['function']>> | undefined;
+    private _transformedResult:
+      | Awaited<ReturnType<NonNullable<TEndpointDef['transformer']>>>
+      | undefined;
 
     constructor(endpointDef: TEndpointDef, promise: Promise<TransformedReturnType<TEndpointDef>>) {
       this._endpointDefinition = endpointDef;
@@ -118,7 +120,7 @@ export function createHttpRequest<TEndpointDef extends EndpointDefinition>(
       return this._transformedResult;
     }
 
-    setTransformedResult(result: Awaited<ReturnType<TEndpointDef['transformer']>>) {
+    setTransformedResult(result: Awaited<ReturnType<NonNullable<TEndpointDef['transformer']>>>) {
       this._transformedResult = result;
     }
   }

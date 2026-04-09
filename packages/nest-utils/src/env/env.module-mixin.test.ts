@@ -6,7 +6,7 @@ import { EnvModuleMixin } from './env.module-mixin';
 describe('registration', () => {
   class Env {
     @IsString()
-    SOME_STRING: string;
+    SOME_STRING!: string;
   }
   class EnvModule extends EnvModuleMixin<Env>(Env) {}
 
@@ -40,7 +40,7 @@ describe('validation', () => {
     vi.unstubAllEnvs();
     class Env {
       @IsString()
-      SOME_STRING: string;
+      SOME_STRING!: string;
     }
     class EnvModule extends EnvModuleMixin<Env>(Env) {}
     expect(() =>
@@ -55,7 +55,7 @@ describe('validation', () => {
     vi.stubEnv('SOME_BOOLEAN', 'foo');
     class Env {
       @IsBooleanString()
-      SOME_BOOLEAN: 'true' | 'false';
+      SOME_BOOLEAN!: 'true' | 'false';
     }
     class EnvModule extends EnvModuleMixin<Env>(Env) {}
     expect(() =>
@@ -71,9 +71,9 @@ describe('validation', () => {
     vi.stubEnv('SOME_NUMBER', '123');
     class Env {
       @IsDate()
-      SOME_DATE: Date;
+      SOME_DATE!: Date;
       @IsNumber()
-      SOME_NUMBER: number;
+      SOME_NUMBER!: number;
     }
     class EnvModule extends EnvModuleMixin<Env>(Env) {}
     await TestContainer.create({

@@ -53,13 +53,14 @@ export class AuthModule {
   ) {
     const mergedOptions = this.mergeOptionsWithDefaultValues(options);
     const { disable, oidc } = mergedOptions;
+
     if (disable) {
       Logger.warn('Authentication is disabled. All routes will be accessible.', AuthModule.name);
       return;
     }
     app.use(auth(oidc));
     Logger.log(
-      `Authentication is enabled and will be handled by issuer at '${oidc.issuerBaseURL}'.`,
+      `Authentication is enabled and will be handled by issuer at '${oidc!.issuerBaseURL}'.`,
       AuthModule.name,
     );
   }

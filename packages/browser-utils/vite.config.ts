@@ -1,18 +1,17 @@
-import { defineConfig } from 'vitest/config';
+import { defineConfig } from 'vite';
 import { resolve } from 'path';
-import dts from 'vite-plugin-dts';
-import tsconfigPaths from 'vite-tsconfig-paths';
+import dts from 'unplugin-dts/vite';
 
 export default defineConfig({
   plugins: [
     dts({
-      include: ['src/**/*'],
-      exclude: ['*.{test,spec}.*'],
-      tsconfigPath: './tsconfig.json',
-      rollupTypes: true,
+      entryRoot: 'src',
+      exclude: ['**/*.{test,spec}.ts'],
     }),
-    tsconfigPaths(),
   ],
+  resolve: {
+    tsconfigPaths: true,
+  },
   build: {
     cssCodeSplit: true,
     lib: {

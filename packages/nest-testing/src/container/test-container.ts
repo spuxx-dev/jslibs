@@ -11,6 +11,15 @@ import { TestContainerOptions } from './types';
 import { NextFunction } from 'express';
 
 /**
+ * A `TestContainer` with end-to-end testing enabled. `app` and `supertest` are guaranteed
+ * to be defined when `enableEndToEnd` is set to `true` in the `TestContainerOptions`.
+ */
+export interface EndToEndTestContainer extends TestContainer {
+  app: INestApplication;
+  supertest: Supertest;
+}
+
+/**
  * `TestContainer` provides an abstraction of `Nest.createTestContainer()`, offering
  * a custom API for easier handling and use. For more information on testing in NestJS,
  * see https://docs.nestjs.com/fundamentals/testing.
@@ -36,7 +45,7 @@ export class TestContainer {
    * The `TestingModule` created by `Nest.createTestingModule()`. This will always be defined,
    * eve in isolated test setups.
    */
-  module: TestingModule;
+  module!: TestingModule;
   /**
    * The Nest application created by `NestFactory.create()`. This will only be defined if
    * `enableEndToEnd` is set to `true` in the `TestContainerOptions`.
@@ -68,7 +77,11 @@ export class TestContainer {
    * });
    * // ... Your test implementation here
    */
-  static async create(options: TestContainerOptions) {
+  static async create(
+    options: TestContainerOptions & { enableEndToEnd: true },
+  ): Promise<EndToEndTestContainer>;
+  static async create(options: TestContainerOptions): Promise<TestContainer>;
+  static async create(options: TestContainerOptions): Promise<TestContainer> {
     const { imports, controllers, providers, logger, enableEndToEnd, afterCreate } = {
       imports: [],
       controllers: [],

@@ -95,7 +95,7 @@ Roles '${requiredRoles.join(', ')}' were required, but the user only had '${user
    * @returns Whether the user has any of the application roles.
    */
   private matchAnyRole(userRoles: string[]): boolean {
-    for (const role of Object.values(this.options.roles)) {
+    for (const role of Object.values(this.options.roles!)) {
       if (userRoles.includes(role)) {
         return true;
       }

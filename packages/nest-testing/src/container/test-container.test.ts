@@ -2,7 +2,7 @@ import { Controller, Get, Injectable, Module } from '@nestjs/common';
 import { TestContainer } from './test-container';
 import { Mapper } from '@spuxx/nest-utils';
 import { AUTH_OPTIONS_KEY, AuthModule, AuthService, defaultAuthOptions } from '@spuxx/nest-auth';
-import { describe, expect, it, vi } from 'vitest';
+import { assert, describe, expect, it, vi } from 'vitest';
 
 describe('TestContainer', () => {
   @Controller()
@@ -45,7 +45,6 @@ describe('TestContainer', () => {
     });
     const { app, supertest } = container;
 
-    expect(app).toBeDefined();
     expect(app.get(TestController)).toBeInstanceOf(TestController);
     expect(app.get(TestService)).toBeInstanceOf(TestService);
     expect(app.get(TestModule)).toBeInstanceOf(TestModule);
@@ -63,7 +62,6 @@ describe('TestContainer', () => {
     });
     const { app, supertest } = container;
 
-    expect(app).toBeDefined();
     expect(app.get(TestController)).toBeInstanceOf(TestController);
     expect(app.get(TestService)).toBeInstanceOf(TestService);
     expect(app.get(TestModule)).toBeInstanceOf(TestModule);
@@ -89,7 +87,6 @@ describe('TestContainer', () => {
     });
     const { app, supertest } = container;
 
-    expect(app).toBeDefined();
     expect(app.get(TestController)).toBeInstanceOf(TestController);
     expect(app.get(AuthService)).toBeInstanceOf(AuthService);
     expect(app.get(AUTH_OPTIONS_KEY)).toEqual(defaultAuthOptions);

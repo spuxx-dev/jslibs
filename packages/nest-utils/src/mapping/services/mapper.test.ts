@@ -35,16 +35,16 @@ describe('Mapper', () => {
 
       class Target {
         @Map()
-        str: string;
+        str!: string;
 
         @Map()
-        num: number;
+        num!: number;
 
         @Map()
-        date: Date;
+        date!: Date;
 
         @Map()
-        bool: boolean;
+        bool!: boolean;
       }
 
       const target = mapper.map(new Source(), Source, Target);
@@ -63,7 +63,7 @@ describe('Mapper', () => {
 
       class Target {
         @Map()
-        foo: string;
+        foo!: string;
       }
 
       const target = mapper.map(new Source(), Source, Target);
@@ -77,7 +77,7 @@ describe('Mapper', () => {
       }
 
       class Target {
-        foo: string;
+        foo!: string;
       }
 
       const target = mapper.map(new Source(), Source, Target);
@@ -92,7 +92,7 @@ describe('Mapper', () => {
 
       class Target {
         @Map()
-        bar: string;
+        bar!: string;
       }
 
       const target = mapper.map(new Source(), Source, Target);
@@ -107,7 +107,7 @@ describe('Mapper', () => {
 
       class Bar {
         @Map()
-        bar: string;
+        bar!: string;
       }
 
       const bar = mapper.map(new Foo(), Foo, Bar);
@@ -163,23 +163,23 @@ describe('Mapper', () => {
     class Cat extends Model {
       @Column
       @Map()
-      name: string;
+      name!: string;
 
       @Column
       @Map({ targetKey: 'color' })
-      furColor: string;
+      furColor!: string;
 
       @ForeignKey(() => Owner)
       @Column
-      ownerId: string;
+      ownerId!: string;
     }
 
     class CatResource {
       @Map()
-      name: string;
+      name!: string;
 
       @Map({ targetKey: 'furColor' })
-      color: string;
+      color!: string;
 
       constructor(init?: CatResource) {
         Object.assign(this, init);
@@ -190,19 +190,19 @@ describe('Mapper', () => {
     class Owner extends Model {
       @Column
       @Map()
-      name: string;
+      name!: string;
 
       @HasOne(() => Cat)
       @Map()
-      cat: Cat;
+      cat!: Cat;
     }
 
     class OwnerResource {
       @Map()
-      name: string;
+      name!: string;
 
       @Map()
-      cat: CatResource;
+      cat!: CatResource;
 
       constructor(init?: OwnerResource) {
         Object.assign(this, init);

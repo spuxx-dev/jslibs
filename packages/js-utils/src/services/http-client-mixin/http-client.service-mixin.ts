@@ -88,7 +88,7 @@ export function HttpClientMixin<TEndpoints extends Endpoints>(
       const { args } = { ...params };
 
       // Execute the endpoint function
-      const promise = endpointDef
+      const promise: Promise<any> = endpointDef
         .function({ signal: abortController.signal, args: args as never })
         .then(async (response) => {
           // Process the response
@@ -184,9 +184,9 @@ export function HttpClientMixin<TEndpoints extends Endpoints>(
         const axiosError = error as AxiosError<object>;
         httpError = new HttpError({
           name: 'AxiosError',
-          status: axiosError.response.status,
-          message: axiosError.response.statusText,
-          body: axiosError.response.data,
+          status: axiosError.response!.status,
+          message: axiosError.response!.statusText,
+          body: axiosError.response!.data,
         });
       } else {
         httpError = new HttpError({

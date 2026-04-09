@@ -1,5 +1,4 @@
 {
-  "include": ["./src", "./tests"],
   "compilerOptions": {
     "skipLibCheck": true,
     "module": "ESNext",
@@ -8,6 +7,6 @@
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true
-  }
+    "noEmit": true,
+  },
 }

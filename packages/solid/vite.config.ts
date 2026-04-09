@@ -1,32 +1,42 @@
 import { defineConfig } from 'vite';
 import solidPlugin from 'vite-plugin-solid';
-import dts from 'vite-plugin-dts';
-import tsconfigPaths from 'vite-tsconfig-paths';
+import dts from 'unplugin-dts/vite';
 import { peerDependencies } from './package.json';
 
-export default defineConfig({
-  plugins: [
-    solidPlugin(),
-    dts({
-      include: ['src/**/*'],
-      tsconfigPath: './tsconfig.build.json',
-      rollupTypes: true,
-    }),
-    tsconfigPaths({
-      configNames: ['tsconfig.build.json'],
-    }),
-  ],
-  build: {
-    target: 'esnext',
-    lib: {
-      entry: {
-        main: './src/main.ts',
+export default defineConfig(({ mode }) => {
+  const isServer = mode === 'server';
+
+  return {
+    plugins: [
+      solidPlugin(
+        isServer ? { ssr: true, solid: { generate: 'ssr', hydratable: true } } : undefined,
+      ),
+      dts({ entryRoot: 'src', exclude: ['**/*.{test,spec}.{ts,tsx}'] }),
+    ],
+    resolve: {
+      tsconfigPaths: true,
+    },
+    build: {
+      emptyOutDir: !isServer,
+      target: 'esnext',
+      lib: {
+        entry: {
+          main: './src/main.ts',
+        },
+        name: '@spuxx/solid',
+        formats: ['es'],
       },
-      name: '@spuxx/solid',
-      formats: ['es'],
+      rolldownOptions: {
+        external: [/^solid-js($|\/)/, ...Object.keys(peerDependencies)],
+        ...(isServer && {
+          output: [
+            {
+              dir: 'dist',
+              entryFileNames: 'server.js',
+            },
+          ],
+        }),
+      },
     },
-    rollupOptions: {
-      external: [/^solid-js($|\/)/, ...Object.keys(peerDependencies)],
-    },
-  },
+  };
 });

@@ -7,63 +7,63 @@ export class SessionResource {
     description: "The IDP subject (the user's unique id).",
     example: '1234567890',
   })
-  sub: string;
+  sub!: string;
 
   @Expose()
   @ApiProperty({
     description: 'The IDP session id.',
     example: '1234567890',
   })
-  sid: string;
+  sid!: string;
 
   @Expose()
   @ApiProperty({
     description: "The user's username.",
     example: 'johndeer',
   })
-  preferred_username: string;
+  preferred_username!: string;
 
   @Expose()
   @ApiProperty({
     description: "The user's full name.",
     example: 'John Deer',
   })
-  name: string;
+  name!: string;
 
   @Expose()
   @ApiProperty({
     description: "The user's first name.",
     example: 'John',
   })
-  given_name: string;
+  given_name!: string;
 
   @Expose()
   @ApiProperty({
     description: "The user's last name.",
     example: 'Deer',
   })
-  family_name: string;
+  family_name!: string;
 
   @Expose()
   @ApiProperty({
     description: "The user's email address.",
     example: 'john.deer@gmail.com',
   })
-  email: string;
+  email!: string;
 
   @Expose()
   @ApiProperty({
     description: 'Whether the user has verified their email.',
     example: true,
   })
-  email_verified: boolean;
+  email_verified!: boolean;
 
   @Expose()
   @ApiProperty({
     description: "The user's chosen locale.",
     example: 'de',
   })
-  locale: string;
+  locale!: string;
 
   @Expose()
   @ApiProperty({
@@ -74,5 +74,5 @@ export class SessionResource {
     type: String,
     isArray: true,
   })
-  groups: string[];
+  groups!: string[];
 }

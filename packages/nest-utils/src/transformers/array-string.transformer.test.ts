@@ -5,7 +5,7 @@ import { TransformArrayString } from './array-string.transformer';
 describe('TransformArrayString', () => {
   class Test {
     @TransformArrayString()
-    values: string[];
+    values!: string[];
   }
 
   it("should transform 'foo' to ['foo']", () => {

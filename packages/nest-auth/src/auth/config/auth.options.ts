@@ -14,7 +14,7 @@ export interface AuthOptions {
   allowedRedirectHostnames?: string[];
   /**
    * The URL that should be used as the default redirect URL after login or logout.
-   * @default 'auth/session'
+   * @default '/'
    */
   defaultRedirectUrl?: string;
   /**

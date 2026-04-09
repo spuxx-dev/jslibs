@@ -9,10 +9,10 @@ describe('Map', () => {
       @Map({
         targetKey: 'catName',
       })
-      name: string;
+      name!: string;
 
       @Map()
-      color: string;
+      color!: string;
     }
     const nameMetadata = Reflect.getMetadata(MAP_METADATA_KEY, Cat.prototype, 'name');
     expect(nameMetadata).toEqual({ targetKey: 'catName', preserveUndefined: false } as MapMetadata);

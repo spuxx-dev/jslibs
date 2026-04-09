@@ -21,7 +21,7 @@ export class AuthService {
   async handleLogin(response: Response, options: { returnTo?: string }): Promise<void> {
     const { returnTo } = options;
     this.validateReturnTo(returnTo);
-    return response.oidc.login({ returnTo: returnTo ?? this.options.defaultRedirectUrl });
+    return response.oidc.login({ returnTo: returnTo ?? this.options.defaultRedirectUrl! });
   }
 
   /**
@@ -58,14 +58,14 @@ export class AuthService {
    * @returns Whether the value of `returnTo` is valid.
    */
   private validateReturnTo(returnTo?: string): boolean {
-    let match: string;
+    let match: string | undefined;
     try {
-      if (!returnTo) returnTo = this.options.defaultRedirectUrl;
+      if (!returnTo) returnTo = this.options.defaultRedirectUrl!;
       const { allowedRedirectHostnames } = this.options;
       // If `returnTo` starts with a slash, it is a local redirect and will be allowed.
       if (returnTo.startsWith('/')) return true;
       const returnToUrl = new URL(returnTo);
-      match = allowedRedirectHostnames.find((hostname) => returnToUrl.host === hostname);
+      match = allowedRedirectHostnames?.find((hostname) => returnToUrl.host === hostname);
     } catch (error) {
       Logger.error(`Failed to validate 'returnTo=${returnTo}': ${error}`);
       throw authExceptions.login.urlParsingError;

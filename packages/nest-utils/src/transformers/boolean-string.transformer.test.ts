@@ -5,7 +5,7 @@ import { TransformBooleanString } from './boolean-string.transformer';
 describe('TransformBooleanString', () => {
   class Test {
     @TransformBooleanString()
-    bool: boolean;
+    bool!: boolean;
   }
 
   it("should transform 'true' to true", () => {

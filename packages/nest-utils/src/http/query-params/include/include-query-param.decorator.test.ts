@@ -4,7 +4,7 @@ import { ArgumentMetadata, BadRequestException, ValidationPipe } from '@nestjs/c
 describe('IncludeQueryParam', () => {
   class Query {
     @IncludeQueryParam('foo', 'bar')
-    include: string[];
+    include!: string[];
   }
   const transformMetadata: ArgumentMetadata = {
     type: 'query',
