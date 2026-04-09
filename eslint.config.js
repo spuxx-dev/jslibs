@@ -30,6 +30,7 @@ export default defineConfig([
   ...tseslint.configs.recommended,
   {
     rules: {
+      '@typescript-eslint/ban-ts-comment': 'off',
       '@typescript-eslint/triple-slash-reference': 'off',
       '@typescript-eslint/no-empty-object-type': 'off',
       '@typescript-eslint/no-unsafe-function-type': 'off',

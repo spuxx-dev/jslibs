@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { getMetadataStorage, ValidationTypes, type ValidationOptions } from 'class-validator';
 import { ValidationMetadata, type ValidationMetadataArgs } from './validation-metadata.internal';
 

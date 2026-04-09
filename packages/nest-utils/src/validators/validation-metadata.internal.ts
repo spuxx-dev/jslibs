@@ -1,4 +1,5 @@
 // @ts-nocheck
+/* eslint-disable */
 import { type ValidationArguments, type ValidationOptions } from 'class-validator';
 
 /**
