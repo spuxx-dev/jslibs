@@ -64,7 +64,7 @@
     "@vitest/coverage-v8": "4.0.13",
     "typescript": "6.0.2",
     "unplugin-dts": "1.0.0-beta.6",
-    "vite": "8.0.3",
+    "vite": "8.0.8",
     "vitest": "4.1.2"
   }
 }
