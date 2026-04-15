@@ -1,6 +1,6 @@
 {
   "name": "@spuxx/js-utils",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "A package containing various utilities for JavaScript applications.",
   "license": "MIT",
   "author": {
@@ -40,7 +40,7 @@
     "build": "vite build",
     "types": "tsc --noEmit",
     "test": "pnpm run test:vitest",
-    "test:vitest": "vitest run --silent"
+    "test:vitest": "vitest run --coverage"
   },
   "peerDependencies": {
     "@modyfi/vite-plugin-yaml": "^1.1.0"
