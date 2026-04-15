@@ -10,6 +10,7 @@ export default mergeConfig(
       reporters: ['default', 'junit'],
       outputFile: 'reports/junit/junit.xml',
       coverage: {
+        enabled: true,
         provider: 'istanbul',
         thresholds: { branches: 70, lines: 90 },
         include: ['src/**/*.ts'],

@@ -41,7 +41,7 @@
     "build": "vite build",
     "types": "tsc --noEmit",
     "test": "pnpm run test:vitest",
-    "test:vitest": "vitest run --coverage"
+    "test:vitest": "vitest run --silent"
   },
   "peerDependencies": {
     "@nanogiants/nestjs-swagger-api-exception-decorator": "^1.7.2",

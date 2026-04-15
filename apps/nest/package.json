@@ -10,7 +10,7 @@
     "build": "nest build",
     "types": "tsc --noEmit",
     "test": "pnpm run test:vitest",
-    "test:vitest": "vitest run --coverage"
+    "test:vitest": "vitest run --silent"
   },
   "dependencies": {
     "@nanogiants/nestjs-swagger-api-exception-decorator": "1.7.2",

@@ -46,7 +46,7 @@
     "build": "vite build",
     "types": "tsc --noEmit",
     "test": "pnpm run test:vitest",
-    "test:vitest": "playwright install && vitest run --coverage"
+    "test:vitest": "playwright install && vitest run --silent"
   },
   "dependencies": {
     "@spuxx/js-utils": "1.3.0"
