@@ -30,10 +30,7 @@ export default defineConfig({
     target: 'node',
     outDir: 'dist',
     ssr: true,
-    rollupOptions: {
-      treeshake: {
-        preset: 'smallest',
-      },
+    rolldownOptions: {
       input: {
         main: './src/main.ts',
       },
