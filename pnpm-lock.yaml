@@ -408,8 +408,8 @@ importers:
         specifier: 5.0.6
         version: 5.0.6
       '@vitest/coverage-v8':
-        specifier: 4.0.13
-        version: 4.0.13(@vitest/browser@4.0.13(msw@2.12.3(@types/node@25.4.0)(typescript@6.0.2))(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.7.1)(@types/node@25.4.0)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.44.1)(yaml@2.8.2))(vitest@4.1.2(@types/node@25.4.0)(@vitest/browser-playwright@4.1.2)(happy-dom@8.9.0)(jsdom@26.0.0)(msw@2.12.3(@types/node@25.4.0)(typescript@6.0.2))(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.7.1)(@types/node@25.4.0)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.44.1)(yaml@2.8.2))))(vitest@4.1.2(@types/node@25.4.0)(@vitest/browser-playwright@4.1.2)(happy-dom@8.9.0)(jsdom@26.0.0)(msw@2.12.3(@types/node@25.4.0)(typescript@6.0.2))(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.7.1)(@types/node@25.4.0)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.44.1)(yaml@2.8.2)))
+        specifier: 4.1.2
+        version: 4.1.2(@vitest/browser@4.1.2(msw@2.12.3(@types/node@25.4.0)(typescript@6.0.2))(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.7.1)(@types/node@25.4.0)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.44.1)(yaml@2.8.2))(vitest@4.1.2(@types/node@25.4.0)(@vitest/browser-playwright@4.1.2)(happy-dom@8.9.0)(jsdom@26.0.0)(msw@2.12.3(@types/node@25.4.0)(typescript@6.0.2))(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.7.1)(@types/node@25.4.0)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.44.1)(yaml@2.8.2))))(vitest@4.1.2(@types/node@25.4.0)(@vitest/browser-playwright@4.1.2)(happy-dom@8.9.0)(jsdom@26.0.0)(msw@2.12.3(@types/node@25.4.0)(typescript@6.0.2))(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.7.1)(@types/node@25.4.0)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.44.1)(yaml@2.8.2)))
       dotenv:
         specifier: 17.4.0
         version: 17.4.0
@@ -11431,6 +11431,22 @@ snapshots:
       vitest: 4.1.2(@types/node@25.4.0)(@vitest/browser-playwright@4.1.2)(happy-dom@8.9.0)(jsdom@26.0.0)(msw@2.12.3(@types/node@25.4.0)(typescript@6.0.2))(vite@7.3.1(@types/node@25.4.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.44.1)(yaml@2.8.2))
     optionalDependencies:
       '@vitest/browser': 4.1.2(msw@2.12.3(@types/node@25.4.0)(typescript@6.0.2))(vite@7.3.1(@types/node@25.4.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.44.1)(yaml@2.8.2))(vitest@4.1.2(@types/node@25.4.0)(@vitest/browser-playwright@4.1.2)(happy-dom@8.9.0)(jsdom@26.0.0)(msw@2.12.3(@types/node@25.4.0)(typescript@6.0.2))(vite@7.3.1(@types/node@25.4.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.44.1)(yaml@2.8.2)))
+
+  '@vitest/coverage-v8@4.1.2(@vitest/browser@4.1.2(msw@2.12.3(@types/node@25.4.0)(typescript@6.0.2))(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.7.1)(@types/node@25.4.0)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.44.1)(yaml@2.8.2))(vitest@4.1.2(@types/node@25.4.0)(@vitest/browser-playwright@4.1.2)(happy-dom@8.9.0)(jsdom@26.0.0)(msw@2.12.3(@types/node@25.4.0)(typescript@6.0.2))(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.7.1)(@types/node@25.4.0)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.44.1)(yaml@2.8.2))))(vitest@4.1.2(@types/node@25.4.0)(@vitest/browser-playwright@4.1.2)(happy-dom@8.9.0)(jsdom@26.0.0)(msw@2.12.3(@types/node@25.4.0)(typescript@6.0.2))(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.7.1)(@types/node@25.4.0)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.44.1)(yaml@2.8.2)))':
+    dependencies:
+      '@bcoe/v8-coverage': 1.0.2
+      '@vitest/utils': 4.1.2
+      ast-v8-to-istanbul: 1.0.0
+      istanbul-lib-coverage: 3.2.2
+      istanbul-lib-report: 3.0.1
+      istanbul-reports: 3.2.0
+      magicast: 0.5.2
+      obug: 2.1.1
+      std-env: 4.0.0
+      tinyrainbow: 3.1.0
+      vitest: 4.1.2(@types/node@25.4.0)(@vitest/browser-playwright@4.1.2)(happy-dom@8.9.0)(jsdom@26.0.0)(msw@2.12.3(@types/node@25.4.0)(typescript@6.0.2))(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.7.1)(@types/node@25.4.0)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.44.1)(yaml@2.8.2))
+    optionalDependencies:
+      '@vitest/browser': 4.1.2(msw@2.12.3(@types/node@25.4.0)(typescript@6.0.2))(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.7.1)(@types/node@25.4.0)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.44.1)(yaml@2.8.2))(vitest@4.1.2(@types/node@25.4.0)(@vitest/browser-playwright@4.1.2)(happy-dom@8.9.0)(jsdom@26.0.0)(msw@2.12.3(@types/node@25.4.0)(typescript@6.0.2))(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.7.1)(@types/node@25.4.0)(esbuild@0.27.7)(jiti@2.6.1)(terser@5.44.1)(yaml@2.8.2)))
 
   '@vitest/expect@4.1.2':
     dependencies:
