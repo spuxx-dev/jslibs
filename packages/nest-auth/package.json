@@ -1,6 +1,6 @@
 {
   "name": "@spuxx/nest-auth",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A package containing auth-related functionalities for my NestJS applications.",
   "license": "MIT",
   "author": {
@@ -41,7 +41,7 @@
     "build": "vite build",
     "types": "tsc --noEmit",
     "test": "pnpm run test:vitest",
-    "test:vitest": "vitest run --silent"
+    "test:vitest": "vitest run --coverage"
   },
   "peerDependencies": {
     "@nanogiants/nestjs-swagger-api-exception-decorator": "^1.7.2",

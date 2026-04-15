@@ -1,6 +1,6 @@
 {
   "name": "@spuxx/nest-testing",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "A package containing testing-related utilities for NestJS applications.",
   "license": "MIT",
   "author": {
@@ -41,7 +41,7 @@
     "build": "vite build",
     "types": "tsc --noEmit",
     "test": "pnpm run test:vitest",
-    "test:vitest": "vitest run --silent"
+    "test:vitest": "vitest run"
   },
   "peerDependencies": {
     "@nestjs/common": "^11.0.0",
