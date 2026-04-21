@@ -59,7 +59,7 @@
     "@vitest/coverage-v8": "4.0.13",
     "typescript": "6.0.3",
     "@rollup/plugin-swc": "0.4.0",
-    "@swc/core": "1.15.24",
+    "@swc/core": "1.15.30",
     "vite": "8.0.8",
     "unplugin-dts": "1.0.0-beta.6",
     "vitest": "4.1.2",
