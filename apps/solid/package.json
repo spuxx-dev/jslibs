@@ -14,7 +14,7 @@
     "@tailwindcss/vite": "^4.1.17",
     "autoprefixer": "10.4.27",
     "iconify-icon": "3.0.2",
-    "postcss": "8.5.6",
+    "postcss": "8.5.10",
     "tailwindcss": "4.2.1",
     "typescript": "6.0.3",
     "vite": "8.0.8",
