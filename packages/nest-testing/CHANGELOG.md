@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.2](https://github.com/spuxx-dev/jslibs/compare/nest-testing-v2.1.1...nest-testing-v2.1.2) (2026-05-05)
+
+
+### Build System
+
+* **deps-dev:** bump @swc/core from 1.15.24 to 1.15.30 ([#527](https://github.com/spuxx-dev/jslibs/issues/527)) ([abcd48a](https://github.com/spuxx-dev/jslibs/commit/abcd48a9c50213458796e36ee3e5ca6a2330e828))
+* **deps-dev:** bump typescript from 6.0.2 to 6.0.3 ([#522](https://github.com/spuxx-dev/jslibs/issues/522)) ([76c45d5](https://github.com/spuxx-dev/jslibs/commit/76c45d5b1b0619f30d8155f8b17431a226fa72ac))
+
 ## [2.1.1](https://github.com/spuxx-dev/jslibs/compare/nest-testing-v2.1.0...nest-testing-v2.1.1) (2026-04-15)
 
 

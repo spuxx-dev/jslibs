@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.2](https://github.com/spuxx-dev/jslibs/compare/js-utils-v2.1.1...js-utils-v2.1.2) (2026-05-05)
+
+
+### Build System
+
+* **deps-dev:** bump axios from 1.15.0 to 1.15.2 ([#534](https://github.com/spuxx-dev/jslibs/issues/534)) ([21dd6f6](https://github.com/spuxx-dev/jslibs/commit/21dd6f68063665adeafb5e014c18a0b2027ed528))
+
 ## [2.1.1](https://github.com/spuxx-dev/jslibs/compare/js-utils-v2.1.0...js-utils-v2.1.1) (2026-04-15)
 
 

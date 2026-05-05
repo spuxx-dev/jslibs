@@ -1,5 +1,18 @@
 # Changelog
 
+## [5.0.0](https://github.com/spuxx-dev/jslibs/compare/nest-utils-v4.1.1...nest-utils-v5.0.0) (2026-05-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** bump class-validator from 0.14.3 to 0.15.1 ([#526](https://github.com/spuxx-dev/jslibs/issues/526))
+
+### Build System
+
+* **deps-dev:** bump @swc/core from 1.15.24 to 1.15.30 ([#527](https://github.com/spuxx-dev/jslibs/issues/527)) ([abcd48a](https://github.com/spuxx-dev/jslibs/commit/abcd48a9c50213458796e36ee3e5ca6a2330e828))
+* **deps-dev:** bump typescript from 6.0.2 to 6.0.3 ([#522](https://github.com/spuxx-dev/jslibs/issues/522)) ([76c45d5](https://github.com/spuxx-dev/jslibs/commit/76c45d5b1b0619f30d8155f8b17431a226fa72ac))
+* **deps:** bump class-validator from 0.14.3 to 0.15.1 ([#526](https://github.com/spuxx-dev/jslibs/issues/526)) ([0ed0736](https://github.com/spuxx-dev/jslibs/commit/0ed073655d52f484fb59cd60dbb353c4fcc92d31))
+
 ## [4.1.1](https://github.com/spuxx-dev/jslibs/compare/nest-utils-v4.1.0...nest-utils-v4.1.1) (2026-04-15)
 
 
