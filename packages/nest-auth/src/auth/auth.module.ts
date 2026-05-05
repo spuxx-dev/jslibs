@@ -1,4 +1,5 @@
 import { DynamicModule, INestApplication, Logger, Module } from '@nestjs/common';
+import { Reflector } from '@nestjs/core';
 import { AUTH_OPTIONS_KEY, AuthGuard, defaultAuthOptions, type AuthOptions } from '../main';
 import { AuthController } from './controllers/auth.controller';
 import { AuthService } from './providers/auth.service';
@@ -77,8 +78,9 @@ export class AuthModule {
         },
         AuthService,
         AuthGuard,
+        Reflector,
       ],
-      exports: [AuthService, AuthGuard],
+      exports: [AuthService, AuthGuard, Reflector],
     };
   }
 
