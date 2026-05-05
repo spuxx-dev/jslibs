@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import { exec } from 'child_process';
+import { execFile } from 'child_process';
 import { promises as fs } from 'fs';
 import path from 'path';
 import util from 'util';
@@ -7,7 +7,7 @@ import pLimit from 'p-limit';
 
 const CONCURRENCY_LIMIT = 8;
 
-const execPromise = util.promisify(exec);
+const execFilePromise = util.promisify(execFile);
 
 async function findIndexFiles(dir) {
   let indexFiles = [];
@@ -30,14 +30,23 @@ async function runTypedoc(indexFile, packagesDir) {
   const outputDir = path.dirname(relativePath.replace('src/', '').replace('index.ts', ''));
   const outputPath = path.join(`${process.cwd()}/output`, outputDir);
   const entryFileName = path.basename(path.dirname(relativePath));
-  const command = `pnpm typedoc --entryPoints ${indexFile} --out ${outputPath} --entryFileName ${entryFileName}`;
+  const args = [
+    'typedoc',
+    '--entryPoints',
+    indexFile,
+    '--out',
+    outputPath,
+    '--entryFileName',
+    entryFileName,
+  ];
+  const commandPreview = `pnpm ${args.map((arg) => JSON.stringify(arg)).join(' ')}`;
 
-  console.log(`Running: ${command}`);
+  console.log(`Running: ${commandPreview}`);
   try {
-    await execPromise(command);
-    console.log(`Completed: ${command}`);
+    await execFilePromise('pnpm', args);
+    console.log(`Completed: ${commandPreview}`);
   } catch (error) {
-    console.error(`Error executing command: ${command}`);
+    console.error(`Error executing command: ${commandPreview}`);
     console.error(error);
   }
 }
