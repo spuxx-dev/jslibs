@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.0](https://github.com/spuxx-dev/jslibs/compare/solid-v1.9.1...solid-v2.0.0) (2026-05-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** Remove csstype due to an incompatibility with Solid
+
+### Build System
+
+* **deps-dev:** bump typescript from 6.0.2 to 6.0.3 ([#522](https://github.com/spuxx-dev/jslibs/issues/522)) ([76c45d5](https://github.com/spuxx-dev/jslibs/commit/76c45d5b1b0619f30d8155f8b17431a226fa72ac))
+* **deps:** Remove csstype due to an incompatibility with Solid ([e875d29](https://github.com/spuxx-dev/jslibs/commit/e875d294cb2c6aac7c3fef9836346714e6864236))
+
 ## [1.9.1](https://github.com/spuxx-dev/jslibs/compare/solid-v1.9.0...solid-v1.9.1) (2026-04-15)
 
 
