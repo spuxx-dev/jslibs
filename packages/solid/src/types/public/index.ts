@@ -1,5 +1,4 @@
 import { JSX } from 'solid-js/jsx-runtime';
-import type * as CSS from 'csstype';
 
 /**
  * A property interface for components to extend from. Includes some basic properties used
@@ -14,7 +13,7 @@ export interface ComponentProps<TAttributes = JSX.HTMLAttributes<HTMLElement>> {
   /**
    * The component's style.
    */
-  style?: Partial<CSS.PropertiesHyphen>;
+  style?: JSX.CSSProperties;
 
   /**
    * The component's attributes.
