@@ -44,7 +44,7 @@
     "eslint": "10.2.1",
     "globals": "17.6.0",
     "nyc": "18.0.0",
-    "prettier": "3.8.1",
+    "prettier": "3.8.3",
     "release-please": "17.2.0",
     "typescript-eslint": "8.57.1",
     "vitest": "4.1.2"
