@@ -502,8 +502,8 @@ importers:
         specifier: 0.28.18
         version: 0.28.18(typescript@6.0.3)
       typedoc-plugin-markdown:
-        specifier: 4.10.0
-        version: 4.10.0(typedoc@0.28.18(typescript@6.0.3))
+        specifier: 4.11.0
+        version: 4.11.0(typedoc@0.28.18(typescript@6.0.3))
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -7234,8 +7234,8 @@ packages:
   typedarray@0.0.6:
     resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
 
-  typedoc-plugin-markdown@4.10.0:
-    resolution: {integrity: sha512-psrg8Rtnv4HPWCsoxId+MzEN8TVK5jeKCnTbnGAbTBqcDapR9hM41bJT/9eAyKn9C2MDG9Qjh3MkltAYuLDoXg==}
+  typedoc-plugin-markdown@4.11.0:
+    resolution: {integrity: sha512-2iunh2ALyfyh204OF7h2u0kuQ84xB3jFZtFyUr01nThJkLvR8oGGSSDlyt2gyO4kXhvUxDcVbO0y43+qX+wFbw==}
     engines: {node: '>= 18'}
     peerDependencies:
       typedoc: 0.28.x
@@ -16184,7 +16184,7 @@ snapshots:
 
   typedarray@0.0.6: {}
 
-  typedoc-plugin-markdown@4.10.0(typedoc@0.28.18(typescript@6.0.3)):
+  typedoc-plugin-markdown@4.11.0(typedoc@0.28.18(typescript@6.0.3)):
     dependencies:
       typedoc: 0.28.18(typescript@6.0.3)
 
