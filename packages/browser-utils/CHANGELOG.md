@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.14.1](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.14.0...browser-utils-v1.14.1) (2026-06-18)
+
+
+### Build System
+
+* **deps-dev:** bump @vitest/browser from 4.1.2 to 4.1.6 ([#565](https://github.com/spuxx-dev/jslibs/issues/565)) ([a5dd025](https://github.com/spuxx-dev/jslibs/commit/a5dd025bf56531719ed49762b38146f5bf2a9240))
+* **deps-dev:** bump @vitest/browser from 4.1.6 to 4.1.8 ([#570](https://github.com/spuxx-dev/jslibs/issues/570)) ([1507fe9](https://github.com/spuxx-dev/jslibs/commit/1507fe9bd1ccaed2f598b771ac78b5dcfd3b1649))
+* **deps-dev:** bump @vitest/browser-playwright from 4.1.2 to 4.1.6 ([#548](https://github.com/spuxx-dev/jslibs/issues/548)) ([02100a1](https://github.com/spuxx-dev/jslibs/commit/02100a10061e59ac558d3e30fe7c235f93b87f32))
+* **deps-dev:** bump unplugin-dts from 1.0.0-beta.6 to 1.0.0 ([#542](https://github.com/spuxx-dev/jslibs/issues/542)) ([897a91c](https://github.com/spuxx-dev/jslibs/commit/897a91c1dc2a6f2f05c853198f255bbced9e1a9b))
+* **deps-dev:** bump vite from 8.0.8 to 8.0.16 ([#567](https://github.com/spuxx-dev/jslibs/issues/567)) ([57267f4](https://github.com/spuxx-dev/jslibs/commit/57267f4f96601fa9dda199b0318aa8d081187eee))
+* **deps-dev:** bump vitest from 4.1.2 to 4.1.6 ([#545](https://github.com/spuxx-dev/jslibs/issues/545)) ([4f45e45](https://github.com/spuxx-dev/jslibs/commit/4f45e452e22ec79cfbb4ad743480ff985ee517a9))
+
 ## [1.14.0](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.13.0...browser-utils-v1.14.0) (2026-04-15)
 
 

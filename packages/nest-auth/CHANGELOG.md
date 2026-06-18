@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.0.1](https://github.com/spuxx-dev/jslibs/compare/nest-auth-v2.0.0...nest-auth-v2.0.1) (2026-06-18)
+
+
+### Build System
+
+* **deps-dev:** bump @vitest/coverage-v8 from 4.0.13 to 4.1.6 ([#541](https://github.com/spuxx-dev/jslibs/issues/541)) ([9c36d84](https://github.com/spuxx-dev/jslibs/commit/9c36d84adb9efd2f5ba2dde0916be76e610af4f9))
+* **deps-dev:** bump unplugin-dts from 1.0.0-beta.6 to 1.0.0 ([#542](https://github.com/spuxx-dev/jslibs/issues/542)) ([897a91c](https://github.com/spuxx-dev/jslibs/commit/897a91c1dc2a6f2f05c853198f255bbced9e1a9b))
+* **deps-dev:** bump vite from 8.0.8 to 8.0.16 ([#567](https://github.com/spuxx-dev/jslibs/issues/567)) ([57267f4](https://github.com/spuxx-dev/jslibs/commit/57267f4f96601fa9dda199b0318aa8d081187eee))
+* **deps-dev:** bump vitest from 4.1.2 to 4.1.6 ([#545](https://github.com/spuxx-dev/jslibs/issues/545)) ([4f45e45](https://github.com/spuxx-dev/jslibs/commit/4f45e452e22ec79cfbb4ad743480ff985ee517a9))
+
 ## [2.0.0](https://github.com/spuxx-dev/jslibs/compare/nest-auth-v1.1.1...nest-auth-v2.0.0) (2026-05-05)
 
 
