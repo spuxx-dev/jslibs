@@ -108,6 +108,26 @@ describe('basic error handling', () => {
     await request.promise;
   });
 
+  it('should skip an error handler with a status filter if status is undefined', async () => {
+    const handler = vi.fn(() => {});
+    const endpoints = {
+      throw: defineEndpoint({
+        function: async (): Promise<Response> => {
+          throw new Error('Oops!');
+        },
+        errorHandlers: [
+          {
+            statusFilter: (status) => status === 500,
+            function: handler,
+          },
+        ],
+      }),
+    };
+    class HttpClient extends HttpClientMixin({ endpoints }) {}
+    await HttpClient.throw().promise.catch(() => {});
+    expect(handler).not.toHaveBeenCalled();
+  });
+
   it("'continue' flag should work as expected", async () => {
     const firstHandler = vi.fn(() => {});
     const secondHandler = vi.fn(() => {});

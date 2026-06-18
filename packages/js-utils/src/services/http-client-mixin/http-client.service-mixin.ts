@@ -161,8 +161,8 @@ export function HttpClientMixin<TEndpoints extends Endpoints>(
       let errorHasBeenHandled = false;
       const { status } = httpError;
       for (const handler of allErrorHandlers) {
-        // Check status filter
-        if (status && handler.statusFilter && !handler.statusFilter(status)) {
+        // Skip handler if it has a status filter but either no status is available or the filter doesn't match
+        if (handler.statusFilter && (!status || !handler.statusFilter(status))) {
           continue;
         }
         await handler.function(httpError);
