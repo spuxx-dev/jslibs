@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.4](https://github.com/spuxx-dev/jslibs/compare/js-utils-v2.1.3...js-utils-v2.1.4) (2026-07-29)
+
+
+### Build System
+
+* **deps-dev:** bump axios from 1.16.0 to 1.18.0 ([#581](https://github.com/spuxx-dev/jslibs/issues/581)) ([85cfb4b](https://github.com/spuxx-dev/jslibs/commit/85cfb4b7e8f65015de047c59641f73bbb080227f))
+* **deps-dev:** bump unplugin-dts from 1.0.0 to 1.0.3 ([#574](https://github.com/spuxx-dev/jslibs/issues/574)) ([d0e68a5](https://github.com/spuxx-dev/jslibs/commit/d0e68a553574c16ad4a36468fb3f635c29c7882a))
+
 ## [2.1.3](https://github.com/spuxx-dev/jslibs/compare/js-utils-v2.1.2...js-utils-v2.1.3) (2026-06-18)
 
 
