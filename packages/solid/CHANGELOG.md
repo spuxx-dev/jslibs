@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.0.2](https://github.com/spuxx-dev/jslibs/compare/solid-v2.0.1...solid-v2.0.2) (2026-07-29)
+
+
+### Build System
+
+* **deps-dev:** bump @vitest/browser from 4.1.8 to 4.1.9 in /packages/solid ([#569](https://github.com/spuxx-dev/jslibs/issues/569)) ([334deca](https://github.com/spuxx-dev/jslibs/commit/334deca7c336ad74fa174f4528d81bc90e1a7afb))
+* **deps-dev:** bump @vitest/browser from 4.1.9 to 4.1.10 ([#584](https://github.com/spuxx-dev/jslibs/issues/584)) ([20e3b7e](https://github.com/spuxx-dev/jslibs/commit/20e3b7ec0d5bcd202845497abae2997f451d7782))
+* **deps-dev:** bump unplugin-dts from 1.0.0 to 1.0.3 ([#574](https://github.com/spuxx-dev/jslibs/issues/574)) ([d0e68a5](https://github.com/spuxx-dev/jslibs/commit/d0e68a553574c16ad4a36468fb3f635c29c7882a))
+
 ## [2.0.1](https://github.com/spuxx-dev/jslibs/compare/solid-v2.0.0...solid-v2.0.1) (2026-06-18)
 
 
