@@ -103,10 +103,7 @@ export function HttpClientMixin<TEndpoints extends Endpoints>(
     }
 
     private static async handleResponse(request: HttpRequest, response: Response): Promise<any> {
-      if (
-        response?.constructor.name === 'HttpResponse' ||
-        response?.constructor.name === 'Response'
-      ) {
+      if (response instanceof Response) {
         // In case of fetch, we need to do further processing
         response = await Client.handleFetchResponse(response);
       }
