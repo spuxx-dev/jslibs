@@ -1,1 +1,0 @@
-export const AUTH_OPTIONS_KEY = 'AUTH_OPTIONS';

@@ -18,13 +18,10 @@
 
 ## <a name='Description'></a>Description
 
-A monorepo containing various libraries for JavaScript, TypeScript, NestJS and SolidJS applications. Find out more about each package here:
+A monorepo containing various libraries for JavaScript, TypeScript and SolidJS applications. Find out more about each package here:
 
 - [@spuxx/js-utils](https://github.com/spuxx-dev/jslibs/tree/main/packages/js-utils)
 - [@spuxx/browser-utils](https://github.com/spuxx-dev/jslibs/tree/main/packages/browser-utils)
-- [@spuxx/nest-utils](https://github.com/spuxx-dev/jslibs/tree/main/packages/nest-utils)
-- [@spuxx/nest-auth](https://github.com/spuxx-dev/jslibs/tree/main/packages/nest-auth)
-- [@spuxx/nest-testing](https://github.com/spuxx-dev/jslibs/tree/main/packages/nest-testing)
 - [@spuxx/solid](https://github.com/spuxx-dev/jslibs/tree/main/packages/solid)
 
 ## <a name='Documentation'></a>Documentation
