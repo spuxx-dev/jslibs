@@ -8,6 +8,7 @@ export default mergeConfig(
     test: {
       watch: false,
       globals: true,
+      environment: 'node',
       reporters: ['default', 'junit'],
       outputFile: 'reports/junit/junit.xml',
       coverage: {
