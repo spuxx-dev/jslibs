@@ -16,9 +16,9 @@ export default defineConfig({
     cssCodeSplit: true,
     lib: {
       entry: {
-        main: resolve(__dirname, 'src/main.ts'),
-        styles: resolve(__dirname, 'src/styles.css'),
-        themes: resolve(__dirname, 'src/themes.css'),
+        main: resolve(import.meta.dirname, 'src/main.ts'),
+        styles: resolve(import.meta.dirname, 'src/styles.css'),
+        themes: resolve(import.meta.dirname, 'src/themes.css'),
       },
       name: '@spuxx/browser-utils',
       formats: ['es'],

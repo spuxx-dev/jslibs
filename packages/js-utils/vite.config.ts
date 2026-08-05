@@ -15,7 +15,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: {
-        main: resolve(__dirname, 'src/main.ts'),
+        main: resolve(import.meta.dirname, 'src/main.ts'),
       },
       name: '@spuxx/js-utils',
       formats: ['es'],
