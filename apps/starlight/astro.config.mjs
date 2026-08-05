@@ -7,7 +7,6 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
   base: '/jslibs/',
   site: 'https://spuxx-dev.github.io',
-
   integrations: [
     solidJs(),
     starlight({

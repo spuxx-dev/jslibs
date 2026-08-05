@@ -2,3 +2,8 @@ packages:
 - 'packages/*'
 - 'apps/*'
 - "typedoc"
+peerDependencyRules:
+  ignoreMissing:
+  - playwright
+  allowedVersions:
+    "@modyfi/vite-plugin-yaml>vite": "*"

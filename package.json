@@ -24,7 +24,7 @@
     "test": "pnpm -r test",
     "test:vitest": "pnpm -r test:vitest && pnpm coverage:vitest",
     "coverage:vitest": "node scripts/report-coverage-vitest.js",
-    "check": "pnpm run types && pnpm run lint && pnpm run prettier-check",
+    "check": "pnpm types && pnpm lint && pnpm prettier-check",
     "types": "pnpm -r types",
     "lint": "eslint . --ext ts,tsx",
     "prettier-check": "prettier --check .",
@@ -42,17 +42,8 @@
     "nyc": "18.0.0",
     "prettier": "3.8.3",
     "release-please": "17.6.0",
+    "typescript": "6.0.3",
     "typescript-eslint": "8.59.4",
     "vitest": "4.1.6"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "playwright"
-      ],
-      "allowedVersions": {
-        "@modyfi/vite-plugin-yaml>vite": "*"
-      }
-    }
   }
 }
