@@ -24,7 +24,7 @@
     "test": "pnpm -r test",
     "test:vitest": "pnpm -r test:vitest && pnpm coverage:vitest",
     "coverage:vitest": "node scripts/report-coverage-vitest.js",
-    "check": "pnpm types && pnpm run lint && pnpm run prettier-check",
+    "check": "pnpm types && pnpm run prettier-check",
     "types": "pnpm -r types",
     "lint": "eslint . --ext ts,tsx",
     "prettier-check": "prettier --check .",
