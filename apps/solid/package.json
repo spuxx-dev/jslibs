@@ -16,7 +16,7 @@
     "iconify-icon": "3.0.2",
     "postcss": "8.5.19",
     "tailwindcss": "4.3.0",
-    "typescript": "6.0.3",
+    "typescript": "7.0.2",
     "vite": "8.0.16",
     "vite-plugin-solid": "2.11.12"
   },
