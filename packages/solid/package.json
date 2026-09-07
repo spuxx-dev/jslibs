@@ -44,9 +44,9 @@
     "build": "vite build && vite build --mode server",
     "types": "tsc --noEmit",
     "test": "pnpm test:vitest",
-    "test:vitest": "playwright install && vitest --browser.headless",
-    "test:vitest:browser": "playwright install && vitest",
-    "test:vitest:watch": "playwright install && vitest --inspect --no-file-parallelism --watch"
+    "test:vitest": "playwright install --with-deps && vitest --browser.headless",
+    "test:vitest:browser": "playwright install --with-deps && vitest",
+    "test:vitest:watch": "playwright install --with-deps && vitest --inspect --no-file-parallelism --watch"
   },
   "devDependencies": {
     "@solidjs/testing-library": "0.8.10",
