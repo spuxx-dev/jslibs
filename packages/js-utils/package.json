@@ -52,7 +52,7 @@
   },
   "devDependencies": {
     "@modyfi/vite-plugin-yaml": "1.1.1",
-    "@vitest/coverage-v8": "4.1.6",
+    "@vitest/coverage-v8": "4.1.11",
     "axios": "1.18.0",
     "msw": "2.15.0",
     "unplugin-dts": "1.0.3",

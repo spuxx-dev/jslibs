@@ -11,6 +11,8 @@
     "jsxImportSource": "solid-js",
     "types": ["vite/client"],
     "isolatedModules": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
     "resolveJsonModule": true,
     "paths": {
       "@src/*": ["./src/*"]
