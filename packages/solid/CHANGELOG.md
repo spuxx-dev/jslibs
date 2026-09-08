@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.2](https://github.com/spuxx-dev/jslibs/compare/solid-v2.0.1...solid-v2.0.2) (2026-09-08)
+
+
+### Build System
+
+* **deps-dev:** bump @vitest/browser from 4.1.11 to 5.0.0 ([#607](https://github.com/spuxx-dev/jslibs/issues/607)) ([4c836d2](https://github.com/spuxx-dev/jslibs/commit/4c836d2ee6066f969c6ceecb3a58c8b35338ff47))
+* **deps-dev:** bump @vitest/browser from 4.1.8 to 4.1.9 in /packages/solid ([#569](https://github.com/spuxx-dev/jslibs/issues/569)) ([334deca](https://github.com/spuxx-dev/jslibs/commit/334deca7c336ad74fa174f4528d81bc90e1a7afb))
+* **deps-dev:** bump @vitest/browser from 4.1.9 to 4.1.10 ([#584](https://github.com/spuxx-dev/jslibs/issues/584)) ([20e3b7e](https://github.com/spuxx-dev/jslibs/commit/20e3b7ec0d5bcd202845497abae2997f451d7782))
+* **deps-dev:** bump @vitest/coverage-v8 from 4.1.11 to 5.0.0 ([#608](https://github.com/spuxx-dev/jslibs/issues/608)) ([81cdc6e](https://github.com/spuxx-dev/jslibs/commit/81cdc6e4c5168ea8a2a0bf679be913a8bf8858fb))
+* **deps-dev:** bump unplugin-dts from 1.0.0 to 1.0.3 ([#574](https://github.com/spuxx-dev/jslibs/issues/574)) ([d0e68a5](https://github.com/spuxx-dev/jslibs/commit/d0e68a553574c16ad4a36468fb3f635c29c7882a))
+* **deps-dev:** bump vitest from 4.1.6 to 4.1.11 ([#597](https://github.com/spuxx-dev/jslibs/issues/597)) ([14637b7](https://github.com/spuxx-dev/jslibs/commit/14637b78faa9b4ecc08bdfb555a573fdde974512))
+
 ## [2.0.1](https://github.com/spuxx-dev/jslibs/compare/solid-v2.0.0...solid-v2.0.1) (2026-06-18)
 
 
