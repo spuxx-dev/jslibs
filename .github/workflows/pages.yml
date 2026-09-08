@@ -35,12 +35,13 @@ jobs:
     - name: Generate docs
       run: pnpm run docs:generate
 
-    - name: Build and deploy
-      uses: withastro/action@v3
+    - name: Build Starlight app
+      run: pnpm --dir apps/starlight build
+
+    - name: Upload Pages artifact
+      uses: actions/upload-pages-artifact@v3
       with:
-        path: ./apps/starlight
-        node-version: 24
-        package-manager: pnpm@latest
+        path: ./apps/starlight/dist/
 
     - name: Deploy to GitHub Pages
       id: deployment
