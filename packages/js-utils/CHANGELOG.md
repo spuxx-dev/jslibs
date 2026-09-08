@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.1.4](https://github.com/spuxx-dev/jslibs/compare/js-utils-v2.1.3...js-utils-v2.1.4) (2026-09-08)
+
+
+### Bug Fixes
+
+* Fix an issue with handling fetch responses ([9123ed1](https://github.com/spuxx-dev/jslibs/commit/9123ed16f1ef211964a38ceb3e037a64a449576a))
+
+
+### Build System
+
+* **deps-dev:** bump @vitest/coverage-v8 from 4.1.11 to 5.0.0 ([#608](https://github.com/spuxx-dev/jslibs/issues/608)) ([81cdc6e](https://github.com/spuxx-dev/jslibs/commit/81cdc6e4c5168ea8a2a0bf679be913a8bf8858fb))
+* **deps-dev:** bump axios from 1.16.0 to 1.18.0 ([#581](https://github.com/spuxx-dev/jslibs/issues/581)) ([85cfb4b](https://github.com/spuxx-dev/jslibs/commit/85cfb4b7e8f65015de047c59641f73bbb080227f))
+* **deps-dev:** bump axios from 1.18.0 to 1.20.0 ([#606](https://github.com/spuxx-dev/jslibs/issues/606)) ([bcbb445](https://github.com/spuxx-dev/jslibs/commit/bcbb445349b1d21fd2bfad9f64131ae7d2a62a98))
+* **deps-dev:** bump msw from 2.12.3 to 2.15.0 ([#588](https://github.com/spuxx-dev/jslibs/issues/588)) ([5c54986](https://github.com/spuxx-dev/jslibs/commit/5c549860694ef19c661f27c693b4511187e59b2f))
+* **deps-dev:** bump unplugin-dts from 1.0.0 to 1.0.3 ([#574](https://github.com/spuxx-dev/jslibs/issues/574)) ([d0e68a5](https://github.com/spuxx-dev/jslibs/commit/d0e68a553574c16ad4a36468fb3f635c29c7882a))
+* **deps-dev:** bump vitest from 4.1.6 to 4.1.11 ([#597](https://github.com/spuxx-dev/jslibs/issues/597)) ([14637b7](https://github.com/spuxx-dev/jslibs/commit/14637b78faa9b4ecc08bdfb555a573fdde974512))
+
 ## [2.1.3](https://github.com/spuxx-dev/jslibs/compare/js-utils-v2.1.2...js-utils-v2.1.3) (2026-06-18)
 
 
