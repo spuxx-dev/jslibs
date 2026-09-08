@@ -7,7 +7,6 @@ import { ModalPortal } from '../modal-portal.component';
 describe(
   'ConfirmModal',
   {
-    sequential: true,
     concurrent: false,
   },
   () => {
