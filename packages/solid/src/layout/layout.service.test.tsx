@@ -1,4 +1,4 @@
-import { page } from '@vitest/browser/context';
+import { page } from 'vitest/browser';
 import { afterEach, describe, expect, it } from 'vitest';
 import { Sidebar } from './sidebar';
 import { Layout } from './layout.service';
