@@ -71,8 +71,7 @@ export function createHttpRequest<TEndpointDef extends EndpointDefinition>(
     private _abortController: AbortController;
     private _result: Awaited<ReturnType<TEndpointDef['function']>> | undefined;
     private _transformedResult:
-      | Awaited<ReturnType<NonNullable<TEndpointDef['transformer']>>>
-      | undefined;
+      Awaited<ReturnType<NonNullable<TEndpointDef['transformer']>>> | undefined;
 
     constructor(endpointDef: TEndpointDef, promise: Promise<TransformedReturnType<TEndpointDef>>) {
       this._endpointDefinition = endpointDef;
