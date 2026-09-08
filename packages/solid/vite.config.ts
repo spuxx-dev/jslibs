@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import solidPlugin from 'vite-plugin-solid';
 import dts from 'unplugin-dts/vite';
-import { peerDependencies } from './package.json';
+import { peerDependencies } from './package.json' with { type: 'json' };
 
 export default defineConfig(({ mode }) => {
   const isServer = mode === 'server';

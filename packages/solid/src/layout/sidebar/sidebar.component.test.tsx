@@ -24,7 +24,7 @@ describe('Sidebar', () => {
     expect(sidebar).toBeInTheDocument();
     expect(sidebar).toHaveClass('spx', 'spx-sidebar');
     expect(sidebar).toHaveAttribute('data-side', 'left');
-    expect(sidebar).toHaveTextContent('Hello World!');
+    expect(sidebar?.textContent).toContain('Hello World!');
   });
 
   it('should render with custom values', () => {
@@ -49,7 +49,7 @@ describe('Sidebar', () => {
     expect(sidebar).toHaveAttribute('id', '123');
     expect(sidebar).toHaveAttribute('data-side', 'right');
     expect(sidebar).toHaveStyle({ color: 'rgb(255,0,0)' });
-    expect(sidebar).toHaveTextContent('Hello World!');
+    expect(sidebar?.textContent).toContain('Hello World!');
   });
 
   it('should close the sidebar by dragging', async () => {

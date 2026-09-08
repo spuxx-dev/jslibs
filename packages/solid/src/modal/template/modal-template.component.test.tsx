@@ -34,8 +34,8 @@ describe('ModalTemplate', () => {
     });
     const dialog = baseElement.querySelector('[role="dialog"]');
     expect(dialog).not.toBeNull();
-    expect(dialog).toHaveTextContent('Hello World!');
-    expect(dialog).toHaveTextContent('This is a custom modal.');
+    expect(dialog?.textContent).toContain('Hello World!');
+    expect(dialog?.textContent).toContain('This is a custom modal.');
     const close = dialog!.querySelector('button');
     close!.click();
     await Promise.resolve();

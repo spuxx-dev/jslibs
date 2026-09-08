@@ -14,6 +14,7 @@ lerna-debug.log*
 reports/
 pnpm-publish-summary.json
 **/__screenshots__/
+**/.vitest/
 
 # Editor directories and files
 .vscode/*
