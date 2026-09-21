@@ -51,7 +51,7 @@
   "devDependencies": {
     "@solidjs/testing-library": "0.8.10",
     "@spuxx/browser-utils": "workspace:@spuxx/browser-utils@*",
-    "@testing-library/jest-dom": "6.9.1",
+    "@testing-library/jest-dom": "7.0.1",
     "@vitest/browser": "5.0.0",
     "@vitest/browser-playwright": "5.0.0",
     "@vitest/coverage-istanbul": "5.0.1",
