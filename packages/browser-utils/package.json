@@ -54,7 +54,7 @@
   "devDependencies": {
     "@vitest/browser": "5.0.0",
     "@vitest/browser-playwright": "5.0.0",
-    "@vitest/coverage-istanbul": "5.0.0",
+    "@vitest/coverage-istanbul": "5.0.1",
     "unplugin-dts": "1.0.3",
     "vite": "8.2.0",
     "vitest": "5.0.0",
