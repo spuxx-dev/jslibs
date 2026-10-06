@@ -55,7 +55,7 @@
     "@vitest/coverage-v8": "5.0.1",
     "axios": "1.20.0",
     "msw": "2.15.0",
-    "unplugin-dts": "1.0.3",
+    "unplugin-dts": "1.1.1",
     "vite": "8.3.2",
     "vitest": "5.0.0"
   }
