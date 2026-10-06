@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.1.5](https://github.com/spuxx-dev/jslibs/compare/js-utils-v2.1.4...js-utils-v2.1.5) (2026-10-06)
+
+
+### Build System
+
+* **deps-dev:** bump @vitest/coverage-v8 from 5.0.0 to 5.0.1 ([#618](https://github.com/spuxx-dev/jslibs/issues/618)) ([a9dc6d4](https://github.com/spuxx-dev/jslibs/commit/a9dc6d4ef48b24b872dfc9a527197741573e0a0a))
+* **deps-dev:** bump unplugin-dts from 1.0.3 to 1.1.1 ([#633](https://github.com/spuxx-dev/jslibs/issues/633)) ([545363d](https://github.com/spuxx-dev/jslibs/commit/545363d5940755541b8f63ab7e35dbb2bac07fa7))
+* **deps-dev:** bump vite from 8.0.16 to 8.3.2 ([#631](https://github.com/spuxx-dev/jslibs/issues/631)) ([79b4b05](https://github.com/spuxx-dev/jslibs/commit/79b4b05d1285b8430c67eba4928fa3d521efe97b))
+
 ## [2.1.4](https://github.com/spuxx-dev/jslibs/compare/js-utils-v2.1.3...js-utils-v2.1.4) (2026-09-08)
 
 
