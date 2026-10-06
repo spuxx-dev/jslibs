@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.14.3](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.14.2...browser-utils-v1.14.3) (2026-10-06)
+
+
+### Build System
+
+* **deps-dev:** bump @vitest/browser from 5.0.0 to 5.0.3 ([#636](https://github.com/spuxx-dev/jslibs/issues/636)) ([a6d50c0](https://github.com/spuxx-dev/jslibs/commit/a6d50c0f232baebae862c89c31704ba0a1fa70fb))
+* **deps-dev:** bump @vitest/browser-playwright from 5.0.0 to 5.0.2 ([#626](https://github.com/spuxx-dev/jslibs/issues/626)) ([e4852b1](https://github.com/spuxx-dev/jslibs/commit/e4852b1efa272dcb2ffdb63501ba447ba249274f))
+* **deps-dev:** bump @vitest/browser-playwright from 5.0.2 to 5.0.3 ([#634](https://github.com/spuxx-dev/jslibs/issues/634)) ([75256c5](https://github.com/spuxx-dev/jslibs/commit/75256c544b37fa8d3bbda31a9b68ddfc8ce44acd))
+* **deps-dev:** bump @vitest/coverage-istanbul from 5.0.0 to 5.0.1 ([#616](https://github.com/spuxx-dev/jslibs/issues/616)) ([f50d479](https://github.com/spuxx-dev/jslibs/commit/f50d4795974a83285ea395319cdbd5e04ddc2827))
+* **deps-dev:** bump @vitest/coverage-istanbul from 5.0.1 to 5.0.3 ([#635](https://github.com/spuxx-dev/jslibs/issues/635)) ([429ecef](https://github.com/spuxx-dev/jslibs/commit/429ecefc31187c984a19d95fdc3b45e12c2d67a1))
+* **deps-dev:** bump playwright from 1.59.1 to 1.63.0 ([#614](https://github.com/spuxx-dev/jslibs/issues/614)) ([37bbe85](https://github.com/spuxx-dev/jslibs/commit/37bbe854675c92f32925f343463c18a2bf8fd942))
+* **deps-dev:** bump unplugin-dts from 1.0.3 to 1.1.1 ([#633](https://github.com/spuxx-dev/jslibs/issues/633)) ([545363d](https://github.com/spuxx-dev/jslibs/commit/545363d5940755541b8f63ab7e35dbb2bac07fa7))
+* **deps-dev:** bump vite from 8.0.16 to 8.3.2 ([#631](https://github.com/spuxx-dev/jslibs/issues/631)) ([79b4b05](https://github.com/spuxx-dev/jslibs/commit/79b4b05d1285b8430c67eba4928fa3d521efe97b))
+
 ## [1.14.2](https://github.com/spuxx-dev/jslibs/compare/browser-utils-v1.14.1...browser-utils-v1.14.2) (2026-09-08)
 
 
